@@ -1,0 +1,13 @@
+.mw400 {
+  max-width: 400px !important; }
+
+.mw900 {
+  max-width: 900px !important; }
+
+.mw1000 {
+  max-width: 1000px !important; }
+
+.w100 {
+  width: 100% !important;
+  float: left;
+  clear: left; }

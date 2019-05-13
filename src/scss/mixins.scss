@@ -1,0 +1,108 @@
+﻿@import "variables";
+
+/********************************************** LOAD CUSTOM FONTS **********************************************/
+
+@font-face {
+  font-family: 'SegoeUI';
+    src: url('../fonts/SegoeUI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/SegoeUI-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@mixin loadFonts($Weight, $Name, $Local, $Woff:'../fonts/#{$Local}.woff'){
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: $Weight;
+  src: local($Local), url($Woff) format('woff');
+}
+
+
+@font-face {@include loadFonts(100, 'SegoeUI', 'SegoeUI-Light')}
+@font-face {@include loadFonts(300, 'SegoeUI', 'SegoeUI')}
+
+
+$default-font: 'Segoe UI', sans-serif;
+@mixin font($weight:100, $size:1em, $font-family:$default-font){
+    font: $weight $size $font-family;
+}
+
+/********************************************** START MIXINS **********************************************/
+
+@mixin gradient($color: #F5F5F5, $start: #EEE, $stop: #FFF) {
+    background: $color;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, $start), color-stop(1, $stop));
+    background: -ms-linear-gradient(bottom, $start, $stop);
+    background: -moz-linear-gradient(center bottom, $start 0%, $stop 100%);
+    background: -o-linear-gradient($stop, $start);
+    filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$stop}', endColorstr='#{$start}', GradientType=0)";
+}
+
+@mixin drop-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $alpha: 0.1) {
+    -webkit-box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+    -moz-box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+    box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+}
+
+@mixin border-radius($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
+    -webkit-border-top-right-radius: $topright;
+    -webkit-border-bottom-right-radius: $bottomright;
+    -webkit-border-bottom-left-radius: $bottomleft;
+    -webkit-border-top-left-radius: $topleft;
+    -moz-border-radius-topright: $topright;
+    -moz-border-radius-bottomright: $bottomright;
+    -moz-border-radius-bottomleft: $bottomleft;
+    -moz-border-radius-topleft: $topleft;
+    border-top-right-radius: $topright;
+    border-bottom-right-radius: $bottomright;
+    border-bottom-left-radius: $bottomleft;
+    border-top-left-radius: $topleft;
+    @include background-clip(padding-box);
+}
+
+@mixin background-clip($argument: padding-box) {
+    -moz-background-clip: $argument;
+    -webkit-background-clip: $argument;
+    background-clip: $argument;
+}
+
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin rotation($degrees) {
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+}
+
+@mixin transition($duration) {
+    -webkit-transition: $duration;
+    -moz-transition: $duration;
+    -ms-transition: $duration;
+    -o-transition: $duration;
+    transition: $duration;
+}
+
+@mixin text-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0,0,0,.4)) {
+    text-shadow: $x $y $blur $color;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: "") {
+    -webkit-box-shadow: $top $left $blur $color #{$inset};
+    -moz-box-shadow: $top $left $blur $color #{$inset};
+    box-shadow: $top $left $blur $color #{$inset};
+}

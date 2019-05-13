@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Carousel</title>
+<link href="./full-screen.css" rel="stylesheet" type="text/css" />
+<link href="./main.less" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="carousel">
+<div id="info"><h2>Cartoon Network Carousel</h2>
+    <p>
+        If you can't see anything below then your Browser's security settings are blocking Adobe Flash Player. Please try another Browser or <a href="https://support.google.com/chrome/answer/6258784?co=GENIE.Platform%3DDesktop&hl=en" target="_blank">change security settings</a> to allow Flash Player.
+    </p>
+</div>
+<div id="container"></div>
+ 
+<script type="text/javascript" src="./swfobject.js"></script>
+<script type="text/javascript">
+	var globalParams 		= {};
+	globalParams.base 				= "";
+	globalParams.wmode 				= "transparent";
+	globalParams.allowScriptAccess 	= "always";
+	// Character Nav
+	var characterNavFlashvars 	= {};  	  		
+	//characterNavFlashvars.content = characterContentArray;
+	characterNavFlashvars.content = 'carousel.xml';
+	swfobject.embedSWF("./carousel.swf", "container", "833", "91", "9.0.0", "expressInstall.swf", characterNavFlashvars, globalParams);
+	</script>
+</body>
+
+</html>

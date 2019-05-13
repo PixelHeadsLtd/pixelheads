@@ -1,0 +1,615 @@
+﻿@import "elements.less";
+
+/* KEY
+.gradient(color, bottom, top)
+.drop-shadow(x, y, blur, alpha);
+.box-shadow: inset x y blur spread rgba(r, g, b, alpha);
+.border-radius(topRight, bottomRight, bottomLeft, topLeft);
+*/
+
+@orange: #c93500;
+@blue: #0093c3;
+@dark-blue: #004a94;
+@yellow: #edda3f;
+@grey: #333;
+@light-grey: #ddd;
+@dark-green: #82b509;
+@light-green: #e4f3cc;
+
+::-webkit-file-upload-button:hover {background-color:@dark-blue;}
+::-webkit-file-upload-button {
+    .gradient(#e9e9e9, #d0cfcf, #fefdfd);
+    color: #333;
+    border:2px solid @orange;
+    font-family:open_sansbold;
+}
+
+.studioHubApp header section.header-section-top {
+    .drop-shadow(0, 1px, 1px, 0.2); 
+    .gradient(#f4f4f4, #efefef, #fafafa); 
+    height:70px;
+    width:100%;
+}
+
+.studioHubApp .stuhubTools {
+    .border-radius(0, 0, 6px, 0);
+    .drop-shadow(-2px, 2px, 2px, 0.1);
+    border-top:none; 
+    border-right:none; 
+    position: absolute;
+    z-index:1;
+    right:0;
+    top:70px;
+}
+
+.studioHubApp table tr td.approve-reject ul li {.drop-shadow(-2px, 1px, 2px, 0.1);}
+
+.studioHubApp .toolsMenu {.gradient(#ddd, #ddd, #fff); opacity:0.9;}
+
+.studioHubApp .modal-dialog,
+.studioHubApp .activityStream article,
+.studioHubApp .accordion-menu-wrapper-tasks,
+.studioHubApp .accordion-menu-wrapper-tools,
+.studioHubApp .commitment-workspace .downloads-content {
+    /*background: #f5f5f5;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y1ZjVmNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM1JSIgc3RvcC1jb2xvcj0iI2VmZWZlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  #f5f5f5 0%, #efefef 35%, #ffffff 99%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(35%,#efefef), color-stop(99%,#ffffff));
+    background: -webkit-linear-gradient(top,  #f5f5f5 0%,#efefef 35%,#ffffff 99%);
+    background: -o-linear-gradient(top,  #f5f5f5 0%,#efefef 35%,#ffffff 99%);
+    background: -ms-linear-gradient(top,  #f5f5f5 0%,#efefef 35%,#ffffff 99%);
+    background: linear-gradient(to bottom,  #f5f5f5 0%,#efefef 35%,#ffffff 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#ffffff',GradientType=0 );*/
+
+    background: #e5e5e5; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U1ZTVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2VmZWZlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #e5e5e5 0%, #efefef 50%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(50%,#efefef), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e5e5e5 0%,#efefef 50%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e5e5e5 0%,#efefef 50%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e5e5e5 0%,#efefef 50%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #e5e5e5 0%,#efefef 50%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+}
+
+.studioHubApp .modal-dialog {
+    width: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    padding: 0; 
+    min-height: 600px; 
+    height:100%;
+    z-index: 1;
+}
+
+.studioHubApp .input-type-file-wrapper .input-type-file-button {.gradient(#fff, #ddd, #fff);}
+.studioHubApp .input-type-file-wrapper:hover .input-type-file-button {.gradient(#fff, #d0dfab, #fff);}
+
+.studioHubApp #cboxLoadedContent input[type="file"],
+.studioHubApp input[type="file"] {
+    text-indent: -200px;
+    margin: 0;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: -6px;
+}
+
+.studioHubApp #cboxLoadedContent button:active,
+.studioHubApp button:active {background:@blue!important; color:white!important}
+
+/* modal styles */
+
+.studioHubApp select {
+    .gradient(#e9e9e9, #d0cfcf, #fefdfd);
+    border:1px #999 solid;
+    float: left; 
+    margin: 1px; 
+    color: #333;
+    width:auto;
+    padding: 1px 5px 1px 5px;
+    clear: left;
+}
+
+.studioHubApp button.submit,
+.studioHubApp a.submit,
+.studioHubApp input[type="submit"]  {
+    .border-radius(5px, 5px, 5px, 5px);
+    .transition(@duration:0.2s, @ease:ease-in);
+    background-color: @orange!important;
+    font-family: open_sansbold!important;
+    padding: 3px 10px;
+    color: #fff!important;
+    font-size: 11px!important;
+    border: none;
+    display:inline-block;
+    float:left;
+    white-space: nowrap;
+}
+.studioHubApp button.grey-button {
+    .border-radius(5px, 5px, 5px, 5px);
+    .transition(@duration:0.2s, @ease:ease-in);
+    background-color: @grey!important;
+    font-family: open_sansbold;
+    padding: 3px 10px;
+    color: #fff;
+    font-size: 11px;
+    border: none;
+    display:inline-block;
+    margin-right:10px;
+    float:left;
+}
+
+.studioHubApp button.light-grey-button {
+    .border-radius(5px, 5px, 5px, 5px);
+    .transition(@duration:0.2s, @ease:ease-in);
+    background-color: @light-grey;
+    font-family: open_sansbold;
+    font-size: 11px;
+    display:inline-block;
+    margin-right:10px;
+    border: 1px solid #bbb;
+    color: #333;
+    padding: 2px 21px;
+}
+
+.studioHubApp .button-group ul li input[type="button"] {
+    .border-radius(5px, 5px, 5px, 5px);
+    background-color: @orange;
+    font-family: open_sansbold;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 11px;
+    border: 1px solid #333;
+    float:left;
+    display:inline-block;
+    margin-right:5px!important;
+}
+
+.studioHubApp input[type="submit"]:hover,
+.studioHubApp .button-group ul li input[type="button"]:hover,
+.studioHubApp button.submit:hover,
+.studioHubApp a.submit:hover,
+.studioHubApp button.inline-button:hover,
+.studioHubApp button.button-inline-form:hover,
+.studioHubApp button.button-small-inline:hover,
+.studioHubApp #media-uploader li.media-upload div.media-overlay span:hover,
+.studioHubApp .editable-buttons button:hover,
+.studioHubApp .black-button:hover,
+.studioHubApp button.grey-button:hover,
+.studioHubApp button.light-grey-button:hover,
+.studioHubApp .modal-dialog button.button-inline-form:hover,
+.studioHubApp input[type="file"]:hover {
+    background-color: @dark-green!important;
+    .transition(@duration:0.2s, @ease:ease-in);
+    color:#000!important;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.studioHubApp .accordion-menu .menu-heading:hover {
+    background-color: #ccc;
+    .transition(@duration:0.3s, @ease:ease-in);
+}
+
+.studioHubApp .modal-dialog button.inline-button {
+    .border-radius(5px, 5px, 0, 0);
+    .transition(@duration:0.2s, @ease:ease-in);
+    background-color: @orange;
+    font-family: open_sansbold;
+    padding: 2px 6px;
+    color: #fff;
+    font-size: 11px;
+    border: 1px solid #999999;
+    float: left;
+    margin: 1px 0 0 -6px;
+}
+
+.studioHubApp .modal-dialog button.button-inline-form,
+.studioHubApp .modal-dialog .editable-buttons button {
+    .border-radius(5px, 5px, 5px, 5px);
+    font-family: open_sanssemibold;
+    padding: 2px 6px;
+    color: #fff;
+    font-size: 11px;
+    border: none;
+    float: left;
+    margin: -1px 0 0 0;
+    height: 20px;
+}
+
+.studioHubApp .modal-dialog button.button-small-inline {
+    .border-radius(5px, 5px, 5px, 5px);
+    background-color: @orange;
+    font-family: open_sanssemibold;
+    padding: 2px 6px;
+    color: #fff;
+    font-size: 11px;
+    border: none;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.studioHubApp ul.dropdown-menu,
+.studioHubApp input,
+.studioHubApp select,
+.studioHubApp textarea,
+.chosen-container-multi .chosen-choices,
+.chosen-container .chosen-with-drop .chosen-drop {.border-radius(5px, 5px, 5px, 5px);}
+
+.studioHubApp .modal-dialog ul.dropdown-menu {.drop-shadow(x, y, 10px, 0.5);}
+
+.studioHubApp .errorMsg {position: absolute;bottom: 3px;left: -14px;z-index: 20;}
+.studioHubApp .errorMsgSmallInput {left: -15px}
+.studioHubApp .deleteMsg {bottom: auto; top:18px; left:0}
+.studioHubApp .deleteMsg .error-txt {white-space:normal!important; min-width: 200px;}
+
+.studioHubApp .errorMsgRight .deleteMsg .confirm-buttons {width:100%}
+.studioHubApp .errorMsgRight .deleteMsg {top: 20px;left: -155px;}
+.studioHubApp .producerPack .errorMsgRight .deleteMsg {top: 20px;left: -137px;}
+.studioHubApp .errorMsgRight .deleteMsg .error-marker {right: -184px!important; left: auto;}
+
+.studioHubApp .errorMsg .error-marker {
+    background: transparent url('../images/error-marker.svg') 0 0 no-repeat;
+    padding-top: 14px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    z-index: 5;
+    width: 20px;
+    height: 10px;
+    background-size: 100%;
+}
+
+.studioHubApp .errorMsg .error-txt {
+    .border-radius(12px, 12px, 12px, 12px);
+    .drop-shadow(0, 0, 6px, 0.3);
+    background:white;
+    color: @blue;
+    font-family: open_sanssemibold_italic;
+    white-space: nowrap;
+    padding:7px 12px;
+    position:absolute;
+    top:10px;
+    left:0;
+    z-index:0;
+}
+
+.studioHubApp .showInfo {opacity:1!important; visibility:visible!important;}
+.studioHubApp .info-be {left: 95px;width: 210px;}
+.studioHubApp .info-fe {left: 66px;width: 228px;}
+
+.studioHubApp .info-pane .content {color: #2d51ac;cursor: default;margin-top: 12px;display: block;}
+.studioHubApp .info-fe .cloud-marker,
+.studioHubApp .info-be .cloud-marker {left:46%!important}
+.studioHubApp .info-pane {
+    color: #999;
+    font-family: open_sanssemibold;
+    padding:15px;
+    position:absolute;
+    top:26px;
+    z-index:20;
+    opacity:0;
+    visibility:hidden;
+    left: 23%!important;
+    min-width:210px;
+}
+
+.studioHubApp .info-pane ul.bullet-list {margin:10px 0 10px 0}
+.studioHubApp .info-pane ul.bullet-list li { font-size:12px;display:list-item}
+
+.studioHubApp .modal-dialog nav.wizardMenu {
+    font-family:open_sansregular;
+    font-size:14px;
+    .drop-shadow(0, 1px, 2px, 0.2);
+    background-color: white;
+    width: 100%;
+    float: left;
+    margin-bottom: -20px;
+    height: 40px;
+    position: relative;
+    z-index: 200;
+}
+
+/* cloud help */
+/* start animation */
+.fadeMe-show, .fadeMe-hide {
+  -webkit-transition:all linear 0.3s;
+  -moz-transition:all linear 0.3s;
+  -ms-transition:all linear 0.3s;
+  -o-transition:all linear 0.3s;
+  transition:all linear 0.3s;
+}
+.fadeMe-show { opacity:0;}
+.fadeMe-show.fadeMe-show-active { opacity:1;}
+.fadeMe-hide { opacity:1; }
+.fadeMe-hide.fadeMe-hide-active { opacity:0;}
+/* end animation */
+
+.studioHubApp .cloud-inner {
+    .border-radius(8px, 8px, 8px, 8px);
+    .gradient(#a3e5fa, #6fc7e4, #a3e5fa);
+    .drop-shadow(0, 0, 8px, 0.2);
+    padding: 12px 15px;
+    float: left;
+    min-height:89px;
+}
+
+.studioHubApp .cloud-close a:hover {text-decoration:none}
+.studioHubApp .cloud-close a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    float: left;
+    color: white;
+    font-family: open_sanssemibold;
+    font-size: 1.3em;
+}
+.studioHubApp .cloud-close {
+    position:absolute;
+    top:0;
+    right:0;
+    background-color:@yellow;
+    .border-radius(8px, 0, 8px, 0);
+    width:20px;
+    height:20px;
+    color:white;
+}
+
+.studioHubApp .cloud-content {
+    font-family: open_sanssemibold;
+    font-size:12px;
+    float:left;
+    color:#333
+}
+
+.studioHubApp .cloud-marker {
+    background: transparent url('../images/help-marker.svg') 0 -21px no-repeat;
+    width:20px;
+    height:15px;
+    position:absolute;
+    bottom:0;
+    left:35px;
+}
+
+.studioHubApp .cloud-help-top .cloud-marker {
+    background: transparent url('../images/help-marker.svg') 0 -20px no-repeat;
+    width:20px;
+    height:15px;
+    position:absolute;
+    bottom:0;
+    left:35px;
+}
+
+.studioHubApp .cloud-help-bottom .cloud-marker {
+    background: transparent url('../images/help-marker.svg') 0 -2px no-repeat;
+    width:20px;
+    height:15px;
+    position:absolute;
+    top:-9px;
+    left:35px;
+}
+
+input:focus, select:focus, button:focus {outline:none!important}
+input.ng-invalid {
+    border: 1px solid @blue!important;
+    box-shadow: inset 0 0 5px 0 rgba(0, 147, 195, 0.9);
+}
+
+.studioHubApp .modal-dialog .contributor-matches .form-right {.drop-shadow(-3px, 0, 5px, 0.1);}
+
+.studioHubApp .modal-dialog .expandable-section {
+    .border-radius(8px, 8px, 8px, 8px);
+    border:1px solid #ccc;
+    padding: 12px;
+    float: left;
+}
+
+/* Animations */
+.studioHubApp a.root-user img {.drop-shadow(0, 0, 3px, 0.4);}
+
+.studioHubApp .activityStream article section.expanded {.drop-shadow(1px, 0, 1px, 0.1);}
+
+.studioHubApp .status-panel .set-status-popup nav {.drop-shadow(0, 0, 12px, 0.3);}
+.studioHubApp .status-panel .set-status-popup article {.drop-shadow(0, 0, 10px, 0.3);}
+.studioHubApp .status-panel .set-status-popup {
+    .transition(@duration:0.2s, @ease:ease-out);
+    opacity: 0;
+    visibility:hidden;
+}
+.studioHubApp .status-panel .showPopup {
+    .transition(@duration:0.2s, @ease:ease-in);
+    opacity: 1;
+    visibility:visible;
+}
+
+.studioHubApp .activityStream .activityStreamInner ul li {
+    .transition(@duration:2s, @ease:ease-out);
+    opacity: 0.60;
+    visibility:visible;
+}
+
+.studioHubApp .activityStream .activityStreamInner ul li.justArrived {
+    .transition(@duration:5s, @ease:ease-out);
+    opacity: 1;
+    visibility:visible;
+}
+
+.studioHubApp .activityStream .activity-tab i {
+    .transition(@duration:1s, @ease:ease-out);
+    opacity: 0;
+    visibility:hidden;
+    top: 150px;
+    left: -24px;
+}
+
+.studioHubApp .activityStream .activity-tab i.arrived {
+    .transition(@duration:1s, @ease:ease-in);
+    opacity: 1;
+    visibility:visible;
+    top: 130px;
+    left: -2px;
+}
+
+.studioHubApp .activityStream .activity-tab i.left {
+    .transition(@duration:1s, @ease:ease-out);
+    top: 121px!important;
+    left: 18px!important;
+    opacity: 0!important;
+    visibility:hidden!important;
+}
+
+.studioHubApp table.songs-dashboard tr td.song-column {width: auto; max-width:300px}
+.studioHubApp table.songs-dashboard tr td.song-column a {max-width:300px}
+
+.studioHubApp .comment-popup ul.showComment {
+    .drop-shadow(0, 0, 8px, 0.2);
+}
+
+.studioHubApp nav.contextual-menu section.view-comments div.scroll-messages {
+    .inner-shadow(@horizontal:0, @vertical:0, @blur:5px, @alpha: 0.2);
+    border-radius: 6px;
+}
+
+.studioHubApp .split-context-header nav.contextual-menu section.view-comments div.scroll-messages {
+    .inner-shadow(@horizontal:0, @vertical:0, @blur:5px, @alpha: 0.2);
+    border-radius: 6px 6px 0 0;
+}
+
+.studioHubApp .contacts aside {
+    .drop-shadow(2px, 0, 2px, 0.1);
+}
+
+.studioHubApp .contacts section.actionPane section.showAddContactForm {
+    opacity:1;
+    visibility:visible; 
+    .transition(@duration:0.3s, @ease:ease-out);
+} 
+.studioHubApp .contacts section section.add-contact-popup {
+    opacity: 0;
+    visibility: hidden;
+    .transition(@duration:0.3s, @ease:ease-out);
+}
+
+.studioHubApp .contacts section.actionPane .contact-section-title {
+    box-shadow: 5px -5px 10px rgba(221, 221, 221, 0.9);
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(22deg,  rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(50%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(22deg,  rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(22deg,  rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(22deg,  rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%); /* IE10+ */
+    background: linear-gradient(22deg,  rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+.studioHubApp .commitment-workspace-content .showingNewSession,
+.studioHubApp .cloud-help,
+.studioHubApp .info-pane,
+.studioHubApp .commitment-workspace-content section.addNewSession,
+.studioHubApp .commitment-workspace-content .sessionForms section.showingAddNewSession,
+.studioHubApp .showTasksMenu .activityStream .expanded .activity-tab,
+.studioHubApp .activityStream article section.expanded .activity-tab,
+.studioHubApp .activityStream article section .activity-tab,
+.studioHubApp .accordion-menu-wrapper-tools .menu-tab,
+.studioHubApp .showTasksMenu .accordion-menu-wrapper-tools .menu-tab,
+.studioHubApp .showTasksMenu .activityStream .activity-tab,
+.studioHubApp .showToolsMenu .activityStream .activity-tab,
+.studioHubApp .showToolsMenu .activityStream article section.expanded .activity-tab,
+.studioHubApp .showTasksMenu .modal-dialog,
+.studioHubApp .showToolsMenu .modal-dialog,
+.studioHubApp .modal-dialog,
+.studioHubApp .showTasksMenu .contacts aside,
+.studioHubApp .showToolsMenu .contacts aside,
+.studioHubApp .contacts aside,
+.studioHubApp .showTasksMenu .activityStream,
+.studioHubApp .showToolsMenu .activityStream,
+.studioHubApp .activityStream,
+.studioHubApp .showTasksMenu .mainContent,
+.studioHubApp .showToolsMenu .mainContent,
+.studioHubApp .mainContent,
+.studioHubApp .showTasksMenu .accordion-menu-wrapper-tasks,
+.studioHubApp .showToolsMenu .accordion-menu-wrapper-tools,
+.studioHubApp .accordion-menu-wrapper-tasks,
+.studioHubApp .accordion-menu-wrapper-tools,
+.studioHubApp .showTasksMenu .modal-dialog ul.stuHubWizardSteps,
+.studioHubApp .showToolsMenu .modal-dialog ul.stuHubWizardSteps,
+.studioHubApp .modal-dialog ul.stuHubWizardSteps,
+.studioHubApp .showNewWriterForm,
+.studioHubApp .addContributorForm,
+.studioHubApp .showNewContribForm,
+.studioHubApp .showEditContributorForm,
+.studioHubApp .editContributorForm,
+.studioHubApp .showSamplesForm,
+.studioHubApp .samplesForm,
+.studioHubApp .commitment-workspace-content .sideArtistMode,
+.studioHubApp .commitment-workspace aside section.status-panel ul li.song-manager-form article.addNewSong ul,
+.studioHubApp section.toggleHeader,
+.studioHubApp header.toggleHeader section.header-section-bottom,
+.studioHubApp header.toggleHeader,
+.studioHubApp .commitment-workspace .downloads-menu,
+.studioHubApp .commitment-workspace-content .newWriterForm,
+.studioHubApp .stuhubContainer,
+.studioHubApp section.header-section-bottom,
+.studioHubApp header.pageHeader,
+.studioHubApp .commitment-workspace .showDownloads,
+.studioHubApp .commitment-workspace li:hover,
+.studioHubApp .commitment-workspace nav ul.menu li a.active,
+.studioHubApp .hideSearch aside.search-results-aside,
+.studioHubApp .contacts aside.search-results-aside,
+.studioHubApp .contacts img.marker,
+.studioHubApp .contacts section.actionPane,
+.studioHubApp .split-context-header nav.contextual-menu section,
+.studioHubApp .split-context-header nav.showMsg section,
+.studioHubApp nav.contextual-menu,
+.studioHubApp nav.showMsg,
+.notification-item,
+.studioHubApp .commitment-workspace-content ul li.mixesCollapsed ul,
+.studioHubApp .commitment-workspace-content ul li.proResCollapsed ul,
+.studioHubApp .commitment-workspace-content ul li ul,
+.studioHubApp .activityStream .expanded .activityStreamInner,
+.studioHubApp .activityStream .activityStreamInner,
+.studioHubApp section.add-po,
+.studioHubApp section.edit-po,
+.studioHubApp section.show-line-form,
+.studioHubApp div.purchase-order section.ng-hide {.transition(@duration:0.3s, @ease:ease-out)}
+
+.studioHubApp .accordion-menu-wrapper-tasks .menu-tab a:hover, 
+.studioHubApp .accordion-menu-wrapper-tools .menu-tab a:hover, 
+.studioHubApp .commitment-workspace .downloads-tab a:hover {transition:none}
+
+.studioHubApp section.edit-po,
+.studioHubApp .show-line-form,
+.studioHubApp .manage-sample-info section.manage-sample .samplesForm {
+    background: #e5e5e5; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U1ZTVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2VmZWZlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #fff 0%, #fff 50%, #ececec 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(50%,#fff), color-stop(100%,#ececec)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fff 0%,#fff 50%,#ececec 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fff 0%,#fff 50%,#ececec 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fff 0%,#fff 50%,#ececec 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fff 0%,#fff 50%,#ececec 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff',GradientType=0 ); /* IE6-8 */
+}
+
+.studioHubApp .contacts section section.add-contact-popup {
+    background: #e5e5e5; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U1ZTVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2VmZWZlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #fff 0%, #fff 50%, #eaeaea 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(50%,#fff), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fff 0%,#fff 50%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fff 0%,#fff 50%,#eaeaea 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fff 0%,#fff 50%,#eaeaea 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fff 0%,#fff 50%,#eaeaea 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff',GradientType=0 ); /* IE6-8 */
+}
+
+.studioHubApp section.offerPreview .emailPreview {border-radius:8px; .drop-shadow(0, 0, 10px, 0.1);}
+
+.studioHubApp .taskNum {.drop-shadow(0, 0, 4px, 0.3);}

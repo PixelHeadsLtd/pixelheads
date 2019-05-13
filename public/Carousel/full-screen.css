@@ -1,0 +1,47 @@
+body { 
+	margin:0;
+	padding:0; 
+	background:#d8d8d8 url('../images/layout/bg-repeat.png') 0 0 repeat-x!important;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	width:100%;
+}
+#container {
+	text-align:center;
+	width:100%;
+}
+
+h1 {font-size:1.4em; margin-bottom:16px;}
+h2 {font-size:1em; color:#ff2e58; margin-bottom:8px;}
+p {font-size:0.9em; line-height:17px; margin-bottom:14px;}
+
+#back-link {float:left; width:100%; margin:20px 0 0 0; text-align:center;}
+#back-link a {
+	background: url('../images/content/arrow-back-off.png') left 4px no-repeat;
+	height:13px;
+	padding-left:13px;
+	margin-top:6px;
+	font-size:1em;
+	font-weight:bold;
+	text-decoration:none;
+	color:#999;
+}
+#back-link a:hover {background: url('../images/content/arrow-back-on.png') left 4px no-repeat;}
+
+
+#object-wrapper {text-align:center; float:left; width:100%; background-color:#000}
+body#monum object {margin:0 auto 0 auto; text-align:center; width:800px; height:550px;}
+body#arc object {margin:0 auto 0 auto; text-align:center; width:770px; height:270px;}
+body#chap object {margin:0 auto 0 auto; text-align:center; width:630px; height:310px;}
+body#nav object {margin:0 auto 0 auto; text-align:center; width:800px; height:200px;}
+body#footy object {margin:0 auto 0 auto; text-align:center; width:778px; height:115px;}
+body#xmas object {margin:0 auto 0 auto; text-align:center; width:778px; height:115px;}
+body#xmas-home object {margin:0 auto 0 auto; text-align:center; width:1036px; height:600px;}
+
+
+body#carousel object {margin:0 auto 0 auto; text-align:center; float:none; width:100%; height:50%;}
+
+#info {text-align:center; float:left; width:100%}
+#info h2 {margin:20px 0 5px 0; color:#666}
+body#carousel #info p {width:330px; margin:0 auto 10px auto}
+body#goals #info p {width:455px; margin:0 auto 10px auto}
+body#topgear #info p {width:550px; margin:0 auto 10px auto}

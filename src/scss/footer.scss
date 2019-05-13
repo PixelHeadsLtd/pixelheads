@@ -1,0 +1,45 @@
+﻿@import "variables";
+@import "mixins";
+@import "images";
+
+body.contact-page {
+    footer {
+        display: inline-block;
+        background: $footer;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 35%;
+        padding:0 60px 0 60px;
+        .logo {
+            background: url($pixelHeadsLogoClean) 0 0 no-repeat;
+            background-size:100%;
+            width: 140px;
+            height: 189px;
+            position: absolute;
+            top: -45px;
+            left: 690px;
+        }
+        nav {
+            display: inline-block;
+            margin: 20px 0 0 0;
+            ul {
+                display:inline-block;
+                margin:0 135px 0 0;
+                padding:0;
+                float:left;
+                li {
+                    display:block;
+                    label {color:$h2}
+                    a:hover {opacity:1;}
+                    a {
+                        color:$white;
+                        @include font(100,9px);
+                        opacity:0.6;
+                    }
+                }
+            }
+        }
+    }
+}

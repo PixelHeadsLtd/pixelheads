@@ -1,0 +1,74 @@
+﻿@import "variables";
+@import "mixins";
+@import "images";
+header.main-header {
+    background:$black url('../images/bg-tint.png') no-repeat 0 0;
+    position:fixed;
+    z-index:2;
+    left:0;
+    right:0;
+    top:0;
+    padding: 0 40px 0 60px;
+    height: 134px;
+    .logo {
+        background: url($pixelHeadsLogoClean) 0 0 no-repeat;
+        background-size:100%;
+        margin: 9px 30px 0 0;
+        float: left;
+        width: 26px;
+        height: 35px;
+    }
+    nav {
+        white-space: nowrap;
+        ul.main-nav {
+            display:inline-block;
+            margin:0;
+            padding: 0;
+            li:last-child {background:none}
+            li {
+                background:url($MenuChevron) right 21px no-repeat;
+                background-size: 7px;
+                display: inline-block;
+                margin: 0 16px 0 0;
+                padding:0 25px 0 0;
+                a {
+                    color:$nav;
+                    opacity:0.7;
+                    @include font(100, 16px);
+                    margin: 14px 0 0 0;
+                    display: inline-block;
+                }
+                a.active {
+                    opacity:1;
+                }
+            }
+            li:hover {
+                cursor:pointer;
+                a {
+                    opacity:1;
+                }
+            }
+        }
+        ul.social {
+            margin:11px 0 0 0;
+            float:right;
+            li {
+                display:inline-block;
+                margin:0 10px 0 0;
+                a {
+                    background-size:100%!important;
+                    display:inline-block;
+                    width:25px;
+                    height:25px;
+                }
+            }
+            li:last-child {margin-right:0}
+            li:nth-child(1) {
+                a {background:url('../images/social/github.png') 0 0 no-repeat;}
+            }
+            li:nth-child(2) {
+                a {background:url('../images/social/linkedin-wht.png') 0 0 no-repeat;}
+            }
+        }
+    }
+}

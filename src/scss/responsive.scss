@@ -1,0 +1,208 @@
+﻿/*responsive sass*/
+@import "variables";
+
+.landing-page {
+    .iphone-portrait {
+        header.main-header {
+           visibility:hidden;
+        }
+        .content {
+            padding:160px 10% 0 10%;
+            .logo {
+                margin:0 0 0 32px;
+            }
+        }
+    }
+}
+
+/* DESKTOP */
+.desktop {
+    header.main-header, 
+    .sub-header, 
+    .ReactStickyHeader_root, 
+    ul.summary {min-width:920px}
+}
+
+/* PORTRAIT */
+.iphone-portrait {
+    header.main-header {
+        padding:0 8px;
+        nav {
+            position:absolute;
+            right:10px;
+            top:0;
+            ul.main-nav {
+                padding:0;
+                margin:0;
+                float: right;
+                li {margin:0 20px}
+                li:last-child {margin:0}
+            }
+            ul.social {display:none;}
+        }
+    }
+    .content {
+        padding:66px 8px 50px 8px;
+        .sub-header {
+            width:100%;
+            background-color:transparent;
+            position:static;
+            padding:0;
+            .intro, h1, h2 {
+                display:none;
+            }
+            aside {
+                position:fixed;
+                top:50px;
+                left:0;
+                right:0;
+                overflow-x:auto;
+                background-color:$subHeader;
+                font-size:15px;
+                ul {display:none}
+                ul.mobile-version {
+                    display:inline-block;
+                    width: 1600px;
+                    li {
+                        float:none;
+                        display:inline-block;
+                        margin:0;
+                        a {padding:10px 30px}
+                        a.active {border:none; padding:10px 30px}
+                    }
+                }
+            }
+        }
+        .projects {
+            .work {
+                .ReactStickyHeader_root {
+                    display:none;
+                }
+               .examples {
+                    padding-top: 45px;
+                    h2, h2 a {
+                        margin:0;
+                        font-size:12px
+                    }
+                    p {min-width:100%; width:auto}
+                    .platform-logos {
+                        ul {
+                            padding:0;
+                            li.umg {width:55%;}
+                            li.studiohub {margin-left:30px}
+                        }
+                    }
+                    .image-wrapper {margin-bottom:20px}
+                    div.LWS-landing-page {height:172px}
+                    div.LWS-masters {height:200px}
+                    div.LWS-song-overview {height:680px}
+                    div.RWS-landing-page {height:215px}
+                    div.RWS-release {height:215px}
+                    div.RWS-scheduling {height:235px}
+                    div.RWS-manage-release {height:235px}
+                    div.RWS-components {height:300px}
+               }
+            }
+        }
+        .thanks {
+            width:auto; 
+            line-height: 16px;
+            h1 {font-size:30px}
+        }
+    }
+    footer {
+        display:none!important;
+    }
+}
+
+/* LANDSCAPE */
+.iphone-landscape {
+    header.main-header {
+        padding:0 8px;
+        nav {
+            position:absolute;
+            right:10px;
+            top:0;
+            ul.main-nav {
+                padding:0;
+                margin:0;
+                float: right;
+                li {margin:0 20px}
+                li:last-child {margin:0}
+            }
+            ul.social {display:none;}
+        }
+    }
+    .content {
+        padding:66px 8px 50px 8px;
+        .sub-header {
+            width:100%;
+            background-color:transparent;
+            position:static;
+            padding:0;
+            .intro, h1, h2 {
+                display:none;
+            }
+            aside {
+                position:fixed;
+                top:50px;
+                left:0;
+                right:0;
+                overflow-x:auto;
+                background-color:$subHeader;
+                font-size:15px;
+                ul {display:none}
+                ul.mobile-version {
+                    display:inline-block;
+                    width: 1600px;
+                    li {
+                        float:none;
+                        display:inline-block;
+                        margin:0;
+                        a {padding:10px 30px}
+                        a.active {border:none; padding:10px 30px}
+                    }
+                }
+            }
+        }
+        .projects {
+            .work {
+                .ReactStickyHeader_root {
+                    display:none;
+                }
+               .examples {
+                    padding-top: 45px;
+                    h2, h2 a {
+                        margin:0;
+                        font-size:12px
+                    }
+                    p {min-width:100%; width:auto}
+                    .platform-logos {
+                        ul {
+                            padding:0;
+                            li.umg {width:55%;}
+                            li.studiohub {margin-left:30px}
+                        }
+                    }
+                    .image-wrapper {margin-bottom:20px}
+                    div.LWS-landing-page {height:172px}
+                    div.LWS-masters {height:200px}
+                    div.LWS-song-overview {height:680px}
+                    div.RWS-landing-page {height:215px}
+                    div.RWS-release {height:215px}
+                    div.RWS-scheduling {height:235px}
+                    div.RWS-manage-release {height:235px}
+                    div.RWS-components {height:300px}
+               }
+            }
+        }
+        .thanks {
+            width:auto; 
+            line-height: 16px;
+            h1 {font-size:30px}
+        }
+    }
+    footer {
+        display:none!important;
+    }
+}

@@ -1,0 +1,191 @@
+body {font-family: open_sansregular; font-size: small ;margin:0; color: #2f4966}
+/* Custom scrollbars. Only works for chrome and Safari */
+body ::-webkit-scrollbar-track {-webkit-box-shadow: none; border-radius: 3px; background: #ddd;}
+body ::-webkit-scrollbar {width: 5px; background-color: #fbfbfb;}
+body ::-webkit-scrollbar-thumb { border-radius: 3px; -webkit-box-shadow: none; background: #999;}
+body ::-webkit-scrollbar-thumb:hover { background: #333;}
+body ::-webkit-scrollbar-thumb:active { background: #c93500;}
+
+h1, h2, h3, h4, h5, h6 {margin:0; padding:0; text-transform: uppercase;}
+
+div.content h2, 
+div.content h3, 
+div.content h4, 
+div.content h5, 
+div.content h6, 
+p, 
+div.content label {text-align: left}
+
+header.page-header ul {margin:0;}
+ul { padding: 0; display: inline-block;}
+ul.list-inline li { display: inline-block; float: left; clear: none; margin:0 20px 0 0!important }
+ul.list-inline li:last-child {margin-right:0!important }
+article ul.activity li {margin:0 5px 0 0!important }
+
+a {color:#fff; text-decoration: none; position: relative; z-index: 999}
+a:hover {text-decoration: underline;}
+
+h1 {font-family:open_sanslight; font-size:2.6em; text-transform: uppercase;}
+h2 {font-size:2.2em; font-family: open_sanslight; text-transform: uppercase; color: #2f4966}
+h3 {font-size: 1.6em; font-family: open_sanslight_italic; text-transform: initial}
+
+p {margin:5px 0 25px;}
+
+textarea { min-width: 850px;max-width: 850px; min-height: 150px; color:#dc5e61}
+
+button.copy:hover {background: #dc5e61 }
+button.copy {
+    text-transform: uppercase;
+    font-family: open_sanssemibold;
+    background: #2f4966;
+    color: white;
+    border: none;
+    font-size: 12px;
+    padding: 10px 15px;
+    margin: 5px 0 5px;
+    cursor: pointer;
+}
+
+div.divider { width: 100%; height: 1px; border-top: 1px dashed #ccc; margin: 20px 0}
+
+div.content h3 {
+	color:#888; 
+	font-family: open_sanslight; 
+	font-size: 1.5em; 
+	text-transform: uppercase;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 4px;
+	margin: 0 0 15px 0
+}
+h4 {font-size:1.2em; margin: 20px 0 10px 0;clear:left}
+h5 {font-size:0.9em;}
+h6 {font-size: 0.85em; font-family: open_sansbold; margin-bottom: 3px;}
+
+.margin-bottom { margin-bottom: 20px !important; float: left; clear:left}
+
+strong {font-family: open_sanssemibold}
+.ital {font-family: open_sansitalic}
+.ital-light { font-family: open_sanslight_italic; color: #888; font-size: 12px}
+
+form { position: relative; z-index: 10}
+
+/* header */
+header.page-header {
+	display: inline-block;
+	background-color: #dc5e61; 
+	width: 100%;
+	min-width: 800px;
+	color: #fff; 
+	text-align: center;
+	position: fixed;
+	top:0;
+	text-transform: uppercase;
+	z-index: 9999;
+}
+
+header.page-header a {color:#fff; text-decoration: none}
+header.page-header a:hover {text-decoration: underline;}
+header.page-header section {width: 800px; margin: 0 auto; padding: 20px 0}
+
+header.page-header nav.top-menu {width:100%; border-bottom: 1px solid #e37e81; font-size: 0.8em}
+header.page-header nav.top-menu ul {margin: 0 auto; width: 800px; padding: 0; text-align: center;}
+header.page-header nav.top-menu ul li {display: inline-block; padding: 6px 30px; border-left: 1px solid #e37e81;}
+header.page-header nav.top-menu ul li:last-child {border-right: 1px solid #e37e81;}
+header.page-header nav.top-menu ul li a {color: #fff; text-decoration: none}
+header.page-header nav.top-menu ul li a:hover {text-decoration: underline;}
+
+header.page-header nav.bottom-menu {
+	background-color: #2f4966; 
+	width:100%; 
+	padding: 12px 0;
+}
+
+header.page-header nav.bottom-menu ul li.selected {
+	background: url("../images/marker.svg") center 94px no-repeat;
+	background-size: 20px;
+}
+
+header.page-header nav.bottom-menu ul li {display: inline-block; text-align: left; margin: 0 20px;}
+header.page-header nav.bottom-menu ul li ul {float: left; height:100%; margin: 2px 0 0 0;}
+header.page-header nav.bottom-menu ul li ul li {float: left; clear: left; margin: 1px 0; font-size: 0.8em; opacity: 0.6}
+header.page-header section.headphones {
+	background: url("../images/headphones.svg") center 0 no-repeat; 
+	background-size: 100px
+}
+
+/* masking */
+section.marker-panel {
+	width: 100%; 
+	min-width: 800px; 
+	position: fixed; 
+	top: 298px;
+	z-index: -200;
+}
+section.marker-panel article {width: 800px; margin: 0 auto; position: relative;}
+section.marker-panel article div {
+	height: 20px; 
+	width: 20px; 
+	display: inline-block; 
+	background: url("../images/marker.svg") no-repeat center top;
+	background-size: 20px;
+	vertical-align: top;
+	position: absolute;
+}
+
+
+/* content */
+div.content {width: 100%; padding-top: 220px;}
+div.content .multi-list { float: left; width:100% }
+div.content .multi-list ul { float: left; margin-right:30px }
+div.content ul {text-align: left; margin: 10px 0 15px 0}
+div.content ul li {list-style-type: square; margin: 0 0 0 16px;}
+div.content a {color:#dc5e61; font-family:open_sanssemibold;}
+div.content div.spacer {height:270px; margin-top:-240px; width:100%}
+div.content section {position: relative; width: 850px; margin: 0 auto} 
+div.content section div.mask {position: absolute; height: 100%; width:20px; background: #fff; z-index: -1;}
+div.content section.branding div.MR {left: 395px; width: 604px;}
+div.content section.markup div.ML {left: 0px; width: 372px;} 
+div.content section.markup div.MR {left: 470px; width: 529px;} 
+div.content section article {margin: 20px 0 300px 0; display: inline-block; width: 100%}
+
+
+div.content div.logos { margin: 30px auto 0 auto; text-align: center;}
+div.content div.logos span { display: inline-block; clear: none; float: left; font-size: 10px; text-align: left}
+div.content div.logos a { display: inline-block; clear: none; float: left}
+div.content div.logos a.first { margin-right:10px}
+div.content div.logos label { width: 100%; float:left}
+div.content div.umglogo {background: url("../images/umg-logos/small/umg-on-wht-bg.svg") no-repeat center 10px; width: 210px; height: 127px; background-size: 200px 122px; padding-left:10px}
+div.content .inline div.logos { display: inline-block; margin-top: 15px; margin-bottom: 20px; height: 108px}
+div.content .inline div.stuhublogo {background: url("../images/umg-logos/large/branding-umg-studiohub-on-wht.svg") no-repeat center 31px; width: 240px; background-size: 240px 79px;}
+div.content .inline div.supplychainlogo {background: url("../images/umg-logos/large/branding-umg-supplychain-on-wht.svg") no-repeat center 25px; width: 290px; background-size: 290px 93px; padding:0 46px}
+div.content .inline div.righthublogo {background: url("../images/umg-logos/large/branding-umg-rightshub-on-wht.svg") no-repeat center 25px; width: 214px; background-size: 214px 93px;}
+
+div.content .cube {width:12px; height:12px; display: inline-block; margin: 5px 3px -1px 0;}
+div.content .red {background-color: #c93500}
+div.content .bright-red {background-color: #E03C00}
+div.content ._333 {background-color: #333}
+div.content ._444 {background-color: #444}
+div.content ._666 {background-color: #666}
+div.content ._777 {background-color: #777}
+div.content ._888 {background-color: #888}
+div.content ._999 {background-color: #999}
+div.content ._bbb {background-color: #bbb}
+div.content ._ccc {background-color: #ccc}
+div.content ._ddd {background-color: #ddd}
+div.content ._eee {background-color: #eee}
+div.content ._f1f1f1 {background-color: #f1f1f1}
+div.content ._f4f4f4 {background-color: #f4f4f4}
+div.content ._f8f8f8 {background-color: #f8f8f8}
+div.content ._fbfbfb {background-color: #fbfbfb}
+div.content ._0093c3 {background-color: #0093c3}
+div.content ._3087C8 {background-color: #3087C8}
+div.content ._ebb701 {background-color: #ebb701}
+div.content ._039C25 {background-color: #039C25}
+div.content ._f13b3b {background-color: #f13b3b}
+
+div.content .three-cols { display: inline-block; clear: none; width: 275px; margin:0 }
+
+div { overflow: hidden}
+
+/* footer */
+footer {width:800px; margin: 0 auto;}
