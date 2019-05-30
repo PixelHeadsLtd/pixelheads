@@ -54,7 +54,7 @@ class Projects extends Component {
               Specialist areas: User Research: Understanding business requirements 
               and User groups. Create Personas, Feedback Sessions, Workshops, User Stories and Testing Scenarios. 
               UXD: User Journey Workflows, Wireframes, Sketches and Interactive Prototypes. 
-              Design: Brand Development, Logo and Website Design. Implementation: Front-End Development, 
+              Design: Brand Development, creation of Styleguides, Logo and Website Design. Implementation: Front-End Development, 
               implementation of final designs, primarily focusing on: HTML5, CSS3, LESS, SASS and including 
               Angular, React and Aurelia JavaScript libraries.
             </p>
@@ -69,35 +69,36 @@ class Projects extends Component {
               <li>UX Research</li>
               <li>UI Design</li>
               <li>Branding</li>
+              <li>Styleguides Creation</li>
               <li>Font-End Developer</li>
               <li>Highly skilled CSS, SASS LESS</li>
-              <li>JavaScript and modern frameworks</li>
+              <li>Angular, Aurelia and React Redux development</li>
             </ul>
           </section>
           <Router>
-          <div className="hide-sub-header"><SubHeader title={title} /></div>
-          <nav className="sub-nav"></nav>
-          <Route path='/projects/umg/lws/lws' component={UMG}></Route>
-          <Route path='/projects/tna/disc/disc' component={TNA}></Route>
-          <Route path='/projects/tb/tb/ctn' component={TB}></Route>
-          <Route path='/projects/tdc/tdc' component={TDC}></Route> 
-          <Route path='/projects/umgOld/umgOld' component={umgOld}></Route>
-          <Route path='/projects/bbc/bbc' component={BBC}></Route>
-          <Route path='/projects/pfizer/pfizer' component={Pfizer}></Route>
-          <Route path='/projects/fullsix/fullsix' component={Fullsix}></Route>
-          <aside>
-              <div className="logos">
-                <NavLink to="/projects/umg/lws/lws"></NavLink>
-                <NavLink to="/projects/tna/disc/disc"></NavLink>
-                <NavLink to="/projects/tb/tb/ctn"></NavLink>
-                <NavLink to="/projects/tdc/tdc"></NavLink>
-                <NavLink to="/projects/umgOld/umgOld"></NavLink>
-                <NavLink to="/projects/bbc/bbc"></NavLink>
-                <NavLink to="/projects/pfizer/pfizer"></NavLink>
-                <NavLink to="/projects/fullsix/fullsix"></NavLink>
-              </div>
-              <div className="shadow"></div>
-          </aside>
+            <div className="hide-sub-header"><SubHeader title={title} /></div>
+            <nav className="sub-nav"></nav>
+            <Route path='/projects' component={UMG}></Route>
+            <Route path='/projects/tna/disc/disc' component={TNA}></Route>
+            <Route path='/projects/tb/ctn/ctn' component={TB}></Route>
+            <Route path='/projects/tdc/tdc' component={TDC}></Route> 
+            <Route path='/projects/umgOld/umgOld' component={umgOld}></Route>
+            <Route path='/projects/bbc/bbc' component={BBC}></Route>
+            <Route path='/projects/pfizer/pfizer' component={Pfizer}></Route>
+            <Route path='/projects/fullsix/fullsix' component={Fullsix}></Route>
+            <aside>
+                <div className="logos">
+                  <NavLink to="/projects" exact activeClassName="active"></NavLink>
+                  <NavLink to="/projects/tna/disc/disc"></NavLink>
+                  <NavLink to="/projects/tb/ctn/ctn"></NavLink>
+                  <NavLink to="/projects/tdc/tdc"></NavLink>
+                  <NavLink to="/projects/umgOld/umgOld"></NavLink>
+                  <NavLink to="/projects/bbc/bbc"></NavLink>
+                  <NavLink to="/projects/pfizer/pfizer"></NavLink>
+                  <NavLink to="/projects/fullsix/fullsix"></NavLink>
+                </div>
+                <div className="shadow"></div>
+            </aside>
         </Router>
       </div>
     );

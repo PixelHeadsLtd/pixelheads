@@ -5,7 +5,7 @@ import { Tabs, Tab, Grid, Cell } from 'react-mdl';
 //import Intro from './intro';
 
 // images
-//import discoveryWebsite from '../../../../../images/clients/tna/home.png';
+import boom from '../../../../../images/clients/tb/bm/home.jpg';
 
 class Boomerang extends Component {
   constructor(props){
@@ -17,13 +17,20 @@ class Boomerang extends Component {
     if (this.state.activeTab === 0) {
       return (
         <div>
-            Test 1
+          <h2>Loaded One</h2>
+          <img src={boom} alt="" />
         </div>
       )
     } else if (this.state.activeTab === 1) {
       return (
         <div>
-            Test 2
+          <h2>Second</h2>
+        </div>
+      )
+    } else if (this.state.activeTab === 2) {
+      return (
+        <div>
+          <h2>Third</h2>
         </div>
       )
     } 
@@ -34,7 +41,8 @@ class Boomerang extends Component {
       <div>
         <Tabs onChange={(tabId) => this.setState({ activeTab: tabId })}>
           <h3>In This Section</h3>
-          <Tab>Whatever</Tab>
+          <Tab>Second</Tab>
+          <Tab>Third</Tab>
         </Tabs>
         <section className="projects-grid">
           <Grid className="projects-grid">
