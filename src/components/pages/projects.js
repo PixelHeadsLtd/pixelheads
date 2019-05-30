@@ -76,29 +76,29 @@ class Projects extends Component {
             </ul>
           </section>
           <Router>
-            <div className="hide-sub-header"><SubHeader title={title} /></div>
-            <nav className="sub-nav"></nav>
-            <Route path='/projects' component={UMG}></Route>
-            <Route path='/projects/tna/disc/disc' component={TNA}></Route>
-            <Route path='/projects/tb/ctn/ctn' component={TB}></Route>
-            <Route path='/projects/tdc/tdc' component={TDC}></Route> 
-            <Route path='/projects/umgOld/umgOld' component={umgOld}></Route>
-            <Route path='/projects/bbc/bbc' component={BBC}></Route>
-            <Route path='/projects/pfizer/pfizer' component={Pfizer}></Route>
-            <Route path='/projects/fullsix/fullsix' component={Fullsix}></Route>
-            <aside>
-                <div className="logos">
-                  <NavLink to="/projects" exact activeClassName="active"></NavLink>
-                  <NavLink to="/projects/tna/disc/disc"></NavLink>
-                  <NavLink to="/projects/tb/ctn/ctn"></NavLink>
-                  <NavLink to="/projects/tdc/tdc"></NavLink>
-                  <NavLink to="/projects/umgOld/umgOld"></NavLink>
-                  <NavLink to="/projects/bbc/bbc"></NavLink>
-                  <NavLink to="/projects/pfizer/pfizer"></NavLink>
-                  <NavLink to="/projects/fullsix/fullsix"></NavLink>
-                </div>
-                <div className="shadow"></div>
-            </aside>
+          <div className="hide-sub-header"><SubHeader title={title} /></div>
+          <nav className="sub-nav"></nav>
+          <Route path='/projects/umg/lws/lws' component={UMG}></Route>
+          <Route path='/projects/tna/disc/disc' component={TNA}></Route>
+          <Route path='/projects/tb/ctn/ctn' component={TB}></Route>
+          <Route path='/projects/tdc/tdc' component={TDC}></Route> 
+          <Route path='/projects/umgOld/umgOld' component={umgOld}></Route>
+          <Route path='/projects/bbc/bbc' component={BBC}></Route>
+          <Route path='/projects/pfizer/pfizer' component={Pfizer}></Route>
+          <Route path='/projects/fullsix/fullsix' component={Fullsix}></Route>
+          <aside>
+              <div className="logos">
+                <NavLink to="/projects/umg/lws/lws" exact></NavLink>
+                <NavLink to="/projects/tna/disc/disc"></NavLink>
+                <NavLink to="/projects/tb/ctn/ctn"></NavLink>
+                <NavLink to="/projects/tdc/tdc"></NavLink>
+                <NavLink to="/projects/umgOld/umgOld"></NavLink>
+                <NavLink to="/projects/bbc/bbc"></NavLink>
+                <NavLink to="/projects/pfizer/pfizer"></NavLink>
+                <NavLink to="/projects/fullsix/fullsix"></NavLink>
+              </div>
+              <div className="shadow"></div>
+          </aside>
         </Router>
       </div>
     );

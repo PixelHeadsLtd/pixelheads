@@ -22,13 +22,13 @@ class UMG extends Component {
         <SubHeader title={title} />
         <nav className="sub-nav">
           <ul>
-              <li><NavLink exact to="/projects/">Label Workspace</NavLink></li>
+              <li><NavLink exact to="/projects/umg/lws/lws">Label Workspace</NavLink></li>
               <li><NavLink to="/projects/umg/aws/aws">Asset Workspace</NavLink></li>
               <li><NavLink to="/projects/umg/rights/rights">Rights Hub</NavLink></li>
               <li><NavLink to="/projects/umg/rws/rws">Supply Chain</NavLink></li>
           </ul>
         </nav>
-        <Route exact path='/projects/' component={LWS}></Route>
+        <Route exact path='/projects/umg/lws/lws' component={LWS}></Route>
         <Route path='/projects/umg/aws/aws' component={AWS}></Route>
         <Route path='/projects/umg/rights/rights' component={Rights}></Route>
         <Route path='/projects/umg/rws/rws' component={RWS}></Route>
