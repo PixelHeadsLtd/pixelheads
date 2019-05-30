@@ -8,7 +8,6 @@ import UMG from './clients/umg/umg';
 import TNA from './clients/tna/tna';
 import TB from './clients/tb/tb';
 import TDC from './clients/tdc/tdc';
-import umgOld from './clients/umgOld/umgOld';
 import BBC from './clients/bbc/bbc';
 import Pfizer from './clients/pfizer/pfizer';
 import Fullsix from './clients/fullsix/fullsix';
@@ -82,7 +81,6 @@ class Projects extends Component {
           <Route path='/projects/tna/disc/disc' component={TNA}></Route>
           <Route path='/projects/tb/ctn/ctn' component={TB}></Route>
           <Route path='/projects/tdc/tdc' component={TDC}></Route> 
-          <Route path='/projects/umgOld/umgOld' component={umgOld}></Route>
           <Route path='/projects/bbc/bbc' component={BBC}></Route>
           <Route path='/projects/pfizer/pfizer' component={Pfizer}></Route>
           <Route path='/projects/fullsix/fullsix' component={Fullsix}></Route>
@@ -92,7 +90,6 @@ class Projects extends Component {
                 <NavLink to="/projects/tna/disc/disc"></NavLink>
                 <NavLink to="/projects/tb/ctn/ctn"></NavLink>
                 <NavLink to="/projects/tdc/tdc"></NavLink>
-                <NavLink to="/projects/umgOld/umgOld"></NavLink>
                 <NavLink to="/projects/bbc/bbc"></NavLink>
                 <NavLink to="/projects/pfizer/pfizer"></NavLink>
                 <NavLink to="/projects/fullsix/fullsix"></NavLink>
