@@ -4,7 +4,11 @@ class Story extends Component {
   render() {
     return (
       <div>
-        <h2>User Story Snippet</h2>
+        
+        <header className="section-header fixed-header">
+            <h2>User Story Snippet</h2>
+            <h3>Example</h3>
+          </header>
           <section className="scroll">
             <table>
               <thead>

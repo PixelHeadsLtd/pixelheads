@@ -2,6 +2,9 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 
+// run 'npm start' and in another window run 'gulp watch'
+// kill all ports 'Get-Process node | Stop-Process'
+
 // compile scss into css
 function style() {
     // 1. where is my scss file

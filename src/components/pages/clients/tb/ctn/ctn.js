@@ -4,9 +4,12 @@ import { Tabs, Tab, Grid, Cell } from 'react-mdl';
 // pages
 import Intro from './intro';
 import Carousel from './carousel';
-import Website from './website';
+import CartoonNetwork from './cartoonnetwork';
+import AdultSwim from './adultswim';
+import Boomerang from './boomerang';
+import CNN from './cnn';
 
-class CartoonNetwork extends Component {
+class CTN extends Component {
   constructor(props){
     super(props);
     this.state = { activeTab: 0 };
@@ -23,7 +26,22 @@ class CartoonNetwork extends Component {
       )
     } else if (this.state.activeTab === 2) {
       return (
-        <Website />
+        <CartoonNetwork />
+      )
+    }
+    else if (this.state.activeTab === 3) {
+      return (
+        <AdultSwim />
+      )
+    }
+    else if (this.state.activeTab === 4) {
+      return (
+        <Boomerang />
+      )
+    }
+    else if (this.state.activeTab === 5) {
+      return (
+        <CNN />
       )
     }
   }
@@ -34,7 +52,10 @@ class CartoonNetwork extends Component {
         <Tabs onChange={(tabId) => this.setState({ activeTab: tabId })}>
           <h3>In This Section</h3>
           <Tab>Navigation</Tab>
-          <Tab>Website</Tab>
+          <Tab>Cartoon Network</Tab>
+          <Tab>Adult Swim</Tab>
+          <Tab>Boomerang</Tab>
+          <Tab>CNN</Tab>
         </Tabs>
         <section className="projects-grid">
           <Grid className="projects-grid">
@@ -48,4 +69,4 @@ class CartoonNetwork extends Component {
   }
 }
 
-export default CartoonNetwork;
+export default CTN;

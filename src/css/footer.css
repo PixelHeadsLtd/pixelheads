@@ -39,14 +39,6 @@ body.contact-page footer {
   right: 0;
   height: 35%;
   padding: 0 60px 0 60px; }
-  body.contact-page footer .logo {
-    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTMuMTg4cHgiIGhlaWdodD0iMTcuNjI1cHgiIHZpZXdCb3g9IjAgMCAxMy4xODggMTcuNjI1IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMy4xODggMTcuNjI1IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IHg9IjQuNTIzIiB5PSIwLjE5NCIgZmlsbD0iI0U3M0YzQiIgd2lkdGg9IjQuMTA5IiBoZWlnaHQ9IjQuMTEiLz4NCjxyZWN0IHg9IjQuNTIzIiB5PSI4LjgyNiIgZmlsbD0iI0U3M0YzQiIgd2lkdGg9IjQuMTA5IiBoZWlnaHQ9IjQuMTA5Ii8+DQo8cG9seWdvbiBmaWxsPSIjRTczRjNCIiBwb2ludHM9IjEyLjk0OSw0LjMwNSA4LjgzOSw0LjMwNSA4LjgzOSwwLjE5NCAiLz4NCjxyZWN0IHg9IjguODM5IiB5PSI0LjUxMSIgZmlsbD0iI0U3M0YzQiIgd2lkdGg9IjQuMTEiIGhlaWdodD0iNC4xMDkiLz4NCjxwb2x5Z29uIGZpbGw9IiNFNzNGM0IiIHBvaW50cz0iOC44MzksMTIuOTM2IDguODM5LDguODI2IDEyLjk0OSw4LjgyNiAiLz4NCjxwb2x5Z29uIGZpbGw9IiNFNzNGM0IiIHBvaW50cz0iNC4zMTgsMC4xOTQgNC4zMTgsNC4zMDUgMC4yMDgsNC4zMDUgIi8+DQo8cmVjdCB4PSIwLjIwOCIgeT0iNC41MTEiIGZpbGw9IiNFNzNGM0IiIHdpZHRoPSI0LjExIiBoZWlnaHQ9IjQuMTA5Ii8+DQo8cmVjdCB4PSIwLjIwOCIgeT0iOC44MjYiIGZpbGw9IiNFNzNGM0IiIHdpZHRoPSI0LjExIiBoZWlnaHQ9IjQuMTA5Ii8+DQo8cG9seWdvbiBmaWxsPSIjRTczRjNCIiBwb2ludHM9IjAuMjA4LDE3LjI1MSAwLjIwOCwxMy4xNDEgNC4zMTgsMTMuMTQxICIvPg0KPC9zdmc+DQo=") 0 0 no-repeat;
-    background-size: 100%;
-    width: 140px;
-    height: 189px;
-    position: absolute;
-    top: -45px;
-    left: 690px; }
   body.contact-page footer nav {
     display: inline-block;
     margin: 20px 0 0 0; }
@@ -63,5 +55,5 @@ body.contact-page footer {
           opacity: 1; }
         body.contact-page footer nav ul li a {
           color: #fff;
-          font: 100 9px "Segoe UI", sans-serif;
+          font: 300 11px "Segoe UI", sans-serif;
           opacity: 0.6; }

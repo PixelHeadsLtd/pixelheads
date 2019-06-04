@@ -18,13 +18,15 @@ class TDC extends Component {
     if (this.state.activeTab === 0) {
       return (
         <div>
-            <img className="mw1000" src={discoveryWebsite} alt="" />
+          <h2>Descovery Website Redesign</h2>
+          <img className="mw1000" src={discoveryWebsite} alt="" />
         </div>
       )
     } else if (this.state.activeTab === 1) {
       return (
         <div>
-            <img className="mw1000" src={megaMenu} alt="" />
+          <h2>Navigation</h2>
+          <img className="mw1000" src={megaMenu} alt="" />
         </div>
       )
     } 

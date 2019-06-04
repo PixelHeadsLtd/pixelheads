@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Personas extends Component {
   render() {
     return (
-      <div>
-        <h2>UX Research</h2>
-          <header className="section-header">
+      <div> 
+          <header className="section-header fixed-header">
+            <h2>UX Research</h2>
             <h3>Personas</h3>
           </header>
           <section className="scroll">

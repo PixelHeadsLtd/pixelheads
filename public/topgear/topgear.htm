@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>BBC Top Gear Presentation</title>
+<link href="../css/full-screen.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="topgear">
+  <div id="info"><h2>Top Gear Presentation</h2><p>I was commissioned to design a presentation for Top Gear to promote business opportunities associated with the 
+  brand. I've stripped down the demo considerably for web, so there is only one section you can navigate after the video plays through and that's via the "Topgear.com" link.</p></div>
+	<div id="object-wrapper"><div id="container"></div></div>
+
+<script type="text/javascript" src="../scripts/flash/swfobject.js"></script>
+<script type="text/javascript">
+	var globalParams 		= {};
+	globalParams.base 				= "";
+	globalParams.wmode 				= "transparent";
+	globalParams.allowScriptAccess 	= "always";
+	// Character Nav  		
+	//characterNavFlashvars.content = characterContentArray;
+	swfobject.embedSWF("topgear.swf", "container", "1024", "768", "9.0.0", "expressInstall.swf");
+	</script>
+</body>
+
+</html>

@@ -7,9 +7,7 @@ import SubHeader from '../header/subheader';
 import UMG from './clients/umg/umg';
 import TNA from './clients/tna/tna';
 import TB from './clients/tb/tb';
-import TDC from './clients/tdc/tdc';
 import BBC from './clients/bbc/bbc';
-import Pfizer from './clients/pfizer/pfizer';
 import Fullsix from './clients/fullsix/fullsix';
 
 class Projects extends Component {
@@ -40,39 +38,39 @@ class Projects extends Component {
             <p>Clients are ordered chronologically from top to bottom.</p>
           </div>
           <section className="projects-intro">
-            <h1>PixelHeads</h1>
+            <h2>PixelHeads</h2>
+            <h3>About</h3>
             <p>
               Thanks for visiting PixelHeads. I've put together this small ReactJS portfolio to provide
               prospective clients with examples of my work, both past and present. 
             </p>
+            <h3>Skills</h3>
             <p>
-              I would describe myself as a fully seasoned Senior UX Consultant and Front-End Web Developer 
-              for desktop and mobile. 
-            </p>
-            <p>
-              Specialist areas: User Research: Understanding business requirements 
+              User Research: Understanding business requirements 
               and User groups. Create Personas, Feedback Sessions, Workshops, User Stories and Testing Scenarios. 
               UXD: User Journey Workflows, Wireframes, Sketches and Interactive Prototypes. 
               Design: Brand Development, creation of Styleguides, Logo and Website Design. Implementation: Front-End Development, 
               implementation of final designs, primarily focusing on: HTML5, CSS3, LESS, SASS and including 
               Angular, React and Aurelia JavaScript libraries.
             </p>
+            <p>
+              <ul>
+                <li>UX Visual Design</li>
+                <li>UX Research</li>
+                <li>UI Design</li>
+                <li>Branding</li>
+                <li>Styleguides Creation</li>
+                <li>Font-End Developer</li>
+                <li>Highly skilled CSS, SASS LESS</li>
+                <li>Angular, Aurelia and React Redux development</li>
+              </ul>
+            </p>
             <h3>Clients</h3>
             <p>
-              Universal Music, Turner Broadcasting, BBC Worldwide, The Discovery Channel, Guinness, 
-              Mars, Toshiba, Lycos, Virgin, Amazon, Sainsbury’s, SEB Bank, Barclays Bank and The National Archives.
+              Universal Music, Republic Records, DeafJam, Turner Broadcasting, BBC Worldwide, The Discovery Channel, 
+              Guinness, Deezer, Apple music, Mars, Toshiba, Lycos, Virgin, Amazon, Sainsbury’s, 
+              SEB Bank, Setanta, Barclays Bank and The National Archives.
             </p>
-            <h3>Skills</h3>
-            <ul>
-              <li>UX Visual Design</li>
-              <li>UX Research</li>
-              <li>UI Design</li>
-              <li>Branding</li>
-              <li>Styleguides Creation</li>
-              <li>Font-End Developer</li>
-              <li>Highly skilled CSS, SASS LESS</li>
-              <li>Angular, Aurelia and React Redux development</li>
-            </ul>
           </section>
           <Router>
           <div className="hide-sub-header"><SubHeader title={title} /></div>
@@ -80,19 +78,15 @@ class Projects extends Component {
           <Route path='/projects/umg/lws/lws' component={UMG}></Route>
           <Route path='/projects/tna/disc/disc' component={TNA}></Route>
           <Route path='/projects/tb/ctn/ctn' component={TB}></Route>
-          <Route path='/projects/tdc/tdc' component={TDC}></Route> 
-          <Route path='/projects/bbc/bbc' component={BBC}></Route>
-          <Route path='/projects/pfizer/pfizer' component={Pfizer}></Route>
-          <Route path='/projects/fullsix/fullsix' component={Fullsix}></Route>
+          <Route path='/projects/bbc/topgear/topgear' component={BBC}></Route>
+          <Route path='/projects/fullsix/website' component={Fullsix}></Route>
           <aside>
               <div className="logos">
-                <NavLink to="/projects/umg/lws/lws" exact></NavLink>
-                <NavLink to="/projects/tna/disc/disc"></NavLink>
-                <NavLink to="/projects/tb/ctn/ctn"></NavLink>
-                <NavLink to="/projects/tdc/tdc"></NavLink>
-                <NavLink to="/projects/bbc/bbc"></NavLink>
-                <NavLink to="/projects/pfizer/pfizer"></NavLink>
-                <NavLink to="/projects/fullsix/fullsix"></NavLink>
+                <NavLink className="umg" to="/projects/umg/lws/lws" exact></NavLink>
+                <NavLink className="tna" to="/projects/tna/disc/disc"></NavLink>
+                <NavLink className="tb" to="/projects/tb/ctn/ctn"></NavLink>
+                <NavLink className="bbc" to="/projects/bbc/topgear/topgear"></NavLink>
+                <NavLink className="fx" to="/projects/fullsix/website"></NavLink>
               </div>
               <div className="shadow"></div>
           </aside>
