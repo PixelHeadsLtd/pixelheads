@@ -10,10 +10,8 @@ class Setanta extends Component {
         <h2>Setanta</h2>
         <h3>About</h3>
         <p>
-          Setanta Sports was a sports television company based in Dublin, Ireland. 
-          The company was formed in 1990 to facilitate the broadcasting of Irish 
-          sporting events to international audiences. The company operated channels 
-          in the UK, Asia, Australia, the United States and Canada
+          Setanta Asset Management is an independent investment management firm based in Dublin, Ireland. 
+          Established in 1998, Setanta has successfully applied a long-term value investing approach to its global equity and multi-asset funds.
         </p>
         <p>My role was to design and build the new Setanta Website</p>
         <img className="wauto" src={Set} alt="" />
