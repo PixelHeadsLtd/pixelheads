@@ -18,7 +18,7 @@ class TDC extends Component {
     if (this.state.activeTab === 0) {
       return (
         <div>
-          <h2>Descovery Website Redesign</h2>
+          <h2>Discovery Website Redesign</h2>
           <img className="mw1000" src={discoveryWebsite} alt="" />
         </div>
       )
