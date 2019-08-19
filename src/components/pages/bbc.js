@@ -6,7 +6,7 @@ class BBC extends Component {
     return (
       <div>
         <ReactBody className="bbc" />     
-        <h1>BBC Worldwide</h1>
+        <h1>In Development</h1>
       </div>
     );
   }

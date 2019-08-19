@@ -6,7 +6,7 @@ class Guinness extends Component {
     return (
       <div>
         <ReactBody className="guinness" />     
-        <h1>Guinness</h1>
+        <h1>In Development</h1>
       </div>
     );
   }

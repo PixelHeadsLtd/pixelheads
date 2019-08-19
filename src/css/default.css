@@ -854,8 +854,6 @@ hr {
 
 /********************************************** START MIXINS **********************************************/
 @media (min-width: 375px) {
-  body.home-page .main-header {
-    border-top: 2px solid red; }
   body.home-page .new-section.about {
     min-height: 1777px; }
     body.home-page .new-section.about .container-fluid {
@@ -870,8 +868,6 @@ hr {
     padding-left: 0; } }
 
 @media (min-width: 576px) {
-  body.home-page .main-header {
-    border-top: 2px solid green; }
   body.home-page .new-section.about {
     min-height: 1590px; }
     body.home-page .new-section.about .container-fluid {
@@ -886,8 +882,6 @@ hr {
     padding-left: 0; } }
 
 @media (min-width: 768px) {
-  body.home-page .main-header {
-    border-top: 2px solid yellow; }
   body.home-page .new-section.about {
     min-height: 1155px; }
     body.home-page .new-section.about .container-fluid {
@@ -902,8 +896,6 @@ hr {
     padding-left: 0; } }
 
 @media (min-width: 992px) {
-  body.home-page .main-header {
-    border-top: 2px solid blue; }
   body.home-page .new-section.about {
     min-height: 924px; }
     body.home-page .new-section.about .container-fluid {
@@ -916,8 +908,6 @@ hr {
     padding-left: 0; } }
 
 @media (min-width: 1200px) {
-  body.home-page .main-header {
-    border-top: 2px solid pink; }
   body.home-page .new-section.about .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
@@ -928,8 +918,7 @@ hr {
 @media (min-width: 375px) {
   html body.projects .App .container-fluid {
     padding-right: 30px;
-    padding-left: 30px;
-    border: 2px solid red; }
+    padding-left: 30px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -982,8 +971,7 @@ hr {
 @media (min-width: 576px) {
   html body.projects .App .container-fluid {
     padding-right: 30px;
-    padding-left: 30px;
-    border: 2px solid yellow; }
+    padding-left: 30px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -1037,8 +1025,7 @@ hr {
 @media (min-width: 768px) {
   html body.projects .App .container-fluid {
     padding-right: 60px;
-    padding-left: 60px;
-    border: 2px solid green; }
+    padding-left: 60px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -1093,8 +1080,7 @@ hr {
 @media (min-width: 992px) {
   html body.projects .App .container-fluid {
     padding-right: 60px;
-    padding-left: 60px;
-    border: 2px solid orange; }
+    padding-left: 60px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -1149,8 +1135,7 @@ hr {
 @media (min-width: 1200px) {
   html body.projects .App .container-fluid {
     padding-right: 60px;
-    padding-left: 60px;
-    border: 2px solid blue; }
+    padding-left: 60px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -1207,8 +1192,7 @@ hr {
 @media (min-width: 1580px) {
   html body.projects .App .container-fluid {
     padding-right: 60px;
-    padding-left: 60px;
-    border: 2px solid pink; }
+    padding-left: 60px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
