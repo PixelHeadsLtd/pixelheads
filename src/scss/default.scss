@@ -1,19 +1,16 @@
 ﻿/*default sass*/
+@import "animation";
 @import "content";
-@import "footer";
+@import "projects";
 @import "header";
 @import "helpers";
 @import "images";
 @import "mixins";
 @import "responsive";
-@import "subheader";
 @import "variables";
-@import "clients/umg";
 
 html, body, #root, .projects, .projects-grid, 
 .mdl-cell, .content, .mobile, .sub-nav + div {height:100%}
-
-footer {display:none}
 
 .hide {
     .hide-sub-header,
@@ -38,32 +35,10 @@ footer {display:none}
     transition-property: transform;
 }
 
-body.landing-page {
-    background-color:$body;
-    .content {
-        p {color:$copy; margin:0 0 6px 0}
-        text-align: center;
-        a {display:inline-block}
-        .logo {
-            background: url($pixelHeadsLogo) no-repeat center center;
-            display: inline-block;
-            background-size: 100%;
-            width: 170px;
-            height: 112px;
-            margin: 90px auto 0 auto;
-        }
-        .intro {
-            @include font(300, 12px);
-            margin:6px 0 4px 0;
-        }
-        a:hover {color:$h2}
-    }
-}
-body {
+body.home-page {
     margin: 0;
     padding: 0;
-    @include font(300, 0.78rem);
-    line-height:20px;
+    @include font(200, 0.78rem);
     letter-spacing: 0.05em;
     /*font-family: $roboto-slab;*/
     /* Custom scrollbars. Only works for chrome and Safari */
@@ -72,69 +47,41 @@ body {
     ::-webkit-scrollbar-thumb {border-radius: 2px; -webkit-box-shadow: none; background: $red;} 
     ::-webkit-scrollbar-thumb:hover {background: $red;} 
     ::-webkit-scrollbar-thumb:active {background: black}
-}
-
-h1, h2, h3, h4, h5, h6 { white-space: nowrap }
-link, a, a:visited {color:$links; text-decoration:none; cursor:pointer}
-a:hover {text-decoration:none; color:$Hover}
-a.link-large {@include font(300, 15px); color:$links}
-ul {
-    li {padding-left:8px}
-}
-p {
-    margin:0 0 20px 0;
-    max-width: 800px;
-    line-height: 1.4rem;
-    a {font-size:0.8rem}
-}
-h1 {color:$h1; margin:0 0 15px -2px; @include font(100, 44px)}
-h2 {
-    color:$h2;
-    margin:0 0 15px 0; 
-    @include font(300, 25px); 
-    clear:left;
-    a.link-large {
-        float:right;
-        margin:5px 0 0 0;
+    h1, h2, h3, h4, h5, h6 { white-space: nowrap }
+    link, a, a:visited {color:$red; text-decoration:none; cursor:pointer}
+    a:hover {text-decoration:none; color:$Hover}
+    a.link-large {@include font(300, 15px); color:$links}
+    ul {
+        li {padding-left:8px}
     }
-}
-h3 {
-    color:$black;
-    @include font(600, 1.1rem); 
-    margin: 0 0 3px 0;
-}
-h4 {
-    color:$black;
-    @include font(600, 0.8rem); 
-    margin: 0 0 4px 0;
-}
-
-.view-inline {
-    width:100%;
-    p, div, span, section, article, img {
-        float:left;
-        clear:none;
-        margin-right:70px;
+    p {
+        margin:0 0 20px 0;
+        line-height: 1.4rem!important;
+        @include font(200, 12px);
+        a {font-size:0.8rem}
     }
-    p:last-child, div:last-child, span:last-child, section:last-child, article:last-child, img:last-child {
-        margin-right:0;
+    h1 {
+        color:$black; 
+        text-align: center; 
+        margin:0 0 5px 0;
+        padding:30px 0 0 0;
+        @include font(300, 76px, 'oraqlescript'); 
+        font-size:76px;
     }
-}
-
-.scroll {
-    position: relative;
-    max-height: 510px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    th {
-        padding-bottom: 25px!important;
-        span {
-            position: fixed;
-            background-color:$white;
-            width:100%;
-            padding-top:5px;
-            padding-bottom: 6px;
-            margin-top:-12px;
+    h2 {
+        color:$h2;
+        margin:0 0 15px 0; 
+        @include font(300, 25px); 
+        clear:left;
+        a.link-large {
+            float:right;
+            margin:5px 0 0 0;
         }
     }
+    h3 {
+        color:$black;
+        @include font(600, 1.1rem); 
+        margin: 0 0 3px 0;
+    }
 }
+

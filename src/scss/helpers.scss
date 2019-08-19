@@ -1,4 +1,6 @@
-﻿// max widths
+﻿@import "variables";
+
+// max widths
 .mw400 {max-width:400px!important}
 .mw650 {max-width:650px!important}
 .mw680 {max-width:680px!important}
@@ -17,7 +19,24 @@
 .margin-bottom-small {margin-bottom:10px;}
 .margin-bottom-med {margin-bottom:20px;}
 .margin-bottom-large {margin-bottom:40px;}
+.mt-20p {margin-top:20%}
 
 .margin-left-small {margin-left:10px;}
 .margin-left-med {margin-left:20px;}
 .margin-left-large {margin-left:40px;}
+
+// Padding
+.padding-top-large {padding-top:50px}
+.padding-top-med {padding-top:30px}
+.padding-top-small {padding-top:10px}
+
+
+// hr
+hr { border-top: 1px solid white; border-bottom: none; }
+
+.spaced {
+    letter-spacing:.15rem!important;
+}
+
+.bg-yellow {background-color:$yellow}
+.relative {position: relative}

@@ -2,49 +2,238 @@
 @import "mixins";
 @import "images";
 
-.home-page {
-    //background:$black url('../images/bg.png') center bottom no-repeat;
-    background-color:$black;
-    background-size:90%;
-    text-align: center;
-    .App {padding:9% 0 0 0}
-    header {display:none}
-    .welcome {
-        display: inline-block;
-        background: url($pixelheadsLogoFull) 0 center no-repeat;
-        background-size: 100px;
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-        text-align: left;
-        h3 {
-            color:$white;
-            margin: 117px 0 0 50px;
-            font-weight: 300;
-            font-size: 14px;
-            letter-spacing: 1px
+.row {
+    width:100%;
+    .col {
+        display:inline-block;
+    }
+}
+
+section.new-section {
+    position: relative;
+    width:100%;
+    display:inline-block;
+    margin:0 0 20px 0;
+    position: relative;
+    min-height: 924px;
+    .marker {
+        position: absolute;
+        z-index: 999;
+        width:30px;
+        height:30px;
+        div {
+            background-color: $black;
+            position: absolute;
         }
-        p {
-            color:$white;
-            margin: 20px 0 0 0;
-            font-size: 12px;
-            font-weight: 200;
-            opacity: 0.5;
-            line-height: 16px;
+    }
+    .top-left-marker {
+        top:-31px;
+        left:10px;
+        div.v {width:1px; height:25px; right:0; top:0}
+        div.h {width:25px; height: 1px; left:0; bottom:0}
+    }
+    .top-right-marker {
+        top:-31px;
+        right:10px;
+        div.v {width:1px; height:25px; left:0; top:0}
+        div.h {width:25px; height: 1px; right:0; bottom:0}
+    }
+    .bottom-left-marker {}
+    .bottom-right-marker {}
+}
+
+// home section
+section.new-section.home {
+    text-align: center;
+    background:url(../images/mike.png) no-repeat center top 40px;
+    .home-wrapper {padding-top:400px}
+    h1 {
+        font-size: 6rem!important;
+        width:100%;
+        margin:20px 0 0 0!important;
+        padding-left:0;
+        span.ellipsis {
+            color:$red;
+            letter-spacing: .2rem;
+            padding-left: 8px;
+        }
+    }
+    p {
+        text-align: center;
+        display: inline-block;
+        line-height: 1.6rem!important;
+        margin: 0 auto;
+    }
+    .social {
+        width: 100%;
+        display: inline-block;
+        margin: 14px auto;
+        a {
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            margin: 0 10px;
+            img {width:100%; height:100%}
         }
     }
 }
 
-.contact-page {
-    .App {
-        padding-top:160px;
-    }
-    .thanks {
-        padding: 0 0 0 60px;
+// about section
+section.new-section.about {
+    background-color: $about;
+    .row {padding-top:50px}
+    .comment {color:$pale-blue!important}
+    h1 {color:$white}
+    p {color:$white; @include font(bold, 12px, 'latolight');}
+    .icons {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 180px;
+        div {
+            display: inline-block;
+            margin:0 6%;
+            p {
+                margin-top:5px; 
+                font-size:10px;
+                span {color:$yellow}
+            }
+        }
     }
 }
+
+// projects section
+section.new-section.projects {
+    .projects-header {
+        width: 100% !important;
+        display: inline-block;
+        text-align: center;
+        nav {
+            white-space: nowrap;
+            margin: 0 auto;
+            display: inline-block;
+            width:100%;
+            a {
+                height: 20px;
+                display:inline-block;
+                margin:15px 20px 25px 20px;
+                padding: 0;
+                cursor:pointer;
+                color:$midGrey!important;
+                @include font(300, .75rem, 'latoregular');
+                text-transform: uppercase;
+            }
+            a:hover {
+                border-bottom: 2px solid $red; 
+                text-decoration: none;
+            }
+            .row {
+                .col-lg-3 {
+                    -webkit-transition: all 0.5s ease-in;
+                    padding:0;
+                }
+                margin-right: 0;
+                margin-left: 0;
+                img {width: 100%; -webkit-transition: all 0.2s ease-in;}
+                figure:hover {a {opacity:1}}
+                figure {
+                    margin: 0;
+                    position: relative;
+                    overflow: hidden;
+                    .tint {
+                        -webkit-transition: all 0.2s ease-in;
+                        position: absolute;
+                        background:$jetBlack;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                    }
+                    a {
+                        color:$white;
+                        text-transform: uppercase;
+                        position: absolute;
+                        top: 0;
+                        z-index: 1;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        opacity: 0;
+                        margin: 0;
+                        padding-top: 25.5%;
+                        border:none;
+                        h3 {
+                            color:$white;
+                            letter-spacing: .2rem;
+                            font-size: .85rem;
+                        }
+                        p {
+                            letter-spacing: .2rem;
+                            font-family:'latolight';
+                            font-size: .65rem;
+                            color:$white;
+                        }
+                    }
+                }
+                .bbc-is-active {
+                    a {padding-top:50%!important}
+                }
+            }  
+            
+            figure:hover,
+            a.umg:hover ~ .row div .umg-is-active,
+            a.turner:hover ~ .row div .turner-is-active,
+            a.bbc:hover ~ .row div .bbc-is-active,
+            a.monum:hover ~ .row div .monum-is-active,
+            a.setanta:hover ~ .row div .setanta-is-active,
+            a.guinness:hover ~ .row div .guinness-is-active {
+                img {
+                    width: 105%;
+                    margin: -3.8% auto auto -2%;
+                }
+                img.tall {
+                    margin: -7.6% auto auto -2%;
+                }
+                .tint {
+                    opacity: 0.8;
+                    -webkit-transition: all 0.2s ease-in;
+                }
+                a {opacity:1}
+            }
+        }
+    }
+}
+
+section.new-section.contact {
+    background-color: $yellow;
+    text-align: center;
+    h3 {color:$white}
+    img {
+        margin:15% auto 0 auto;
+        width: 155px;
+    }
+    ul.contact-panel {
+        width:100%;
+        margin:40px 0 0 0;
+        li {
+            display:inline-block;
+            background-position: center left!important;
+            background-size: 25px!important;
+            background-repeat: no-repeat!important;
+            padding:5px 30px;
+            a {color: $black}
+        }
+        li:nth-child(1) {background: url(../images/icons/icon-phone.svg)}
+        li:nth-child(2) {background: url(../images/icons/icon-location.svg)}
+        li:nth-child(3) {background: url(../images/icons/icon-email.svg)}
+    }
+}
+
+// --------------------------------------------------------------------------------
+
 .App {
-    padding:180px 50px 50px 0;
+    padding:0;
     .is-sticky {
         .sub-nav {
             position:fixed; 
@@ -53,245 +242,19 @@
             opacity: 0.95;
         }
     }
-    .sub-nav {
-        margin:0;
-        padding:0 60px;
-        font-size:9px;
-        line-height:14px;
-        background-color:$subNav;
-        position:fixed;
-        z-index: 1;
-        left: 0;
-        right: 0;
-        top:134px;
-        height: 32px;
-        white-space: nowrap;
-        ul {
-            margin:0 0 0 220px;
-            padding:0;
-            li:first-child {padding-left:0; border-left:none}
-            li:last-child {margin-right:0;}
-            li {
-                display:inline-block;
-                margin:4px 50px 0 0;
-                a.active {opacity:1}
-                a {
-                    @include font(100, 15px);
-                    color:$white;
-                    opacity:0.5;
-                }
-            }
-        }
-    }
     // mdl tabs
     .mdl-tabs {
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        left: 80px;
-        top: 180px;
-        z-index: 1;
-        h3 {
-            @include font(300, 1.1rem);
-            margin: 8px 0 18px 0; 
-        }
         // mdl tabs
         .mdl-tabs__tab-bar {
-            margin:5px 0 0 0;
-            padding:0;
+            text-align: center;
             .is-active {color:$red!important;}
             .mdl-tabs__tab {
-                @include font(500, 13px);
-                color:$black;
-                margin: 0 0 12px 0;
-                float: left;
-                clear: left;
-            }
-        }
-    }
-    aside {
-        font-size: 11px;
-        position: fixed;
-        width:260px;
-        left: 0;
-        top: 166px;
-        bottom: 0;
-        background-color:$aside;
-        .logos {
-            a.active {
-                opacity:1; 
-                background-color: $white;
-                @include drop-shadow(-2px, 0, 6px, $alpha: 0.1);
-            }
-            a:first-child {margin-top:17px;}
-            a {
-                opacity:0.3;
-                background-repeat: no-repeat;
-                position: relative;
-                width: 52px;
-                height: 50px;
-                z-index: 1;
-                left: 8px;
-                margin: 5px 0 0 0;
-                padding: 0;
-                border-radius: 4px 0 0 4px;
-                float:left;
-                clear:left;
-            }
-            a.umg {background-image:url($umg); background-size: 42px; background-position: 5px 12px;}
-            a.tna {background-image:url($nationalArchives); background-size: 29px; background-position: 9px 14px;}
-            a.tb {background-image:url($turner); background-size: 28px; background-position: 11px 11px;}
-            a.bbc {background-image:url($bbc); background-size: 33px; background-position: 8px 20px;}
-            a.pf {background-image:url($pfizer); background-size: 40px; background-position: 5px 13px;}
-            a.fx {background-image:url($fullsix); background-size: 28px; background-position: 10px 11px;}
-        }
-        h3 {margin:0 0 8px 15px}
-        ul.mobile-version {display:none}
-        .shadow {
-            @include drop-shadow(-2px, 0, 6px, $alpha: 0.1);
-            margin:0;
-            padding:10px 0 0 5px;
-            background: $white;
-            position: absolute;
-            top: 0;
-            left: 60px;
-            right: 0;
-            bottom: 0;
-            border-right:1px dashed $lightGrey;
-        }
-    }
-    .projects {
-        padding-left:280px;
-        .fixed-header {
-            position: fixed;
-            top: 166px;
-            background: $white;
-            z-index: 1;
-            width: 100%;
-            margin-bottom: 0;
-            padding-top: 13px;
-        }
-        .fixed-header + .scroll {
-            padding-top: 88px;
-        }
-        ul.image-wall {
-            margin:0;
-            padding:0;
-            li {
+                @include font(300, 13px);
                 display: inline-block;
-                float: left;
-                margin:0 15px 15px 0;
-                padding:0;
-                a {
-                    float:left; 
-                    width:100%;
-                    margin:0 0 5px 0;
-                }
-                img {
-                    margin: 0;
-                    padding:0;
-                    float:left;
-                    clear:left;
-                }
+                margin: 0 15px;
             }
         }
-        .contextual-links {
-            float:left;
-            clear:left;
-            width:100%;
-            a {
-                float:left;
-                clear:left;
-                margin: 0 0 20px 0;
-            }
-        }
-        img {width:100%; max-width: 1200px; min-width: 300px;}
-        .menu-info {
-            background-size:100px;
-            color:$red;
-            position: fixed;
-            left: 80px;
-            z-index: 1;
-            width: 160px;
-            margin-top:5px;
-            font-size: 13px;
-        }
-        .projects-intro {
-            max-width:70%;
-        }
-        .info-divider {
-            width:70%;
-            float: left;
-            clear:left;
-            border-top: 1px dotted $lightGrey;
-            border-bottom: 1px dotted $lightGrey;
-            @include font(300, 13px);
-            padding:30px 0;
-            margin: 30px 0;
-            line-height: 22px;
-            color:$darkGrey;
-        }
-        .magnifier {
-            // Styles for <div> around image and magnifying glass 
-        }
-        .magnifier-image {
-            // Styles for large image 
-        }     
-        .magnifying-glass {
-            // Styles for magnifying glass 
-            border:1px solid $lightGrey;
-            box-shadow: none;
-            width:210px!important;
-            height:210px!important;
-        }
     }
-    .toggle {
-        background:url($toggleChevron) center center no-repeat;
-        background-size: 18px;
-        position: fixed;
-        width: 18px;
-        height: 18px;
-        overflow: hidden;
-        top: 139px;
-        z-index: 2;
-        left: 21px;
-        padding: 2px 0 1px 2px;
-        float: left;
-        transform: rotate(0deg);
-    }
-    .sub-header, .sub-nav ul, .projects, aside {transition: all 0.5s ease;}
-    .menu-info, .mdl-tabs {transition: all 1.5s ease;}
-    .hide-menu {
-        padding-left:80px!important; 
-        transition: all 0.5s ease;
-        .mdl-tabs,
-        .menu-info {
-            opacity: 0;
-            transition: all 0.4s ease;
-        }
-        aside {
-            width:60px;
-            
-            .shadow {border-right:none}
-        }
-        .toggle {transform: rotate(180deg);}
-        .sub-nav ul {
-            transition: all 0.5s ease;
-            margin-left:0;
-        }
-        .sub-header {
-            left:-220px;
-            transition: all 0.5s ease;
-        }
-    }
-
-    // section headers
-    header.section-header {
-        border-bottom:1px dashed $lightGrey;
-        margin: 0 0 10px 0;
-        padding: 0 0 5px 0;
-    }
-
     // lists
     ul {
         margin: 0;

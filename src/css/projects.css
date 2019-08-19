@@ -1,0 +1,331 @@
+/********************************************** LOAD CUSTOM FONTS **********************************************/
+@font-face {
+  font-family: 'latohairline';
+  src: url("../fonts/lato-thin.woff") format("woff");
+  src: url("../fonts/lato-thin.woff2") format("woff2");
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'latolight';
+  src: url("../fonts/lato-light.ttf") format("ttf");
+  src: url("../fonts/lato-light.woff") format("woff");
+  src: url("../fonts/lato-light.woff2") format("woff2");
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/lato-regular.ttf") format("ttf");
+  src: url("../fonts/lato-regular.woff") format("woff");
+  src: url("../fonts/lato-regular.woff2") format("woff2");
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'latobold';
+  src: url("../fonts/lato-bold.woff") format("woff");
+  src: url("../fonts/lato-bold.woff2") format("woff2");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'oraqlescript';
+  src: url("../fonts/OraqleScript.otf") format("otf");
+  src: url("../fonts/OraqleScript.ttf") format("ttf");
+  src: url("../fonts/OraqleScript.woff") format("woff");
+  font-weight: 400; }
+
+/********************************************** START MIXINS **********************************************/
+/* Header */
+/* Video Format Icons */
+/* Mike King Icons (copyright pixelHeadsLtd) */
+/* end */
+/* pagination */
+/* client logo */
+html body.projects {
+  background-size: 100%;
+  font-family: latoregular;
+  font-size: small;
+  margin: 0;
+  padding: 0; }
+  html body.projects .App {
+    overflow: hidden;
+    letter-spacing: .04rem;
+    /* Main Header */
+    /* Links */
+    /* Projects Headers */
+    /* Lists */
+    /* Text */
+    /* Layout */
+    /* Helpers */ }
+    html body.projects .App h4 {
+      color: #252525;
+      font: 600 0.9rem "latoregular";
+      margin: 0 0 6px 0;
+      text-transform: uppercase;
+      letter-spacing: .2rem; }
+    html body.projects .App .container-fluid {
+      background: white;
+      margin-top: 440px; }
+    html body.projects .App .main-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      background-color: #ffffff;
+      height: 44px;
+      width: 100% !important;
+      border-bottom: 1px solid #eee; }
+      html body.projects .App .main-header img {
+        position: absolute;
+        top: 8px;
+        right: 60px; }
+      html body.projects .App .main-header nav.main-nav {
+        position: relative;
+        margin-left: 60px;
+        white-space: nowrap;
+        float: left; }
+        html body.projects .App .main-header nav.main-nav a:hover {
+          text-decoration: none !important; }
+        html body.projects .App .main-header nav.main-nav a.active {
+          opacity: 1;
+          border-bottom: 2px solid #ff0049; }
+        html body.projects .App .main-header nav.main-nav a {
+          height: 18px;
+          display: inline-block;
+          margin: 15px 40px 0 0;
+          padding: 0;
+          cursor: pointer;
+          color: #252525 !important;
+          opacity: 0.6;
+          font-family: latobold;
+          font-size: .63rem;
+          text-transform: uppercase;
+          border-bottom: 2px solid #ffffff;
+          letter-spacing: .05rem; }
+    html body.projects .App a {
+      color: #00a3cc;
+      text-decoration: none; }
+    html body.projects .App a:hover {
+      color: #252525;
+      text-decoration: none; }
+    html body.projects .App .projects-header {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      position: absolute;
+      top: -286px;
+      left: 0;
+      right: 0; }
+      html body.projects .App .projects-header h1 {
+        color: white;
+        margin: 70px 0 105px 0; }
+      html body.projects .App .projects-header p {
+        text-transform: uppercase;
+        font-size: .6rem;
+        text-align: left;
+        line-height: 1.1rem;
+        margin: 0;
+        padding: 0;
+        color: #999;
+        letter-spacing: .2rem; }
+        html body.projects .App .projects-header p label {
+          float: left;
+          clear: left;
+          width: 100%;
+          text-transform: uppercase;
+          color: #ff0049; }
+      html body.projects .App .projects-header h3 {
+        text-align: left;
+        margin: 0 0 3px 0;
+        padding: 0 0 3px 0;
+        border-bottom: 1px dashed #666;
+        width: 100%;
+        float: left;
+        text-transform: uppercase;
+        color: white;
+        font-family: 'latolight';
+        letter-spacing: .3rem;
+        font-size: .8rem;
+        font-weight: bolder; }
+      html body.projects .App .projects-header ul {
+        display: block;
+        margin: 0 60px;
+        padding: 0;
+        float: none; }
+        html body.projects .App .projects-header ul li {
+          display: block;
+          margin: 0;
+          padding: 0;
+          width: 25%;
+          float: left; }
+      html body.projects .App .projects-header .mini-menu {
+        position: absolute;
+        top: 30px; }
+        html body.projects .App .projects-header .mini-menu ul li {
+          display: inline-block;
+          margin: 0 40px 0 0;
+          padding: 0;
+          width: auto;
+          text-align: left;
+          line-height: .9rem; }
+          html body.projects .App .projects-header .mini-menu ul li a {
+            font-size: .6rem;
+            text-transform: uppercase;
+            letter-spacing: .05rem; }
+      html body.projects .App .projects-header .quick-links {
+        position: absolute;
+        right: 60px;
+        top: 20px; }
+        html body.projects .App .projects-header .quick-links h3 {
+          color: #252525;
+          border: none;
+          font-size: .7rem;
+          text-transform: uppercase;
+          letter-spacing: .05rem;
+          margin-bottom: 0; }
+        html body.projects .App .projects-header .quick-links ul {
+          width: auto;
+          list-style-type: square; }
+          html body.projects .App .projects-header .quick-links ul li {
+            width: auto;
+            display: list-item;
+            margin: 0 0 0 5px;
+            text-indent: -3px; }
+            html body.projects .App .projects-header .quick-links ul li a {
+              font-size: .6rem;
+              letter-spacing: .05rem;
+              text-transform: uppercase; }
+            html body.projects .App .projects-header .quick-links ul li a:hover {
+              color: #252525; }
+    html body.projects .App ul li {
+      margin: 0 0 10px 0; }
+    html body.projects .App h1 {
+      font-family: latobold;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: .4rem;
+      color: #ff0049; }
+    html body.projects .App h2 {
+      font-family: oraqlescript;
+      font-size: 52px;
+      font-weight: lighter;
+      margin: 25px 0 10px 0; }
+    html body.projects .App h3 {
+      color: #ff0049;
+      font-family: latobold;
+      font-size: 1rem; }
+    html body.projects .App p {
+      font-size: .8rem;
+      line-height: 1.5rem;
+      margin-top: 0; }
+    html body.projects .App p label {
+      width: 100%;
+      color: #ff0049;
+      margin-bottom: 0;
+      font-size: .95rem;
+      letter-spacing: .05rem; }
+    html body.projects .App img.to-the-right-edge {
+      float: right;
+      margin-right: -90px; }
+    html body.projects .App .row .inner {
+      margin: 100px 100px 90px 100px;
+      display: inline-block; }
+      html body.projects .App .row .inner p {
+        margin-bottom: 40px; }
+    html body.projects .App .w-25 {
+      width: 25%; }
+    html body.projects .App .w-50 {
+      width: 50%; }
+    html body.projects .App .height-1000 {
+      height: 1000px; }
+    html body.projects .App .absolute-right {
+      position: absolute;
+      right: 0; }
+
+/* ------------------------------------------------- Project Specific ------------------------------------------------ */
+html body.umg .App img.personas {
+  width: 100%;
+  margin-top: -160px; }
+
+html body.umg .App .row .red-panel {
+  background-color: #ff0049;
+  color: white; }
+  html body.umg .App .row .red-panel label {
+    color: white; }
+
+html body.umg .App .container-fluid {
+  background: #fff url("../images/clients/pages/umg/background.png") no-repeat 0 0;
+  background-size: 100%; }
+  html body.umg .App .container-fluid .projects-header ul.umg-overview li {
+    width: 25%; }
+    html body.umg .App .container-fluid .projects-header ul.umg-overview li li:last-child {
+      width: 13%; }
+
+html body.umg .App .banner {
+  background: url("../images/clients/pages/umg/banner.png") no-repeat top left;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 440px; }
+
+html body.turner .App img.personas {
+  width: 100%;
+  margin-top: -160px; }
+
+html body.turner .App .row .red-panel {
+  background-color: #ff0049;
+  color: white; }
+  html body.turner .App .row .red-panel label {
+    color: white; }
+
+html body.turner .App .container-fluid {
+  background-size: 100%; }
+  html body.turner .App .container-fluid .projects-header ul.umg-overview li {
+    width: 25%; }
+  html body.turner .App .container-fluid .projects-header ul.umg-overview li:last-child {
+    width: 20%; }
+  html body.turner .App .container-fluid img.batman {
+    width: 170%;
+    margin-top: -96px;
+    vertical-align: middle;
+    border-style: none;
+    position: absolute;
+    z-index: 1; }
+  html body.turner .App .container-fluid img.carousel {
+    width: 60%;
+    margin: -9px 0 0 440px;
+    position: absolute; }
+  html body.turner .App .container-fluid .row.ctn-ntw {
+    padding-top: 80px;
+    background-color: #dc1f0a; }
+    html body.turner .App .container-fluid .row.ctn-ntw img.adv-time {
+      position: absolute;
+      top: -240px;
+      right: 395px;
+      width: 400px; }
+    html body.turner .App .container-fluid .row.ctn-ntw img.cartoon-network {
+      width: 82.5%;
+      margin-left: 45px; }
+  html body.turner .App .container-fluid .row.scooby {
+    min-height: 400px;
+    margin-top: 123px;
+    padding-top: 100px; }
+    html body.turner .App .container-fluid .row.scooby p, html body.turner .App .container-fluid .row.scooby h4 {
+      color: #fff; }
+    html body.turner .App .container-fluid .row.scooby h4 {
+      white-space: nowrap; }
+    html body.turner .App .container-fluid .row.scooby img.scooby-van {
+      position: absolute;
+      top: -230px;
+      left: 0; }
+  html body.turner .App .container-fluid .row.as {
+    padding-top: 80px;
+    background-color: #dc1f0a; }
+
+html body.turner .App .banner {
+  background: url("../images/clients/pages/turner/banner.png") no-repeat top left;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 440px; }

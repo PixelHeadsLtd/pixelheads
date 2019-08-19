@@ -1,96 +1,118 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, NavLink, Link } from 'react-router-dom';
-// sub header
-import SubHeader from '../header/subheader';
+import { Link } from 'react-router-dom';
 
-// clients
-import UMG from './clients/umg/umg';
-import TNA from './clients/tna/tna';
-import TB from './clients/tb/tb';
-import BBC from './clients/bbc/bbc';
-import Fullsix from './clients/fullsix/fullsix';
+// images
+import UMGThumb from '../../images/clients/thumbs/umg.png'
+import TurnerThumb from '../../images/clients/thumbs/turner.png'
+import BBCThumb from '../../images/clients/thumbs/bbc.png'
+import MonumThumb from '../../images/clients/thumbs/monum.png'
+import SetantaThumb from '../../images/clients/thumbs/setanta.png'
+import GuinnessThumb from '../../images/clients/thumbs/guinness.png'
+
+import UMG from './umg';
+import Turner from './turner';
+import BBC from './bbc';
+import Monum from './monum';
+import Setanta from './setanta';
+import Guinness from './guinness';
 
 class Projects extends Component {
-  constructor() {
-    super();
-    this.state = {
-        show: false
-    }
-    this.toggleActiveClass = this.toggleActiveClass.bind(this);
-  } 
-
-  toggleActiveClass() {
-    this.setState((prev) => {
-        return {
-            show: !prev.show
-        }
-    })
-  }
   render() {
-    var title = {
-      name: "Projects"
-    }
     return (
-        <div className={"projects " + (this.state.show ? 'hide-menu' : '')}>
-          <Link className="toggle animate" onClick={this.toggleActiveClass}></Link>
-          <div className="menu-info">
-            <p>Please use the left menu to browse my project work.</p>
-            <p>Clients are ordered chronologically from top to bottom.</p>
-          </div>
-          <section className="projects-intro">
-            <h2>PixelHeads</h2>
-            <h3>About</h3>
-            <p>
-              Thanks for visiting PixelHeads. I've put together this small ReactJS portfolio to provide
-              prospective clients with examples of my work, both past and present. 
-            </p>
-            <h3>Skills</h3>
-            <p>
-              User Research: Understanding business requirements 
-              and User groups. Create Personas, Feedback Sessions, Workshops, User Stories and Testing Scenarios. 
-              UXD: User Journey Workflows, Wireframes, Sketches and Interactive Prototypes. 
-              Design: Brand Development, creation of Styleguides, Logo and Website Design. Implementation: Front-End Development, 
-              implementation of final designs, primarily focusing on: HTML5, CSS3, LESS, SASS and including 
-              Angular, React and Aurelia JavaScript libraries.
-            </p>
-            <p>
-              <ul>
-                <li>UX Visual Design</li>
-                <li>UX Research</li>
-                <li>UI Design</li>
-                <li>Branding</li>
-                <li>Styleguides Creation</li>
-                <li>Font-End Developer</li>
-                <li>Highly skilled CSS, SASS LESS</li>
-                <li>Angular, Aurelia and React Redux development</li>
-              </ul>
-            </p>
-            <h3>Clients</h3>
-            <p>
-              Universal Music, Republic Records, DeafJam, Turner Broadcasting, BBC Worldwide, The Discovery Channel, 
-              Guinness, Deezer, Apple music, Mars, Toshiba, Lycos, Virgin, Amazon, Sainsbury’s, 
-              SEB Bank, Setanta, Barclays Bank and The National Archives.
-            </p>
-          </section>
-          <Router>
-          <div className="hide-sub-header"><SubHeader title={title} /></div>
-          <nav className="sub-nav"></nav>
-          <Route path='/projects/umg/lws/lws' component={UMG}></Route>
-          <Route path='/projects/tna/disc/disc' component={TNA}></Route>
-          <Route path='/projects/tb/ctn/ctn' component={TB}></Route>
-          <Route path='/projects/bbc/topgear/topgear' component={BBC}></Route>
-          <Route path='/projects/fullsix/website' component={Fullsix}></Route>
-          <aside>
-              <div className="logos">
-                <NavLink className="umg" to="/projects/umg/lws/lws" exact></NavLink>
-                <NavLink className="tna" to="/projects/tna/disc/disc"></NavLink>
-                <NavLink className="tb" to="/projects/tb/ctn/ctn"></NavLink>
-                <NavLink className="bbc" to="/projects/bbc/topgear/topgear"></NavLink>
-                <NavLink className="fx" to="/projects/fullsix/website"></NavLink>
+      <div className="container-fluid">
+        <h1>Projects</h1>
+        <header className="projects-header">
+          <nav className="main-nav">
+            <Link className="umg" to="/umg" component={UMG}>Universal Music</Link>
+            <Link className="turner" to="/turner" component={Turner}>Turner</Link>
+            <Link className="bbc" to="/bbc" component={BBC}>BBC Worldwide</Link>
+            <Link className="monum" to="/monum" component={Monum}>Monum</Link>
+            <Link className="setanta" to="/setanta" component={Setanta}>Setanta</Link>
+            <Link className="guinness" to="/guinness" component={Guinness}>Guinness</Link><br/>
+            <div className="row">
+              <div className="col-lg-3 col-md-4 col-sm-6">
+                <figure className="umg-is-active">
+                  <Link to="/umg">
+                    <h3>Universal Music</h3>
+                    <p>
+                      #UX Research #Web & Mobile Design<br />
+                      #Brand Design #Styleguides<br />
+                      #FE Development
+                    </p>
+                  </Link>
+                  <div className="tint"></div>
+                  <img src={UMGThumb} alt="" />
+                </figure>
+                <figure className="turner-is-active">
+                  <Link to="/turner">
+                    <h3>Turner Broadcasting</h3>
+                    <p>
+                      #UX Research #Web & Mobile Design<br />
+                      #Drupal Theming #Animation<br />
+                      #FE Development
+                    </p>
+                  </Link>
+                  <div className="tint"></div>
+                  <img src={TurnerThumb} alt="" />
+                </figure>
               </div>
-              <div className="shadow"></div>
-          </aside>
-        </Router>
+              <div className="col-lg-3 col-md-4 col-sm-6">
+                <figure className="bbc-is-active">
+                  <Link to="/bbc">
+                    <h3>BBC Worldwide</h3>
+                    <p>
+                      #UX Research #Web Design #E-Com<br />
+                      #Brand Design #Styleguides<br />
+                      #FE Development
+                    </p>
+                  </Link>
+                  <div className="tint"></div>
+                  <img src={BBCThumb} className="tall" alt="" />
+                </figure>
+              </div>
+              <div className="col-lg-3 col-md-4 col-sm-6">
+                <figure className="monum-is-active">
+                  <Link to="/monum">
+                    <h3>Monum</h3>
+                    <p>
+                      #Web & Interactive Design<br />
+                      #Brand Design #Conceptualisation<br />
+                      #FE Development
+                    </p>
+                  </Link>
+                  <div className="tint"></div>
+                  <img src={MonumThumb} alt="" />
+                </figure>
+                <figure className="setanta-is-active">
+                  <Link to="/setanta">
+                    <h3>Setanta</h3>
+                    <p>
+                      #Web & Interactive Design<br />
+                      #Brand Design #Conceptualisation<br />
+                      #FE Development
+                    </p>
+                  </Link>
+                  <div className="tint"></div>
+                  <img src={SetantaThumb} alt="" />
+                </figure>
+              </div>
+              <div className="col-lg-3 col-md-4 col-sm-6">
+                <figure className="guinness-is-active">
+                  <Link to="/guinness">
+                    <h3>Guinness</h3>
+                    <p>
+                      #Web & Interactive Design<br />
+                      #Brand Design #Conceptualisation<br />
+                      #FE Development #Animation
+                    </p>
+                  </Link>
+                  <div className="tint"></div>
+                  <img src={GuinnessThumb} alt="" />
+                </figure>
+              </div>
+          </div>
+          </nav>
+        </header>
       </div>
     );
   }

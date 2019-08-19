@@ -1,74 +1,58 @@
 ﻿@import "variables";
 @import "mixins";
 @import "images";
-header.main-header {
-    background:$black url('../images/bg-tint.png') no-repeat 0 0;
-    position:fixed;
-    z-index:2;
-    left:0;
-    right:0;
+.main-header {
+    position: fixed;
     top:0;
-    padding: 0 40px 0 60px;
-    height: 134px;
-    .logo {
-        background: url($pixelHeadsLogoClean) 0 0 no-repeat;
-        background-size:100%;
-        margin: 9px 30px 0 0;
-        float: left;
-        width: 26px;
-        height: 35px;
-    }
-    nav {
+    z-index: 999;
+    background-color:$white;
+    height: 44px;
+    width: 100%!important;
+    img {position: absolute; top: 8px; right: 60px;}
+    nav.main-nav {
+        position: relative;
+        margin-left: 60px;
         white-space: nowrap;
-        ul.main-nav {
+        float: left;
+        a {
+            -webkit-transition: all 0.5s ease-in;
+            height: 16px;
             display:inline-block;
-            margin:0;
+            margin:15px 40px 0 0;
             padding: 0;
-            li:last-child {background:none}
-            li {
-                background:url($MenuChevron) right 21px no-repeat;
-                background-size: 7px;
-                display: inline-block;
-                margin: 0 16px 0 0;
-                padding:0 25px 0 0;
-                a {
-                    color:$nav;
-                    opacity:0.7;
-                    @include font(100, 16px);
-                    margin: 14px 0 0 0;
-                    display: inline-block;
-                }
-                a.active {
-                    opacity:1;
-                }
-            }
-            li:hover {
-                cursor:pointer;
-                a {
-                    opacity:1;
-                }
-            }
+            cursor:pointer;
+            color:$black!important;
+            opacity:0.6;
+            @include font(300, .63rem, 'latobold');
+            text-transform: uppercase;
+            //border-bottom: 2px solid $white;
         }
-        ul.social {
-            margin:11px 0 0 0;
-            float:right;
-            li {
-                display:inline-block;
-                margin:0 10px 0 0;
-                a {
-                    background-size:100%!important;
-                    display:inline-block;
-                    width:25px;
-                    height:25px;
-                }
-            }
-            li:last-child {margin-right:0}
-            li:nth-child(1) {
-                a {background:url('../images/social/github.png') 0 0 no-repeat;}
-            }
-            li:nth-child(2) {
-                a {background:url('../images/social/linkedin-wht.png') 0 0 no-repeat;}
-            }
+        .active-marker {
+            -webkit-transition: all 0.1s ease-in;
+            height:2px;
+            width:34px;
+            background-color:$red;
+            display:inline-block;
+            position: absolute;
+            top:30px;
+            left:0;
+        }
+        a.active.about ~ .active-marker {
+            left: 73px;
+            width: 38px;
+        }
+        a.active.projects ~ .active-marker {
+            left: 152px;
+            width: 53px;
+        }
+        a.active.contact ~ .active-marker {
+            left: 246px;
+            width: 50px;
+        }
+        a:hover {text-decoration: none!important}
+        a.active {
+            opacity:1;
+            //border-bottom: 2px solid $red
         }
     }
 }

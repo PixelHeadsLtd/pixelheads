@@ -1,0 +1,6 @@
+svg.demo .target-path {
+  fill: none;
+  stroke: #252525;
+  stroke-width: 1;
+  stroke-linecap: square;
+  stroke-miterlimit: 10; }

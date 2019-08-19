@@ -36,6 +36,9 @@
 .margin-bottom-large {
   margin-bottom: 40px; }
 
+.mt-20p {
+  margin-top: 20%; }
+
 .margin-left-small {
   margin-left: 10px; }
 
@@ -44,3 +47,25 @@
 
 .margin-left-large {
   margin-left: 40px; }
+
+.padding-top-large {
+  padding-top: 50px; }
+
+.padding-top-med {
+  padding-top: 30px; }
+
+.padding-top-small {
+  padding-top: 10px; }
+
+hr {
+  border-top: 1px solid white;
+  border-bottom: none; }
+
+.spaced {
+  letter-spacing: 0.15rem !important; }
+
+.bg-yellow {
+  background-color: #fbc900; }
+
+.relative {
+  position: relative; }

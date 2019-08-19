@@ -1,0 +1,293 @@
+@import "variables";
+@import "mixins";
+@import "images";
+
+html {
+    body.projects {
+        background-size: 100%;
+        font-family: latoregular; 
+        font-size: small; 
+        margin: 0; 
+        padding:0;
+        .App {
+            overflow: hidden;
+            letter-spacing: .04rem;
+            h4 {
+                color:$black;
+                @include font(600, 0.9rem); 
+                margin: 0 0 6px 0;
+                text-transform: uppercase;
+                letter-spacing: .2rem;
+            }
+            .container-fluid {background:white; margin-top:440px;}
+            /* Main Header */
+            .main-header {
+                position: fixed;
+                top:0;
+                left:0;
+                right:0;
+                z-index: 999;
+                background-color:#ffffff;
+                height: 44px;
+                width: 100%!important;
+                border-bottom: 1px solid #eee;
+                img {position: absolute; top: 8px; right: 60px;}
+                nav.main-nav {
+                    position: relative;
+                    margin-left: 60px;
+                    white-space: nowrap;
+                    float: left;
+                    a:hover {text-decoration: none!important}
+                    a.active {
+                        opacity:1;
+                        border-bottom: 2px solid #ff0049;
+                    }
+                    a {
+                        height: 18px;
+                        display:inline-block;
+                        margin:15px 40px 0 0;
+                        padding: 0;
+                        cursor:pointer;
+                        color:#252525!important;
+                        opacity:0.6;
+                        font-family: latobold;
+                        font-size:.63rem;
+                        text-transform: uppercase;
+                        border-bottom: 2px solid #ffffff;
+                        letter-spacing: .05rem;
+                    }
+                } // end main-nav
+            } // end header
+        
+            /* Links */
+            a {color:#00a3cc; text-decoration: none}
+            a:hover {color:#252525; text-decoration: none}
+        
+            /* Projects Headers */
+            .projects-header {
+                width: 100%;
+                display: inline-block;
+                text-align: center;
+                position: absolute;
+                top: -286px;
+                left: 0;
+                right: 0;
+                h1 {color:white; margin:70px 0 105px 0}
+                p {
+                    text-transform: uppercase; 
+                    font-size: .6rem; 
+                    text-align: left; 
+                    line-height: 1.1rem; 
+                    margin:0; 
+                    padding:0;
+                    color:#999;
+                    letter-spacing: .2rem;
+                    label {float:left; clear:left; width:100%; text-transform: uppercase; color:#ff0049}
+                }
+                h3 {
+                    text-align: left; 
+                    margin: 0 0 3px 0; 
+                    padding: 0 0 3px 0; 
+                    border-bottom:1px dashed #666; 
+                    width:100%; 
+                    float:left;
+                    text-transform: uppercase;
+                    color:white;
+                    font-family: 'latolight';
+                    letter-spacing: .3rem;
+                    font-size:.8rem;
+                    font-weight: bolder;
+                }
+                ul {
+                    display: block; 
+                    margin:0 60px; 
+                    padding: 0; 
+                    float:none;
+                    li {display:block; margin: 0; padding: 0; width: 25%; float:left}
+                }
+                .mini-menu {
+                    position: absolute; 
+                    top: 30px;
+                    ul {
+                        li {
+                            display:inline-block; 
+                            margin:0 40px 0 0; 
+                            padding:0; 
+                            width:auto; 
+                            text-align: left; 
+                            line-height: .9rem;
+                            a {
+                                font-size: .6rem; 
+                                text-transform: uppercase; 
+                                letter-spacing: .05rem;
+                            }
+                        }
+                    }
+                }  // end mini-menu
+                .quick-links { 
+                    position: absolute; 
+                    right:60px; 
+                    top:20px;
+                    h3 {
+                        color:#252525; 
+                        border:none; 
+                        font-size: .7rem; 
+                        text-transform: uppercase;
+                        letter-spacing: .05rem;
+                        margin-bottom: 0;
+                    }
+                    ul { 
+                        width:auto; 
+                        list-style-type: square;
+                        li {
+                            width:auto; 
+                            display:list-item; 
+                            margin: 0 0 0 5px; 
+                            text-indent: -3px;
+                            a {font-size: .6rem; letter-spacing: .05rem; text-transform: uppercase;}
+                            a:hover {color:#252525}
+                        }
+                    }
+                 } // end quick-links
+            } // end projects header
+        
+            /* Lists */
+            ul li { margin: 0 0 10px 0}
+        
+            /* Text */
+            h1 {font-family: latobold; font-size: 1.5rem;; text-transform: uppercase; letter-spacing: .4rem; color:#ff0049}
+            h2 {font-family: oraqlescript; font-size: 52px; font-weight: lighter; margin:25px 0 10px 0}
+            h3 {color:#ff0049; font-family: latobold; font-size: 1rem}
+            p {font-size: .8rem; line-height: 1.5rem; margin-top: 0}
+            p label {width:100%; color:#ff0049; margin-bottom: 0; font-size: .95rem; letter-spacing: .05rem;}
+        
+            /* Layout */
+            img.to-the-right-edge {float:right; margin-right:-90px}
+            .row {
+                .inner {
+                    margin:100px 100px 90px 100px; 
+                    display: inline-block;
+                    p {margin-bottom: 40px}
+                }
+            }
+    
+            /* Helpers */
+            .w-25 {width:25%}
+            .w-50 {width:50%}
+            .height-1000 {height: 1000px}
+            .absolute-right {position: absolute; right:0;}
+
+        } // end App
+    } // end projects
+} // end html
+
+/* ------------------------------------------------- Project Specific ------------------------------------------------ */
+
+html {
+    // UMG
+    body.umg {
+        .App {
+            img.personas {width:100%; margin-top:-160px}
+            .row {
+                .red-panel {
+                    background-color: #ff0049; 
+                    color:white;
+                    label {color:white}
+                }
+            }
+            .container-fluid {
+                background:#fff url('../images/clients/pages/umg/background.png') no-repeat 0 0;
+                background-size:100%;
+                .projects-header {
+                    ul.umg-overview {
+                        li {width: 25%;
+                        li:last-child {width:13%}
+                    }
+                }
+            }
+        }
+        .banner {
+            background:url('../images/clients/pages/umg/banner.png') no-repeat top left;
+            position:fixed;
+            left:0;
+            right:0;
+            top:0;
+            height:440px;
+            }
+        }
+    }
+
+    // Turner
+    body.turner {
+        .App {
+            img.personas {width:100%; margin-top:-160px}
+            .row {
+                .red-panel {
+                    background-color: #ff0049; 
+                    color:white;
+                    label {color:white}
+                }
+            }
+            .container-fluid {
+                background-size:100%;
+                .projects-header {
+                    ul.umg-overview {
+                        li {width:25%}
+                        li:last-child {width:20%}
+                    }
+                } 
+                img.batman {
+                    width:170%;
+                    margin-top:-96px;
+                    vertical-align: middle;
+                    border-style: none;
+                    position: absolute;
+                    z-index: 1;
+                }
+                img.carousel {
+                    width: 60%;
+                    margin: -9px 0 0 440px;
+                    position: absolute;
+                }
+                .row.ctn-ntw {
+                    padding-top:80px;
+                    background-color:$crimson;
+                    img.adv-time {
+                        position: absolute;
+                        top: -240px;
+                        right: 395px;
+                        width: 400px;
+                    }
+                    img.cartoon-network {
+                        width: 82.5%;
+                        margin-left: 45px;
+                    }
+                }
+                .row.scooby {
+                    min-height: 400px;
+                    margin-top: 123px;
+                    padding-top:100px;
+                    p, h4 {color:$white}
+                    h4 {white-space: nowrap;}
+                    img.scooby-van {
+                        position: absolute;
+                        top: -230px;
+                        left:0;
+                    }
+                }
+                .row.as {
+                    padding-top:80px;
+                    background-color:$crimson;
+                }
+            }
+            .banner {
+                background:url('../images/clients/pages/turner/banner.png') no-repeat top left;
+                position:fixed;
+                left:0;
+                right:0;
+                top:0;
+                height:440px;
+            }
+        }
+    }
+} // end html

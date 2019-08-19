@@ -1,24 +1,48 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Sticky } from 'react-sticky';
+// NOTE: Sticky Container for this menu is location within home.js as it
+// needs to wrap around all components in order to maintain stickyness.
+
+import PixelHeadsLogo from '../../images/pixelheads-logo.svg';
 
 class Header extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isActiveIndex: "0",
+      show: false
+    }
+    this.toggleActiveClass.bind(this);
+    this.changeActiveMenu.bind(this);
+}
+
+toggleActiveClass(index) {
+  this.setState({ isActiveIndex: index });
+};
+
+changeActiveMenu(index){
+  if(index >= 0 && index <= 4)
+  {
+    this.setState({ isActiveIndex: index });
+  }
+  console.log(index);
+};
   render() {
-    console.log(this.props);
+    //console.log(this.state.isActiveIndex);
     return (
-      <header className="main-header">
-          <div className="logo" title="PixelHeads Ltd"></div>
-          <nav>
-              <ul className="main-nav">
-                  <li><NavLink exact to="/">Home</NavLink></li>
-                  <li><NavLink to="/Projects">Projects</NavLink></li>
-                  <li><NavLink to="/Contact">Contact</NavLink></li>
-              </ul>
-              <ul className="social">
-                  <li><a href="https://github.com/PixelHeadsLtd" title="View GitHub Profile"></a></li>
-                  <li><a href="http://www.linkedin.com/in/mike-king-0481b92" title="View LinkedIn Profile"></a></li>
-              </ul>
-          </nav>
-      </header>
+      <Sticky>
+        {({ style }) =>
+          <header style={style} className="main-header">
+            <nav className="main-nav">
+              <a className={this.state.isActiveIndex === "0" ? 'active home' : ''} onClick={() => this.toggleActiveClass("0") } href='#section-home'>Home</a>
+              <a className={this.state.isActiveIndex === "1" ? 'active about' : ''} onClick={() => this.toggleActiveClass("1") } href='#section-about'>About</a>
+              <a className={this.state.isActiveIndex === "2" ? 'active projects' : ''} onClick={() => this.toggleActiveClass("2")} href='#section-projects'>Projects</a>
+              <a className={this.state.isActiveIndex === "3" ? 'active contact' : ''} onClick={() => this.toggleActiveClass("3")} href='#section-contact'>Contact</a>
+              <div className="active-marker"></div>
+            </nav>
+            <img src={PixelHeadsLogo} alt="" />
+          </header>}
+      </Sticky>
     );
   }
 }

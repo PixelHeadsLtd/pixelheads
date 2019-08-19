@@ -1,208 +1,481 @@
-﻿/*responsive sass*/
-@import "variables";
-
-.landing-page {
-    .iphone-portrait {
-        header.main-header {
-           visibility:hidden;
+﻿// Responsive for Home
+body.home-page {
+    @media (min-width: 375px) {
+        .main-header {
+            border-top: 2px solid red;
         }
-        .content {
-            padding:160px 10% 0 10%;
-            .logo {
-                margin:0 0 0 32px;
-            }
-        }
-    }
-}
-
-/* DESKTOP */
-.desktop {
-    header.main-header, 
-    .sub-header, 
-    .ReactStickyHeader_root, 
-    ul.summary {min-width:920px}
-}
-
-/* PORTRAIT */
-.iphone-portrait {
-    header.main-header {
-        padding:0 8px;
-        nav {
-            position:absolute;
-            right:10px;
-            top:0;
-            ul.main-nav {
-                padding:0;
-                margin:0;
-                float: right;
-                li {margin:0 20px}
-                li:last-child {margin:0}
-            }
-            ul.social {display:none;}
-        }
-    }
-    .content {
-        padding:66px 8px 50px 8px;
-        .sub-header {
-            width:100%;
-            background-color:transparent;
-            position:static;
-            padding:0;
-            .intro, h1, h2 {
-                display:none;
-            }
-            aside {
-                position:fixed;
-                top:50px;
-                left:0;
-                right:0;
-                overflow-x:auto;
-                background-color:$subHeader;
-                font-size:15px;
-                ul {display:none}
-                ul.mobile-version {
-                    display:inline-block;
-                    width: 1600px;
-                    li {
-                        float:none;
-                        display:inline-block;
-                        margin:0;
-                        a {padding:10px 30px}
-                        a.active {border:none; padding:10px 30px}
-                    }
+        .new-section.about {
+            min-height: 1777px;
+            .container-fluid {
+                padding-right: 60px;
+                padding-left: 60px;
+                .icons {
+                    bottom:60px;
+                    div {margin: 0 5%;}
                 }
             }
         }
-        .projects {
-            .work {
-                .ReactStickyHeader_root {
-                    display:none;
+        .new-section.projects {
+            .container-fluid {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    }
+    
+    @media (min-width: 576px) {
+        .main-header {
+            border-top: 2px solid green;
+        }
+        .new-section.about {
+            min-height: 1590px;
+            .container-fluid {
+                padding-right: 60px;
+                padding-left: 60px;
+                .icons {
+                    bottom:60px;
+                    div {margin: 0 10%;}
                 }
-               .examples {
-                    padding-top: 45px;
-                    h2, h2 a {
-                        margin:0;
-                        font-size:12px
-                    }
-                    p {min-width:100%; width:auto}
-                    .platform-logos {
-                        ul {
-                            padding:0;
-                            li.umg {width:55%;}
-                            li.studiohub {margin-left:30px}
+            }
+        }
+        .new-section.projects {
+            .container-fluid {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    }
+      
+    @media (min-width: 768px) {
+        .main-header {
+            border-top: 2px solid yellow;
+        }
+        .new-section.about {
+            min-height: 1155px;
+            .container-fluid {
+                padding-right: 60px;
+                padding-left: 60px;
+                .icons {
+                    bottom:90px;
+                    div {margin: 0 5%;}
+                }
+            }
+        }
+        .new-section.projects {
+            .container-fluid {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .main-header {
+            border-top: 2px solid blue;
+        }
+        .new-section.about {
+            min-height: 924px;
+            .container-fluid {
+                padding-right: 60px;
+                padding-left: 60px;
+                .icons {bottom:90px}
+            }
+        }
+        .new-section.projects {
+            .container-fluid {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    }
+      
+    @media (min-width: 1200px) {
+        .main-header {
+            border-top: 2px solid pink;
+        }
+        .new-section.about {
+            .container-fluid {
+                padding-right: 60px;
+                padding-left: 60px;
+            }
+        }
+        .new-section.projects {
+            .container-fluid {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    }    
+}
+
+// Responsive for Projects
+html {
+    body.projects {
+        .App {
+            @media (min-width: 375px) {
+                .container-fluid {
+                    padding-right: 30px;
+                    padding-left: 30px;
+                    border: 2px solid red;
+                    .row.fullwidth {
+                        margin-left: -60px;
+                        min-width: 123%;
+                    } 
+                    .row {
+                        img.batman {
+                            width: 108%;
+                            margin-top: 0;
+                            position: static;
+                        }
+                        img.carousel {
+                            width: 100%;
+                            margin: 20px 0 0 20px;
+                            position: static;
                         }
                     }
-                    .image-wrapper {margin-bottom:20px}
-                    div.LWS-landing-page {height:172px}
-                    div.LWS-masters {height:200px}
-                    div.LWS-song-overview {height:680px}
-                    div.RWS-landing-page {height:215px}
-                    div.RWS-release {height:215px}
-                    div.RWS-scheduling {height:235px}
-                    div.RWS-manage-release {height:235px}
-                    div.RWS-components {height:300px}
-               }
-            }
-        }
-        .thanks {
-            width:auto; 
-            line-height: 16px;
-            h1 {font-size:30px}
-        }
-    }
-    footer {
-        display:none!important;
-    }
-}
-
-/* LANDSCAPE */
-.iphone-landscape {
-    header.main-header {
-        padding:0 8px;
-        nav {
-            position:absolute;
-            right:10px;
-            top:0;
-            ul.main-nav {
-                padding:0;
-                margin:0;
-                float: right;
-                li {margin:0 20px}
-                li:last-child {margin:0}
-            }
-            ul.social {display:none;}
-        }
-    }
-    .content {
-        padding:66px 8px 50px 8px;
-        .sub-header {
-            width:100%;
-            background-color:transparent;
-            position:static;
-            padding:0;
-            .intro, h1, h2 {
-                display:none;
-            }
-            aside {
-                position:fixed;
-                top:50px;
-                left:0;
-                right:0;
-                overflow-x:auto;
-                background-color:$subHeader;
-                font-size:15px;
-                ul {display:none}
-                ul.mobile-version {
-                    display:inline-block;
-                    width: 1600px;
-                    li {
-                        float:none;
-                        display:inline-block;
-                        margin:0;
-                        a {padding:10px 30px}
-                        a.active {border:none; padding:10px 30px}
-                    }
-                }
-            }
-        }
-        .projects {
-            .work {
-                .ReactStickyHeader_root {
-                    display:none;
-                }
-               .examples {
-                    padding-top: 45px;
-                    h2, h2 a {
-                        margin:0;
-                        font-size:12px
-                    }
-                    p {min-width:100%; width:auto}
-                    .platform-logos {
-                        ul {
-                            padding:0;
-                            li.umg {width:55%;}
-                            li.studiohub {margin-left:30px}
+                    .row.scooby {
+                        padding-top: 60px;
+                        padding-bottom: 180px;
+                        > div:first-child { margin-right: 130px;}
+                        img.scooby-van {
+                            top: -172px;
+                        }
+                        .para1 {    
+                            margin-left: 0;
+                            max-width: 90%;
+                            padding-left: 60px;
+                            margin-top: 300px;
+                        }
+                        .para2 {
+                            max-width: 90%;
+                            padding-left: 60px;
+                            margin-top: 0;
                         }
                     }
-                    .image-wrapper {margin-bottom:20px}
-                    div.LWS-landing-page {height:172px}
-                    div.LWS-masters {height:200px}
-                    div.LWS-song-overview {height:680px}
-                    div.RWS-landing-page {height:215px}
-                    div.RWS-release {height:215px}
-                    div.RWS-scheduling {height:235px}
-                    div.RWS-manage-release {height:235px}
-                    div.RWS-components {height:300px}
-               }
+                    .row.ctn-ntw {
+                        padding-top:80px;
+                        img.adv-time {
+                            top: -169px;
+                            right: 113px;
+                            width: 265px;
+                        } 
+                    }
+                    .row.as {
+                        div { max-width: 100%;padding-right: 0;}
+                        img {margin-bottom: 30px; width:100%;}
+                        img.adult-swim-games {margin-left: 0;}
+                        img.adult-swim-videos {margin-left: 0;}
+                    }
+                    .projects-header ul {display: none}
+                }
+                img.personas {width:497px; margin-top:-79px}
+            }
+            
+            @media (min-width: 576px) {
+                .container-fluid {
+                    padding-right: 30px;
+                    padding-left: 30px;
+                    border: 2px solid yellow;
+                    .row.fullwidth {
+                        margin-left: -60px;
+                        min-width: 123%;
+                    }
+                    .row {
+                        img.batman {
+                            width: 108%;
+                            margin-top: 0;
+                            position: static;
+                        }
+                        img.carousel {
+                            width: 100%;
+                            margin: 20px 0 0 20px;
+                            position: static;
+                        }
+                    }
+                    .row.scooby {
+                        padding-top: 60px;
+                        padding-bottom: 180px;
+                        > div:first-child { margin-right: 130px;}
+                        img.scooby-van {
+                            top: -172px;
+                        }
+                        .para1 {    
+                            margin-left: 0;
+                            max-width: 90%;
+                            padding-left: 60px;
+                            margin-top: 300px;
+                        }
+                        .para2 {
+                            max-width: 90%;
+                            padding-left: 60px;
+                            margin-top: 0;
+                        }
+                    }
+                    .row.ctn-ntw {
+                        padding-top:80px;
+                        img.adv-time {
+                            top: -169px;
+                            right: 113px;
+                            width: 265px;
+                        } 
+                    }
+                    .row.as {
+                        div {max-width: 95%; padding-right: 0;}
+                        img {margin-bottom: 30px; width:100%;}
+                        img.adult-swim-games {margin-left: 0;}
+                        img.adult-swim-videos {margin-left: 0;}
+                    }
+                    .projects-header ul {display: block; margin:0 35px}
+                }
+                img.personas {width: 767px; margin-top:-91px}
+            }
+              
+            @media (min-width: 768px) {
+                .container-fluid {
+                    padding-right: 60px;
+                    padding-left: 60px;
+                    border: 2px solid green;
+                    .row.fullwidth {
+                        margin-left: -60px;
+                        min-width: 123%;
+                    }
+                    .row {
+                        img.batman {
+                            width: 108%;
+                            margin-top: 0;
+                            position: static;
+                        }
+                        img.carousel {
+                            width: 100%;
+                            margin: 20px 0 0 20px;
+                            position: static;
+                        }
+                    }
+                    .row.scooby {
+                        padding-top: 60px;
+                        padding-bottom: 180px;
+                        > div:first-child { margin-right: 130px;}
+                        .para1 {    
+                            margin-left: 0;
+                            max-width: 90%;
+                            padding-left: 60px;
+                            margin-top: 300px;
+                        }
+                        .para2 {
+                            max-width: 90%;
+                            padding-left: 60px;
+                            margin-top: 0;
+                        }
+                        img.scooby-van {
+                            top: -172px;
+                        }
+                    }
+                    .row.ctn-ntw {
+                        padding-top:80px;
+                        img.adv-time {
+                            top: -206px;
+                            right: 230px;
+                            width: 340px;
+                        } 
+                    }
+                    .row.as {
+                        div { max-width:96.3%; padding-right: 0;padding-left: 0;}
+                        img {margin-bottom: 30px; width:100%;}
+                        img.adult-swim-games {margin-left: 0;}
+                        img.adult-swim-videos {margin-left: 0;}
+                    }
+                    .projects-header ul {display: block; margin:0 60px}
+                }
+                img.personas {width:936px; margin-top:-84px}
+            }
+            
+            @media (min-width: 992px) {
+                .container-fluid {
+                    padding-right: 60px;
+                    padding-left: 60px;
+                    border: 2px solid orange;
+                    .row.fullwidth {
+                        margin-left: -60px;
+                        min-width: 123%;
+                    }
+                    .row {
+                        img.batman {
+                            width: 180%;
+                            margin-top: 50px;
+                            position: absolute;
+                        }
+                        img.carousel {
+                            width: 100%;
+                            margin: 40px 0 0 20px;
+                            position: static;
+                        }
+                    }
+                    .row.scooby {
+                        padding-top: 60px;
+                        padding-bottom: 130px;
+                        > div:first-child { margin-right: 130px;}
+                        img.scooby-van {
+                            top: -172px;
+                        }
+                        .para1 {
+                            margin-left: 465px;
+                            max-width: 44%;
+                            min-width: 50%;
+                            padding-top: 30px;
+                            margin-top:0;
+                        }
+                        .para2 {
+                            max-width: 90%;
+                            padding-left: 60px;
+                            margin-top: 115px;
+                            min-width: 90%;
+                        }
+                    }
+                    .row.ctn-ntw {
+                        img.adv-time {
+                            top: -206px;
+                            right: 230px;
+                            width: 340px;
+                        } 
+                    }
+                    .row.as {
+                        div { max-width: 45.8%; padding-right: 0; padding-left: 15px;}
+                        img {margin-bottom: 30px; width:90%;}
+                        img.adult-swim-games {margin-left: 45px;}
+                        img.adult-swim-videos {margin-left: 0;}
+                    }
+                    .projects-header ul {display: block; margin:0 60px}
+                }
+                img.personas { width: 520px; margin-top: -123px;}
+            }
+              
+            @media (min-width: 1200px) {
+                .container-fluid {
+                    padding-right: 60px;
+                    padding-left: 60px;
+                    border: 2px solid blue;
+                    .row.fullwidth {
+                        margin-left: -60px;
+                        min-width: 123%;
+                    }
+                    .row {
+                        img.batman {
+                            width: 140%;
+                            margin-top:10px;
+                            position: absolute;
+                        }
+                        img.carousel {
+                            width: 100%;
+                            margin: 50px 0 0 20px;
+                            position: static;
+                        }
+                    }
+                    .row.scooby {
+                        padding-top: 60px;
+                        padding-bottom: 0;
+                        > div:first-child { margin-right: 100px;}
+                        img.scooby-van {
+                            top: -172px;
+                        }
+                        .para1 {    
+                            margin-left: 0;
+                            max-width: 100%;
+                            margin-right:30px;
+                            min-width: initial;
+                            padding-top: 0;
+                            padding-left: 0;
+                        }
+                        .para2 {
+                            max-width: 100%;
+                            padding-left: 0;
+                            margin-top: 0;
+                            min-width: initial;
+                        }
+                    }
+                    .row.ctn-ntw {
+                        img.adv-time {
+                            position: absolute;
+                            top: -240px;
+                            right: 395px;
+                            width: 400px;
+                        }
+                    }
+                    .row.as {
+                        div { max-width: 44.2%;padding-right: 0; padding-left:15px}
+                        img {margin-bottom: 30px; width:90%;}
+                        img.adult-swim-games {margin-left: 45px;}
+                        img.adult-swim-videos {margin-left: 0;}
+                    }
+                    .projects-header ul {display: block; margin:0 60px}
+                }
+                img.personas {width:640px; margin-top:-132px}
+            }
+
+            @media (min-width: 1580px) {
+                .container-fluid {
+                    padding-right: 60px;
+                    padding-left: 60px;
+                    border: 2px solid pink;
+                    .row.fullwidth {
+                        margin-left: -60px;
+                        min-width: 123%;
+                    }
+                    .row {
+                        img.batman {
+                            width:170%;
+                            margin-top:-96px;
+                            position: absolute;
+                        }
+                        img.carousel {
+                            width: 60%;
+                            margin: -9px 0 0 440px;
+                            position: absolute;
+                        }
+                        img.cartoon-network {
+                            width: 82.5%;
+                            margin-left: 45px;
+                        }
+                    }
+                    .row.scooby {
+                        padding-top: 100px;
+                        padding-bottom: 0;
+                        > div {margin-right:30px}
+                        > div:first-child { margin-right: 0;}
+                        img.scooby-van {
+                            top: -230px;
+                        }
+                        .para1 {    
+                            margin-left: 0;
+                            max-width: 100%;
+                            min-width: initial;
+                            padding-top: 0;
+                            padding-left: 0;
+                        }
+                        .para2 {
+                            max-width: 100%;
+                            padding-left: 0;
+                            margin-top: 0;
+                            min-width: initial;
+                        }
+                    }
+                    .row.ctn-ntw {
+                        img.adv-time {
+                            position: absolute;
+                            top: -240px;
+                            right: 395px;
+                            width: 400px;
+                        }
+                    }
+                    .row.as {
+                        div { max-width: 44.2%; padding-right: 0; padding-left:15px}
+                        img {margin-bottom: 30px; width:90%;}
+                        img.adult-swim-games {margin-left: 45px;}
+                        img.adult-swim-videos {margin-left: 0;}
+                    }
+                    .projects-header ul {display: block; margin:0 60px}
+                }
+                img.personas {width:980px; margin-top:-157px}
             }
         }
-        .thanks {
-            width:auto; 
-            line-height: 16px;
-            h1 {font-size:30px}
-        }
-    }
-    footer {
-        display:none!important;
     }
 }

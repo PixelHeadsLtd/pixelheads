@@ -1,0 +1,15 @@
+﻿@import "variables";
+
+svg.demo {
+    //height: 176px;
+    //width: 1200px;
+    //margin: 0 0 0 70px;
+    //transform: translateX(-200px);
+    .target-path {
+        fill: none;
+        stroke: $black;
+        stroke-width: 1;
+        stroke-linecap: square;
+        stroke-miterlimit: 10;
+    }
+}

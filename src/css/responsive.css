@@ -1,199 +1,412 @@
-/*responsive sass*/
-.landing-page .iphone-portrait header.main-header {
-  visibility: hidden; }
+@media (min-width: 375px) {
+  body.home-page .main-header {
+    border-top: 2px solid red; }
+  body.home-page .new-section.about {
+    min-height: 1777px; }
+    body.home-page .new-section.about .container-fluid {
+      padding-right: 60px;
+      padding-left: 60px; }
+      body.home-page .new-section.about .container-fluid .icons {
+        bottom: 60px; }
+        body.home-page .new-section.about .container-fluid .icons div {
+          margin: 0 5%; }
+  body.home-page .new-section.projects .container-fluid {
+    padding-right: 0;
+    padding-left: 0; } }
 
-.landing-page .iphone-portrait .content {
-  padding: 160px 10% 0 10%; }
-  .landing-page .iphone-portrait .content .logo {
-    margin: 0 0 0 32px; }
+@media (min-width: 576px) {
+  body.home-page .main-header {
+    border-top: 2px solid green; }
+  body.home-page .new-section.about {
+    min-height: 1590px; }
+    body.home-page .new-section.about .container-fluid {
+      padding-right: 60px;
+      padding-left: 60px; }
+      body.home-page .new-section.about .container-fluid .icons {
+        bottom: 60px; }
+        body.home-page .new-section.about .container-fluid .icons div {
+          margin: 0 10%; }
+  body.home-page .new-section.projects .container-fluid {
+    padding-right: 0;
+    padding-left: 0; } }
 
-/* DESKTOP */
-.desktop header.main-header,
-.desktop .sub-header,
-.desktop .ReactStickyHeader_root,
-.desktop ul.summary {
-  min-width: 920px; }
+@media (min-width: 768px) {
+  body.home-page .main-header {
+    border-top: 2px solid yellow; }
+  body.home-page .new-section.about {
+    min-height: 1155px; }
+    body.home-page .new-section.about .container-fluid {
+      padding-right: 60px;
+      padding-left: 60px; }
+      body.home-page .new-section.about .container-fluid .icons {
+        bottom: 90px; }
+        body.home-page .new-section.about .container-fluid .icons div {
+          margin: 0 5%; }
+  body.home-page .new-section.projects .container-fluid {
+    padding-right: 0;
+    padding-left: 0; } }
 
-/* PORTRAIT */
-.iphone-portrait header.main-header {
-  padding: 0 8px; }
-  .iphone-portrait header.main-header nav {
-    position: absolute;
-    right: 10px;
-    top: 0; }
-    .iphone-portrait header.main-header nav ul.main-nav {
-      padding: 0;
-      margin: 0;
-      float: right; }
-      .iphone-portrait header.main-header nav ul.main-nav li {
-        margin: 0 20px; }
-      .iphone-portrait header.main-header nav ul.main-nav li:last-child {
-        margin: 0; }
-    .iphone-portrait header.main-header nav ul.social {
+@media (min-width: 992px) {
+  body.home-page .main-header {
+    border-top: 2px solid blue; }
+  body.home-page .new-section.about {
+    min-height: 924px; }
+    body.home-page .new-section.about .container-fluid {
+      padding-right: 60px;
+      padding-left: 60px; }
+      body.home-page .new-section.about .container-fluid .icons {
+        bottom: 90px; }
+  body.home-page .new-section.projects .container-fluid {
+    padding-right: 0;
+    padding-left: 0; } }
+
+@media (min-width: 1200px) {
+  body.home-page .main-header {
+    border-top: 2px solid pink; }
+  body.home-page .new-section.about .container-fluid {
+    padding-right: 60px;
+    padding-left: 60px; }
+  body.home-page .new-section.projects .container-fluid {
+    padding-right: 0;
+    padding-left: 0; } }
+
+@media (min-width: 375px) {
+  html body.projects .App .container-fluid {
+    padding-right: 30px;
+    padding-left: 30px;
+    border: 2px solid red; }
+    html body.projects .App .container-fluid .row.fullwidth {
+      margin-left: -60px;
+      min-width: 123%; }
+    html body.projects .App .container-fluid .row img.batman {
+      width: 108%;
+      margin-top: 0;
+      position: static; }
+    html body.projects .App .container-fluid .row img.carousel {
+      width: 100%;
+      margin: 20px 0 0 20px;
+      position: static; }
+    html body.projects .App .container-fluid .row.scooby {
+      padding-top: 60px;
+      padding-bottom: 180px; }
+      html body.projects .App .container-fluid .row.scooby > div:first-child {
+        margin-right: 130px; }
+      html body.projects .App .container-fluid .row.scooby img.scooby-van {
+        top: -172px; }
+      html body.projects .App .container-fluid .row.scooby .para1 {
+        margin-left: 0;
+        max-width: 90%;
+        padding-left: 60px;
+        margin-top: 300px; }
+      html body.projects .App .container-fluid .row.scooby .para2 {
+        max-width: 90%;
+        padding-left: 60px;
+        margin-top: 0; }
+    html body.projects .App .container-fluid .row.ctn-ntw {
+      padding-top: 80px; }
+      html body.projects .App .container-fluid .row.ctn-ntw img.adv-time {
+        top: -169px;
+        right: 113px;
+        width: 265px; }
+    html body.projects .App .container-fluid .row.as div {
+      max-width: 100%;
+      padding-right: 0; }
+    html body.projects .App .container-fluid .row.as img {
+      margin-bottom: 30px;
+      width: 100%; }
+    html body.projects .App .container-fluid .row.as img.adult-swim-games {
+      margin-left: 0; }
+    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
+      margin-left: 0; }
+    html body.projects .App .container-fluid .projects-header ul {
       display: none; }
+  html body.projects .App img.personas {
+    width: 497px;
+    margin-top: -79px; } }
 
-.iphone-portrait .content {
-  padding: 66px 8px 50px 8px; }
-  .iphone-portrait .content .sub-header {
-    width: 100%;
-    background-color: transparent;
-    position: static;
-    padding: 0; }
-    .iphone-portrait .content .sub-header .intro, .iphone-portrait .content .sub-header h1, .iphone-portrait .content .sub-header h2 {
-      display: none; }
-    .iphone-portrait .content .sub-header aside {
-      position: fixed;
-      top: 50px;
-      left: 0;
-      right: 0;
-      overflow-x: auto;
-      background-color: #252525;
-      font-size: 15px; }
-      .iphone-portrait .content .sub-header aside ul {
-        display: none; }
-      .iphone-portrait .content .sub-header aside ul.mobile-version {
-        display: inline-block;
-        width: 1600px; }
-        .iphone-portrait .content .sub-header aside ul.mobile-version li {
-          float: none;
-          display: inline-block;
-          margin: 0; }
-          .iphone-portrait .content .sub-header aside ul.mobile-version li a {
-            padding: 10px 30px; }
-          .iphone-portrait .content .sub-header aside ul.mobile-version li a.active {
-            border: none;
-            padding: 10px 30px; }
-  .iphone-portrait .content .projects .work .ReactStickyHeader_root {
-    display: none; }
-  .iphone-portrait .content .projects .work .examples {
-    padding-top: 45px; }
-    .iphone-portrait .content .projects .work .examples h2, .iphone-portrait .content .projects .work .examples h2 a {
-      margin: 0;
-      font-size: 12px; }
-    .iphone-portrait .content .projects .work .examples p {
-      min-width: 100%;
-      width: auto; }
-    .iphone-portrait .content .projects .work .examples .platform-logos ul {
-      padding: 0; }
-      .iphone-portrait .content .projects .work .examples .platform-logos ul li.umg {
-        width: 55%; }
-      .iphone-portrait .content .projects .work .examples .platform-logos ul li.studiohub {
-        margin-left: 30px; }
-    .iphone-portrait .content .projects .work .examples .image-wrapper {
-      margin-bottom: 20px; }
-    .iphone-portrait .content .projects .work .examples div.LWS-landing-page {
-      height: 172px; }
-    .iphone-portrait .content .projects .work .examples div.LWS-masters {
-      height: 200px; }
-    .iphone-portrait .content .projects .work .examples div.LWS-song-overview {
-      height: 680px; }
-    .iphone-portrait .content .projects .work .examples div.RWS-landing-page {
-      height: 215px; }
-    .iphone-portrait .content .projects .work .examples div.RWS-release {
-      height: 215px; }
-    .iphone-portrait .content .projects .work .examples div.RWS-scheduling {
-      height: 235px; }
-    .iphone-portrait .content .projects .work .examples div.RWS-manage-release {
-      height: 235px; }
-    .iphone-portrait .content .projects .work .examples div.RWS-components {
-      height: 300px; }
-  .iphone-portrait .content .thanks {
-    width: auto;
-    line-height: 16px; }
-    .iphone-portrait .content .thanks h1 {
-      font-size: 30px; }
+@media (min-width: 576px) {
+  html body.projects .App .container-fluid {
+    padding-right: 30px;
+    padding-left: 30px;
+    border: 2px solid yellow; }
+    html body.projects .App .container-fluid .row.fullwidth {
+      margin-left: -60px;
+      min-width: 123%; }
+    html body.projects .App .container-fluid .row img.batman {
+      width: 108%;
+      margin-top: 0;
+      position: static; }
+    html body.projects .App .container-fluid .row img.carousel {
+      width: 100%;
+      margin: 20px 0 0 20px;
+      position: static; }
+    html body.projects .App .container-fluid .row.scooby {
+      padding-top: 60px;
+      padding-bottom: 180px; }
+      html body.projects .App .container-fluid .row.scooby > div:first-child {
+        margin-right: 130px; }
+      html body.projects .App .container-fluid .row.scooby img.scooby-van {
+        top: -172px; }
+      html body.projects .App .container-fluid .row.scooby .para1 {
+        margin-left: 0;
+        max-width: 90%;
+        padding-left: 60px;
+        margin-top: 300px; }
+      html body.projects .App .container-fluid .row.scooby .para2 {
+        max-width: 90%;
+        padding-left: 60px;
+        margin-top: 0; }
+    html body.projects .App .container-fluid .row.ctn-ntw {
+      padding-top: 80px; }
+      html body.projects .App .container-fluid .row.ctn-ntw img.adv-time {
+        top: -169px;
+        right: 113px;
+        width: 265px; }
+    html body.projects .App .container-fluid .row.as div {
+      max-width: 95%;
+      padding-right: 0; }
+    html body.projects .App .container-fluid .row.as img {
+      margin-bottom: 30px;
+      width: 100%; }
+    html body.projects .App .container-fluid .row.as img.adult-swim-games {
+      margin-left: 0; }
+    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
+      margin-left: 0; }
+    html body.projects .App .container-fluid .projects-header ul {
+      display: block;
+      margin: 0 35px; }
+  html body.projects .App img.personas {
+    width: 767px;
+    margin-top: -91px; } }
 
-.iphone-portrait footer {
-  display: none !important; }
+@media (min-width: 768px) {
+  html body.projects .App .container-fluid {
+    padding-right: 60px;
+    padding-left: 60px;
+    border: 2px solid green; }
+    html body.projects .App .container-fluid .row.fullwidth {
+      margin-left: -60px;
+      min-width: 123%; }
+    html body.projects .App .container-fluid .row img.batman {
+      width: 108%;
+      margin-top: 0;
+      position: static; }
+    html body.projects .App .container-fluid .row img.carousel {
+      width: 100%;
+      margin: 20px 0 0 20px;
+      position: static; }
+    html body.projects .App .container-fluid .row.scooby {
+      padding-top: 60px;
+      padding-bottom: 180px; }
+      html body.projects .App .container-fluid .row.scooby > div:first-child {
+        margin-right: 130px; }
+      html body.projects .App .container-fluid .row.scooby .para1 {
+        margin-left: 0;
+        max-width: 90%;
+        padding-left: 60px;
+        margin-top: 300px; }
+      html body.projects .App .container-fluid .row.scooby .para2 {
+        max-width: 90%;
+        padding-left: 60px;
+        margin-top: 0; }
+      html body.projects .App .container-fluid .row.scooby img.scooby-van {
+        top: -172px; }
+    html body.projects .App .container-fluid .row.ctn-ntw {
+      padding-top: 80px; }
+      html body.projects .App .container-fluid .row.ctn-ntw img.adv-time {
+        top: -206px;
+        right: 230px;
+        width: 340px; }
+    html body.projects .App .container-fluid .row.as div {
+      max-width: 96.3%;
+      padding-right: 0;
+      padding-left: 0; }
+    html body.projects .App .container-fluid .row.as img {
+      margin-bottom: 30px;
+      width: 100%; }
+    html body.projects .App .container-fluid .row.as img.adult-swim-games {
+      margin-left: 0; }
+    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
+      margin-left: 0; }
+    html body.projects .App .container-fluid .projects-header ul {
+      display: block;
+      margin: 0 60px; }
+  html body.projects .App img.personas {
+    width: 936px;
+    margin-top: -84px; } }
 
-/* LANDSCAPE */
-.iphone-landscape header.main-header {
-  padding: 0 8px; }
-  .iphone-landscape header.main-header nav {
-    position: absolute;
-    right: 10px;
-    top: 0; }
-    .iphone-landscape header.main-header nav ul.main-nav {
-      padding: 0;
-      margin: 0;
-      float: right; }
-      .iphone-landscape header.main-header nav ul.main-nav li {
-        margin: 0 20px; }
-      .iphone-landscape header.main-header nav ul.main-nav li:last-child {
-        margin: 0; }
-    .iphone-landscape header.main-header nav ul.social {
-      display: none; }
+@media (min-width: 992px) {
+  html body.projects .App .container-fluid {
+    padding-right: 60px;
+    padding-left: 60px;
+    border: 2px solid orange; }
+    html body.projects .App .container-fluid .row.fullwidth {
+      margin-left: -60px;
+      min-width: 123%; }
+    html body.projects .App .container-fluid .row img.batman {
+      width: 180%;
+      margin-top: 50px;
+      position: absolute; }
+    html body.projects .App .container-fluid .row img.carousel {
+      width: 100%;
+      margin: 40px 0 0 20px;
+      position: static; }
+    html body.projects .App .container-fluid .row.scooby {
+      padding-top: 60px;
+      padding-bottom: 130px; }
+      html body.projects .App .container-fluid .row.scooby > div:first-child {
+        margin-right: 130px; }
+      html body.projects .App .container-fluid .row.scooby img.scooby-van {
+        top: -172px; }
+      html body.projects .App .container-fluid .row.scooby .para1 {
+        margin-left: 465px;
+        max-width: 44%;
+        min-width: 50%;
+        padding-top: 30px;
+        margin-top: 0; }
+      html body.projects .App .container-fluid .row.scooby .para2 {
+        max-width: 90%;
+        padding-left: 60px;
+        margin-top: 115px;
+        min-width: 90%; }
+    html body.projects .App .container-fluid .row.ctn-ntw img.adv-time {
+      top: -206px;
+      right: 230px;
+      width: 340px; }
+    html body.projects .App .container-fluid .row.as div {
+      max-width: 45.8%;
+      padding-right: 0;
+      padding-left: 15px; }
+    html body.projects .App .container-fluid .row.as img {
+      margin-bottom: 30px;
+      width: 90%; }
+    html body.projects .App .container-fluid .row.as img.adult-swim-games {
+      margin-left: 45px; }
+    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
+      margin-left: 0; }
+    html body.projects .App .container-fluid .projects-header ul {
+      display: block;
+      margin: 0 60px; }
+  html body.projects .App img.personas {
+    width: 520px;
+    margin-top: -123px; } }
 
-.iphone-landscape .content {
-  padding: 66px 8px 50px 8px; }
-  .iphone-landscape .content .sub-header {
-    width: 100%;
-    background-color: transparent;
-    position: static;
-    padding: 0; }
-    .iphone-landscape .content .sub-header .intro, .iphone-landscape .content .sub-header h1, .iphone-landscape .content .sub-header h2 {
-      display: none; }
-    .iphone-landscape .content .sub-header aside {
-      position: fixed;
-      top: 50px;
-      left: 0;
-      right: 0;
-      overflow-x: auto;
-      background-color: #252525;
-      font-size: 15px; }
-      .iphone-landscape .content .sub-header aside ul {
-        display: none; }
-      .iphone-landscape .content .sub-header aside ul.mobile-version {
-        display: inline-block;
-        width: 1600px; }
-        .iphone-landscape .content .sub-header aside ul.mobile-version li {
-          float: none;
-          display: inline-block;
-          margin: 0; }
-          .iphone-landscape .content .sub-header aside ul.mobile-version li a {
-            padding: 10px 30px; }
-          .iphone-landscape .content .sub-header aside ul.mobile-version li a.active {
-            border: none;
-            padding: 10px 30px; }
-  .iphone-landscape .content .projects .work .ReactStickyHeader_root {
-    display: none; }
-  .iphone-landscape .content .projects .work .examples {
-    padding-top: 45px; }
-    .iphone-landscape .content .projects .work .examples h2, .iphone-landscape .content .projects .work .examples h2 a {
-      margin: 0;
-      font-size: 12px; }
-    .iphone-landscape .content .projects .work .examples p {
-      min-width: 100%;
-      width: auto; }
-    .iphone-landscape .content .projects .work .examples .platform-logos ul {
-      padding: 0; }
-      .iphone-landscape .content .projects .work .examples .platform-logos ul li.umg {
-        width: 55%; }
-      .iphone-landscape .content .projects .work .examples .platform-logos ul li.studiohub {
-        margin-left: 30px; }
-    .iphone-landscape .content .projects .work .examples .image-wrapper {
-      margin-bottom: 20px; }
-    .iphone-landscape .content .projects .work .examples div.LWS-landing-page {
-      height: 172px; }
-    .iphone-landscape .content .projects .work .examples div.LWS-masters {
-      height: 200px; }
-    .iphone-landscape .content .projects .work .examples div.LWS-song-overview {
-      height: 680px; }
-    .iphone-landscape .content .projects .work .examples div.RWS-landing-page {
-      height: 215px; }
-    .iphone-landscape .content .projects .work .examples div.RWS-release {
-      height: 215px; }
-    .iphone-landscape .content .projects .work .examples div.RWS-scheduling {
-      height: 235px; }
-    .iphone-landscape .content .projects .work .examples div.RWS-manage-release {
-      height: 235px; }
-    .iphone-landscape .content .projects .work .examples div.RWS-components {
-      height: 300px; }
-  .iphone-landscape .content .thanks {
-    width: auto;
-    line-height: 16px; }
-    .iphone-landscape .content .thanks h1 {
-      font-size: 30px; }
+@media (min-width: 1200px) {
+  html body.projects .App .container-fluid {
+    padding-right: 60px;
+    padding-left: 60px;
+    border: 2px solid blue; }
+    html body.projects .App .container-fluid .row.fullwidth {
+      margin-left: -60px;
+      min-width: 123%; }
+    html body.projects .App .container-fluid .row img.batman {
+      width: 140%;
+      margin-top: 10px;
+      position: absolute; }
+    html body.projects .App .container-fluid .row img.carousel {
+      width: 100%;
+      margin: 50px 0 0 20px;
+      position: static; }
+    html body.projects .App .container-fluid .row.scooby {
+      padding-top: 60px;
+      padding-bottom: 0; }
+      html body.projects .App .container-fluid .row.scooby > div:first-child {
+        margin-right: 100px; }
+      html body.projects .App .container-fluid .row.scooby img.scooby-van {
+        top: -172px; }
+      html body.projects .App .container-fluid .row.scooby .para1 {
+        margin-left: 0;
+        max-width: 100%;
+        margin-right: 30px;
+        min-width: initial;
+        padding-top: 0;
+        padding-left: 0; }
+      html body.projects .App .container-fluid .row.scooby .para2 {
+        max-width: 100%;
+        padding-left: 0;
+        margin-top: 0;
+        min-width: initial; }
+    html body.projects .App .container-fluid .row.ctn-ntw img.adv-time {
+      position: absolute;
+      top: -240px;
+      right: 395px;
+      width: 400px; }
+    html body.projects .App .container-fluid .row.as div {
+      max-width: 44.2%;
+      padding-right: 0;
+      padding-left: 15px; }
+    html body.projects .App .container-fluid .row.as img {
+      margin-bottom: 30px;
+      width: 90%; }
+    html body.projects .App .container-fluid .row.as img.adult-swim-games {
+      margin-left: 45px; }
+    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
+      margin-left: 0; }
+    html body.projects .App .container-fluid .projects-header ul {
+      display: block;
+      margin: 0 60px; }
+  html body.projects .App img.personas {
+    width: 640px;
+    margin-top: -132px; } }
 
-.iphone-landscape footer {
-  display: none !important; }
+@media (min-width: 1580px) {
+  html body.projects .App .container-fluid {
+    padding-right: 60px;
+    padding-left: 60px;
+    border: 2px solid pink; }
+    html body.projects .App .container-fluid .row.fullwidth {
+      margin-left: -60px;
+      min-width: 123%; }
+    html body.projects .App .container-fluid .row img.batman {
+      width: 170%;
+      margin-top: -96px;
+      position: absolute; }
+    html body.projects .App .container-fluid .row img.carousel {
+      width: 60%;
+      margin: -9px 0 0 440px;
+      position: absolute; }
+    html body.projects .App .container-fluid .row img.cartoon-network {
+      width: 82.5%;
+      margin-left: 45px; }
+    html body.projects .App .container-fluid .row.scooby {
+      padding-top: 100px;
+      padding-bottom: 0; }
+      html body.projects .App .container-fluid .row.scooby > div {
+        margin-right: 30px; }
+      html body.projects .App .container-fluid .row.scooby > div:first-child {
+        margin-right: 0; }
+      html body.projects .App .container-fluid .row.scooby img.scooby-van {
+        top: -230px; }
+      html body.projects .App .container-fluid .row.scooby .para1 {
+        margin-left: 0;
+        max-width: 100%;
+        min-width: initial;
+        padding-top: 0;
+        padding-left: 0; }
+      html body.projects .App .container-fluid .row.scooby .para2 {
+        max-width: 100%;
+        padding-left: 0;
+        margin-top: 0;
+        min-width: initial; }
+    html body.projects .App .container-fluid .row.ctn-ntw img.adv-time {
+      position: absolute;
+      top: -240px;
+      right: 395px;
+      width: 400px; }
+    html body.projects .App .container-fluid .row.as div {
+      max-width: 44.2%;
+      padding-right: 0;
+      padding-left: 15px; }
+    html body.projects .App .container-fluid .row.as img {
+      margin-bottom: 30px;
+      width: 90%; }
+    html body.projects .App .container-fluid .row.as img.adult-swim-games {
+      margin-left: 45px; }
+    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
+      margin-left: 0; }
+    html body.projects .App .container-fluid .projects-header ul {
+      display: block;
+      margin: 0 60px; }
+  html body.projects .App img.personas {
+    width: 980px;
+    margin-top: -157px; } }
