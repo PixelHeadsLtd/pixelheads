@@ -1,9 +1,6 @@
 ﻿// Responsive for Home
 body.home-page {
     @media (min-width: 375px) {
-        .main-header {
-            border-top: 2px solid red;
-        }
         .new-section.about {
             min-height: 1777px;
             .container-fluid {
@@ -24,9 +21,6 @@ body.home-page {
     }
     
     @media (min-width: 576px) {
-        .main-header {
-            border-top: 2px solid green;
-        }
         .new-section.about {
             min-height: 1590px;
             .container-fluid {
@@ -47,9 +41,6 @@ body.home-page {
     }
       
     @media (min-width: 768px) {
-        .main-header {
-            border-top: 2px solid yellow;
-        }
         .new-section.about {
             min-height: 1155px;
             .container-fluid {
@@ -70,9 +61,6 @@ body.home-page {
     }
     
     @media (min-width: 992px) {
-        .main-header {
-            border-top: 2px solid blue;
-        }
         .new-section.about {
             min-height: 924px;
             .container-fluid {
@@ -90,9 +78,6 @@ body.home-page {
     }
       
     @media (min-width: 1200px) {
-        .main-header {
-            border-top: 2px solid pink;
-        }
         .new-section.about {
             .container-fluid {
                 padding-right: 60px;
@@ -116,7 +101,7 @@ html {
                 .container-fluid {
                     padding-right: 30px;
                     padding-left: 30px;
-                    border: 2px solid red;
+                    //border: 2px solid red;
                     .row.fullwidth {
                         margin-left: -60px;
                         min-width: 123%;
@@ -175,7 +160,7 @@ html {
                 .container-fluid {
                     padding-right: 30px;
                     padding-left: 30px;
-                    border: 2px solid yellow;
+                    //border: 2px solid yellow;
                     .row.fullwidth {
                         margin-left: -60px;
                         min-width: 123%;
@@ -234,7 +219,7 @@ html {
                 .container-fluid {
                     padding-right: 60px;
                     padding-left: 60px;
-                    border: 2px solid green;
+                    //border: 2px solid green;
                     .row.fullwidth {
                         margin-left: -60px;
                         min-width: 123%;
@@ -293,7 +278,7 @@ html {
                 .container-fluid {
                     padding-right: 60px;
                     padding-left: 60px;
-                    border: 2px solid orange;
+                    //border: 2px solid orange;
                     .row.fullwidth {
                         margin-left: -60px;
                         min-width: 123%;
@@ -353,7 +338,7 @@ html {
                 .container-fluid {
                     padding-right: 60px;
                     padding-left: 60px;
-                    border: 2px solid blue;
+                    //border: 2px solid blue;
                     .row.fullwidth {
                         margin-left: -60px;
                         min-width: 123%;
@@ -415,7 +400,7 @@ html {
                 .container-fluid {
                     padding-right: 60px;
                     padding-left: 60px;
-                    border: 2px solid pink;
+                    //border: 2px solid pink;
                     .row.fullwidth {
                         margin-left: -60px;
                         min-width: 123%;
