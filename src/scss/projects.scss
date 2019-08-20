@@ -290,4 +290,52 @@ html {
             }
         }
     }
+
+    // BBC
+    body.bbc {
+        .App {
+            .container-fluid {
+                background:$white url('../images/clients/pages/bbc/tyre-marks-grey.png') no-repeat;
+                background-position: top right -322px;
+                background-size: 1200px;
+                .projects-header {
+                    ul.umg-overview {
+                        li {width:25%}
+                        li:last-child {width:20%}
+                    }
+                }
+                .row {
+                    margin-right: 0 !important;
+                    margin-left: 0 !important;
+                    .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+                        padding-right:10%;
+                        padding-left:10%
+                    }
+                }
+                .row.youtube {
+                    position: relative;
+                    ul {
+                        position: absolute;
+                        top: 82%;
+                        left: 34%;
+                        width: 100%;
+                        li {
+                            display: inline-block;
+                            width: 20%;
+                            margin-right: 10%;
+                            p, h4 {color:$white}
+                        }
+                    }
+                }
+            }
+            .banner {
+                background:url('../images/clients/pages/bbc/banner.png') no-repeat top left;
+                position:fixed;
+                left:0;
+                right:0;
+                top:0;
+                height:440px;
+            }
+        }
+    }
 } // end html

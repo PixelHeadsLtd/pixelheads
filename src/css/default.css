@@ -127,7 +127,9 @@ section.new-section.home {
         height: 100%; }
 
 section.new-section.about {
-  background-color: #076c9b; }
+  background-color: #076c9b;
+  border-bottom: 45px solid #fff;
+  min-height: 879px; }
   section.new-section.about .row {
     padding-top: 50px; }
   section.new-section.about .comment {
@@ -649,6 +651,42 @@ html body.turner .App .banner {
   top: 0;
   height: 440px; }
 
+html body.bbc .App .container-fluid {
+  background: #fff url("../images/clients/pages/bbc/tyre-marks-grey.png") no-repeat;
+  background-position: top right -322px;
+  background-size: 1200px; }
+  html body.bbc .App .container-fluid .projects-header ul.umg-overview li {
+    width: 25%; }
+  html body.bbc .App .container-fluid .projects-header ul.umg-overview li:last-child {
+    width: 20%; }
+  html body.bbc .App .container-fluid .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important; }
+    html body.bbc .App .container-fluid .row .col-xs-12, html body.bbc .App .container-fluid .row .col-sm-12, html body.bbc .App .container-fluid .row .col-md-12, html body.bbc .App .container-fluid .row .col-lg-12 {
+      padding-right: 10%;
+      padding-left: 10%; }
+  html body.bbc .App .container-fluid .row.youtube {
+    position: relative; }
+    html body.bbc .App .container-fluid .row.youtube ul {
+      position: absolute;
+      top: 82%;
+      left: 34%;
+      width: 100%; }
+      html body.bbc .App .container-fluid .row.youtube ul li {
+        display: inline-block;
+        width: 20%;
+        margin-right: 10%; }
+        html body.bbc .App .container-fluid .row.youtube ul li p, html body.bbc .App .container-fluid .row.youtube ul li h4 {
+          color: #fff; }
+
+html body.bbc .App .banner {
+  background: url("../images/clients/pages/bbc/banner.png") no-repeat top left;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 440px; }
+
 /********************************************** LOAD CUSTOM FONTS **********************************************/
 @font-face {
   font-family: 'latohairline';
@@ -761,10 +799,11 @@ html body.turner .App .banner {
 .mw1000 {
   max-width: 1000px !important; }
 
-.w100 {
-  width: 100% !important;
-  float: left;
-  clear: left; }
+.w-100 {
+  width: 100% !important; }
+
+.w-80 {
+  width: 80% !important; }
 
 .wauto {
   width: auto !important; }
@@ -803,6 +842,9 @@ hr {
   border-top: 1px solid white;
   border-bottom: none; }
 
+.centered {
+  text-align: center; }
+
 .spaced {
   letter-spacing: 0.15rem !important; }
 
@@ -811,6 +853,28 @@ hr {
 
 .relative {
   position: relative; }
+
+.row.clear-spacing {
+  margin-right: 0 !important;
+  margin-left: 0 !important; }
+  .row.clear-spacing .col-1, .row.clear-spacing .col-2, .row.clear-spacing .col-3, .row.clear-spacing .col-4, .row.clear-spacing .col-5, .row.clear-spacing .col-6,
+  .row.clear-spacing .col-7, .row.clear-spacing .col-8, .row.clear-spacing .col-9, .row.clear-spacing .col-10, .row.clear-spacing .col-11, .row.clear-spacing .col-12,
+  .row.clear-spacing .col, .row.clear-spacing .col-auto, .row.clear-spacing .col-sm-1, .row.clear-spacing .col-sm-2, .row.clear-spacing .col-sm-3,
+  .row.clear-spacing .col-sm-4, .row.clear-spacing .col-sm-5, .row.clear-spacing .col-sm-6, .row.clear-spacing .col-sm-7, .row.clear-spacing .col-sm-8,
+  .row.clear-spacing .col-sm-9, .row.clear-spacing .col-sm-10, .row.clear-spacing .col-sm-11, .row.clear-spacing .col-sm-12,
+  .row.clear-spacing .col-sm, .row.clear-spacing .col-sm-auto, .row.clear-spacing .col-md-1, .row.clear-spacing .col-md-2,
+  .row.clear-spacing .col-md-3, .row.clear-spacing .col-md-4, .row.clear-spacing .col-md-5, .row.clear-spacing .col-md-6,
+  .row.clear-spacing .col-md-7, .row.clear-spacing .col-md-8, .row.clear-spacing .col-md-9, .row.clear-spacing .col-md-10,
+  .row.clear-spacing .col-md-11, .row.clear-spacing .col-md-12, .row.clear-spacing .col-md, .row.clear-spacing .col-md-auto,
+  .row.clear-spacing .col-lg-1, .row.clear-spacing .col-lg-2, .row.clear-spacing .col-lg-3, .row.clear-spacing .col-lg-4,
+  .row.clear-spacing .col-lg-5, .row.clear-spacing .col-lg-6, .row.clear-spacing .col-lg-7, .row.clear-spacing .col-lg-8,
+  .row.clear-spacing .col-lg-9, .row.clear-spacing .col-lg-10, .row.clear-spacing .col-lg-11, .row.clear-spacing .col-lg-12,
+  .row.clear-spacing .col-lg, .row.clear-spacing .col-lg-auto, .row.clear-spacing .col-xl-1, .row.clear-spacing .col-xl-2,
+  .row.clear-spacing .col-xl-3, .row.clear-spacing .col-xl-4, .row.clear-spacing .col-xl-5, .row.clear-spacing .col-xl-6,
+  .row.clear-spacing .col-xl-7, .row.clear-spacing .col-xl-8, .row.clear-spacing .col-xl-9, .row.clear-spacing .col-xl-10,
+  .row.clear-spacing .col-xl-11, .row.clear-spacing .col-xl-12, .row.clear-spacing .col-xl, .row.clear-spacing .col-xl-auto {
+    padding-right: 0 !important;
+    padding-left: 0 !important; }
 
 /* Header */
 /* Video Format Icons */
@@ -1036,9 +1100,16 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 375px) {
+  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+    padding-right: 0;
+    padding-left: 0; }
   html body.projects .App .container-fluid {
     padding-right: 30px;
     padding-left: 30px; }
+    html body.projects .App .container-fluid .main-header img {
+      display: none; }
+    html body.projects .App .container-fluid .main-header nav.main-nav {
+      margin-left: 40px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -1082,6 +1153,8 @@ hr {
       margin-left: 0; }
     html body.projects .App .container-fluid .row.as img.adult-swim-videos {
       margin-left: 0; }
+    html body.projects .App .container-fluid .row.youtube ul {
+      display: none; }
     html body.projects .App .container-fluid .projects-header ul {
       display: none; }
   html body.projects .App img.personas {
@@ -1089,9 +1162,16 @@ hr {
     margin-top: -79px; } }
 
 @media (min-width: 576px) {
+  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+    padding-right: 0;
+    padding-left: 0; }
   html body.projects .App .container-fluid {
     padding-right: 30px;
     padding-left: 30px; }
+    html body.projects .App .container-fluid .main-header img {
+      display: block; }
+    html body.projects .App .container-fluid .main-header nav.main-nav {
+      margin-left: 60px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -1135,6 +1215,8 @@ hr {
       margin-left: 0; }
     html body.projects .App .container-fluid .row.as img.adult-swim-videos {
       margin-left: 0; }
+    html body.projects .App .container-fluid .row.youtube ul {
+      display: none; }
     html body.projects .App .container-fluid .projects-header ul {
       display: block;
       margin: 0 35px; }
@@ -1143,9 +1225,16 @@ hr {
     margin-top: -91px; } }
 
 @media (min-width: 768px) {
+  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+    padding-right: 0;
+    padding-left: 0; }
   html body.projects .App .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
+    html body.projects .App .container-fluid .main-header img {
+      display: block; }
+    html body.projects .App .container-fluid .main-header nav.main-nav {
+      margin-left: 60px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -1190,6 +1279,8 @@ hr {
       margin-left: 0; }
     html body.projects .App .container-fluid .row.as img.adult-swim-videos {
       margin-left: 0; }
+    html body.projects .App .container-fluid .row.youtube ul {
+      display: block; }
     html body.projects .App .container-fluid .projects-header ul {
       display: block;
       margin: 0 60px; }
@@ -1198,9 +1289,16 @@ hr {
     margin-top: -84px; } }
 
 @media (min-width: 992px) {
+  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+    padding-right: 10%;
+    padding-left: 10%; }
   html body.projects .App .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
+    html body.projects .App .container-fluid .main-header img {
+      display: block; }
+    html body.projects .App .container-fluid .main-header nav.main-nav {
+      margin-left: 60px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -1245,6 +1343,8 @@ hr {
       margin-left: 45px; }
     html body.projects .App .container-fluid .row.as img.adult-swim-videos {
       margin-left: 0; }
+    html body.projects .App .container-fluid .row.youtube ul {
+      display: block; }
     html body.projects .App .container-fluid .projects-header ul {
       display: block;
       margin: 0 60px; }
@@ -1253,9 +1353,16 @@ hr {
     margin-top: -123px; } }
 
 @media (min-width: 1200px) {
+  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+    padding-right: 10%;
+    padding-left: 10%; }
   html body.projects .App .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
+    html body.projects .App .container-fluid .main-header img {
+      display: block; }
+    html body.projects .App .container-fluid .main-header nav.main-nav {
+      margin-left: 60px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -1302,6 +1409,8 @@ hr {
       margin-left: 45px; }
     html body.projects .App .container-fluid .row.as img.adult-swim-videos {
       margin-left: 0; }
+    html body.projects .App .container-fluid .row.youtube ul {
+      display: block; }
     html body.projects .App .container-fluid .projects-header ul {
       display: block;
       margin: 0 60px; }
@@ -1310,9 +1419,16 @@ hr {
     margin-top: -132px; } }
 
 @media (min-width: 1580px) {
+  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+    padding-right: 10%;
+    padding-left: 10%; }
   html body.projects .App .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
+    html body.projects .App .container-fluid .main-header img {
+      display: block; }
+    html body.projects .App .container-fluid .main-header nav.main-nav {
+      margin-left: 60px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -1363,6 +1479,8 @@ hr {
       margin-left: 45px; }
     html body.projects .App .container-fluid .row.as img.adult-swim-videos {
       margin-left: 0; }
+    html body.projects .App .container-fluid .row.youtube ul {
+      display: block; }
     html body.projects .App .container-fluid .projects-header ul {
       display: block;
       margin: 0 60px; }

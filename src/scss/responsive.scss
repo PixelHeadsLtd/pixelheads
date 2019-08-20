@@ -288,10 +288,24 @@ html {
     body.projects {
         .App {
             @media (min-width: 375px) {
+                .container-fluid.bbc-container {
+                    .row {
+                        .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+                            padding-right:0;
+                            padding-left:0;
+                        }
+                    }
+                }
                 .container-fluid {
                     padding-right: 30px;
                     padding-left: 30px;
                     //border: 2px solid red;
+                    .main-header {
+                        img {display:none}
+                        nav.main-nav {
+                            margin-left:40px;
+                        }
+                    }
                     .row.fullwidth {
                         margin-left: -60px;
                         min-width: 123%;
@@ -341,16 +355,33 @@ html {
                         img.adult-swim-games {margin-left: 0;}
                         img.adult-swim-videos {margin-left: 0;}
                     }
+                    .row.youtube {
+                        ul {display:none}
+                    }
                     .projects-header ul {display: none}
                 }
                 img.personas {width:497px; margin-top:-79px}
             }
             
             @media (min-width: 576px) {
+                .container-fluid.bbc-container {
+                    .row {
+                        .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+                            padding-right:0;
+                            padding-left:0;
+                        }
+                    }
+                }
                 .container-fluid {
                     padding-right: 30px;
                     padding-left: 30px;
                     //border: 2px solid yellow;
+                    .main-header {
+                        img {display:block}
+                        nav.main-nav {
+                            margin-left:60px;
+                        }
+                    }
                     .row.fullwidth {
                         margin-left: -60px;
                         min-width: 123%;
@@ -400,16 +431,33 @@ html {
                         img.adult-swim-games {margin-left: 0;}
                         img.adult-swim-videos {margin-left: 0;}
                     }
+                    .row.youtube {
+                        ul {display:none}
+                    }
                     .projects-header ul {display: block; margin:0 35px}
                 }
                 img.personas {width: 767px; margin-top:-91px}
             }
               
             @media (min-width: 768px) {
+                .container-fluid.bbc-container {
+                    .row {
+                        .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+                            padding-right:0;
+                            padding-left:0;
+                        }
+                    }
+                }
                 .container-fluid {
                     padding-right: 60px;
                     padding-left: 60px;
                     //border: 2px solid green;
+                    .main-header {
+                        img {display:block}
+                        nav.main-nav {
+                            margin-left:60px;
+                        }
+                    }
                     .row.fullwidth {
                         margin-left: -60px;
                         min-width: 123%;
@@ -459,16 +507,33 @@ html {
                         img.adult-swim-games {margin-left: 0;}
                         img.adult-swim-videos {margin-left: 0;}
                     }
+                    .row.youtube {
+                        ul {display:block}
+                    }
                     .projects-header ul {display: block; margin:0 60px}
                 }
                 img.personas {width:936px; margin-top:-84px}
             }
             
             @media (min-width: 992px) {
+                .container-fluid.bbc-container {
+                    .row {
+                        .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+                            padding-right:10%;
+                            padding-left:10%;
+                        }
+                    }
+                }
                 .container-fluid {
                     padding-right: 60px;
                     padding-left: 60px;
                     //border: 2px solid orange;
+                    .main-header {
+                        img {display:block}
+                        nav.main-nav {
+                            margin-left:60px;
+                        }
+                    }
                     .row.fullwidth {
                         margin-left: -60px;
                         min-width: 123%;
@@ -519,16 +584,33 @@ html {
                         img.adult-swim-games {margin-left: 45px;}
                         img.adult-swim-videos {margin-left: 0;}
                     }
+                    .row.youtube {
+                        ul {display:block}
+                    }
                     .projects-header ul {display: block; margin:0 60px}
                 }
                 img.personas { width: 520px; margin-top: -123px;}
             }
               
             @media (min-width: 1200px) {
+                .container-fluid.bbc-container {
+                    .row {
+                        .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+                            padding-right:10%;
+                            padding-left:10%;
+                        }
+                    }
+                }
                 .container-fluid {
                     padding-right: 60px;
                     padding-left: 60px;
                     //border: 2px solid blue;
+                    .main-header {
+                        img {display:block}
+                        nav.main-nav {
+                            margin-left:60px;
+                        }
+                    }
                     .row.fullwidth {
                         margin-left: -60px;
                         min-width: 123%;
@@ -581,16 +663,33 @@ html {
                         img.adult-swim-games {margin-left: 45px;}
                         img.adult-swim-videos {margin-left: 0;}
                     }
+                    .row.youtube {
+                        ul {display:block}
+                    }
                     .projects-header ul {display: block; margin:0 60px}
                 }
                 img.personas {width:640px; margin-top:-132px}
             }
 
             @media (min-width: 1580px) {
+                .container-fluid.bbc-container {
+                    .row {
+                        .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+                            padding-right:10%;
+                            padding-left:10%;
+                        }
+                    }
+                }
                 .container-fluid {
                     padding-right: 60px;
                     padding-left: 60px;
                     //border: 2px solid pink;
+                    .main-header {
+                        img {display:block}
+                        nav.main-nav {
+                            margin-left:60px;
+                        }
+                    }
                     .row.fullwidth {
                         margin-left: -60px;
                         min-width: 123%;
@@ -646,6 +745,9 @@ html {
                         img {margin-bottom: 30px; width:90%;}
                         img.adult-swim-games {margin-left: 45px;}
                         img.adult-swim-videos {margin-left: 0;}
+                    }
+                    .row.youtube {
+                        ul {display:block}
                     }
                     .projects-header ul {display: block; margin:0 60px}
                 }

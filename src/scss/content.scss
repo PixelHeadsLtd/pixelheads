@@ -81,6 +81,8 @@ section.new-section.home {
 // about section
 section.new-section.about {
     background-color: $about;
+    border-bottom:45px solid $white;
+    min-height: 879px;
     .row {padding-top:50px}
     .comment {color:$pale-blue!important}
     h1 {color:$white}

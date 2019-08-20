@@ -329,3 +329,39 @@ html body.turner .App .banner {
   right: 0;
   top: 0;
   height: 440px; }
+
+html body.bbc .App .container-fluid {
+  background: #fff url("../images/clients/pages/bbc/tyre-marks-grey.png") no-repeat;
+  background-position: top right -322px;
+  background-size: 1200px; }
+  html body.bbc .App .container-fluid .projects-header ul.umg-overview li {
+    width: 25%; }
+  html body.bbc .App .container-fluid .projects-header ul.umg-overview li:last-child {
+    width: 20%; }
+  html body.bbc .App .container-fluid .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important; }
+    html body.bbc .App .container-fluid .row .col-xs-12, html body.bbc .App .container-fluid .row .col-sm-12, html body.bbc .App .container-fluid .row .col-md-12, html body.bbc .App .container-fluid .row .col-lg-12 {
+      padding-right: 10%;
+      padding-left: 10%; }
+  html body.bbc .App .container-fluid .row.youtube {
+    position: relative; }
+    html body.bbc .App .container-fluid .row.youtube ul {
+      position: absolute;
+      top: 82%;
+      left: 34%;
+      width: 100%; }
+      html body.bbc .App .container-fluid .row.youtube ul li {
+        display: inline-block;
+        width: 20%;
+        margin-right: 10%; }
+        html body.bbc .App .container-fluid .row.youtube ul li p, html body.bbc .App .container-fluid .row.youtube ul li h4 {
+          color: #fff; }
+
+html body.bbc .App .banner {
+  background: url("../images/clients/pages/bbc/banner.png") no-repeat top left;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 440px; }

@@ -181,9 +181,16 @@
       margin-bottom: 0; } }
 
 @media (min-width: 375px) {
+  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+    padding-right: 0;
+    padding-left: 0; }
   html body.projects .App .container-fluid {
     padding-right: 30px;
     padding-left: 30px; }
+    html body.projects .App .container-fluid .main-header img {
+      display: none; }
+    html body.projects .App .container-fluid .main-header nav.main-nav {
+      margin-left: 40px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -227,6 +234,8 @@
       margin-left: 0; }
     html body.projects .App .container-fluid .row.as img.adult-swim-videos {
       margin-left: 0; }
+    html body.projects .App .container-fluid .row.youtube ul {
+      display: none; }
     html body.projects .App .container-fluid .projects-header ul {
       display: none; }
   html body.projects .App img.personas {
@@ -234,9 +243,16 @@
     margin-top: -79px; } }
 
 @media (min-width: 576px) {
+  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+    padding-right: 0;
+    padding-left: 0; }
   html body.projects .App .container-fluid {
     padding-right: 30px;
     padding-left: 30px; }
+    html body.projects .App .container-fluid .main-header img {
+      display: block; }
+    html body.projects .App .container-fluid .main-header nav.main-nav {
+      margin-left: 60px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -280,6 +296,8 @@
       margin-left: 0; }
     html body.projects .App .container-fluid .row.as img.adult-swim-videos {
       margin-left: 0; }
+    html body.projects .App .container-fluid .row.youtube ul {
+      display: none; }
     html body.projects .App .container-fluid .projects-header ul {
       display: block;
       margin: 0 35px; }
@@ -288,9 +306,16 @@
     margin-top: -91px; } }
 
 @media (min-width: 768px) {
+  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+    padding-right: 0;
+    padding-left: 0; }
   html body.projects .App .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
+    html body.projects .App .container-fluid .main-header img {
+      display: block; }
+    html body.projects .App .container-fluid .main-header nav.main-nav {
+      margin-left: 60px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -335,6 +360,8 @@
       margin-left: 0; }
     html body.projects .App .container-fluid .row.as img.adult-swim-videos {
       margin-left: 0; }
+    html body.projects .App .container-fluid .row.youtube ul {
+      display: block; }
     html body.projects .App .container-fluid .projects-header ul {
       display: block;
       margin: 0 60px; }
@@ -343,9 +370,16 @@
     margin-top: -84px; } }
 
 @media (min-width: 992px) {
+  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+    padding-right: 10%;
+    padding-left: 10%; }
   html body.projects .App .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
+    html body.projects .App .container-fluid .main-header img {
+      display: block; }
+    html body.projects .App .container-fluid .main-header nav.main-nav {
+      margin-left: 60px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -390,6 +424,8 @@
       margin-left: 45px; }
     html body.projects .App .container-fluid .row.as img.adult-swim-videos {
       margin-left: 0; }
+    html body.projects .App .container-fluid .row.youtube ul {
+      display: block; }
     html body.projects .App .container-fluid .projects-header ul {
       display: block;
       margin: 0 60px; }
@@ -398,9 +434,16 @@
     margin-top: -123px; } }
 
 @media (min-width: 1200px) {
+  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+    padding-right: 10%;
+    padding-left: 10%; }
   html body.projects .App .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
+    html body.projects .App .container-fluid .main-header img {
+      display: block; }
+    html body.projects .App .container-fluid .main-header nav.main-nav {
+      margin-left: 60px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -447,6 +490,8 @@
       margin-left: 45px; }
     html body.projects .App .container-fluid .row.as img.adult-swim-videos {
       margin-left: 0; }
+    html body.projects .App .container-fluid .row.youtube ul {
+      display: block; }
     html body.projects .App .container-fluid .projects-header ul {
       display: block;
       margin: 0 60px; }
@@ -455,9 +500,16 @@
     margin-top: -132px; } }
 
 @media (min-width: 1580px) {
+  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+    padding-right: 10%;
+    padding-left: 10%; }
   html body.projects .App .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
+    html body.projects .App .container-fluid .main-header img {
+      display: block; }
+    html body.projects .App .container-fluid .main-header nav.main-nav {
+      margin-left: 60px; }
     html body.projects .App .container-fluid .row.fullwidth {
       margin-left: -60px;
       min-width: 123%; }
@@ -508,6 +560,8 @@
       margin-left: 45px; }
     html body.projects .App .container-fluid .row.as img.adult-swim-videos {
       margin-left: 0; }
+    html body.projects .App .container-fluid .row.youtube ul {
+      display: block; }
     html body.projects .App .container-fluid .projects-header ul {
       display: block;
       margin: 0 60px; }

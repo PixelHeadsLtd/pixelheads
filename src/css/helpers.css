@@ -19,10 +19,11 @@
 .mw1000 {
   max-width: 1000px !important; }
 
-.w100 {
-  width: 100% !important;
-  float: left;
-  clear: left; }
+.w-100 {
+  width: 100% !important; }
+
+.w-80 {
+  width: 80% !important; }
 
 .wauto {
   width: auto !important; }
@@ -61,6 +62,9 @@ hr {
   border-top: 1px solid white;
   border-bottom: none; }
 
+.centered {
+  text-align: center; }
+
 .spaced {
   letter-spacing: 0.15rem !important; }
 
@@ -69,3 +73,25 @@ hr {
 
 .relative {
   position: relative; }
+
+.row.clear-spacing {
+  margin-right: 0 !important;
+  margin-left: 0 !important; }
+  .row.clear-spacing .col-1, .row.clear-spacing .col-2, .row.clear-spacing .col-3, .row.clear-spacing .col-4, .row.clear-spacing .col-5, .row.clear-spacing .col-6,
+  .row.clear-spacing .col-7, .row.clear-spacing .col-8, .row.clear-spacing .col-9, .row.clear-spacing .col-10, .row.clear-spacing .col-11, .row.clear-spacing .col-12,
+  .row.clear-spacing .col, .row.clear-spacing .col-auto, .row.clear-spacing .col-sm-1, .row.clear-spacing .col-sm-2, .row.clear-spacing .col-sm-3,
+  .row.clear-spacing .col-sm-4, .row.clear-spacing .col-sm-5, .row.clear-spacing .col-sm-6, .row.clear-spacing .col-sm-7, .row.clear-spacing .col-sm-8,
+  .row.clear-spacing .col-sm-9, .row.clear-spacing .col-sm-10, .row.clear-spacing .col-sm-11, .row.clear-spacing .col-sm-12,
+  .row.clear-spacing .col-sm, .row.clear-spacing .col-sm-auto, .row.clear-spacing .col-md-1, .row.clear-spacing .col-md-2,
+  .row.clear-spacing .col-md-3, .row.clear-spacing .col-md-4, .row.clear-spacing .col-md-5, .row.clear-spacing .col-md-6,
+  .row.clear-spacing .col-md-7, .row.clear-spacing .col-md-8, .row.clear-spacing .col-md-9, .row.clear-spacing .col-md-10,
+  .row.clear-spacing .col-md-11, .row.clear-spacing .col-md-12, .row.clear-spacing .col-md, .row.clear-spacing .col-md-auto,
+  .row.clear-spacing .col-lg-1, .row.clear-spacing .col-lg-2, .row.clear-spacing .col-lg-3, .row.clear-spacing .col-lg-4,
+  .row.clear-spacing .col-lg-5, .row.clear-spacing .col-lg-6, .row.clear-spacing .col-lg-7, .row.clear-spacing .col-lg-8,
+  .row.clear-spacing .col-lg-9, .row.clear-spacing .col-lg-10, .row.clear-spacing .col-lg-11, .row.clear-spacing .col-lg-12,
+  .row.clear-spacing .col-lg, .row.clear-spacing .col-lg-auto, .row.clear-spacing .col-xl-1, .row.clear-spacing .col-xl-2,
+  .row.clear-spacing .col-xl-3, .row.clear-spacing .col-xl-4, .row.clear-spacing .col-xl-5, .row.clear-spacing .col-xl-6,
+  .row.clear-spacing .col-xl-7, .row.clear-spacing .col-xl-8, .row.clear-spacing .col-xl-9, .row.clear-spacing .col-xl-10,
+  .row.clear-spacing .col-xl-11, .row.clear-spacing .col-xl-12, .row.clear-spacing .col-xl, .row.clear-spacing .col-xl-auto {
+    padding-right: 0 !important;
+    padding-left: 0 !important; }
