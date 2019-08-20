@@ -1,64 +1,184 @@
 @media (min-width: 375px) {
+  body.home-page .main-header img {
+    display: none; }
+  body.home-page .main-header nav.main-nav {
+    margin-left: 40px; }
+  body.home-page section.new-section.home {
+    background-position: center top 6px; }
+    body.home-page section.new-section.home .home-wrapper {
+      padding-top: 320px; }
   body.home-page .new-section.about {
-    min-height: 1777px; }
+    min-height: 1845px; }
     body.home-page .new-section.about .container-fluid {
-      padding-right: 60px;
-      padding-left: 60px; }
+      padding-right: 40px;
+      padding-left: 40px; }
+      body.home-page .new-section.about .container-fluid .row {
+        margin-right: 0;
+        margin-left: 0; }
+        body.home-page .new-section.about .container-fluid .row .col-sm-12 {
+          padding-right: 0;
+          padding-left: 0; }
       body.home-page .new-section.about .container-fluid .icons {
-        bottom: 60px; }
+        bottom: 30px; }
         body.home-page .new-section.about .container-fluid .icons div {
-          margin: 0 5%; }
+          margin: 0 2%; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
-    padding-left: 0; } }
+    padding-left: 0; }
+    body.home-page .new-section.projects .container-fluid .projects-header nav > a {
+      display: none; }
+  body.home-page .new-section.contact img {
+    margin: 50% auto 0 auto; }
+  body.home-page .new-section.contact ul {
+    margin: 20% 0 0 22%; }
+    body.home-page .new-section.contact ul li {
+      float: left;
+      clear: left;
+      margin-bottom: 10px; } }
 
 @media (min-width: 576px) {
+  body.home-page .main-header img {
+    display: block; }
+  body.home-page .main-header nav.main-nav {
+    margin-left: 60px; }
+  body.home-page section.new-section.home {
+    background-position: center top 40px; }
+    body.home-page section.new-section.home .home-wrapper {
+      padding-top: 400px; }
   body.home-page .new-section.about {
     min-height: 1590px; }
     body.home-page .new-section.about .container-fluid {
       padding-right: 60px;
       padding-left: 60px; }
+      body.home-page .new-section.about .container-fluid .row {
+        margin-right: -15px;
+        margin-left: -15px; }
+        body.home-page .new-section.about .container-fluid .row .col-sm-12 {
+          padding-right: 15px;
+          padding-left: 15px; }
       body.home-page .new-section.about .container-fluid .icons {
         bottom: 60px; }
         body.home-page .new-section.about .container-fluid .icons div {
           margin: 0 10%; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
-    padding-left: 0; } }
+    padding-left: 0; }
+    body.home-page .new-section.projects .container-fluid .projects-header nav > a {
+      display: inline-block; }
+  body.home-page .new-section.contact img {
+    margin: 15% auto 0 auto; }
+  body.home-page .new-section.contact ul {
+    margin: 40px 0 0 0; }
+    body.home-page .new-section.contact ul li {
+      float: none;
+      clear: none;
+      margin-bottom: 0; } }
 
 @media (min-width: 768px) {
+  body.home-page .main-header img {
+    display: block; }
+  body.home-page .main-header nav.main-nav {
+    margin-left: 60px; }
+  body.home-page section.new-section.home {
+    background-position: center top 40px; }
+    body.home-page section.new-section.home .home-wrapper {
+      padding-top: 400px; }
   body.home-page .new-section.about {
     min-height: 1155px; }
     body.home-page .new-section.about .container-fluid {
       padding-right: 60px;
       padding-left: 60px; }
+      body.home-page .new-section.about .container-fluid .row {
+        margin-right: -15px;
+        margin-left: -15px; }
+        body.home-page .new-section.about .container-fluid .row .col-sm-12 {
+          padding-right: 15px;
+          padding-left: 15px; }
       body.home-page .new-section.about .container-fluid .icons {
         bottom: 90px; }
         body.home-page .new-section.about .container-fluid .icons div {
           margin: 0 5%; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
-    padding-left: 0; } }
+    padding-left: 0; }
+    body.home-page .new-section.projects .container-fluid .projects-header nav > a {
+      display: inline-block; }
+  body.home-page .new-section.contact img {
+    margin: 15% auto 0 auto; }
+  body.home-page .new-section.contact ul {
+    margin: 40px 0 0 0; }
+    body.home-page .new-section.contact ul li {
+      float: none;
+      clear: none;
+      margin-bottom: 0; } }
 
 @media (min-width: 992px) {
+  body.home-page .main-header img {
+    display: block; }
+  body.home-page .main-header nav.main-nav {
+    margin-left: 60px; }
+  body.home-page section.new-section.home {
+    background-position: center top 40px; }
+    body.home-page section.new-section.home .home-wrapper {
+      padding-top: 400px; }
   body.home-page .new-section.about {
     min-height: 924px; }
     body.home-page .new-section.about .container-fluid {
       padding-right: 60px;
       padding-left: 60px; }
+      body.home-page .new-section.about .container-fluid .row {
+        margin-right: -15px;
+        margin-left: -15px; }
+        body.home-page .new-section.about .container-fluid .row .col-sm-12 {
+          padding-right: 15px;
+          padding-left: 15px; }
       body.home-page .new-section.about .container-fluid .icons {
         bottom: 90px; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
-    padding-left: 0; } }
+    padding-left: 0; }
+    body.home-page .new-section.projects .container-fluid .projects-header nav > a {
+      display: inline-block; }
+  body.home-page .new-section.contact img {
+    margin: 15% auto 0 auto; }
+  body.home-page .new-section.contact ul {
+    margin: 40px 0 0 0; }
+    body.home-page .new-section.contact ul li {
+      float: none;
+      clear: none;
+      margin-bottom: 0; } }
 
 @media (min-width: 1200px) {
+  body.home-page .main-header img {
+    display: block; }
+  body.home-page .main-header nav.main-nav {
+    margin-left: 60px; }
+  body.home-page section.new-section.home {
+    background-position: center top 40px; }
+    body.home-page section.new-section.home .home-wrapper {
+      padding-top: 400px; }
   body.home-page .new-section.about .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
+    body.home-page .new-section.about .container-fluid .row {
+      margin-right: -15px;
+      margin-left: -15px; }
+      body.home-page .new-section.about .container-fluid .row .col-sm-12 {
+        padding-right: 15px;
+        padding-left: 15px; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
-    padding-left: 0; } }
+    padding-left: 0; }
+    body.home-page .new-section.projects .container-fluid .projects-header nav > a {
+      display: inline-block; }
+  body.home-page .new-section.contact img {
+    margin: 15% auto 0 auto; }
+  body.home-page .new-section.contact ul {
+    margin: 40px 0 0 0; }
+    body.home-page .new-section.contact ul li {
+      float: none;
+      clear: none;
+      margin-bottom: 0; } }
 
 @media (min-width: 375px) {
   html body.projects .App .container-fluid {

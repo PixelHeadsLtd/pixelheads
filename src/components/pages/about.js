@@ -10,7 +10,7 @@ class About extends Component {
       <div className="container-fluid">
         <h1>About</h1>
         <div className="row">
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-3 col-md-6 col-sm-12">
             <p className="comment">OK, so who’s this Mike bloke? </p>
             <p>He’s a creative fella, can turn his 
             hand to most things, but there’s a bit more to 
@@ -24,7 +24,7 @@ class About extends Component {
             which forms part of the RCA with a Bauhaus 
             approach to design teaching.</p>
           </div>
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-3 col-md-6 col-sm-12">
             <p className="comment">Is he still talking?</p>
             <p>Following graduation, Mike’s first positions were 
               working for Design & Marketing agencies. 
@@ -37,7 +37,7 @@ class About extends Component {
               contracting career and ended up working
               client-side for some of the larger organisations.</p>
           </div>
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-3 col-md-6 col-sm-12">
             <p>No particular reason for 
               this, it’s just the way things went. </p>
             <p>During this time he’d been lucky enough 
@@ -50,7 +50,7 @@ class About extends Component {
               he’s been hands-on and in his experience
               most back-end developers</p>
           </div>
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-3 col-md-6 col-sm-12">
             <p>need a creative
               front-ender to reproduce pixel-perfect
               representations of the final designs, that’s where 
