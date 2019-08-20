@@ -17,7 +17,7 @@ class About extends Component {
             him than that...</p>
             <p>Like many folks growing up, Mike didn’t really 
             know what career he wanted, he was always 
-            sketching and had a passion for Art, Design 
+            sketching and had a passion for Art, Design, 
             Music and Photography.</p>
             <p>He studied Design and Design History at 
             Ravensbourne College of Design & Communication
@@ -56,7 +56,7 @@ class About extends Component {
               representations of the final designs, that’s where 
               his skills shine.</p>
             <p>Mike’s a fully seasoned CSSer, acting as main mentor 
-              on all things SASS, LESS & HTML5 related. He has working
+              on all things SASS, LESS & HTML5 related. He has strong
               FE experience of RESTFUL API's such as Angular & React.</p>
             <p className="comment">Some clients looking for pure UXers see 
               the dev experience as detremental. Please don’t!
