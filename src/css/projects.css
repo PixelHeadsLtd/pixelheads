@@ -48,9 +48,7 @@ html body.projects {
   html body.projects .App {
     overflow: hidden;
     letter-spacing: .04rem;
-    /* Main Header */
     /* Links */
-    /* Projects Headers */
     /* Lists */
     /* Text */
     /* Layout */
@@ -61,141 +59,121 @@ html body.projects {
       margin: 0 0 6px 0;
       text-transform: uppercase;
       letter-spacing: .2rem; }
+    html body.projects .App .banner.umg-active nav ul li:nth-child(1) a {
+      padding-left: 15px; }
+      html body.projects .App .banner.umg-active nav ul li:nth-child(1) a i {
+        display: block; }
+    html body.projects .App .banner.turner-active nav ul li:nth-child(2) a {
+      padding-left: 15px; }
+      html body.projects .App .banner.turner-active nav ul li:nth-child(2) a i {
+        display: block; }
+    html body.projects .App .banner.bbc-active nav ul li:nth-child(3) a {
+      padding-left: 15px; }
+      html body.projects .App .banner.bbc-active nav ul li:nth-child(3) a i {
+        display: block; }
+    html body.projects .App .banner.monun-active nav ul li:nth-child(4) a {
+      padding-left: 15px; }
+      html body.projects .App .banner.monun-active nav ul li:nth-child(4) a i {
+        display: block; }
+    html body.projects .App .banner.setanta-active nav ul li:nth-child(5) a {
+      padding-left: 15px; }
+      html body.projects .App .banner.setanta-active nav ul li:nth-child(5) a i {
+        display: block; }
+    html body.projects .App .banner.guinnessactive nav ul li:nth-child(6) a {
+      padding-left: 15px; }
+      html body.projects .App .banner.guinnessactive nav ul li:nth-child(6) a i {
+        display: block; }
+    html body.projects .App .banner {
+      /* Projects Headers */ }
+      html body.projects .App .banner nav {
+        position: absolute;
+        z-index: 1;
+        left: 60px;
+        top: 68px; }
+        html body.projects .App .banner nav h4 {
+          color: #fff;
+          font-size: .8rem;
+          font-family: 'latolight'; }
+        html body.projects .App .banner nav ul {
+          padding: 0; }
+          html body.projects .App .banner nav ul li {
+            font-size: .65rem;
+            margin-bottom: 4px;
+            display: block;
+            position: relative; }
+            html body.projects .App .banner nav ul li a {
+              color: #fff;
+              font-family: 'latolight';
+              font-weight: bolder; }
+              html body.projects .App .banner nav ul li a i {
+                display: none;
+                width: 9px;
+                height: 9px;
+                border-top: 1px solid #888;
+                border-right: 1px solid #888;
+                transform: rotate(45deg);
+                position: absolute;
+                left: -2px;
+                top: 2px; }
+      html body.projects .App .banner .projects-header {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        bottom: 25px;
+        left: 0;
+        right: 0; }
+        html body.projects .App .banner .projects-header h1 {
+          color: white;
+          margin: 70px 0 105px 0; }
+        html body.projects .App .banner .projects-header p {
+          text-transform: uppercase;
+          font-size: .6rem;
+          text-align: left;
+          line-height: 1.1rem;
+          margin: 0;
+          padding: 0;
+          color: #999;
+          letter-spacing: .2rem; }
+          html body.projects .App .banner .projects-header p label {
+            float: left;
+            clear: left;
+            width: 100%;
+            text-transform: uppercase;
+            color: #ff0049; }
+        html body.projects .App .banner .projects-header h3 {
+          text-align: left;
+          margin: 0 0 3px 0;
+          padding: 0 0 3px 0;
+          border-bottom: 1px dashed #666;
+          width: 100%;
+          float: left;
+          text-transform: uppercase;
+          color: white;
+          font-family: 'latolight';
+          letter-spacing: .3rem;
+          font-size: .8rem;
+          font-weight: bolder; }
+        html body.projects .App .banner .projects-header ul {
+          display: block;
+          margin: 0 60px;
+          padding: 0;
+          float: none; }
+          html body.projects .App .banner .projects-header ul li {
+            display: block;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            float: left; }
     html body.projects .App .container-fluid {
       background: white;
       margin-top: 440px; }
-    html body.projects .App .main-header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 999;
-      background-color: #ffffff;
-      height: 44px;
-      width: 100% !important;
-      border-bottom: 1px solid #eee; }
-      html body.projects .App .main-header img {
-        position: absolute;
-        top: 8px;
-        right: 60px; }
-      html body.projects .App .main-header nav.main-nav {
-        position: relative;
-        margin-left: 60px;
-        white-space: nowrap;
-        float: left; }
-        html body.projects .App .main-header nav.main-nav a:hover {
-          text-decoration: none !important; }
-        html body.projects .App .main-header nav.main-nav a.active {
-          opacity: 1;
-          border-bottom: 2px solid #ff0049; }
-        html body.projects .App .main-header nav.main-nav a {
-          height: 18px;
-          display: inline-block;
-          margin: 15px 40px 0 0;
-          padding: 0;
-          cursor: pointer;
-          color: #252525 !important;
-          opacity: 0.6;
-          font-family: latobold;
-          font-size: .63rem;
-          text-transform: uppercase;
-          border-bottom: 2px solid #ffffff;
-          letter-spacing: .05rem; }
     html body.projects .App a {
       color: #00a3cc;
       text-decoration: none; }
     html body.projects .App a:hover {
       color: #252525;
       text-decoration: none; }
-    html body.projects .App .projects-header {
-      width: 100%;
-      display: inline-block;
-      text-align: center;
-      position: absolute;
-      top: -286px;
-      left: 0;
-      right: 0; }
-      html body.projects .App .projects-header h1 {
-        color: white;
-        margin: 70px 0 105px 0; }
-      html body.projects .App .projects-header p {
-        text-transform: uppercase;
-        font-size: .6rem;
-        text-align: left;
-        line-height: 1.1rem;
-        margin: 0;
-        padding: 0;
-        color: #999;
-        letter-spacing: .2rem; }
-        html body.projects .App .projects-header p label {
-          float: left;
-          clear: left;
-          width: 100%;
-          text-transform: uppercase;
-          color: #ff0049; }
-      html body.projects .App .projects-header h3 {
-        text-align: left;
-        margin: 0 0 3px 0;
-        padding: 0 0 3px 0;
-        border-bottom: 1px dashed #666;
-        width: 100%;
-        float: left;
-        text-transform: uppercase;
-        color: white;
-        font-family: 'latolight';
-        letter-spacing: .3rem;
-        font-size: .8rem;
-        font-weight: bolder; }
-      html body.projects .App .projects-header ul {
-        display: block;
-        margin: 0 60px;
-        padding: 0;
-        float: none; }
-        html body.projects .App .projects-header ul li {
-          display: block;
-          margin: 0;
-          padding: 0;
-          width: 25%;
-          float: left; }
-      html body.projects .App .projects-header .mini-menu {
-        position: absolute;
-        top: 30px; }
-        html body.projects .App .projects-header .mini-menu ul li {
-          display: inline-block;
-          margin: 0 40px 0 0;
-          padding: 0;
-          width: auto;
-          text-align: left;
-          line-height: .9rem; }
-          html body.projects .App .projects-header .mini-menu ul li a {
-            font-size: .6rem;
-            text-transform: uppercase;
-            letter-spacing: .05rem; }
-      html body.projects .App .projects-header .quick-links {
-        position: absolute;
-        right: 60px;
-        top: 20px; }
-        html body.projects .App .projects-header .quick-links h3 {
-          color: #252525;
-          border: none;
-          font-size: .7rem;
-          text-transform: uppercase;
-          letter-spacing: .05rem;
-          margin-bottom: 0; }
-        html body.projects .App .projects-header .quick-links ul {
-          width: auto;
-          list-style-type: square; }
-          html body.projects .App .projects-header .quick-links ul li {
-            width: auto;
-            display: list-item;
-            margin: 0 0 0 5px;
-            text-indent: -3px; }
-            html body.projects .App .projects-header .quick-links ul li a {
-              font-size: .6rem;
-              letter-spacing: .05rem;
-              text-transform: uppercase; }
-            html body.projects .App .projects-header .quick-links ul li a:hover {
-              color: #252525; }
     html body.projects .App ul li {
       margin: 0 0 10px 0; }
     html body.projects .App h1 {
@@ -255,10 +233,6 @@ html body.umg .App .row .red-panel {
 html body.umg .App .container-fluid {
   background: #fff url("../images/clients/pages/umg/background.png") no-repeat 0 0;
   background-size: 100%; }
-  html body.umg .App .container-fluid .projects-header ul.umg-overview li {
-    width: 25%; }
-    html body.umg .App .container-fluid .projects-header ul.umg-overview li li:last-child {
-      width: 13%; }
 
 html body.umg .App .banner {
   background: url("../images/clients/pages/umg/banner.png") no-repeat top left;
@@ -280,10 +254,6 @@ html body.turner .App .row .red-panel {
 
 html body.turner .App .container-fluid {
   background-size: 100%; }
-  html body.turner .App .container-fluid .projects-header ul.umg-overview li {
-    width: 25%; }
-  html body.turner .App .container-fluid .projects-header ul.umg-overview li:last-child {
-    width: 20%; }
   html body.turner .App .container-fluid img.batman {
     width: 170%;
     margin-top: -96px;
@@ -334,10 +304,6 @@ html body.bbc .App .container-fluid {
   background: #fff url("../images/clients/pages/bbc/tyre-marks-grey.png") no-repeat;
   background-position: top right -322px;
   background-size: 1200px; }
-  html body.bbc .App .container-fluid .projects-header ul.umg-overview li {
-    width: 25%; }
-  html body.bbc .App .container-fluid .projects-header ul.umg-overview li:last-child {
-    width: 20%; }
   html body.bbc .App .container-fluid .row {
     margin-right: 0 !important;
     margin-left: 0 !important; }
@@ -360,6 +326,14 @@ html body.bbc .App .container-fluid {
 
 html body.bbc .App .banner {
   background: url("../images/clients/pages/bbc/banner.png") no-repeat top left;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 440px; }
+
+html body.setanta .App .banner, html body.monum .App .banner, html body.guinness .App .banner {
+  background: url("../images/clients/pages/setanta/banner.png") no-repeat top left;
   position: fixed;
   left: 0;
   right: 0;

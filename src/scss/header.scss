@@ -1,9 +1,11 @@
 ﻿@import "variables";
 @import "mixins";
 @import "images";
+
 .main-header {
     position: fixed;
     top:0;
+    left:0;
     z-index: 999;
     background-color:$white;
     height: 44px;
@@ -15,8 +17,7 @@
         white-space: nowrap;
         float: left;
         a {
-            -webkit-transition: all 0.5s ease-in;
-            height: 16px;
+            height: 17px;
             display:inline-block;
             margin:15px 40px 0 0;
             padding: 0;
@@ -27,32 +28,10 @@
             text-transform: uppercase;
             //border-bottom: 2px solid $white;
         }
-        .active-marker {
-            -webkit-transition: all 0.1s ease-in;
-            height:2px;
-            width:34px;
-            background-color:$red;
-            display:inline-block;
-            position: absolute;
-            top:30px;
-            left:0;
-        }
-        a.active.about ~ .active-marker {
-            left: 73px;
-            width: 38px;
-        }
-        a.active.projects ~ .active-marker {
-            left: 152px;
-            width: 53px;
-        }
-        a.active.contact ~ .active-marker {
-            left: 246px;
-            width: 50px;
-        }
         a:hover {text-decoration: none!important}
         a.active {
             opacity:1;
-            //border-bottom: 2px solid $red
+            border-bottom: 2px solid $red
         }
     }
 }

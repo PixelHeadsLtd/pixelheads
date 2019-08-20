@@ -38,7 +38,6 @@ changeActiveMenu(index){
               <a className={this.state.isActiveIndex === "1" ? 'active about' : ''} onClick={() => this.toggleActiveClass("1") } href='#section-about'>About</a>
               <a className={this.state.isActiveIndex === "2" ? 'active projects' : ''} onClick={() => this.toggleActiveClass("2")} href='#section-projects'>Projects</a>
               <a className={this.state.isActiveIndex === "3" ? 'active contact' : ''} onClick={() => this.toggleActiveClass("3")} href='#section-contact'>Contact</a>
-              <div className="active-marker"></div>
             </nav>
             <img src={PixelHeadsLogo} alt="" />
           </header>}

@@ -3,8 +3,10 @@ import ReactBody from 'react-body';
 import { goToTop } from 'react-scrollable-anchor'
 
 // images
-import PixelHeadsLogo from '../../images/pixelheads-logo.svg'
 import YouTube from '../../images/clients/pages/bbc/youtube.png'
+
+import ProjectsNav from './projects-nav'
+import ProjectsMenu from './projects-menu'
 
 class BBC extends Component {
   render() {
@@ -12,18 +14,9 @@ class BBC extends Component {
     return (
       <div>
         <ReactBody className="bbc projects" />     
-        <div className="banner"></div>
-        <div className="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12 bbc-container">
-            <header className="main-header">
-                <nav className="main-nav">
-                  <a href="/#section-home">Home</a>
-                  <a href="/#section-about">About</a>
-                  <a className="active" href="/#section-projects">Projects</a>
-                  <a href="/#section-contact">Contact</a>
-                </nav>
-                <img src={PixelHeadsLogo} alt="" />
-            </header>
-            <header className="projects-header">
+        <div className="banner bbc-active">
+          <ProjectsMenu />
+          <header className="projects-header">
                 <h1>BBC Worldwide</h1>
                 <ul>
                     <li>
@@ -36,8 +29,8 @@ class BBC extends Component {
                     </li>
                     <li>
                         <h3>Services</h3>
-                        <p>UI Design for Desktop<br />
-                          E-Com, Interactive Design & VOD
+                        <p>UX UI Design<br />
+                          E-Com, FE Dev & VOD
                         </p>
                     </li>
                     <li>
@@ -45,6 +38,11 @@ class BBC extends Component {
                         <p>2007 - 2009</p>
                     </li>
                 </ul>
+            </header>
+        </div>
+        <div className="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12 bbc-container">
+            <header className="main-header">
+              <ProjectsNav />
             </header>
             <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">

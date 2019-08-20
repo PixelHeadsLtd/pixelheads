@@ -42,6 +42,7 @@
 .main-header {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 999;
   background-color: #fff;
   height: 44px;
@@ -56,8 +57,7 @@
     white-space: nowrap;
     float: left; }
     .main-header nav.main-nav a {
-      -webkit-transition: all 0.5s ease-in;
-      height: 16px;
+      height: 17px;
       display: inline-block;
       margin: 15px 40px 0 0;
       padding: 0;
@@ -66,25 +66,8 @@
       opacity: 0.6;
       font: 300 0.63rem "latobold";
       text-transform: uppercase; }
-    .main-header nav.main-nav .active-marker {
-      -webkit-transition: all 0.1s ease-in;
-      height: 2px;
-      width: 34px;
-      background-color: #e6233e;
-      display: inline-block;
-      position: absolute;
-      top: 30px;
-      left: 0; }
-    .main-header nav.main-nav a.active.about ~ .active-marker {
-      left: 73px;
-      width: 38px; }
-    .main-header nav.main-nav a.active.projects ~ .active-marker {
-      left: 152px;
-      width: 53px; }
-    .main-header nav.main-nav a.active.contact ~ .active-marker {
-      left: 246px;
-      width: 50px; }
     .main-header nav.main-nav a:hover {
       text-decoration: none !important; }
     .main-header nav.main-nav a.active {
-      opacity: 1; }
+      opacity: 1;
+      border-bottom: 2px solid #e6233e; }

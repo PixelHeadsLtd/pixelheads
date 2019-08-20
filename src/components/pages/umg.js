@@ -3,7 +3,6 @@ import ReactBody from 'react-body';
 import { goToTop } from 'react-scrollable-anchor'
 
 import StuHubLogo from '../../images/clients/pages/umg/studiohub-logo.png'
-import PixelHeadsLogo from '../../images/pixelheads-logo.svg'
 import Personas from '../../images/clients/pages/umg/personas.png'
 import Mobile from '../../images/clients/pages/umg/mobile.png'
 import StudioHub from '../../images/clients/pages/umg/studiohub.png'
@@ -13,23 +12,17 @@ import RightsHub from '../../images/clients/pages/umg/rightshub.png'
 import SupplyChainLogo from '../../images/clients/pages/umg/supplychain-logo.png'
 import SupplyChain from '../../images/clients/pages/umg/supplychain.png'
 
+import ProjectsNav from './projects-nav'
+import ProjectsMenu from './projects-menu'
+
 class UMG extends Component {
   render() {
     goToTop()
     return (
       <div>
         <ReactBody className="umg projects" />     
-        <div className="banner"></div>
-        <div className="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12 umg-mobile">
-            <header className="main-header">
-                <nav className="main-nav">
-                  <a href="/#section-home">Home</a>
-                  <a href="/#section-about">About</a>
-                  <a className="active" href="/#section-projects">Projects</a>
-                  <a href="/#section-contact">Contact</a>
-                </nav>
-                <img src={PixelHeadsLogo} alt="" />
-            </header>
+        <div className="banner umg-active">
+            <ProjectsMenu />
             <header className="projects-header">
                 <h1>Universal Music</h1>
                 <ul className="umg-overview">
@@ -50,6 +43,11 @@ class UMG extends Component {
                         <p>2013 - 2019</p>
                     </li>
                 </ul>
+            </header>
+        </div>
+        <div className="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12 umg-mobile">
+            <header className="main-header">
+                <ProjectsNav />
             </header>
             <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">

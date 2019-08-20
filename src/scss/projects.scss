@@ -19,138 +19,138 @@ html {
                 text-transform: uppercase;
                 letter-spacing: .2rem;
             }
-            .container-fluid {background:white; margin-top:440px;}
-            /* Main Header */
-            .main-header {
-                position: fixed;
-                top:0;
-                left:0;
-                right:0;
-                z-index: 999;
-                background-color:#ffffff;
-                height: 44px;
-                width: 100%!important;
-                border-bottom: 1px solid #eee;
-                img {position: absolute; top: 8px; right: 60px;}
-                nav.main-nav {
-                    position: relative;
-                    margin-left: 60px;
-                    white-space: nowrap;
-                    float: left;
-                    a:hover {text-decoration: none!important}
-                    a.active {
-                        opacity:1;
-                        border-bottom: 2px solid #ff0049;
+            .banner.umg-active {
+                nav ul {
+                    li:nth-child(1) a {
+                        padding-left: 15px;
+                        i {display: block;}
                     }
-                    a {
-                        height: 18px;
-                        display:inline-block;
-                        margin:15px 40px 0 0;
-                        padding: 0;
-                        cursor:pointer;
-                        color:#252525!important;
-                        opacity:0.6;
-                        font-family: latobold;
-                        font-size:.63rem;
-                        text-transform: uppercase;
-                        border-bottom: 2px solid #ffffff;
-                        letter-spacing: .05rem;
+                }
+            }
+            .banner.turner-active {
+                nav ul {
+                    li:nth-child(2) a {
+                        padding-left: 15px;
+                        i {display: block;}
                     }
-                } // end main-nav
-            } // end header
-        
-            /* Links */
-            a {color:#00a3cc; text-decoration: none}
-            a:hover {color:#252525; text-decoration: none}
-        
-            /* Projects Headers */
-            .projects-header {
-                width: 100%;
-                display: inline-block;
-                text-align: center;
-                position: absolute;
-                top: -286px;
-                left: 0;
-                right: 0;
-                h1 {color:white; margin:70px 0 105px 0}
-                p {
-                    text-transform: uppercase; 
-                    font-size: .6rem; 
-                    text-align: left; 
-                    line-height: 1.1rem; 
-                    margin:0; 
-                    padding:0;
-                    color:#999;
-                    letter-spacing: .2rem;
-                    label {float:left; clear:left; width:100%; text-transform: uppercase; color:#ff0049}
                 }
-                h3 {
-                    text-align: left; 
-                    margin: 0 0 3px 0; 
-                    padding: 0 0 3px 0; 
-                    border-bottom:1px dashed #666; 
-                    width:100%; 
-                    float:left;
-                    text-transform: uppercase;
-                    color:white;
-                    font-family: 'latolight';
-                    letter-spacing: .3rem;
-                    font-size:.8rem;
-                    font-weight: bolder;
+            }
+            .banner.bbc-active {
+                nav ul {
+                    li:nth-child(3) a {
+                        padding-left: 15px;
+                        i {display: block;}
+                    }
                 }
-                ul {
-                    display: block; 
-                    margin:0 60px; 
-                    padding: 0; 
-                    float:none;
-                    li {display:block; margin: 0; padding: 0; width: 25%; float:left}
+            }
+            .banner.monun-active {
+                nav ul {
+                    li:nth-child(4) a {
+                        padding-left: 15px;
+                        i {display: block;}
+                    }
                 }
-                .mini-menu {
-                    position: absolute; 
-                    top: 30px;
+            }
+            .banner.setanta-active {
+                nav ul {
+                    li:nth-child(5) a {
+                        padding-left: 15px;
+                        i {display: block;}
+                    }
+                }
+            }
+            .banner.guinnessactive {
+                nav ul {
+                    li:nth-child(6) a {
+                        padding-left: 15px;
+                        i {display: block;}
+                    }
+                }
+            }
+            .banner {
+                nav {
+                    position: absolute;
+                    z-index: 1;
+                    left: 60px;
+                    top: 68px;
+                    h4 {color:$white; font-size: .8rem; font-family:'latolight'}
                     ul {
+                        padding:0;
                         li {
-                            display:inline-block; 
-                            margin:0 40px 0 0; 
-                            padding:0; 
-                            width:auto; 
-                            text-align: left; 
-                            line-height: .9rem;
+                            font-size: .65rem;
+                            margin-bottom:4px;
+                            display: block;
+                            position: relative;
                             a {
-                                font-size: .6rem; 
-                                text-transform: uppercase; 
-                                letter-spacing: .05rem;
+                                color:$white;
+                                font-family: 'latolight';
+                                font-weight: bolder;
+                                i {
+                                    display: none;
+                                    width:9px;
+                                    height:9px;
+                                    border-top:1px solid $midGrey;
+                                    border-right:1px solid $midGrey;
+                                    transform: rotate(45deg);
+                                    position: absolute;
+                                    left: -2px;
+                                    top: 2px;
+                                }
                             }
                         }
                     }
-                }  // end mini-menu
-                .quick-links { 
-                    position: absolute; 
-                    right:60px; 
-                    top:20px;
+                }
+                /* Projects Headers */
+                .projects-header {
+                    width: 100%;
+                    display: inline-block;
+                    text-align: center;
+                    position: absolute;
+                    bottom: 25px;
+                    left: 0;
+                    right: 0;
+                    h1 {color:white; margin:70px 0 105px 0}
+                    p {
+                        text-transform: uppercase; 
+                        font-size: .6rem; 
+                        text-align: left; 
+                        line-height: 1.1rem; 
+                        margin:0; 
+                        padding:0;
+                        color:#999;
+                        letter-spacing: .2rem;
+                        label {float:left; clear:left; width:100%; text-transform: uppercase; color:#ff0049}
+                    }
                     h3 {
-                        color:#252525; 
-                        border:none; 
-                        font-size: .7rem; 
+                        text-align: left; 
+                        margin: 0 0 3px 0; 
+                        padding: 0 0 3px 0; 
+                        border-bottom:1px dashed #666; 
+                        width:100%; 
+                        float:left;
                         text-transform: uppercase;
-                        letter-spacing: .05rem;
-                        margin-bottom: 0;
+                        color:white;
+                        font-family: 'latolight';
+                        letter-spacing: .3rem;
+                        font-size:.8rem;
+                        font-weight: bolder;
                     }
-                    ul { 
-                        width:auto; 
-                        list-style-type: square;
-                        li {
-                            width:auto; 
-                            display:list-item; 
-                            margin: 0 0 0 5px; 
-                            text-indent: -3px;
-                            a {font-size: .6rem; letter-spacing: .05rem; text-transform: uppercase;}
-                            a:hover {color:#252525}
-                        }
+                    ul {
+                        display: block; 
+                        margin:0 60px; 
+                        padding: 0; 
+                        float:none;
+                        li {display:block; margin: 0; padding: 0; width: 25%; float:left}
                     }
-                 } // end quick-links
-            } // end projects header
-        
+                } // end projects header
+            }
+            .container-fluid {
+                background:white; 
+                margin-top:440px;
+            }
+            /* Links */
+            a {color:#00a3cc; text-decoration: none}
+            a:hover {color:#252525; text-decoration: none}
             /* Lists */
             ul li { margin: 0 0 10px 0}
         
@@ -186,7 +186,7 @@ html {
 html {
     // UMG
     body.umg {
-        .App {
+        .App {     
             img.personas {width:100%; margin-top:-160px}
             .row {
                 .red-panel {
@@ -195,16 +195,9 @@ html {
                     label {color:white}
                 }
             }
-            .container-fluid {
-                background:#fff url('../images/clients/pages/umg/background.png') no-repeat 0 0;
-                background-size:100%;
-                .projects-header {
-                    ul.umg-overview {
-                        li {width: 25%;
-                        li:last-child {width:13%}
-                    }
-                }
-            }
+        .container-fluid {
+            background:#fff url('../images/clients/pages/umg/background.png') no-repeat 0 0;
+            background-size:100%;
         }
         .banner {
             background:url('../images/clients/pages/umg/banner.png') no-repeat top left;
@@ -230,12 +223,6 @@ html {
             }
             .container-fluid {
                 background-size:100%;
-                .projects-header {
-                    ul.umg-overview {
-                        li {width:25%}
-                        li:last-child {width:20%}
-                    }
-                } 
                 img.batman {
                     width:170%;
                     margin-top:-96px;
@@ -298,12 +285,6 @@ html {
                 background:$white url('../images/clients/pages/bbc/tyre-marks-grey.png') no-repeat;
                 background-position: top right -322px;
                 background-size: 1200px;
-                .projects-header {
-                    ul.umg-overview {
-                        li {width:25%}
-                        li:last-child {width:20%}
-                    }
-                }
                 .row {
                     margin-right: 0 !important;
                     margin-left: 0 !important;
@@ -330,6 +311,22 @@ html {
             }
             .banner {
                 background:url('../images/clients/pages/bbc/banner.png') no-repeat top left;
+                position:fixed;
+                left:0;
+                right:0;
+                top:0;
+                height:440px;
+            }
+        }
+    }
+
+    // Setanta
+    body.setanta, body.monum, body.guinness {
+        .App {
+            .container-fluid {
+            }
+            .banner {
+                background:url('../images/clients/pages/setanta/banner.png') no-repeat top left;
                 position:fixed;
                 left:0;
                 right:0;
