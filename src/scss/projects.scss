@@ -68,11 +68,19 @@ html {
                 }
             }
             .banner {
+                height: 395px;
+                background-size:100%!important;
+                background-position: center center;
+                background-repeat: no-repeat;
+                position:fixed;
+                left:0;
+                right:0;
+                top:45px;
                 nav {
                     position: absolute;
                     z-index: 1;
                     left: 60px;
-                    top: 68px;
+                    top: 10px;
                     h4 {color:$white; font-size: .8rem; font-family:'latolight'}
                     ul {
                         padding:0;
@@ -200,12 +208,8 @@ html {
             background-size:100%;
         }
         .banner {
-            background:url('../images/clients/pages/umg/banner.png') no-repeat top left;
-            position:fixed;
-            left:0;
-            right:0;
-            top:0;
-            height:440px;
+            background-image: url('../images/clients/pages/umg/banner.png');
+            background-color: $jetBlack;
             }
         }
     }
@@ -268,12 +272,8 @@ html {
                 }
             }
             .banner {
-                background:url('../images/clients/pages/turner/banner.png') no-repeat top left;
-                position:fixed;
-                left:0;
-                right:0;
-                top:0;
-                height:440px;
+                background-image:url('../images/clients/pages/turner/banner.png');
+                background-color:$jetBlack;
             }
         }
     }
@@ -308,14 +308,13 @@ html {
                         }
                     }
                 }
+                .row.topgear-grouped {
+                    margin-top:-100px;
+                }
             }
             .banner {
-                background:url('../images/clients/pages/bbc/banner.png') no-repeat top left;
-                position:fixed;
-                left:0;
-                right:0;
-                top:0;
-                height:440px;
+                background-image: url('../images/clients/pages/bbc/banner.png');
+                background-color: $jetBlack;
             }
         }
     }
@@ -326,12 +325,7 @@ html {
             .container-fluid {
             }
             .banner {
-                background:url('../images/clients/pages/setanta/banner.png') no-repeat top left;
-                position:fixed;
-                left:0;
-                right:0;
-                top:0;
-                height:440px;
+                background:url('../images/clients/pages/setanta/banner.png');
             }
         }
     }

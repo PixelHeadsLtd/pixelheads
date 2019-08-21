@@ -4,6 +4,9 @@ import { goToTop } from 'react-scrollable-anchor'
 
 // images
 import YouTube from '../../images/clients/pages/bbc/youtube.png'
+import TGGrouped from '../../images/clients/pages/bbc/grouped.png'
+import CarNews from '../../images/clients/pages/bbc/car-news.png'
+import MotionGallery from '../../images/clients/pages/bbc/motion-gallery.png'
 
 import ProjectsNav from './projects-nav'
 import ProjectsMenu from './projects-menu'
@@ -91,6 +94,42 @@ class BBC extends Component {
                   </ul>
                   <img src={YouTube} alt="" className="w-100" />
                 </div>
+            </div>
+            <div className="row">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img src={CarNews} className="w-100" alt="" />
+                </div>
+            </div>
+            <div className="row topgear-grouped">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img src={TGGrouped} className="w-100" alt="" />
+                </div>
+            </div>
+            <div className="row">
+              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>Motion Gallery</h2>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">      
+                    <p>
+                      Design the BBC Motion Gallery e-com website. BBC Motion Gallery sells BBC content VOD
+                      to various companies from Advertising Corporations to TV Documentaries. The site sells
+                      content that both Royalty and Royalty Free content.
+                    </p>
+              </div>
+              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <p>
+                      My role was to research the User Base, design the UI and site architecture/navigation,
+                      search, basket & checkout etc. Just to note. Web trends have changed consuderably since 2008,
+                      so the UI here may look a bit dated.
+                    </p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <img src={MotionGallery} className="w-100" alt="" />
+              </div>
             </div>
         </div>
       </div>

@@ -2,13 +2,14 @@
 body.home-page {
     @media (min-width: 375px) {
         .main-header {
+            border-top:2px solid red;
             img {display:none}
             nav.main-nav {
                 margin-left:40px;
             }
         }
         section.new-section.home {
-            background-position: center top 6px;
+            background-position: center top 5px;
             .home-wrapper {
                 padding-top: 320px;
             }
@@ -21,6 +22,7 @@ body.home-page {
                 .row {
                     margin-right: 0;
                     margin-left: 0;
+                    padding-top:0;
                     .col-sm-12 {
                         padding-right:0;
                         padding-left:0;
@@ -60,15 +62,16 @@ body.home-page {
     
     @media (min-width: 576px) {
         .main-header {
+            border-top:2px solid green;
             img {display:block}
             nav.main-nav {
                 margin-left:60px;
             }
         }
         section.new-section.home {
-            background-position: center top 40px;
+            background-position: center top 5px;
             .home-wrapper {
-                padding-top: 400px;
+                padding-top: 320px;
             }
         }
         .new-section.about {
@@ -79,6 +82,7 @@ body.home-page {
                 .row {
                     margin-right: -15px;
                     margin-left: -15px;
+                    padding-top:0;
                     .col-sm-12 {
                         padding-right:15px;
                         padding-left:15px;
@@ -118,15 +122,16 @@ body.home-page {
       
     @media (min-width: 768px) {
         .main-header {
+            border-top:2px solid orange;
             img {display:block}
             nav.main-nav {
                 margin-left:60px;
             }
         }
         section.new-section.home {
-            background-position: center top 40px;
+            background-position: center top 5px;
             .home-wrapper {
-                padding-top: 400px;
+                padding-top: 320px;
             }
         }
         .new-section.about {
@@ -137,13 +142,14 @@ body.home-page {
                 .row {
                     margin-right: -15px;
                     margin-left: -15px;
+                    padding-top:0;
                     .col-sm-12 {
                         padding-right:15px;
                         padding-left:15px;
                     }
                 }
                 .icons {
-                    bottom:90px;
+                    bottom:60px;
                     div {margin: 0 5%;}
                 }
             }
@@ -176,15 +182,16 @@ body.home-page {
     
     @media (min-width: 992px) {
         .main-header {
+            border-top:2px solid blue;
             img {display:block}
             nav.main-nav {
                 margin-left:60px;
             }
         }
         section.new-section.home {
-            background-position: center top 40px;
+            background-position: center top 5px;
             .home-wrapper {
-                padding-top: 400px;
+                padding-top: 320px;
             }
         }
         .new-section.about {
@@ -195,6 +202,7 @@ body.home-page {
                 .row {
                     margin-right: -15px;
                     margin-left: -15px;
+                    padding-top:0;
                     .col-sm-12 {
                         padding-right:15px;
                         padding-left:15px;
@@ -231,15 +239,16 @@ body.home-page {
       
     @media (min-width: 1200px) {
         .main-header {
+            border-top:2px solid pink;
             img {display:block}
             nav.main-nav {
                 margin-left:60px;
             }
         }
         section.new-section.home {
-            background-position: center top 40px;
+            background-position: center top 5px;
             .home-wrapper {
-                padding-top: 400px;
+                padding-top: 320px;
             }
         }
         .new-section.about {
@@ -249,11 +258,13 @@ body.home-page {
                 .row {
                     margin-right: -15px;
                     margin-left: -15px;
+                    padding-top:0;
                     .col-sm-12 {
                         padding-right:15px;
                         padding-left:15px;
                     }
                 }
+                .icons {bottom:235px}
             }
         }
         .new-section.projects {
@@ -281,6 +292,61 @@ body.home-page {
             }
         }
     }    
+    @media (min-width: 1500px) {
+        .main-header {
+            border-top:2px solid yellow;
+            img {display:block}
+            nav.main-nav {
+                margin-left:60px;
+            }
+        }
+        section.new-section.home {
+            background-position: center top 40px;
+            .home-wrapper {
+                padding-top: 400px;
+            }
+        }
+        .new-section.about {
+            .container-fluid {
+                padding-right: 60px;
+                padding-left: 60px;
+                .row {
+                    margin-right: -15px;
+                    margin-left: -15px;
+                    padding-top:50px;
+                    .col-sm-12 {
+                        padding-right:15px;
+                        padding-left:15px;
+                    }
+                }
+                .icons {bottom:100px}
+            }
+        }
+        .new-section.projects {
+            .container-fluid {
+                padding-right: 0;
+                padding-left: 0;
+                .projects-header {
+                    nav {
+                        > a {display:inline-block}
+                    }
+                }
+            }
+        }
+        .new-section.contact {
+            img {
+                margin: 15% auto 0 auto;
+            }
+            ul {
+                margin: 40px 0 0 0;
+                li {
+                    float: none;
+                    clear: none;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }  
 }
 
 // ----------------------------------- Responsive for Projects ----------------------------------
