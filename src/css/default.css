@@ -651,8 +651,14 @@ html body.bbc .App .banner {
   background-image: url("../images/clients/pages/bbc/banner.png");
   background-color: #000000; }
 
-html body.setanta .App .banner, html body.monum .App .banner, html body.guinness .App .banner {
-  background: url("../images/clients/pages/setanta/banner.png"); }
+html body.monum .App .banner {
+  background-image: url("../images/clients/pages/monum/banner.png");
+  background-color: #000000;
+  background-position: bottom center !important; }
+
+html body.setanta .App .banner, html body.guinness .App .banner {
+  background-image: url("../images/clients/pages/setanta/banner.png");
+  background-color: #000000; }
 
 /********************************************** LOAD CUSTOM FONTS **********************************************/
 @font-face {
@@ -868,12 +874,10 @@ hr {
 
 /********************************************** START MIXINS **********************************************/
 @media (min-width: 375px) {
-  body.home-page .main-header {
-    border-top: 2px solid red; }
-    body.home-page .main-header img {
-      display: none; }
-    body.home-page .main-header nav.main-nav {
-      margin-left: 40px; }
+  body.home-page .main-header img {
+    display: none; }
+  body.home-page .main-header nav.main-nav {
+    margin-left: 40px; }
   body.home-page section.new-section.home {
     background-position: center top 5px; }
     body.home-page section.new-section.home .home-wrapper {
@@ -909,12 +913,10 @@ hr {
       margin-bottom: 10px; } }
 
 @media (min-width: 576px) {
-  body.home-page .main-header {
-    border-top: 2px solid green; }
-    body.home-page .main-header img {
-      display: block; }
-    body.home-page .main-header nav.main-nav {
-      margin-left: 60px; }
+  body.home-page .main-header img {
+    display: block; }
+  body.home-page .main-header nav.main-nav {
+    margin-left: 60px; }
   body.home-page section.new-section.home {
     background-position: center top 5px; }
     body.home-page section.new-section.home .home-wrapper {
@@ -950,12 +952,10 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 768px) {
-  body.home-page .main-header {
-    border-top: 2px solid orange; }
-    body.home-page .main-header img {
-      display: block; }
-    body.home-page .main-header nav.main-nav {
-      margin-left: 60px; }
+  body.home-page .main-header img {
+    display: block; }
+  body.home-page .main-header nav.main-nav {
+    margin-left: 60px; }
   body.home-page section.new-section.home {
     background-position: center top 5px; }
     body.home-page section.new-section.home .home-wrapper {
@@ -991,12 +991,10 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 992px) {
-  body.home-page .main-header {
-    border-top: 2px solid blue; }
-    body.home-page .main-header img {
-      display: block; }
-    body.home-page .main-header nav.main-nav {
-      margin-left: 60px; }
+  body.home-page .main-header img {
+    display: block; }
+  body.home-page .main-header nav.main-nav {
+    margin-left: 60px; }
   body.home-page section.new-section.home {
     background-position: center top 5px; }
     body.home-page section.new-section.home .home-wrapper {
@@ -1030,12 +1028,10 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 1200px) {
-  body.home-page .main-header {
-    border-top: 2px solid pink; }
-    body.home-page .main-header img {
-      display: block; }
-    body.home-page .main-header nav.main-nav {
-      margin-left: 60px; }
+  body.home-page .main-header img {
+    display: block; }
+  body.home-page .main-header nav.main-nav {
+    margin-left: 60px; }
   body.home-page section.new-section.home {
     background-position: center top 5px; }
     body.home-page section.new-section.home .home-wrapper {
@@ -1067,12 +1063,10 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 1500px) {
-  body.home-page .main-header {
-    border-top: 2px solid yellow; }
-    body.home-page .main-header img {
-      display: block; }
-    body.home-page .main-header nav.main-nav {
-      margin-left: 60px; }
+  body.home-page .main-header img {
+    display: block; }
+  body.home-page .main-header nav.main-nav {
+    margin-left: 60px; }
   body.home-page section.new-section.home {
     background-position: center top 40px; }
     body.home-page section.new-section.home .home-wrapper {

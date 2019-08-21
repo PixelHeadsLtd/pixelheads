@@ -319,13 +319,23 @@ html {
         }
     }
 
-    // Setanta
-    body.setanta, body.monum, body.guinness {
+    // Monum
+    body.monum {
         .App {
-            .container-fluid {
-            }
             .banner {
-                background:url('../images/clients/pages/setanta/banner.png');
+                background-image: url('../images/clients/pages/monum/banner.png');
+                background-color: $jetBlack;
+                background-position: bottom center!important;
+            }
+        }
+    }
+
+    // Setanta
+    body.setanta, body.guinness {
+        .App {
+            .banner {
+                background-image:url('../images/clients/pages/setanta/banner.png');
+                background-color: $jetBlack;
             }
         }
     }

@@ -330,5 +330,11 @@ html body.bbc .App .banner {
   background-image: url("../images/clients/pages/bbc/banner.png");
   background-color: #000000; }
 
-html body.setanta .App .banner, html body.monum .App .banner, html body.guinness .App .banner {
-  background: url("../images/clients/pages/setanta/banner.png"); }
+html body.monum .App .banner {
+  background-image: url("../images/clients/pages/monum/banner.png");
+  background-color: #000000;
+  background-position: bottom center !important; }
+
+html body.setanta .App .banner, html body.guinness .App .banner {
+  background-image: url("../images/clients/pages/setanta/banner.png");
+  background-color: #000000; }
