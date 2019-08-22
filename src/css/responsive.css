@@ -8,7 +8,7 @@
     body.home-page section.new-section.home .home-wrapper {
       padding-top: 320px; }
   body.home-page .new-section.about {
-    min-height: 1845px; }
+    min-height: 2160px; }
     body.home-page .new-section.about .container-fluid {
       padding-right: 40px;
       padding-left: 40px; }
@@ -23,8 +23,6 @@
         bottom: 30px; }
         body.home-page .new-section.about .container-fluid .icons div {
           margin: 0 2%; }
-          body.home-page .new-section.about .container-fluid .icons div p {
-            font-size: .55rem; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }
