@@ -363,7 +363,7 @@ section.new-section.contact {
 html body.projects {
   background-size: 100%;
   font-family: latoregular;
-  font-size: small;
+  font-size: .75rem;
   margin: 0;
   padding: 0; }
   html body.projects .App {
@@ -374,34 +374,84 @@ html body.projects {
     /* Text */
     /* Layout */
     /* Helpers */ }
+    html body.projects .App .container-fluid {
+      background: white;
+      margin-top: 440px;
+      padding-top: 20px; }
+    html body.projects .App .container-fluid.fullwidth {
+      padding-right: 0 !important;
+      padding-left: 0 !important; }
+      html body.projects .App .container-fluid.fullwidth .row {
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 40px;
+        padding-left: 40px; }
     html body.projects .App h4 {
       color: #252525;
       font: 600 0.9rem "latoregular";
       margin: 0 0 6px 0;
       text-transform: uppercase;
       letter-spacing: .2rem; }
+    html body.projects .App figure:hover a {
+      opacity: 1; }
+    html body.projects .App figure:hover .tint {
+      -webkit-transition: all 0.2s ease-in;
+      opacity: 0.6; }
+    html body.projects .App figure {
+      margin: 0;
+      position: relative;
+      overflow: hidden; }
+      html body.projects .App figure .tint {
+        -webkit-transition: all 0.2s ease-in;
+        position: absolute;
+        background: #000000;
+        width: 100%;
+        height: 100%;
+        opacity: 0; }
+      html body.projects .App figure a {
+        color: #fff;
+        text-transform: uppercase;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        opacity: 0;
+        margin: 0;
+        padding-top: 25.5%;
+        border: none; }
+        html body.projects .App figure a h3 {
+          color: #fff;
+          letter-spacing: .2rem;
+          font-size: .85rem; }
+        html body.projects .App figure a p {
+          letter-spacing: .2rem;
+          font-family: 'latolight';
+          font-size: .65rem;
+          color: #fff; }
     html body.projects .App .banner.umg-active nav ul li:nth-child(1) a {
-      padding-left: 15px; }
+      color: #fff; }
       html body.projects .App .banner.umg-active nav ul li:nth-child(1) a i {
         display: block; }
     html body.projects .App .banner.turner-active nav ul li:nth-child(2) a {
-      padding-left: 15px; }
+      color: #fff; }
       html body.projects .App .banner.turner-active nav ul li:nth-child(2) a i {
         display: block; }
     html body.projects .App .banner.bbc-active nav ul li:nth-child(3) a {
-      padding-left: 15px; }
+      color: #fff; }
       html body.projects .App .banner.bbc-active nav ul li:nth-child(3) a i {
         display: block; }
     html body.projects .App .banner.monum-active nav ul li:nth-child(4) a {
-      padding-left: 15px; }
+      color: #fff; }
       html body.projects .App .banner.monum-active nav ul li:nth-child(4) a i {
         display: block; }
     html body.projects .App .banner.setanta-active nav ul li:nth-child(5) a {
-      padding-left: 15px; }
+      color: #fff; }
       html body.projects .App .banner.setanta-active nav ul li:nth-child(5) a i {
         display: block; }
     html body.projects .App .banner.guinness-active nav ul li:nth-child(6) a {
-      padding-left: 15px; }
+      color: #fff; }
       html body.projects .App .banner.guinness-active nav ul li:nth-child(6) a i {
         display: block; }
     html body.projects .App .banner {
@@ -427,23 +477,25 @@ html body.projects {
           padding: 0; }
           html body.projects .App .banner nav ul li {
             font-size: .65rem;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
             display: block;
             position: relative; }
+            html body.projects .App .banner nav ul li a:hover {
+              color: #fff; }
             html body.projects .App .banner nav ul li a {
-              color: #fff;
-              font-family: 'latolight';
-              font-weight: bolder; }
+              color: #888;
+              font-family: 'latoregular';
+              letter-spacing: .05rem; }
               html body.projects .App .banner nav ul li a i {
                 display: none;
-                width: 9px;
-                height: 9px;
-                border-top: 1px solid #888;
-                border-right: 1px solid #888;
+                width: 7px;
+                height: 7px;
+                border-top: 1px solid #fff;
+                border-right: 1px solid #fff;
                 transform: rotate(45deg);
                 position: absolute;
-                left: -2px;
-                top: 2px; }
+                left: -14px;
+                top: 3px; }
       html body.projects .App .banner .projects-header {
         width: 100%;
         display: inline-block;
@@ -484,7 +536,6 @@ html body.projects {
           font-size: .8rem;
           font-weight: bolder; }
         html body.projects .App .banner .projects-header ul {
-          display: block;
           margin: 0 60px;
           padding: 0;
           float: none; }
@@ -494,9 +545,6 @@ html body.projects {
             padding: 0;
             width: 25%;
             float: left; }
-    html body.projects .App .container-fluid {
-      background: white;
-      margin-top: 440px; }
     html body.projects .App a {
       color: #00a3cc;
       text-decoration: none; }
@@ -521,7 +569,6 @@ html body.projects {
       font-family: latobold;
       font-size: 1rem; }
     html body.projects .App p {
-      font-size: .8rem;
       line-height: 1.5rem;
       margin-top: 0; }
     html body.projects .App p label {
@@ -533,11 +580,14 @@ html body.projects {
     html body.projects .App img.to-the-right-edge {
       float: right;
       margin-right: -90px; }
-    html body.projects .App .row .inner {
-      margin: 100px 100px 90px 100px;
-      display: inline-block; }
-      html body.projects .App .row .inner p {
-        margin-bottom: 40px; }
+    html body.projects .App .row {
+      margin-right: 0;
+      margin-left: 0; }
+      html body.projects .App .row .inner {
+        margin: 100px 100px 90px 100px;
+        display: inline-block; }
+        html body.projects .App .row .inner p {
+          margin-bottom: 40px; }
     html body.projects .App .w-25 {
       width: 25%; }
     html body.projects .App .w-50 {
@@ -586,10 +636,15 @@ html body.turner .App .container-fluid {
     border-style: none;
     position: absolute;
     z-index: 1; }
-  html body.turner .App .container-fluid img.carousel {
-    width: 60%;
-    margin: -9px 0 0 440px;
-    position: absolute; }
+  html body.turner .App .container-fluid .row.carousel {
+    overflow: hidden;
+    max-height: 200px;
+    margin: 30px 0 -160px 0;
+    border-top: 1px dashed #fbc900;
+    background: #fcfcff; }
+    html body.turner .App .container-fluid .row.carousel img {
+      width: 100%;
+      margin-top: -10px; }
   html body.turner .App .container-fluid .row.ctn-ntw {
     padding-top: 80px;
     background-color: #dc1f0a; }
@@ -598,9 +653,6 @@ html body.turner .App .container-fluid {
       top: -240px;
       right: 395px;
       width: 400px; }
-    html body.turner .App .container-fluid .row.ctn-ntw img.cartoon-network {
-      width: 82.5%;
-      margin-left: 45px; }
   html body.turner .App .container-fluid .row.scooby {
     min-height: 400px;
     margin-top: 123px;
@@ -612,7 +664,7 @@ html body.turner .App .container-fluid {
     html body.turner .App .container-fluid .row.scooby img.scooby-van {
       position: absolute;
       top: -230px;
-      left: 0; }
+      left: -40px; }
   html body.turner .App .container-fluid .row.as {
     padding-top: 80px;
     background-color: #dc1f0a; }
@@ -654,7 +706,7 @@ html body.bbc .App .banner {
 html body.monum .App .banner {
   background-image: url("../images/clients/pages/monum/banner.png");
   background-color: #000000;
-  background-position: bottom center !important; }
+  background-position: center bottom 63px !important; }
 
 html body.setanta .App .banner, html body.guinness .App .banner {
   background-image: url("../images/clients/pages/setanta/banner.png");
@@ -768,7 +820,7 @@ html body.setanta .App .banner, html body.guinness .App .banner {
   margin-bottom: 10px; }
 
 .margin-bottom-med {
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
 
 .margin-bottom-large {
   margin-bottom: 40px; }
@@ -1110,6 +1162,12 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 375px) {
+  html body.projects .App .banner nav {
+    display: none; }
+  html body.projects .App .projects-header {
+    bottom: 75px !important; }
+    html body.projects .App .projects-header ul {
+      display: none; }
   html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 0;
     padding-left: 0; }
@@ -1120,16 +1178,9 @@ hr {
       display: none; }
     html body.projects .App .container-fluid .main-header nav.main-nav {
       margin-left: 40px; }
-    html body.projects .App .container-fluid .row.fullwidth {
-      margin-left: -60px;
-      min-width: 123%; }
     html body.projects .App .container-fluid .row img.batman {
       width: 108%;
       margin-top: 0;
-      position: static; }
-    html body.projects .App .container-fluid .row img.carousel {
-      width: 100%;
-      margin: 20px 0 0 20px;
       position: static; }
     html body.projects .App .container-fluid .row.scooby {
       padding-top: 60px;
@@ -1153,25 +1204,19 @@ hr {
         top: -169px;
         right: 113px;
         width: 265px; }
-    html body.projects .App .container-fluid .row.as div {
-      max-width: 100%;
-      padding-right: 0; }
-    html body.projects .App .container-fluid .row.as img {
-      margin-bottom: 30px;
-      width: 100%; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-games {
-      margin-left: 0; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
-      margin-left: 0; }
     html body.projects .App .container-fluid .row.youtube ul {
-      display: none; }
-    html body.projects .App .container-fluid .projects-header ul {
       display: none; }
   html body.projects .App img.personas {
     width: 497px;
     margin-top: -79px; } }
 
 @media (min-width: 576px) {
+  html body.projects .App .banner nav {
+    display: block; }
+  html body.projects .App .projects-header {
+    bottom: 25px !important; }
+    html body.projects .App .projects-header ul {
+      display: block; }
   html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 0;
     padding-left: 0; }
@@ -1182,16 +1227,9 @@ hr {
       display: block; }
     html body.projects .App .container-fluid .main-header nav.main-nav {
       margin-left: 60px; }
-    html body.projects .App .container-fluid .row.fullwidth {
-      margin-left: -60px;
-      min-width: 123%; }
     html body.projects .App .container-fluid .row img.batman {
       width: 108%;
       margin-top: 0;
-      position: static; }
-    html body.projects .App .container-fluid .row img.carousel {
-      width: 100%;
-      margin: 20px 0 0 20px;
       position: static; }
     html body.projects .App .container-fluid .row.scooby {
       padding-top: 60px;
@@ -1215,16 +1253,6 @@ hr {
         top: -169px;
         right: 113px;
         width: 265px; }
-    html body.projects .App .container-fluid .row.as div {
-      max-width: 95%;
-      padding-right: 0; }
-    html body.projects .App .container-fluid .row.as img {
-      margin-bottom: 30px;
-      width: 100%; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-games {
-      margin-left: 0; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
-      margin-left: 0; }
     html body.projects .App .container-fluid .row.youtube ul {
       display: none; }
     html body.projects .App .container-fluid .projects-header ul {
@@ -1245,16 +1273,9 @@ hr {
       display: block; }
     html body.projects .App .container-fluid .main-header nav.main-nav {
       margin-left: 60px; }
-    html body.projects .App .container-fluid .row.fullwidth {
-      margin-left: -60px;
-      min-width: 123%; }
     html body.projects .App .container-fluid .row img.batman {
       width: 108%;
       margin-top: 0;
-      position: static; }
-    html body.projects .App .container-fluid .row img.carousel {
-      width: 100%;
-      margin: 20px 0 0 20px;
       position: static; }
     html body.projects .App .container-fluid .row.scooby {
       padding-top: 60px;
@@ -1278,17 +1299,6 @@ hr {
         top: -206px;
         right: 230px;
         width: 340px; }
-    html body.projects .App .container-fluid .row.as div {
-      max-width: 96.3%;
-      padding-right: 0;
-      padding-left: 0; }
-    html body.projects .App .container-fluid .row.as img {
-      margin-bottom: 30px;
-      width: 100%; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-games {
-      margin-left: 0; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
-      margin-left: 0; }
     html body.projects .App .container-fluid .row.youtube ul {
       display: block; }
     html body.projects .App .container-fluid .projects-header ul {
@@ -1309,17 +1319,10 @@ hr {
       display: block; }
     html body.projects .App .container-fluid .main-header nav.main-nav {
       margin-left: 60px; }
-    html body.projects .App .container-fluid .row.fullwidth {
-      margin-left: -60px;
-      min-width: 123%; }
     html body.projects .App .container-fluid .row img.batman {
       width: 180%;
       margin-top: 50px;
       position: absolute; }
-    html body.projects .App .container-fluid .row img.carousel {
-      width: 100%;
-      margin: 40px 0 0 20px;
-      position: static; }
     html body.projects .App .container-fluid .row.scooby {
       padding-top: 60px;
       padding-bottom: 130px; }
@@ -1342,17 +1345,6 @@ hr {
       top: -206px;
       right: 230px;
       width: 340px; }
-    html body.projects .App .container-fluid .row.as div {
-      max-width: 45.8%;
-      padding-right: 0;
-      padding-left: 15px; }
-    html body.projects .App .container-fluid .row.as img {
-      margin-bottom: 30px;
-      width: 90%; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-games {
-      margin-left: 45px; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
-      margin-left: 0; }
     html body.projects .App .container-fluid .row.youtube ul {
       display: block; }
     html body.projects .App .container-fluid .projects-header ul {
@@ -1373,17 +1365,10 @@ hr {
       display: block; }
     html body.projects .App .container-fluid .main-header nav.main-nav {
       margin-left: 60px; }
-    html body.projects .App .container-fluid .row.fullwidth {
-      margin-left: -60px;
-      min-width: 123%; }
     html body.projects .App .container-fluid .row img.batman {
       width: 140%;
       margin-top: 10px;
       position: absolute; }
-    html body.projects .App .container-fluid .row img.carousel {
-      width: 100%;
-      margin: 50px 0 0 20px;
-      position: static; }
     html body.projects .App .container-fluid .row.scooby {
       padding-top: 60px;
       padding-bottom: 0; }
@@ -1408,17 +1393,6 @@ hr {
       top: -240px;
       right: 395px;
       width: 400px; }
-    html body.projects .App .container-fluid .row.as div {
-      max-width: 44.2%;
-      padding-right: 0;
-      padding-left: 15px; }
-    html body.projects .App .container-fluid .row.as img {
-      margin-bottom: 30px;
-      width: 90%; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-games {
-      margin-left: 45px; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
-      margin-left: 0; }
     html body.projects .App .container-fluid .row.youtube ul {
       display: block; }
     html body.projects .App .container-fluid .projects-header ul {
@@ -1439,20 +1413,10 @@ hr {
       display: block; }
     html body.projects .App .container-fluid .main-header nav.main-nav {
       margin-left: 60px; }
-    html body.projects .App .container-fluid .row.fullwidth {
-      margin-left: -60px;
-      min-width: 123%; }
     html body.projects .App .container-fluid .row img.batman {
       width: 170%;
       margin-top: -96px;
       position: absolute; }
-    html body.projects .App .container-fluid .row img.carousel {
-      width: 60%;
-      margin: -9px 0 0 440px;
-      position: absolute; }
-    html body.projects .App .container-fluid .row img.cartoon-network {
-      width: 82.5%;
-      margin-left: 45px; }
     html body.projects .App .container-fluid .row.scooby {
       padding-top: 100px;
       padding-bottom: 0; }
@@ -1478,17 +1442,6 @@ hr {
       top: -240px;
       right: 395px;
       width: 400px; }
-    html body.projects .App .container-fluid .row.as div {
-      max-width: 44.2%;
-      padding-right: 0;
-      padding-left: 15px; }
-    html body.projects .App .container-fluid .row.as img {
-      margin-bottom: 30px;
-      width: 90%; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-games {
-      margin-left: 45px; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
-      margin-left: 0; }
     html body.projects .App .container-fluid .row.youtube ul {
       display: block; }
     html body.projects .App .container-fluid .projects-header ul {

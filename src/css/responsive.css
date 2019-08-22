@@ -235,6 +235,12 @@
       margin-bottom: 0; } }
 
 @media (min-width: 375px) {
+  html body.projects .App .banner nav {
+    display: none; }
+  html body.projects .App .projects-header {
+    bottom: 75px !important; }
+    html body.projects .App .projects-header ul {
+      display: none; }
   html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 0;
     padding-left: 0; }
@@ -245,16 +251,9 @@
       display: none; }
     html body.projects .App .container-fluid .main-header nav.main-nav {
       margin-left: 40px; }
-    html body.projects .App .container-fluid .row.fullwidth {
-      margin-left: -60px;
-      min-width: 123%; }
     html body.projects .App .container-fluid .row img.batman {
       width: 108%;
       margin-top: 0;
-      position: static; }
-    html body.projects .App .container-fluid .row img.carousel {
-      width: 100%;
-      margin: 20px 0 0 20px;
       position: static; }
     html body.projects .App .container-fluid .row.scooby {
       padding-top: 60px;
@@ -278,25 +277,19 @@
         top: -169px;
         right: 113px;
         width: 265px; }
-    html body.projects .App .container-fluid .row.as div {
-      max-width: 100%;
-      padding-right: 0; }
-    html body.projects .App .container-fluid .row.as img {
-      margin-bottom: 30px;
-      width: 100%; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-games {
-      margin-left: 0; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
-      margin-left: 0; }
     html body.projects .App .container-fluid .row.youtube ul {
-      display: none; }
-    html body.projects .App .container-fluid .projects-header ul {
       display: none; }
   html body.projects .App img.personas {
     width: 497px;
     margin-top: -79px; } }
 
 @media (min-width: 576px) {
+  html body.projects .App .banner nav {
+    display: block; }
+  html body.projects .App .projects-header {
+    bottom: 25px !important; }
+    html body.projects .App .projects-header ul {
+      display: block; }
   html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 0;
     padding-left: 0; }
@@ -307,16 +300,9 @@
       display: block; }
     html body.projects .App .container-fluid .main-header nav.main-nav {
       margin-left: 60px; }
-    html body.projects .App .container-fluid .row.fullwidth {
-      margin-left: -60px;
-      min-width: 123%; }
     html body.projects .App .container-fluid .row img.batman {
       width: 108%;
       margin-top: 0;
-      position: static; }
-    html body.projects .App .container-fluid .row img.carousel {
-      width: 100%;
-      margin: 20px 0 0 20px;
       position: static; }
     html body.projects .App .container-fluid .row.scooby {
       padding-top: 60px;
@@ -340,16 +326,6 @@
         top: -169px;
         right: 113px;
         width: 265px; }
-    html body.projects .App .container-fluid .row.as div {
-      max-width: 95%;
-      padding-right: 0; }
-    html body.projects .App .container-fluid .row.as img {
-      margin-bottom: 30px;
-      width: 100%; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-games {
-      margin-left: 0; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
-      margin-left: 0; }
     html body.projects .App .container-fluid .row.youtube ul {
       display: none; }
     html body.projects .App .container-fluid .projects-header ul {
@@ -370,16 +346,9 @@
       display: block; }
     html body.projects .App .container-fluid .main-header nav.main-nav {
       margin-left: 60px; }
-    html body.projects .App .container-fluid .row.fullwidth {
-      margin-left: -60px;
-      min-width: 123%; }
     html body.projects .App .container-fluid .row img.batman {
       width: 108%;
       margin-top: 0;
-      position: static; }
-    html body.projects .App .container-fluid .row img.carousel {
-      width: 100%;
-      margin: 20px 0 0 20px;
       position: static; }
     html body.projects .App .container-fluid .row.scooby {
       padding-top: 60px;
@@ -403,17 +372,6 @@
         top: -206px;
         right: 230px;
         width: 340px; }
-    html body.projects .App .container-fluid .row.as div {
-      max-width: 96.3%;
-      padding-right: 0;
-      padding-left: 0; }
-    html body.projects .App .container-fluid .row.as img {
-      margin-bottom: 30px;
-      width: 100%; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-games {
-      margin-left: 0; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
-      margin-left: 0; }
     html body.projects .App .container-fluid .row.youtube ul {
       display: block; }
     html body.projects .App .container-fluid .projects-header ul {
@@ -434,17 +392,10 @@
       display: block; }
     html body.projects .App .container-fluid .main-header nav.main-nav {
       margin-left: 60px; }
-    html body.projects .App .container-fluid .row.fullwidth {
-      margin-left: -60px;
-      min-width: 123%; }
     html body.projects .App .container-fluid .row img.batman {
       width: 180%;
       margin-top: 50px;
       position: absolute; }
-    html body.projects .App .container-fluid .row img.carousel {
-      width: 100%;
-      margin: 40px 0 0 20px;
-      position: static; }
     html body.projects .App .container-fluid .row.scooby {
       padding-top: 60px;
       padding-bottom: 130px; }
@@ -467,17 +418,6 @@
       top: -206px;
       right: 230px;
       width: 340px; }
-    html body.projects .App .container-fluid .row.as div {
-      max-width: 45.8%;
-      padding-right: 0;
-      padding-left: 15px; }
-    html body.projects .App .container-fluid .row.as img {
-      margin-bottom: 30px;
-      width: 90%; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-games {
-      margin-left: 45px; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
-      margin-left: 0; }
     html body.projects .App .container-fluid .row.youtube ul {
       display: block; }
     html body.projects .App .container-fluid .projects-header ul {
@@ -498,17 +438,10 @@
       display: block; }
     html body.projects .App .container-fluid .main-header nav.main-nav {
       margin-left: 60px; }
-    html body.projects .App .container-fluid .row.fullwidth {
-      margin-left: -60px;
-      min-width: 123%; }
     html body.projects .App .container-fluid .row img.batman {
       width: 140%;
       margin-top: 10px;
       position: absolute; }
-    html body.projects .App .container-fluid .row img.carousel {
-      width: 100%;
-      margin: 50px 0 0 20px;
-      position: static; }
     html body.projects .App .container-fluid .row.scooby {
       padding-top: 60px;
       padding-bottom: 0; }
@@ -533,17 +466,6 @@
       top: -240px;
       right: 395px;
       width: 400px; }
-    html body.projects .App .container-fluid .row.as div {
-      max-width: 44.2%;
-      padding-right: 0;
-      padding-left: 15px; }
-    html body.projects .App .container-fluid .row.as img {
-      margin-bottom: 30px;
-      width: 90%; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-games {
-      margin-left: 45px; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
-      margin-left: 0; }
     html body.projects .App .container-fluid .row.youtube ul {
       display: block; }
     html body.projects .App .container-fluid .projects-header ul {
@@ -564,20 +486,10 @@
       display: block; }
     html body.projects .App .container-fluid .main-header nav.main-nav {
       margin-left: 60px; }
-    html body.projects .App .container-fluid .row.fullwidth {
-      margin-left: -60px;
-      min-width: 123%; }
     html body.projects .App .container-fluid .row img.batman {
       width: 170%;
       margin-top: -96px;
       position: absolute; }
-    html body.projects .App .container-fluid .row img.carousel {
-      width: 60%;
-      margin: -9px 0 0 440px;
-      position: absolute; }
-    html body.projects .App .container-fluid .row img.cartoon-network {
-      width: 82.5%;
-      margin-left: 45px; }
     html body.projects .App .container-fluid .row.scooby {
       padding-top: 100px;
       padding-bottom: 0; }
@@ -603,17 +515,6 @@
       top: -240px;
       right: 395px;
       width: 400px; }
-    html body.projects .App .container-fluid .row.as div {
-      max-width: 44.2%;
-      padding-right: 0;
-      padding-left: 15px; }
-    html body.projects .App .container-fluid .row.as img {
-      margin-bottom: 30px;
-      width: 90%; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-games {
-      margin-left: 45px; }
-    html body.projects .App .container-fluid .row.as img.adult-swim-videos {
-      margin-left: 0; }
     html body.projects .App .container-fluid .row.youtube ul {
       display: block; }
     html body.projects .App .container-fluid .projects-header ul {

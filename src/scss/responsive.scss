@@ -372,6 +372,13 @@ html {
     body.projects {
         .App {
             @media (min-width: 375px) {
+                .banner {
+                    nav {display:none}
+                }
+                .projects-header {
+                    bottom:75px!important;
+                    ul {display: none}
+                }
                 .container-fluid.bbc-container {
                     .row {
                         .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
@@ -390,19 +397,10 @@ html {
                             margin-left:40px;
                         }
                     }
-                    .row.fullwidth {
-                        margin-left: -60px;
-                        min-width: 123%;
-                    } 
                     .row {
                         img.batman {
                             width: 108%;
                             margin-top: 0;
-                            position: static;
-                        }
-                        img.carousel {
-                            width: 100%;
-                            margin: 20px 0 0 20px;
                             position: static;
                         }
                     }
@@ -433,21 +431,21 @@ html {
                             width: 265px;
                         } 
                     }
-                    .row.as {
-                        div { max-width: 100%;padding-right: 0;}
-                        img {margin-bottom: 30px; width:100%;}
-                        img.adult-swim-games {margin-left: 0;}
-                        img.adult-swim-videos {margin-left: 0;}
-                    }
                     .row.youtube {
                         ul {display:none}
                     }
-                    .projects-header ul {display: none}
                 }
                 img.personas {width:497px; margin-top:-79px}
             }
             
             @media (min-width: 576px) {
+                .banner {
+                    nav {display:block}
+                }
+                .projects-header {
+                    bottom:25px!important;
+                    ul {display: block}
+                }
                 .container-fluid.bbc-container {
                     .row {
                         .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
@@ -466,19 +464,10 @@ html {
                             margin-left:60px;
                         }
                     }
-                    .row.fullwidth {
-                        margin-left: -60px;
-                        min-width: 123%;
-                    }
                     .row {
                         img.batman {
                             width: 108%;
                             margin-top: 0;
-                            position: static;
-                        }
-                        img.carousel {
-                            width: 100%;
-                            margin: 20px 0 0 20px;
                             position: static;
                         }
                     }
@@ -508,12 +497,6 @@ html {
                             right: 113px;
                             width: 265px;
                         } 
-                    }
-                    .row.as {
-                        div {max-width: 95%; padding-right: 0;}
-                        img {margin-bottom: 30px; width:100%;}
-                        img.adult-swim-games {margin-left: 0;}
-                        img.adult-swim-videos {margin-left: 0;}
                     }
                     .row.youtube {
                         ul {display:none}
@@ -542,19 +525,10 @@ html {
                             margin-left:60px;
                         }
                     }
-                    .row.fullwidth {
-                        margin-left: -60px;
-                        min-width: 123%;
-                    }
                     .row {
                         img.batman {
                             width: 108%;
                             margin-top: 0;
-                            position: static;
-                        }
-                        img.carousel {
-                            width: 100%;
-                            margin: 20px 0 0 20px;
                             position: static;
                         }
                     }
@@ -585,12 +559,6 @@ html {
                             width: 340px;
                         } 
                     }
-                    .row.as {
-                        div { max-width:96.3%; padding-right: 0;padding-left: 0;}
-                        img {margin-bottom: 30px; width:100%;}
-                        img.adult-swim-games {margin-left: 0;}
-                        img.adult-swim-videos {margin-left: 0;}
-                    }
                     .row.youtube {
                         ul {display:block}
                     }
@@ -618,20 +586,11 @@ html {
                             margin-left:60px;
                         }
                     }
-                    .row.fullwidth {
-                        margin-left: -60px;
-                        min-width: 123%;
-                    }
                     .row {
                         img.batman {
                             width: 180%;
                             margin-top: 50px;
                             position: absolute;
-                        }
-                        img.carousel {
-                            width: 100%;
-                            margin: 40px 0 0 20px;
-                            position: static;
                         }
                     }
                     .row.scooby {
@@ -662,12 +621,6 @@ html {
                             width: 340px;
                         } 
                     }
-                    .row.as {
-                        div { max-width: 45.8%; padding-right: 0; padding-left: 15px;}
-                        img {margin-bottom: 30px; width:90%;}
-                        img.adult-swim-games {margin-left: 45px;}
-                        img.adult-swim-videos {margin-left: 0;}
-                    }
                     .row.youtube {
                         ul {display:block}
                     }
@@ -695,20 +648,11 @@ html {
                             margin-left:60px;
                         }
                     }
-                    .row.fullwidth {
-                        margin-left: -60px;
-                        min-width: 123%;
-                    }
                     .row {
                         img.batman {
                             width: 140%;
                             margin-top:10px;
                             position: absolute;
-                        }
-                        img.carousel {
-                            width: 100%;
-                            margin: 50px 0 0 20px;
-                            position: static;
                         }
                     }
                     .row.scooby {
@@ -741,12 +685,6 @@ html {
                             width: 400px;
                         }
                     }
-                    .row.as {
-                        div { max-width: 44.2%;padding-right: 0; padding-left:15px}
-                        img {margin-bottom: 30px; width:90%;}
-                        img.adult-swim-games {margin-left: 45px;}
-                        img.adult-swim-videos {margin-left: 0;}
-                    }
                     .row.youtube {
                         ul {display:block}
                     }
@@ -774,24 +712,11 @@ html {
                             margin-left:60px;
                         }
                     }
-                    .row.fullwidth {
-                        margin-left: -60px;
-                        min-width: 123%;
-                    }
                     .row {
                         img.batman {
                             width:170%;
                             margin-top:-96px;
                             position: absolute;
-                        }
-                        img.carousel {
-                            width: 60%;
-                            margin: -9px 0 0 440px;
-                            position: absolute;
-                        }
-                        img.cartoon-network {
-                            width: 82.5%;
-                            margin-left: 45px;
                         }
                     }
                     .row.scooby {
@@ -823,12 +748,6 @@ html {
                             right: 395px;
                             width: 400px;
                         }
-                    }
-                    .row.as {
-                        div { max-width: 44.2%; padding-right: 0; padding-left:15px}
-                        img {margin-bottom: 30px; width:90%;}
-                        img.adult-swim-games {margin-left: 45px;}
-                        img.adult-swim-videos {margin-left: 0;}
                     }
                     .row.youtube {
                         ul {display:block}

@@ -6,12 +6,27 @@ html {
     body.projects {
         background-size: 100%;
         font-family: latoregular; 
-        font-size: small; 
+        font-size: .75rem; 
         margin: 0; 
         padding:0;
         .App {
             overflow: hidden;
             letter-spacing: .04rem;
+            .container-fluid {
+                background:white; 
+                margin-top:440px;
+                padding-top: 20px;
+            }
+            .container-fluid.fullwidth {
+                padding-right:0!important;
+                padding-left:0!important;
+                .row {
+                    margin-right:0;
+                    margin-left:0;
+                    padding-right:40px;
+                    padding-left:40px;
+                }
+            }
             h4 {
                 color:$black;
                 @include font(600, 0.9rem); 
@@ -19,10 +34,55 @@ html {
                 text-transform: uppercase;
                 letter-spacing: .2rem;
             }
+            figure:hover { 
+                a {opacity:1;} 
+                .tint {
+                    -webkit-transition: all 0.2s ease-in;
+                    opacity:0.6;
+                }
+            }
+            figure {
+                margin: 0;
+                position: relative;
+                overflow: hidden;
+                .tint {
+                    -webkit-transition: all 0.2s ease-in;
+                    position: absolute;
+                    background:$jetBlack;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                }
+                a {
+                    color:$white;
+                    text-transform: uppercase;
+                    position: absolute;
+                    top: 0;
+                    z-index: 1;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    opacity: 0;
+                    margin: 0;
+                    padding-top: 25.5%;
+                    border:none;
+                    h3 {
+                        color:$white;
+                        letter-spacing: .2rem;
+                        font-size: .85rem;
+                    }
+                    p {
+                        letter-spacing: .2rem;
+                        font-family:'latolight';
+                        font-size: .65rem;
+                        color:$white;
+                    }
+                }
+            }
             .banner.umg-active {
                 nav ul {
                     li:nth-child(1) a {
-                        padding-left: 15px;
+                        color:$white;
                         i {display: block;}
                     }
                 }
@@ -30,7 +90,7 @@ html {
             .banner.turner-active {
                 nav ul {
                     li:nth-child(2) a {
-                        padding-left: 15px;
+                        color:$white;
                         i {display: block;}
                     }
                 }
@@ -38,7 +98,7 @@ html {
             .banner.bbc-active {
                 nav ul {
                     li:nth-child(3) a {
-                        padding-left: 15px;
+                        color:$white;
                         i {display: block;}
                     }
                 }
@@ -46,7 +106,7 @@ html {
             .banner.monum-active {
                 nav ul {
                     li:nth-child(4) a {
-                        padding-left: 15px;
+                        color:$white;
                         i {display: block;}
                     }
                 }
@@ -54,7 +114,7 @@ html {
             .banner.setanta-active {
                 nav ul {
                     li:nth-child(5) a {
-                        padding-left: 15px;
+                        color:$white;
                         i {display: block;}
                     }
                 }
@@ -62,7 +122,7 @@ html {
             .banner.guinness-active {
                 nav ul {
                     li:nth-child(6) a {
-                        padding-left: 15px;
+                        color:$white;
                         i {display: block;}
                     }
                 }
@@ -86,23 +146,24 @@ html {
                         padding:0;
                         li {
                             font-size: .65rem;
-                            margin-bottom:4px;
+                            margin-bottom:6px;
                             display: block;
                             position: relative;
+                            a:hover {color:$white}
                             a {
-                                color:$white;
-                                font-family: 'latolight';
-                                font-weight: bolder;
+                                color:#888;
+                                font-family: 'latoregular';
+                                letter-spacing: .05rem;
                                 i {
                                     display: none;
-                                    width:9px;
-                                    height:9px;
-                                    border-top:1px solid $midGrey;
-                                    border-right:1px solid $midGrey;
+                                    width:7px;
+                                    height:7px;
+                                    border-top:1px solid $white;
+                                    border-right:1px solid $white;
                                     transform: rotate(45deg);
                                     position: absolute;
-                                    left: -2px;
-                                    top: 2px;
+                                    left: -14px;
+                                    top: 3px;
                                 }
                             }
                         }
@@ -144,17 +205,12 @@ html {
                         font-weight: bolder;
                     }
                     ul {
-                        display: block; 
                         margin:0 60px; 
                         padding: 0; 
                         float:none;
                         li {display:block; margin: 0; padding: 0; width: 25%; float:left}
                     }
                 } // end projects header
-            }
-            .container-fluid {
-                background:white; 
-                margin-top:440px;
             }
             /* Links */
             a {color:#00a3cc; text-decoration: none}
@@ -166,12 +222,14 @@ html {
             h1 {font-family: latobold; font-size: 1.5rem;; text-transform: uppercase; letter-spacing: .4rem; color:#ff0049}
             h2 {font-family: oraqlescript; font-size: 52px; font-weight: lighter; margin:25px 0 10px 0}
             h3 {color:#ff0049; font-family: latobold; font-size: 1rem}
-            p {font-size: .8rem; line-height: 1.5rem; margin-top: 0}
+            p {line-height: 1.5rem; margin-top: 0}
             p label {width:100%; color:#ff0049; margin-bottom: 0; font-size: .95rem; letter-spacing: .05rem;}
         
             /* Layout */
             img.to-the-right-edge {float:right; margin-right:-90px}
             .row {
+                margin-right: 0;
+                margin-left: 0;
                 .inner {
                     margin:100px 100px 90px 100px; 
                     display: inline-block;
@@ -235,10 +293,16 @@ html {
                     position: absolute;
                     z-index: 1;
                 }
-                img.carousel {
-                    width: 60%;
-                    margin: -9px 0 0 440px;
-                    position: absolute;
+                .row.carousel {
+                    overflow: hidden;
+                    max-height: 200px;
+                    margin: 30px 0 -160px 0;
+                    border-top: 1px dashed $yellow;
+                    background: #fcfcff;
+                    img {
+                        width: 100%;
+                        margin-top: -10px;
+                    }
                 }
                 .row.ctn-ntw {
                     padding-top:80px;
@@ -248,10 +312,6 @@ html {
                         top: -240px;
                         right: 395px;
                         width: 400px;
-                    }
-                    img.cartoon-network {
-                        width: 82.5%;
-                        margin-left: 45px;
                     }
                 }
                 .row.scooby {
@@ -263,7 +323,7 @@ html {
                     img.scooby-van {
                         position: absolute;
                         top: -230px;
-                        left:0;
+                        left:-40px;
                     }
                 }
                 .row.as {
@@ -325,7 +385,7 @@ html {
             .banner {
                 background-image: url('../images/clients/pages/monum/banner.png');
                 background-color: $jetBlack;
-                background-position: bottom center!important;
+                background-position: center bottom 63px!important;
             }
         }
     }

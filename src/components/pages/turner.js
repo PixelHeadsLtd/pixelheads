@@ -46,7 +46,7 @@ class Turner extends Component {
               </ul>
             </header>
         </div>
-        <div className="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div className="container-fluid fullwidth col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <header className="main-header">
               <ProjectsNav />
             </header>
@@ -72,12 +72,12 @@ class Turner extends Component {
                     <img src={Batman} className="batman" alt="batman" />
                 </div>
             </div>
-            <div className="row">
+            <div className="row carousel">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <img src={Carousel} className="carousel" alt="" />
+                <img src={Carousel} alt="" />
               </div>
             </div>
-            <div className="row bg-yellow scooby fullwidth">
+            <div className="row bg-yellow scooby">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-3 relative">
                 <img src={ScoobyVan} className="scooby-van" alt="" />
               </div>
@@ -104,18 +104,18 @@ class Turner extends Component {
                     </p>
                 </div>
             </div>
-            <div className="row fullwidth relative ctn-ntw">
+            <div className="row relative ctn-ntw">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <img src={AdvTime} className="adv-time" alt="" />
-                <img src={CartoonNetwork} className="cartoon-network" alt="" />
+                <img src={CartoonNetwork} className="cartoon-network w-100" alt="" />
               </div>
             </div>
-            <div className="row fullwidth relative as">
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                <img src={AdultSwimGames} className="adult-swim-games" alt="" />
+            <div className="row relative as">
+              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <img src={AdultSwimGames} className="adult-swim-games w-100" alt="" />
               </div>
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                <img src={AdultSwimVideos} className="adult-swim-videos" alt="" />
+              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <img src={AdultSwimVideos} className="adult-swim-videos w-100" alt="" />
               </div>
             </div>
         </div>
