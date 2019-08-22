@@ -151,7 +151,7 @@ section.new-section.about {
       margin: 0 6%; }
       section.new-section.about .icons div p {
         margin-top: 5px;
-        font-size: 10px; }
+        font-size: .62rem; }
         section.new-section.about .icons div p span {
           color: #fbc900; }
 
@@ -898,6 +898,8 @@ hr {
         bottom: 30px; }
         body.home-page .new-section.about .container-fluid .icons div {
           margin: 0 2%; }
+          body.home-page .new-section.about .container-fluid .icons div p {
+            font-size: .55rem; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -937,6 +939,8 @@ hr {
         bottom: 60px; }
         body.home-page .new-section.about .container-fluid .icons div {
           margin: 0 10%; }
+          body.home-page .new-section.about .container-fluid .icons div p {
+            font-size: .62rem; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -976,6 +980,8 @@ hr {
         bottom: 60px; }
         body.home-page .new-section.about .container-fluid .icons div {
           margin: 0 5%; }
+          body.home-page .new-section.about .container-fluid .icons div p {
+            font-size: .62rem; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -1013,6 +1019,8 @@ hr {
           padding-left: 15px; }
       body.home-page .new-section.about .container-fluid .icons {
         bottom: 90px; }
+        body.home-page .new-section.about .container-fluid .icons p {
+          font-size: .62rem; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -1048,6 +1056,8 @@ hr {
         padding-left: 15px; }
     body.home-page .new-section.about .container-fluid .icons {
       bottom: 235px; }
+      body.home-page .new-section.about .container-fluid .icons p {
+        font-size: .62rem; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -1083,6 +1093,8 @@ hr {
         padding-left: 15px; }
     body.home-page .new-section.about .container-fluid .icons {
       bottom: 100px; }
+      body.home-page .new-section.about .container-fluid .icons p {
+        font-size: .62rem; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }

@@ -23,6 +23,8 @@
         bottom: 30px; }
         body.home-page .new-section.about .container-fluid .icons div {
           margin: 0 2%; }
+          body.home-page .new-section.about .container-fluid .icons div p {
+            font-size: .55rem; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -62,6 +64,8 @@
         bottom: 60px; }
         body.home-page .new-section.about .container-fluid .icons div {
           margin: 0 10%; }
+          body.home-page .new-section.about .container-fluid .icons div p {
+            font-size: .62rem; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -101,6 +105,8 @@
         bottom: 60px; }
         body.home-page .new-section.about .container-fluid .icons div {
           margin: 0 5%; }
+          body.home-page .new-section.about .container-fluid .icons div p {
+            font-size: .62rem; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -138,6 +144,8 @@
           padding-left: 15px; }
       body.home-page .new-section.about .container-fluid .icons {
         bottom: 90px; }
+        body.home-page .new-section.about .container-fluid .icons p {
+          font-size: .62rem; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -173,6 +181,8 @@
         padding-left: 15px; }
     body.home-page .new-section.about .container-fluid .icons {
       bottom: 235px; }
+      body.home-page .new-section.about .container-fluid .icons p {
+        font-size: .62rem; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -208,6 +218,8 @@
         padding-left: 15px; }
     body.home-page .new-section.about .container-fluid .icons {
       bottom: 100px; }
+      body.home-page .new-section.about .container-fluid .icons p {
+        font-size: .62rem; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }

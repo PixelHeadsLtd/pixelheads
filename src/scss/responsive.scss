@@ -30,7 +30,10 @@ body.home-page {
                 }
                 .icons {
                     bottom:30px;
-                    div {margin: 0 2%;}
+                    div {
+                        margin: 0 2%;
+                        p {font-size:.55rem}
+                    }
                 }
             }
         }
@@ -90,7 +93,10 @@ body.home-page {
                 }
                 .icons {
                     bottom:60px;
-                    div {margin: 0 10%;}
+                    div {
+                        margin: 0 10%;
+                        p {font-size:.62rem}
+                    }
                 }
             }
         }
@@ -150,7 +156,10 @@ body.home-page {
                 }
                 .icons {
                     bottom:60px;
-                    div {margin: 0 5%;}
+                    div {
+                        margin: 0 5%;
+                        p {font-size:.62rem}
+                    }
                 }
             }
         }
@@ -208,7 +217,10 @@ body.home-page {
                         padding-left:15px;
                     }
                 }
-                .icons {bottom:90px}
+                .icons {
+                    bottom:90px;
+                    p {font-size:.62rem}
+                }
             }
         }
         .new-section.projects {
@@ -264,7 +276,10 @@ body.home-page {
                         padding-left:15px;
                     }
                 }
-                .icons {bottom:235px}
+                .icons {
+                    bottom:235px;
+                    p {font-size:.62rem}
+                }
             }
         }
         .new-section.projects {
@@ -319,7 +334,10 @@ body.home-page {
                         padding-left:15px;
                     }
                 }
-                .icons {bottom:100px}
+                .icons {
+                    bottom:100px;
+                    p {font-size:.62rem}
+                }
             }
         }
         .new-section.projects {
