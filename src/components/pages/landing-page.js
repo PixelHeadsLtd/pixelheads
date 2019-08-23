@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import LinkedIn from '../../images/social/linkedin.svg';
-import Facebook from '../../images/social/facebook.svg';
+import FB from '../../images/social/fb.svg';
 import GitHub from '../../images/social/github.svg';
 
 class Landing extends Component {
@@ -24,8 +24,8 @@ class Landing extends Component {
             <a href="https://www.linkedin.com/in/mike-king-0481b92/" target="blank" title="View LinkedIn Profile" >
               <img src={LinkedIn} alt="" />
             </a>
-            <a href="https://www.facebook.com/profile.php?id=613721312" target="blank" title="Facebook">
-              <img src={Facebook} alt="" />
+            <a href="https://www.facebook.com/profile.php?id=613721312" target="blank" title="FB">
+              <img src={FB} alt="" />
             </a>
             <a href="https://github.com/PixelHeadsLtd" target="blank" title="Visit GitHub Account">
               <img src={GitHub} alt="" />
