@@ -230,11 +230,6 @@ html {
             .row {
                 margin-right: 0;
                 margin-left: 0;
-                .inner {
-                    margin:100px 100px 90px 100px; 
-                    display: inline-block;
-                    p {margin-bottom: 40px}
-                }
             }
     
             /* Helpers */
@@ -256,9 +251,10 @@ html {
             img.personas {width:100%; margin-top:-160px}
             .row {
                 .red-panel {
-                    background-color: #ff0049; 
+                    background-color: #ff0049;
+                    padding-top: 20px;
                     color:white;
-                    label {color:white}
+                    h4 {color:white}
                 }
             }
         .container-fluid {

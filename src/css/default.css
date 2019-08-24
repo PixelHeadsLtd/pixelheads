@@ -583,11 +583,6 @@ html body.projects {
     html body.projects .App .row {
       margin-right: 0;
       margin-left: 0; }
-      html body.projects .App .row .inner {
-        margin: 100px 100px 90px 100px;
-        display: inline-block; }
-        html body.projects .App .row .inner p {
-          margin-bottom: 40px; }
     html body.projects .App .w-25 {
       width: 25%; }
     html body.projects .App .w-50 {
@@ -605,8 +600,9 @@ html body.umg .App img.personas {
 
 html body.umg .App .row .red-panel {
   background-color: #ff0049;
+  padding-top: 20px;
   color: white; }
-  html body.umg .App .row .red-panel label {
+  html body.umg .App .row .red-panel h4 {
     color: white; }
 
 html body.umg .App .container-fluid {

@@ -105,29 +105,27 @@ class UMG extends Component {
                     <img src={Mobile} className="w-100" alt="" />
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 red-panel">
-                    <div className="inner">
-                        <p>
-                            <label>STAGE ONE</label>
-                            Research the User needs inline with the Business incentives. Create Personas, User Stories, low-level 
-                            Mock-ups and User Jouney's. Set up design workshops and schedule regular meetings with the BA’s and 
-                            business owners to thrash out ideas.
-                            </p>
-                            <p>
-                            <label>STAGE TWO</label>
-                            Based on findings. Create med-level wireframes and prototypes for both mobile & desktop. Sketch out site 
-                            architecture, navigation and content.  Arrange feedback sessions and promote a collaborative environment 
-                            with myself, users (Labels) and the Business.
+                    <p>
+                        <h4>STAGE ONE</h4>
+                        Research the User needs inline with the Business incentives. Create Personas, User Stories, low-level 
+                        Mock-ups and User Jouney's. Set up design workshops and schedule regular meetings with the BA’s and 
+                        business owners to thrash out ideas.
                         </p>
                         <p>
-                            <label>STAGE THREE</label>
-                            Design the Platform Brand and mobile-first UI. Create high-level interactive prototypes using Axure & Sketch. Create 
-                            polished visuals in both Sketch and CS6 that present the final look and feel.
-                        </p>
-                        <p> 
-                            <label>STAGE FOUR</label>
-                            Build Front-End. Bootstrap, ReactJS, Angular, SASS, LESS and HTML5.
-                        </p>
-                    </div>
+                        <h4>STAGE TWO</h4>
+                        Based on findings. Create med-level wireframes and prototypes for both mobile & desktop. Sketch out site 
+                        architecture, navigation and content.  Arrange feedback sessions and promote a collaborative environment 
+                        with myself, users (Labels) and the Business.
+                    </p>
+                    <p>
+                        <h4>STAGE THREE</h4>
+                        Design the Platform Brand and mobile-first UI. Create high-level interactive prototypes using Axure & Sketch. Create 
+                        polished visuals in both Sketch and CS6 that present the final look and feel.
+                    </p>
+                    <p> 
+                        <h4>STAGE FOUR</h4>
+                        Build Front-End. Bootstrap, ReactJS, Angular, SASS, LESS and HTML5.
+                    </p>
                 </div>
             </div>
 
