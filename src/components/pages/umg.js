@@ -29,7 +29,7 @@ class UMG extends Component {
                         <a href="./../umg/AWS-Example-User-Journey.pdf" download="AWS User Journey" title="Will Download a PDF">Example User Journey</a>
                     </li>
                     <li>
-                        <a href="./../axure-demo/index.html" title="Will open in a New Window" target="blank">Axure Prototype</a>
+                        <a href="./../axure-demo/index.html" title="Will open in a New Window" target="_blank">Axure Prototype</a>
                     </li>
                 </ul>
             </nav>
