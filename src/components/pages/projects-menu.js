@@ -12,7 +12,7 @@ class ProjectsMenu extends Component {
   render() {
     return (
       <div>
-        <nav>
+        <nav className="projects-menu">
 `         <h4>Projects</h4>
           <ul>
             <li><Link to="/umg" component={UMG}><i></i>Universal Music</Link></li>

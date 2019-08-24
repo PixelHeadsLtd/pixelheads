@@ -430,29 +430,29 @@ html body.projects {
           font-family: 'latolight';
           font-size: .65rem;
           color: #fff; }
-    html body.projects .App .banner.umg-active nav ul li:nth-child(1) a {
+    html body.projects .App .banner.umg-active nav.projects-menu ul li:nth-child(1) a {
       color: #fff; }
-      html body.projects .App .banner.umg-active nav ul li:nth-child(1) a i {
+      html body.projects .App .banner.umg-active nav.projects-menu ul li:nth-child(1) a i {
         display: block; }
-    html body.projects .App .banner.turner-active nav ul li:nth-child(2) a {
+    html body.projects .App .banner.turner-active nav.projects-menu ul li:nth-child(2) a {
       color: #fff; }
-      html body.projects .App .banner.turner-active nav ul li:nth-child(2) a i {
+      html body.projects .App .banner.turner-active nav.projects-menu ul li:nth-child(2) a i {
         display: block; }
-    html body.projects .App .banner.bbc-active nav ul li:nth-child(3) a {
+    html body.projects .App .banner.bbc-active nav.projects-menu ul li:nth-child(3) a {
       color: #fff; }
-      html body.projects .App .banner.bbc-active nav ul li:nth-child(3) a i {
+      html body.projects .App .banner.bbc-active nav.projects-menu ul li:nth-child(3) a i {
         display: block; }
-    html body.projects .App .banner.monum-active nav ul li:nth-child(4) a {
+    html body.projects .App .banner.monum-active nav.projects-menu ul li:nth-child(4) a {
       color: #fff; }
-      html body.projects .App .banner.monum-active nav ul li:nth-child(4) a i {
+      html body.projects .App .banner.monum-active nav.projects-menu ul li:nth-child(4) a i {
         display: block; }
-    html body.projects .App .banner.setanta-active nav ul li:nth-child(5) a {
+    html body.projects .App .banner.setanta-active nav.projects-menu ul li:nth-child(5) a {
       color: #fff; }
-      html body.projects .App .banner.setanta-active nav ul li:nth-child(5) a i {
+      html body.projects .App .banner.setanta-active nav.projects-menu ul li:nth-child(5) a i {
         display: block; }
-    html body.projects .App .banner.guinness-active nav ul li:nth-child(6) a {
+    html body.projects .App .banner.guinness-active nav.projects-menu ul li:nth-child(6) a {
       color: #fff; }
-      html body.projects .App .banner.guinness-active nav ul li:nth-child(6) a i {
+      html body.projects .App .banner.guinness-active nav.projects-menu ul li:nth-child(6) a i {
         display: block; }
     html body.projects .App .banner {
       height: 395px;
@@ -464,29 +464,46 @@ html body.projects {
       right: 0;
       top: 45px;
       /* Projects Headers */ }
-      html body.projects .App .banner nav {
+      html body.projects .App .banner nav.downloads-menu {
+        position: absolute;
+        top: 20px;
+        right: 60px; }
+        html body.projects .App .banner nav.downloads-menu ul {
+          padding: 0; }
+          html body.projects .App .banner nav.downloads-menu ul li {
+            display: block;
+            margin: 0 0 2px 0;
+            text-align: right; }
+            html body.projects .App .banner nav.downloads-menu ul li a:hover {
+              color: #fff !important; }
+            html body.projects .App .banner nav.downloads-menu ul li a {
+              color: #e6233e !important;
+              font-family: 'latoregular';
+              letter-spacing: .05rem;
+              font-size: .65rem; }
+      html body.projects .App .banner nav.projects-menu {
         position: absolute;
         z-index: 1;
         left: 60px;
         top: 10px; }
-        html body.projects .App .banner nav h4 {
+        html body.projects .App .banner nav.projects-menu h4 {
           color: #fff;
           font-size: .8rem;
           font-family: 'latolight'; }
-        html body.projects .App .banner nav ul {
+        html body.projects .App .banner nav.projects-menu ul {
           padding: 0; }
-          html body.projects .App .banner nav ul li {
+          html body.projects .App .banner nav.projects-menu ul li {
             font-size: .65rem;
             margin-bottom: 6px;
             display: block;
             position: relative; }
-            html body.projects .App .banner nav ul li a:hover {
+            html body.projects .App .banner nav.projects-menu ul li a:hover {
               color: #fff; }
-            html body.projects .App .banner nav ul li a {
+            html body.projects .App .banner nav.projects-menu ul li a {
               color: #888;
               font-family: 'latoregular';
               letter-spacing: .05rem; }
-              html body.projects .App .banner nav ul li a i {
+              html body.projects .App .banner nav.projects-menu ul li a i {
                 display: none;
                 width: 7px;
                 height: 7px;

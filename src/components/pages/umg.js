@@ -23,6 +23,16 @@ class UMG extends Component {
         <ReactBody className="umg projects" />     
         <div className="banner umg-active">
             <ProjectsMenu />
+            <nav className="downloads-menu">
+                <ul>
+                    <li>
+                        <a href="./../umg/AWS-Example-User-Journey.pdf" download="AWS User Journey" title="Will Download a PDF">Example User Journey</a>
+                    </li>
+                    <li>
+                        <a href="./../axure-demo/index.html" title="Will open in a New Window" target="blank">Axure Prototype</a>
+                    </li>
+                </ul>
+            </nav>
             <header className="projects-header">
                 <h1>Universal Music</h1>
                 <ul className="umg-overview">
