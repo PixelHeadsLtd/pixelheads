@@ -83,7 +83,7 @@ class Monum extends Component {
             <div className="row margin-bottom-med">
               <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <figure className="bbc-is-active">
-                  <a href="./swf/fullsix/monum/home.htm" target="blank">
+                  <a href="./swf/fullsix/monum/index.html" target="blank">
                     <h3>View Flash Version</h3>
                     <p>
                       #Conceptualisation<br />
@@ -97,7 +97,7 @@ class Monum extends Component {
               </div>
               <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <figure className="bbc-is-active">
-                  <a href="./swf/fullsix/monum/home.htm" target="blank">
+                  <a href="./swf/fullsix/monum/resources/arc.htm" target="blank">
                     <h3>View Flash Version</h3>
                     <p>
                       #Conceptualisation<br />
@@ -113,7 +113,7 @@ class Monum extends Component {
             <div className="row margin-bottom-med">
               <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <figure className="bbc-is-active">
-                  <a href="./swf/fullsix/monum/home.htm" target="blank">
+                  <a href="./swf/fullsix/monum/resources/chap.htm" target="blank">
                     <h3>View Flash Version</h3>
                     <p>
                       #Conceptualisation<br />
@@ -127,7 +127,7 @@ class Monum extends Component {
               </div>
               <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <figure className="bbc-is-active">
-                  <a href="./swf/fullsix/monum/home.htm" target="blank">
+                  <a href="./swf/fullsix/monum/resources/anger.htm" target="blank">
                     <h3>View Flash Version</h3>
                     <p>
                       #Conceptualisation<br />
