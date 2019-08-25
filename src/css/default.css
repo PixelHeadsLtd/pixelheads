@@ -721,8 +721,12 @@ html body.monum .App .banner {
   background-color: #000000;
   background-position: center bottom 63px !important; }
 
-html body.setanta .App .banner, html body.guinness .App .banner {
+html body.setanta .App .banner {
   background-image: url("../images/clients/pages/setanta/banner.png");
+  background-color: #000000; }
+
+html body.guinness .App .banner {
+  background-image: url("../images/clients/pages/guinness/banner.png");
   background-color: #000000; }
 
 /********************************************** LOAD CUSTOM FONTS **********************************************/

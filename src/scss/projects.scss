@@ -407,10 +407,19 @@ html {
     }
 
     // Setanta
-    body.setanta, body.guinness {
+    body.setanta {
         .App {
             .banner {
                 background-image:url('../images/clients/pages/setanta/banner.png');
+                background-color: $jetBlack;
+            }
+        }
+    }
+     // Guinness
+     body.guinness {
+        .App {
+            .banner {
+                background-image:url('../images/clients/pages/guinness/banner.png');
                 background-color: $jetBlack;
             }
         }
