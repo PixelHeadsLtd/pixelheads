@@ -8,8 +8,9 @@ import TGGrouped from '../../images/clients/pages/bbc/grouped.png'
 import CarNews from '../../images/clients/pages/bbc/car-news.png'
 import MotionGallery from '../../images/clients/pages/bbc/motion-gallery.png'
 
-import ProjectsNav from './projects-nav'
-import ProjectsMenu from './projects-menu'
+// includes
+import ProjectsNav from '../menus/projects-nav'
+import ProjectsMenu from '../menus/projects-menu'
 
 class BBC extends Component {
   render() {

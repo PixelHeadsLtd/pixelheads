@@ -11,8 +11,9 @@ import AdvTime from '../../images/clients/pages/turner/at.png'
 import AdultSwimGames from '../../images/clients/pages/turner/as-games.jpg'
 import AdultSwimVideos from '../../images/clients/pages/turner/as-videos.jpg'
 
-import ProjectsNav from './projects-nav'
-import ProjectsMenu from './projects-menu'
+// includes
+import ProjectsNav from '../menus/projects-nav'
+import ProjectsMenu from '../menus/projects-menu'
 
 class Turner extends Component {
   render() {

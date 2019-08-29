@@ -9,13 +9,6 @@ import MonumThumb from '../../images/clients/thumbs/monum.png'
 import SetantaThumb from '../../images/clients/thumbs/setanta.png'
 import GuinnessThumb from '../../images/clients/thumbs/guinness.png'
 
-import UMG from './umg';
-import Turner from './turner';
-import BBC from './bbc';
-import Monum from './monum';
-import Setanta from './setanta';
-import Guinness from './guinness';
-
 class Projects extends Component {
   render() {
     return (
@@ -23,12 +16,12 @@ class Projects extends Component {
         <h1>Projects</h1>
         <header className="projects-header">
           <nav className="main-nav">
-            <Link className="umg" to="/umg" component={UMG}>Universal Music</Link>
-            <Link className="turner" to="/turner" component={Turner}>Turner</Link>
-            <Link className="bbc" to="/bbc" component={BBC}>BBC Worldwide</Link>
-            <Link className="monum" to="/monum" component={Monum}>Monum</Link>
-            <Link className="setanta" to="/setanta" component={Setanta}>Setanta</Link>
-            <Link className="guinness" to="/guinness" component={Guinness}>Guinness</Link><br/>
+            <Link className="umg" to="/umg">Universal Music</Link>
+            <Link className="turner" to="/turner">Turner</Link>
+            <Link className="bbc" to="/bbc">BBC Worldwide</Link>
+            <Link className="monum" to="/monum">Monum</Link>
+            <Link className="setanta" to="/setanta">Setanta</Link>
+            <Link className="guinness" to="/guinness">Guinness</Link><br/>
             <div className="row">
               <div className="col-lg-3 col-md-4 col-sm-6">
                 <figure className="umg-is-active">

@@ -7,8 +7,9 @@ import SetantaHome from './../../images/clients/pages/setanta/home.png'
 import SetantaIncome from './../../images/clients/pages/setanta/income.png'
 import SetantaNews from './../../images/clients/pages/setanta/news.png'
 
-import ProjectsNav from './projects-nav'
-import ProjectsMenu from './projects-menu'
+// includes
+import ProjectsNav from '../menus/projects-nav'
+import ProjectsMenu from '../menus/projects-menu'
 
 class Setanta extends Component {
   render() {

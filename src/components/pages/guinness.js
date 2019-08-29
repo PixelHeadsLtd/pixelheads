@@ -5,8 +5,9 @@ import { goToTop } from 'react-scrollable-anchor'
 // images
 import GuinnessHomePage from './../../images/clients/pages/guinness/home.png'
 
-import ProjectsNav from './projects-nav'
-import ProjectsMenu from './projects-menu'
+// includes
+import ProjectsNav from '../menus/projects-nav'
+import ProjectsMenu from '../menus/projects-menu'
 
 class Guinness extends Component {
   render() {

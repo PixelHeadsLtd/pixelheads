@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import UMG from './umg';
-import Turner from './turner';
-import BBC from './bbc';
-import Monum from './monum';
-import Setanta from './setanta';
-import Guinness from './guinness';
+import UMG from '../pages/umg';
+import Turner from '../pages/turner';
+import BBC from '../pages/bbc';
+import Monum from '../pages/monum';
+import Setanta from '../pages/setanta';
+import Guinness from '../pages/guinness';
 
 class ProjectsMenu extends Component {
   render() {

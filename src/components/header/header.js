@@ -25,7 +25,6 @@ changeActiveMenu(index){
   {
     this.setState({ isActiveIndex: index });
   }
-  console.log(index);
 };
   render() {
     //console.log(this.state.isActiveIndex);

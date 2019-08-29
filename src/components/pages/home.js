@@ -26,9 +26,13 @@ import ContactMike from './contact';
 configureAnchors({offset: -45, scrollDuration: 300})
 
 class Home extends Component {
+  componentDidMount() {
+    console.log('I was triggered during componentDidMount')
+  }
 
   render() {
     var menuRef = React.createRef();
+    console.log('I was triggered during render')
     return (
       <div className="content">
         <ReactBody className="home-page" />     

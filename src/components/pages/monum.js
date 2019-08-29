@@ -10,8 +10,9 @@ import Angers from '../../images/clients/pages/monum/anger.jpg'
 import MonumHome from '../../images/clients/pages/monum/home.png'
 import MonumHomeTwo from '../../images/clients/pages/monum/monum-fullpage.png'
 
-import ProjectsNav from './projects-nav'
-import ProjectsMenu from './projects-menu'
+// includes
+import ProjectsNav from '../menus/projects-nav'
+import ProjectsMenu from '../menus/projects-menu'
 
 class Monum extends Component {
   render() {
@@ -49,11 +50,11 @@ class Monum extends Component {
             <header className="main-header">
               <ProjectsNav />
             </header>
-            <row>
+            <div className="row">
                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <h2>Overview</h2>
                </div>
-            </row>
+            </div>
             <div className="row">
                 <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                     <p>

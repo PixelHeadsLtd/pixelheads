@@ -14,8 +14,8 @@ import SupplyChainLogo from '../../images/clients/pages/umg/supplychain-logo.png
 import SupplyChain from '../../images/clients/pages/umg/supplychain.png'
 
 // includes
-import ProjectsNav from './projects-nav'
-import ProjectsMenu from './projects-menu'
+import ProjectsNav from '../menus/projects-nav'
+import ProjectsMenu from '../menus/projects-menu'
 
 class UMG extends Component {
   render() {
@@ -117,25 +117,25 @@ class UMG extends Component {
                     <img src={Mobile} className="w-100" alt="" />
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 red-panel">
+                    <h4>STAGE ONE</h4>
                     <p>
-                        <h4>STAGE ONE</h4>
                         Research the User needs inline with the Business incentives. Create Personas, User Stories, low-level 
                         Mock-ups and User Jouney's. Set up design workshops and schedule regular meetings with the BA’s and 
                         business owners to thrash out ideas.
-                        </p>
-                        <p>
-                        <h4>STAGE TWO</h4>
+                    </p>
+                    <h4>STAGE TWO</h4>
+                    <p>
                         Based on findings. Create med-level wireframes and prototypes for both mobile & desktop. Sketch out site 
                         architecture, navigation and content.  Arrange feedback sessions and promote a collaborative environment 
                         with myself, users (Labels) and the Business.
                     </p>
+                    <h4>STAGE THREE</h4>
                     <p>
-                        <h4>STAGE THREE</h4>
                         Design the Platform Brand and mobile-first UI. Create high-level interactive prototypes using Axure & Sketch. Create 
                         polished visuals in both Sketch and CS6 that present the final look and feel.
                     </p>
-                    <p> 
-                        <h4>STAGE FOUR</h4>
+                    <h4>STAGE FOUR</h4>
+                    <p>              
                         Build Front-End. Bootstrap, ReactJS, Angular, SASS, LESS and HTML5.
                     </p>
                 </div>
