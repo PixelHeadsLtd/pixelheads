@@ -3,6 +3,7 @@ import ReactBody from 'react-body';
 import { goToTop } from 'react-scrollable-anchor'
 
 // images
+import GuinnessHomePage from './../../images/clients/pages/guinness/home.png'
 
 import ProjectsNav from './projects-nav'
 import ProjectsMenu from './projects-menu'
@@ -34,7 +35,7 @@ class Guinness extends Component {
                     </li>
                     <li>
                         <h3>When</h3>
-                        <p>Pre 2009</p>
+                        <p>Pre 2013</p>
                     </li>
                 </ul>
             </header>
@@ -44,12 +45,15 @@ class Guinness extends Component {
               <ProjectsNav />
             </header>
             <div className="row">
-                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <h2>Overview</h2>
-                    <p>
-                      Sorry, this page is currently in Development and will be available soon.
-                    </p>
+                    <p>Freelance project to Design the new Guinness website UI and participate in various sponsorship promotions. More info to follow shortly.</p>
                 </div>
+            </div>
+            <div className="row">
+              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <img src={GuinnessHomePage} className="w-100" alt="" />
+              </div>
             </div>
         </div>
       </div>

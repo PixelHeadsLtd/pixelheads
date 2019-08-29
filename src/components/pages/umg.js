@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactBody from 'react-body';
 import { goToTop } from 'react-scrollable-anchor'
 
+// images
 import StuHubLogo from '../../images/clients/pages/umg/studiohub-logo.png'
 import Personas from '../../images/clients/pages/umg/personas.png'
 import Mobile from '../../images/clients/pages/umg/mobile.png'
@@ -12,6 +13,7 @@ import RightsHub from '../../images/clients/pages/umg/rightshub.png'
 import SupplyChainLogo from '../../images/clients/pages/umg/supplychain-logo.png'
 import SupplyChain from '../../images/clients/pages/umg/supplychain.png'
 
+// includes
 import ProjectsNav from './projects-nav'
 import ProjectsMenu from './projects-menu'
 

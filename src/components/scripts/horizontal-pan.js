@@ -34,7 +34,7 @@ class HorizontalPan extends Component {
 
   handleScroll = () => {
     let y = this.state.element.current.getBoundingClientRect().y; // offset for when opacity begins
-    let left = 0;
+    let left = -100;
 
     if(y !== 0) { // after in view
       let distanceFactor = this.sigmoid(y);

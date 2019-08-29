@@ -3,6 +3,9 @@ import ReactBody from 'react-body';
 import { goToTop } from 'react-scrollable-anchor'
 
 // images
+import SetantaHome from './../../images/clients/pages/setanta/home.png'
+import SetantaIncome from './../../images/clients/pages/setanta/income.png'
+import SetantaNews from './../../images/clients/pages/setanta/news.png'
 
 import ProjectsNav from './projects-nav'
 import ProjectsMenu from './projects-menu'
@@ -34,7 +37,7 @@ class Setanta extends Component {
                     </li>
                     <li>
                         <h3>When</h3>
-                        <p>Pre 2009</p>
+                        <p>Pre 2013</p>
                     </li>
                 </ul>
             </header>
@@ -46,9 +49,32 @@ class Setanta extends Component {
             <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <h2>Overview</h2>
-                    <p>
-                      Sorry, this page is currently in Development and will be available soon.
-                    </p>
+                    <p>Setanta Asset Management is an independent investment management firm based<br/>
+                      in Dublin, Ireland. Established in 1998, Setanta has successfully applied a <br/>
+                      long-term value investing approach to its global equity and multi-asset funds</p>
+                </div>
+                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <h2>The Brief</h2>
+                    <ul>
+                        <li>Create low-level, medium level and high level Mock-Ups.</li>
+                        <li>Design the overall site look and feel based on earier research.</li>
+                        <li>Create working static & Interactive Prototypes.</li>
+                    </ul>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img src={SetantaHome} className="w-100" alt="" />
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img src={SetantaIncome} className="w-100"  alt="" />
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img src={SetantaNews} className="w-100"  alt="" />
                 </div>
             </div>
         </div>
