@@ -33,6 +33,9 @@ class UMG extends Component {
                     <li>
                         <a href="./../axure-demo/index.html" title="Will open in a New Window" target="_blank">Axure Prototype</a>
                     </li>
+                    <li>
+                        <a href="./../StudioHubStyleGuides/index.htm" title="Will open in a New Window" target="_blank">StyleGuides</a>
+                    </li>
                 </ul>
             </nav>
             <header className="projects-header">
