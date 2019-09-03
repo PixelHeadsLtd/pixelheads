@@ -11,6 +11,7 @@ import BBC from './components/pages/bbc';
 import Monum from './components/pages/monum';
 import Setanta from './components/pages/setanta';
 import Guinness from './components/pages/guinness';
+import Tutorials from './components/pages/tutorials';
 
 
 class App extends Component {
@@ -35,6 +36,7 @@ class App extends Component {
           <Route path='/Monum' component={Monum}></Route>
           <Route path='/Setanta' component={Setanta}></Route>
           <Route path='/Guinness' component={Guinness}></Route>
+          <Route path='/Tutorials' component={Tutorials}></Route>
         </div>
       </Router>
     );
