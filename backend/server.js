@@ -10,6 +10,18 @@ const app = express();
 app.use(cors());
 const router = express.Router();
 
+app.use(function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,PATCH,OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
+  // allow preflight
+  if (req.method === 'OPTIONS') {
+      res.send(200);
+  } else {
+      next();
+  }
+});
+
 // this is our MongoDB database
 const dbRoute =
   'mongodb://heroku_x7k58sr8:6vtpthsn3covl5po9u9bpi7vqi@ds217438.mlab.com:17438/heroku_x7k58sr8';
