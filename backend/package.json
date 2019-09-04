@@ -15,5 +15,5 @@
     "mongoose": "^5.6.12",
     "morgan": "^1.9.1"
   },
-  "proxy": "https://pixel-heads.com:3001"
+  "proxy": "https://pixelheads.herokuapp.com"
 }

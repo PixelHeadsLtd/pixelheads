@@ -42,8 +42,7 @@ class Tutorials extends Component {
   // our first get method that uses our backend api to
   // fetch data from our data base
   getDataFromDb = () => {
-    //fetch('http://localhost:3001/api/getData')
-    fetch('https://pixel-heads.com:3001/api/getData')
+    fetch('https://pixelheads.herokuapp.com/api/getData')
       .then((data) => data.json())
       .then((res) => this.setState({ data: res.data }));
   };
@@ -56,8 +55,8 @@ class Tutorials extends Component {
     while (currentIds.includes(idToBeAdded)) {
       ++idToBeAdded;
     }
-    //axios.post('http://localhost:3001/api/putData', {
-    axios.post('https://pixel-heads.com:3001/api/putData', {
+
+    axios.post('https://pixelheads.herokuapp.com/api/putData', {
       id: idToBeAdded,
       message: message,
     });
@@ -73,8 +72,8 @@ class Tutorials extends Component {
         objIdToDelete = dat._id;
       }
     });
-    //axios.delete('http://localhost:3001/api/deleteData', {
-    axios.delete('https://pixel-heads.com:3001/api/deleteData', {
+
+    axios.delete('https://pixelheads.herokuapp.com/api/deleteData', {
       data: {
         id: objIdToDelete,
       },
@@ -91,8 +90,8 @@ class Tutorials extends Component {
         objIdToUpdate = dat._id;
       }
     });
-    //axios.post('http://localhost:3001/api/updateData', {
-    axios.post('https://pixel-heads.com:3001/api/updateData', {
+
+    axios.post('https://pixelheads.herokuapp.com/api/updateData', {
       id: objIdToUpdate,
       update: { message: updateToApply },
     });
