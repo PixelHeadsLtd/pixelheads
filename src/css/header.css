@@ -40,7 +40,9 @@
 /* pagination */
 /* client logo */
 body.projects .main-header {
-  background: #000000 url(../images/pixelheads-logo-inverted.svg) no-repeat top 8px right 60px;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: top 8px right 60px;
   opacity: 1; }
   body.projects .main-header .container {
     max-width: none;
@@ -135,7 +137,9 @@ body.projects .transpose-menu .main-header {
   -ms-transition: background-color 0.5s ease-in;
   -o-transition: background-color 0.5s ease-in;
   transition: background-color 0.5s ease-in;
-  background: #fff url(../images/pixelheads-logo.svg) no-repeat top 8px right 60px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: top 8px right 60px;
   opacity: 0.95; }
   body.projects .transpose-menu .main-header a.top {
     opacity: 1;

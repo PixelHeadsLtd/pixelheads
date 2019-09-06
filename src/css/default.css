@@ -771,7 +771,9 @@ html body.guinness .App .banner {
 /* pagination */
 /* client logo */
 body.projects .main-header {
-  background: #000000 url(../images/pixelheads-logo-inverted.svg) no-repeat top 8px right 60px;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: top 8px right 60px;
   opacity: 1; }
   body.projects .main-header .container {
     max-width: none;
@@ -866,7 +868,9 @@ body.projects .transpose-menu .main-header {
   -ms-transition: background-color 0.5s ease-in;
   -o-transition: background-color 0.5s ease-in;
   transition: background-color 0.5s ease-in;
-  background: #fff url(../images/pixelheads-logo.svg) no-repeat top 8px right 60px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: top 8px right 60px;
   opacity: 0.95; }
   body.projects .transpose-menu .main-header a.top {
     opacity: 1;
@@ -1052,14 +1056,14 @@ hr {
 
 /********************************************** START MIXINS **********************************************/
 @media (min-width: 375px) {
-  body.home-page .main-header img {
-    display: none; }
-  body.home-page .main-header nav.main-nav {
-    margin-left: 40px; }
+  body.home-page .main-header {
+    background-image: none; }
+    body.home-page .main-header nav.main-nav {
+      margin-left: 40px; }
   body.home-page section.new-section.home {
-    background-position: center top 5px; }
+    background-size: 450px; }
     body.home-page section.new-section.home .home-wrapper {
-      padding-top: 320px; }
+      padding-top: 280px; }
   body.home-page .new-section.about {
     min-height: 2160px; }
     body.home-page .new-section.about .container-fluid {
@@ -1091,14 +1095,14 @@ hr {
       margin-bottom: 10px; } }
 
 @media (min-width: 576px) {
-  body.home-page .main-header img {
-    display: block; }
-  body.home-page .main-header nav.main-nav {
-    margin-left: 60px; }
+  body.home-page .main-header {
+    background: #fff url(../images/pixelheads-logo.svg) no-repeat top 8px right 60px; }
+    body.home-page .main-header nav.main-nav {
+      margin-left: 60px; }
   body.home-page section.new-section.home {
-    background-position: center top 5px; }
+    background-size: 530px; }
     body.home-page section.new-section.home .home-wrapper {
-      padding-top: 320px; }
+      padding-top: 340px; }
   body.home-page .new-section.about {
     min-height: 1590px; }
     body.home-page .new-section.about .container-fluid {
@@ -1132,14 +1136,8 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 768px) {
-  body.home-page .main-header img {
-    display: block; }
   body.home-page .main-header nav.main-nav {
     margin-left: 60px; }
-  body.home-page section.new-section.home {
-    background-position: center top 5px; }
-    body.home-page section.new-section.home .home-wrapper {
-      padding-top: 320px; }
   body.home-page .new-section.about {
     min-height: 1155px; }
     body.home-page .new-section.about .container-fluid {
@@ -1173,14 +1171,8 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 992px) {
-  body.home-page .main-header img {
-    display: block; }
   body.home-page .main-header nav.main-nav {
     margin-left: 60px; }
-  body.home-page section.new-section.home {
-    background-position: center top 5px; }
-    body.home-page section.new-section.home .home-wrapper {
-      padding-top: 320px; }
   body.home-page .new-section.about {
     min-height: 924px; }
     body.home-page .new-section.about .container-fluid {
@@ -1212,14 +1204,8 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 1200px) {
-  body.home-page .main-header img {
-    display: block; }
   body.home-page .main-header nav.main-nav {
     margin-left: 60px; }
-  body.home-page section.new-section.home {
-    background-position: center top 5px; }
-    body.home-page section.new-section.home .home-wrapper {
-      padding-top: 320px; }
   body.home-page .new-section.about .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
@@ -1249,14 +1235,10 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 1500px) {
-  body.home-page .main-header img {
-    display: block; }
   body.home-page .main-header nav.main-nav {
     margin-left: 60px; }
-  body.home-page section.new-section.home {
-    background-position: center top 40px; }
-    body.home-page section.new-section.home .home-wrapper {
-      padding-top: 400px; }
+  body.home-page section.new-section.home .home-wrapper {
+    padding-top: 400px; }
   body.home-page .new-section.about .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
@@ -1286,300 +1268,284 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 375px) {
-  html body.projects .App .container a.top {
+  html body.projects .main-header {
+    background-image: none; }
+    html body.projects .main-header nav.main-nav {
+      margin-left: 40px; }
+  html body.projects .container a.top {
     display: none; }
-  html body.projects .App .banner nav {
+  html body.projects .banner nav {
     display: none; }
-  html body.projects .App .projects-header {
+  html body.projects .projects-header {
     bottom: 75px !important; }
-    html body.projects .App .projects-header ul {
+    html body.projects .projects-header ul {
       display: none; }
-  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+  html body.projects .container-fluid.bbc-container .row .col-xs-12, html body.projects .container-fluid.bbc-container .row .col-sm-12, html body.projects .container-fluid.bbc-container .row .col-md-12, html body.projects .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 0;
     padding-left: 0; }
-  html body.projects .App .container-fluid {
+  html body.projects .container-fluid {
     padding-right: 30px;
     padding-left: 30px; }
-    html body.projects .App .container-fluid .main-header img {
-      display: none; }
-    html body.projects .App .container-fluid .main-header nav.main-nav {
-      margin-left: 40px; }
-    html body.projects .App .container-fluid .row img.batman {
+    html body.projects .container-fluid .row img.batman {
       width: 108%;
       margin-top: 0;
       position: static; }
-    html body.projects .App .container-fluid .row.scooby {
+    html body.projects .container-fluid .row.scooby {
       padding-top: 60px;
       padding-bottom: 180px; }
-      html body.projects .App .container-fluid .row.scooby > div:first-child {
+      html body.projects .container-fluid .row.scooby > div:first-child {
         margin-right: 130px; }
-      html body.projects .App .container-fluid .row.scooby img.scooby-van {
+      html body.projects .container-fluid .row.scooby img.scooby-van {
         top: -172px; }
-      html body.projects .App .container-fluid .row.scooby .para1 {
+      html body.projects .container-fluid .row.scooby .para1 {
         margin-left: 0;
         max-width: 90%;
         padding-left: 60px;
         margin-top: 300px; }
-      html body.projects .App .container-fluid .row.scooby .para2 {
+      html body.projects .container-fluid .row.scooby .para2 {
         max-width: 90%;
         padding-left: 60px;
         margin-top: 0; }
-    html body.projects .App .container-fluid .row.ctn-ntw {
+    html body.projects .container-fluid .row.ctn-ntw {
       padding-top: 80px; }
-      html body.projects .App .container-fluid .row.ctn-ntw img.adv-time {
+      html body.projects .container-fluid .row.ctn-ntw img.adv-time {
         top: -169px;
         right: 113px;
         width: 265px; }
-    html body.projects .App .container-fluid .row.youtube ul {
+    html body.projects .container-fluid .row.youtube ul {
       display: none; }
-  html body.projects .App img.personas {
+  html body.projects img.personas {
     width: 497px;
     margin-top: -79px; } }
 
 @media (min-width: 576px) {
-  html body.projects .App .container a.top {
+  html body.projects .transpose-menu .main-header {
+    background-image: url(../images/pixelheads-logo.svg) !important; }
+  html body.projects .main-header {
+    background-image: url(../images/pixelheads-logo-inverted.svg); }
+  html body.projects .main-header nav.main-nav {
+    margin-left: 60px; }
+  html body.projects .container a.top {
     display: none; }
-  html body.projects .App .banner nav {
+  html body.projects .banner nav {
     display: block; }
-  html body.projects .App .projects-header {
+  html body.projects .projects-header {
     bottom: 25px !important; }
-    html body.projects .App .projects-header ul {
+    html body.projects .projects-header ul {
       display: block; }
-  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+  html body.projects .container-fluid.bbc-container .row .col-xs-12, html body.projects .container-fluid.bbc-container .row .col-sm-12, html body.projects .container-fluid.bbc-container .row .col-md-12, html body.projects .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 0;
     padding-left: 0; }
-  html body.projects .App .container-fluid {
+  html body.projects .container-fluid {
     padding-right: 30px;
     padding-left: 30px; }
-    html body.projects .App .container-fluid .main-header img {
-      display: block; }
-    html body.projects .App .container-fluid .main-header nav.main-nav {
-      margin-left: 60px; }
-    html body.projects .App .container-fluid .row img.batman {
+    html body.projects .container-fluid .row img.batman {
       width: 108%;
       margin-top: 0;
       position: static; }
-    html body.projects .App .container-fluid .row.scooby {
+    html body.projects .container-fluid .row.scooby {
       padding-top: 60px;
       padding-bottom: 180px; }
-      html body.projects .App .container-fluid .row.scooby > div:first-child {
+      html body.projects .container-fluid .row.scooby > div:first-child {
         margin-right: 130px; }
-      html body.projects .App .container-fluid .row.scooby img.scooby-van {
+      html body.projects .container-fluid .row.scooby img.scooby-van {
         top: -172px; }
-      html body.projects .App .container-fluid .row.scooby .para1 {
+      html body.projects .container-fluid .row.scooby .para1 {
         margin-left: 0;
         max-width: 90%;
         padding-left: 60px;
         margin-top: 300px; }
-      html body.projects .App .container-fluid .row.scooby .para2 {
+      html body.projects .container-fluid .row.scooby .para2 {
         max-width: 90%;
         padding-left: 60px;
         margin-top: 0; }
-    html body.projects .App .container-fluid .row.ctn-ntw {
+    html body.projects .container-fluid .row.ctn-ntw {
       padding-top: 80px; }
-      html body.projects .App .container-fluid .row.ctn-ntw img.adv-time {
+      html body.projects .container-fluid .row.ctn-ntw img.adv-time {
         top: -169px;
         right: 113px;
         width: 265px; }
-    html body.projects .App .container-fluid .row.youtube ul {
+    html body.projects .container-fluid .row.youtube ul {
       display: none; }
-    html body.projects .App .container-fluid .projects-header ul {
+    html body.projects .container-fluid .projects-header ul {
       display: block;
       margin: 0 35px; }
-  html body.projects .App img.personas {
+  html body.projects img.personas {
     width: 767px;
     margin-top: -91px; } }
 
 @media (min-width: 768px) {
-  html body.projects .App .container a.top {
-    display: none; }
-  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+  html body.projects .container a.top {
+    display: inline-block; }
+  html body.projects .container-fluid.bbc-container .row .col-xs-12, html body.projects .container-fluid.bbc-container .row .col-sm-12, html body.projects .container-fluid.bbc-container .row .col-md-12, html body.projects .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 0;
     padding-left: 0; }
-  html body.projects .App .container-fluid {
+  html body.projects .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
-    html body.projects .App .container-fluid .main-header img {
-      display: block; }
-    html body.projects .App .container-fluid .main-header nav.main-nav {
-      margin-left: 60px; }
-    html body.projects .App .container-fluid .row img.batman {
+    html body.projects .container-fluid .row img.batman {
       width: 108%;
       margin-top: 0;
       position: static; }
-    html body.projects .App .container-fluid .row.scooby {
+    html body.projects .container-fluid .row.scooby {
       padding-top: 60px;
       padding-bottom: 180px; }
-      html body.projects .App .container-fluid .row.scooby > div:first-child {
+      html body.projects .container-fluid .row.scooby > div:first-child {
         margin-right: 130px; }
-      html body.projects .App .container-fluid .row.scooby .para1 {
+      html body.projects .container-fluid .row.scooby .para1 {
         margin-left: 0;
         max-width: 90%;
         padding-left: 60px;
         margin-top: 300px; }
-      html body.projects .App .container-fluid .row.scooby .para2 {
+      html body.projects .container-fluid .row.scooby .para2 {
         max-width: 90%;
         padding-left: 60px;
         margin-top: 0; }
-      html body.projects .App .container-fluid .row.scooby img.scooby-van {
+      html body.projects .container-fluid .row.scooby img.scooby-van {
         top: -172px; }
-    html body.projects .App .container-fluid .row.ctn-ntw {
+    html body.projects .container-fluid .row.ctn-ntw {
       padding-top: 80px; }
-      html body.projects .App .container-fluid .row.ctn-ntw img.adv-time {
+      html body.projects .container-fluid .row.ctn-ntw img.adv-time {
         top: -206px;
         right: 230px;
         width: 340px; }
-    html body.projects .App .container-fluid .row.youtube ul {
+    html body.projects .container-fluid .row.youtube ul {
       display: block; }
-    html body.projects .App .container-fluid .projects-header ul {
+    html body.projects .container-fluid .projects-header ul {
       display: block;
       margin: 0 60px; }
-  html body.projects .App img.personas {
+  html body.projects img.personas {
     width: 936px;
     margin-top: -84px; } }
 
 @media (min-width: 992px) {
-  html body.projects .App .container a.top {
-    display: inline-block; }
-  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+  html body.projects .container-fluid.bbc-container .row .col-xs-12, html body.projects .container-fluid.bbc-container .row .col-sm-12, html body.projects .container-fluid.bbc-container .row .col-md-12, html body.projects .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 10%;
     padding-left: 10%; }
-  html body.projects .App .container-fluid {
+  html body.projects .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
-    html body.projects .App .container-fluid .main-header img {
-      display: block; }
-    html body.projects .App .container-fluid .main-header nav.main-nav {
-      margin-left: 60px; }
-    html body.projects .App .container-fluid .row img.batman {
+    html body.projects .container-fluid .row img.batman {
       width: 180%;
       margin-top: 50px;
       position: absolute; }
-    html body.projects .App .container-fluid .row.scooby {
+    html body.projects .container-fluid .row.scooby {
       padding-top: 60px;
       padding-bottom: 130px; }
-      html body.projects .App .container-fluid .row.scooby > div:first-child {
+      html body.projects .container-fluid .row.scooby > div:first-child {
         margin-right: 130px; }
-      html body.projects .App .container-fluid .row.scooby img.scooby-van {
+      html body.projects .container-fluid .row.scooby img.scooby-van {
         top: -172px; }
-      html body.projects .App .container-fluid .row.scooby .para1 {
+      html body.projects .container-fluid .row.scooby .para1 {
         margin-left: 465px;
         max-width: 44%;
         min-width: 50%;
         padding-top: 30px;
         margin-top: 0; }
-      html body.projects .App .container-fluid .row.scooby .para2 {
+      html body.projects .container-fluid .row.scooby .para2 {
         max-width: 90%;
         padding-left: 60px;
         margin-top: 115px;
         min-width: 90%; }
-    html body.projects .App .container-fluid .row.ctn-ntw img.adv-time {
+    html body.projects .container-fluid .row.ctn-ntw img.adv-time {
       top: -206px;
       right: 230px;
       width: 340px; }
-    html body.projects .App .container-fluid .row.youtube ul {
+    html body.projects .container-fluid .row.youtube ul {
       display: block; }
-    html body.projects .App .container-fluid .projects-header ul {
+    html body.projects .container-fluid .projects-header ul {
       display: block;
       margin: 0 60px; }
-  html body.projects .App img.personas {
+  html body.projects img.personas {
     width: 520px;
     margin-top: -123px; } }
 
 @media (min-width: 1200px) {
-  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+  html body.projects .container-fluid.bbc-container .row .col-xs-12, html body.projects .container-fluid.bbc-container .row .col-sm-12, html body.projects .container-fluid.bbc-container .row .col-md-12, html body.projects .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 10%;
     padding-left: 10%; }
-  html body.projects .App .container-fluid {
+  html body.projects .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
-    html body.projects .App .container-fluid .main-header img {
-      display: block; }
-    html body.projects .App .container-fluid .main-header nav.main-nav {
-      margin-left: 60px; }
-    html body.projects .App .container-fluid .row img.batman {
+    html body.projects .container-fluid .row img.batman {
       width: 140%;
       margin-top: 10px;
       position: absolute; }
-    html body.projects .App .container-fluid .row.scooby {
+    html body.projects .container-fluid .row.scooby {
       padding-top: 60px;
       padding-bottom: 0; }
-      html body.projects .App .container-fluid .row.scooby > div:first-child {
+      html body.projects .container-fluid .row.scooby > div:first-child {
         margin-right: 100px; }
-      html body.projects .App .container-fluid .row.scooby img.scooby-van {
+      html body.projects .container-fluid .row.scooby img.scooby-van {
         top: -172px; }
-      html body.projects .App .container-fluid .row.scooby .para1 {
+      html body.projects .container-fluid .row.scooby .para1 {
         margin-left: 0;
         max-width: 100%;
         margin-right: 30px;
         min-width: initial;
         padding-top: 0;
         padding-left: 0; }
-      html body.projects .App .container-fluid .row.scooby .para2 {
+      html body.projects .container-fluid .row.scooby .para2 {
         max-width: 100%;
         padding-left: 0;
         margin-top: 0;
         min-width: initial; }
-    html body.projects .App .container-fluid .row.ctn-ntw img.adv-time {
+    html body.projects .container-fluid .row.ctn-ntw img.adv-time {
       position: absolute;
       top: -240px;
       right: 395px;
       width: 400px; }
-    html body.projects .App .container-fluid .row.youtube ul {
+    html body.projects .container-fluid .row.youtube ul {
       display: block; }
-    html body.projects .App .container-fluid .projects-header ul {
+    html body.projects .container-fluid .projects-header ul {
       display: block;
       margin: 0 60px; }
-  html body.projects .App img.personas {
+  html body.projects img.personas {
     width: 640px;
     margin-top: -132px; } }
 
 @media (min-width: 1580px) {
-  html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
+  html body.projects .container-fluid.bbc-container .row .col-xs-12, html body.projects .container-fluid.bbc-container .row .col-sm-12, html body.projects .container-fluid.bbc-container .row .col-md-12, html body.projects .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 10%;
     padding-left: 10%; }
-  html body.projects .App .container-fluid {
+  html body.projects .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
-    html body.projects .App .container-fluid .main-header img {
-      display: block; }
-    html body.projects .App .container-fluid .main-header nav.main-nav {
-      margin-left: 60px; }
-    html body.projects .App .container-fluid .row img.batman {
+    html body.projects .container-fluid .row img.batman {
       width: 170%;
       margin-top: -96px;
       position: absolute; }
-    html body.projects .App .container-fluid .row.scooby {
+    html body.projects .container-fluid .row.scooby {
       padding-top: 100px;
       padding-bottom: 0; }
-      html body.projects .App .container-fluid .row.scooby > div {
+      html body.projects .container-fluid .row.scooby > div {
         margin-right: 30px; }
-      html body.projects .App .container-fluid .row.scooby > div:first-child {
+      html body.projects .container-fluid .row.scooby > div:first-child {
         margin-right: 0; }
-      html body.projects .App .container-fluid .row.scooby img.scooby-van {
+      html body.projects .container-fluid .row.scooby img.scooby-van {
         top: -230px; }
-      html body.projects .App .container-fluid .row.scooby .para1 {
+      html body.projects .container-fluid .row.scooby .para1 {
         margin-left: 0;
         max-width: 100%;
         min-width: initial;
         padding-top: 0;
         padding-left: 0; }
-      html body.projects .App .container-fluid .row.scooby .para2 {
+      html body.projects .container-fluid .row.scooby .para2 {
         max-width: 100%;
         padding-left: 0;
         margin-top: 0;
         min-width: initial; }
-    html body.projects .App .container-fluid .row.ctn-ntw img.adv-time {
+    html body.projects .container-fluid .row.ctn-ntw img.adv-time {
       position: absolute;
       top: -240px;
       right: 395px;
       width: 400px; }
-    html body.projects .App .container-fluid .row.youtube ul {
+    html body.projects .container-fluid .row.youtube ul {
       display: block; }
-    html body.projects .App .container-fluid .projects-header ul {
+    html body.projects .container-fluid .projects-header ul {
       display: block;
       margin: 0 60px; }
-  html body.projects .App img.personas {
+  html body.projects img.personas {
     width: 980px;
     margin-top: -157px; } }
 

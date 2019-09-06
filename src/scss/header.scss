@@ -11,7 +11,9 @@ body.projects {
             margin-right: 0;
             margin-left: 0;
         }
-        background:$jetBlack url(../images/pixelheads-logo-inverted.svg) no-repeat top 8px right 60px;
+        background-color: $jetBlack;
+        background-repeat: no-repeat;
+        background-position: top 8px right 60px;
         opacity: 1;
         a.top {
             position: relative;
@@ -71,7 +73,7 @@ body.projects {
     }
     // hover
     .transpose-menu .main-header a.top:hover div.top-arrow  {
-        @include transition(all 0.2s ease-in);
+        @include transition( all 0.2s ease-in);
         top: 11px;
         left: 11px;
         width: 15px; 
@@ -85,7 +87,9 @@ body.projects {
         .main-header {
             @include drop-shadow(0px, 1px, 4px, 0.1);
             @include transition(background-color 0.5s ease-in);
-            background:$white url(../images/pixelheads-logo.svg) no-repeat top 8px right 60px;
+            background-color: $white;
+            background-repeat: no-repeat;
+            background-position: top 8px right 60px;
             opacity: 0.95;
             a.top {
                 opacity: 1;

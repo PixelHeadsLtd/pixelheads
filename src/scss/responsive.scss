@@ -1,17 +1,19 @@
-﻿// Responsive for Home
+﻿@import "variables";
+
+// Responsive for Home
 body.home-page {
     @media (min-width: 375px) {
         .main-header {
             //border-top:2px solid red;
-            img {display:none}
+            background-image:none;
             nav.main-nav {
                 margin-left:40px;
             }
         }
         section.new-section.home {
-            background-position: center top 5px;
+            background-size: 450px;
             .home-wrapper {
-                padding-top: 320px;
+                padding-top: 280px;
             }
         }
         .new-section.about {
@@ -65,15 +67,15 @@ body.home-page {
     @media (min-width: 576px) {
         .main-header {
             //border-top:2px solid green;
-            img {display:block}
+            background:$white url(../images/pixelheads-logo.svg) no-repeat top 8px right 60px;
             nav.main-nav {
                 margin-left:60px;
             }
         }
         section.new-section.home {
-            background-position: center top 5px;
+            background-size: 530px;
             .home-wrapper {
-                padding-top: 320px;
+                padding-top: 340px;
             }
         }
         .new-section.about {
@@ -128,15 +130,8 @@ body.home-page {
     @media (min-width: 768px) {
         .main-header {
             //border-top:2px solid orange;
-            img {display:block}
             nav.main-nav {
                 margin-left:60px;
-            }
-        }
-        section.new-section.home {
-            background-position: center top 5px;
-            .home-wrapper {
-                padding-top: 320px;
             }
         }
         .new-section.about {
@@ -191,15 +186,8 @@ body.home-page {
     @media (min-width: 992px) {
         .main-header {
             //border-top:2px solid blue;
-            img {display:block}
             nav.main-nav {
                 margin-left:60px;
-            }
-        }
-        section.new-section.home {
-            background-position: center top 5px;
-            .home-wrapper {
-                padding-top: 320px;
             }
         }
         .new-section.about {
@@ -251,15 +239,8 @@ body.home-page {
     @media (min-width: 1200px) {
         .main-header {
             //border-top:2px solid pink;
-            img {display:block}
             nav.main-nav {
                 margin-left:60px;
-            }
-        }
-        section.new-section.home {
-            background-position: center top 5px;
-            .home-wrapper {
-                padding-top: 320px;
             }
         }
         .new-section.about {
@@ -309,13 +290,11 @@ body.home-page {
     @media (min-width: 1500px) {
         .main-header {
             //border-top:2px solid yellow;
-            img {display:block}
             nav.main-nav {
                 margin-left:60px;
             }
         }
         section.new-section.home {
-            background-position: center top 40px;
             .home-wrapper {
                 padding-top: 400px;
             }
@@ -369,404 +348,382 @@ body.home-page {
 // ----------------------------------- Responsive for Projects ----------------------------------
 html {
     body.projects {
-        .App {
-            @media (min-width: 375px) {
-                .container {
-                    a.top {display:none}
+        @media (min-width: 375px) {
+            .main-header {
+                background-image:none;
+                nav.main-nav {
+                    margin-left:40px;
                 }
-                .banner {
-                    nav {display:none}
-                }
-                .projects-header {
-                    bottom:75px!important;
-                    ul {display: none}
-                }
-                .container-fluid.bbc-container {
-                    .row {
-                        .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-                            padding-right:0;
-                            padding-left:0;
-                        }
-                    }
-                }
-                .container-fluid {
-                    padding-right: 30px;
-                    padding-left: 30px;
-                    //border: 2px solid red;
-                    .main-header {
-                        img {display:none}
-                        nav.main-nav {
-                            margin-left:40px;
-                        }
-                    }
-                    .row {
-                        img.batman {
-                            width: 108%;
-                            margin-top: 0;
-                            position: static;
-                        }
-                    }
-                    .row.scooby {
-                        padding-top: 60px;
-                        padding-bottom: 180px;
-                        > div:first-child { margin-right: 130px;}
-                        img.scooby-van {
-                            top: -172px;
-                        }
-                        .para1 {    
-                            margin-left: 0;
-                            max-width: 90%;
-                            padding-left: 60px;
-                            margin-top: 300px;
-                        }
-                        .para2 {
-                            max-width: 90%;
-                            padding-left: 60px;
-                            margin-top: 0;
-                        }
-                    }
-                    .row.ctn-ntw {
-                        padding-top:80px;
-                        img.adv-time {
-                            top: -169px;
-                            right: 113px;
-                            width: 265px;
-                        } 
-                    }
-                    .row.youtube {
-                        ul {display:none}
-                    }
-                }
-                img.personas {width:497px; margin-top:-79px}
             }
+            .container {
+                a.top {display:none}
+            }
+            .banner {
+                nav {display:none}
+            }
+            .projects-header {
+                bottom:75px!important;
+                ul {display: none}
+            }
+            .container-fluid.bbc-container {
+                .row {
+                    .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+                        padding-right:0;
+                        padding-left:0;
+                    }
+                }
+            }
+            .container-fluid {
+                padding-right: 30px;
+                padding-left: 30px;
+                //border: 2px solid red;
+                .row {
+                    img.batman {
+                        width: 108%;
+                        margin-top: 0;
+                        position: static;
+                    }
+                }
+                .row.scooby {
+                    padding-top: 60px;
+                    padding-bottom: 180px;
+                    > div:first-child { margin-right: 130px;}
+                    img.scooby-van {
+                        top: -172px;
+                    }
+                    .para1 {    
+                        margin-left: 0;
+                        max-width: 90%;
+                        padding-left: 60px;
+                        margin-top: 300px;
+                    }
+                    .para2 {
+                        max-width: 90%;
+                        padding-left: 60px;
+                        margin-top: 0;
+                    }
+                }
+                .row.ctn-ntw {
+                    padding-top:80px;
+                    img.adv-time {
+                        top: -169px;
+                        right: 113px;
+                        width: 265px;
+                    } 
+                }
+                .row.youtube {
+                    ul {display:none}
+                }
+            }
+            img.personas {width:497px; margin-top:-79px}
+        }
+        
+        @media (min-width: 576px) {
+            .transpose-menu {
+                .main-header {
+                    background-image: url(../images/pixelheads-logo.svg)!important;
+                }
+            }
+            .main-header {
+                background-image: url(../images/pixelheads-logo-inverted.svg);
+            }
+            .main-header {
+                nav.main-nav {
+                    margin-left:60px;
+                }
+            }
+            .container {
+                a.top {display:none}
+            }
+            .banner {
+                nav {display:block}
+            }
+            .projects-header {
+                bottom:25px!important;
+                ul {display: block}
+            }
+            .container-fluid.bbc-container {
+                .row {
+                    .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+                        padding-right:0;
+                        padding-left:0;
+                    }
+                }
+            }
+            .container-fluid {
+                padding-right: 30px;
+                padding-left: 30px;
+                //border: 2px solid yellow;
+                .row {
+                    img.batman {
+                        width: 108%;
+                        margin-top: 0;
+                        position: static;
+                    }
+                }
+                .row.scooby {
+                    padding-top: 60px;
+                    padding-bottom: 180px;
+                    > div:first-child { margin-right: 130px;}
+                    img.scooby-van {
+                        top: -172px;
+                    }
+                    .para1 {    
+                        margin-left: 0;
+                        max-width: 90%;
+                        padding-left: 60px;
+                        margin-top: 300px;
+                    }
+                    .para2 {
+                        max-width: 90%;
+                        padding-left: 60px;
+                        margin-top: 0;
+                    }
+                }
+                .row.ctn-ntw {
+                    padding-top:80px;
+                    img.adv-time {
+                        top: -169px;
+                        right: 113px;
+                        width: 265px;
+                    } 
+                }
+                .row.youtube {
+                    ul {display:none}
+                }
+                .projects-header ul {display: block; margin:0 35px}
+            }
+            img.personas {width: 767px; margin-top:-91px}
+        }
             
-            @media (min-width: 576px) {
-                .container {
-                    a.top {display:none}
-                }
-                .banner {
-                    nav {display:block}
-                }
-                .projects-header {
-                    bottom:25px!important;
-                    ul {display: block}
-                }
-                .container-fluid.bbc-container {
-                    .row {
-                        .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-                            padding-right:0;
-                            padding-left:0;
-                        }
-                    }
-                }
-                .container-fluid {
-                    padding-right: 30px;
-                    padding-left: 30px;
-                    //border: 2px solid yellow;
-                    .main-header {
-                        img {display:block}
-                        nav.main-nav {
-                            margin-left:60px;
-                        }
-                    }
-                    .row {
-                        img.batman {
-                            width: 108%;
-                            margin-top: 0;
-                            position: static;
-                        }
-                    }
-                    .row.scooby {
-                        padding-top: 60px;
-                        padding-bottom: 180px;
-                        > div:first-child { margin-right: 130px;}
-                        img.scooby-van {
-                            top: -172px;
-                        }
-                        .para1 {    
-                            margin-left: 0;
-                            max-width: 90%;
-                            padding-left: 60px;
-                            margin-top: 300px;
-                        }
-                        .para2 {
-                            max-width: 90%;
-                            padding-left: 60px;
-                            margin-top: 0;
-                        }
-                    }
-                    .row.ctn-ntw {
-                        padding-top:80px;
-                        img.adv-time {
-                            top: -169px;
-                            right: 113px;
-                            width: 265px;
-                        } 
-                    }
-                    .row.youtube {
-                        ul {display:none}
-                    }
-                    .projects-header ul {display: block; margin:0 35px}
-                }
-                img.personas {width: 767px; margin-top:-91px}
+        @media (min-width: 768px) {
+            .container {
+                a.top {display:inline-block}
             }
-              
-            @media (min-width: 768px) {
-                .container {
-                    a.top {display:none}
-                }
-                .container-fluid.bbc-container {
-                    .row {
-                        .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-                            padding-right:0;
-                            padding-left:0;
-                        }
+            .container-fluid.bbc-container {
+                .row {
+                    .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+                        padding-right:0;
+                        padding-left:0;
                     }
                 }
-                .container-fluid {
-                    padding-right: 60px;
-                    padding-left: 60px;
-                    //border: 2px solid green;
-                    .main-header {
-                        img {display:block}
-                        nav.main-nav {
-                            margin-left:60px;
-                        }
-                    }
-                    .row {
-                        img.batman {
-                            width: 108%;
-                            margin-top: 0;
-                            position: static;
-                        }
-                    }
-                    .row.scooby {
-                        padding-top: 60px;
-                        padding-bottom: 180px;
-                        > div:first-child { margin-right: 130px;}
-                        .para1 {    
-                            margin-left: 0;
-                            max-width: 90%;
-                            padding-left: 60px;
-                            margin-top: 300px;
-                        }
-                        .para2 {
-                            max-width: 90%;
-                            padding-left: 60px;
-                            margin-top: 0;
-                        }
-                        img.scooby-van {
-                            top: -172px;
-                        }
-                    }
-                    .row.ctn-ntw {
-                        padding-top:80px;
-                        img.adv-time {
-                            top: -206px;
-                            right: 230px;
-                            width: 340px;
-                        } 
-                    }
-                    .row.youtube {
-                        ul {display:block}
-                    }
-                    .projects-header ul {display: block; margin:0 60px}
-                }
-                img.personas {width:936px; margin-top:-84px}
             }
+            .container-fluid {
+                padding-right: 60px;
+                padding-left: 60px;
+                //border: 2px solid green;
+                .row {
+                    img.batman {
+                        width: 108%;
+                        margin-top: 0;
+                        position: static;
+                    }
+                }
+                .row.scooby {
+                    padding-top: 60px;
+                    padding-bottom: 180px;
+                    > div:first-child { margin-right: 130px;}
+                    .para1 {    
+                        margin-left: 0;
+                        max-width: 90%;
+                        padding-left: 60px;
+                        margin-top: 300px;
+                    }
+                    .para2 {
+                        max-width: 90%;
+                        padding-left: 60px;
+                        margin-top: 0;
+                    }
+                    img.scooby-van {
+                        top: -172px;
+                    }
+                }
+                .row.ctn-ntw {
+                    padding-top:80px;
+                    img.adv-time {
+                        top: -206px;
+                        right: 230px;
+                        width: 340px;
+                    } 
+                }
+                .row.youtube {
+                    ul {display:block}
+                }
+                .projects-header ul {display: block; margin:0 60px}
+            }
+            img.personas {width:936px; margin-top:-84px}
+        }
+        
+        @media (min-width: 992px) {
+            .container-fluid.bbc-container {
+                .row {
+                    .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+                        padding-right:10%;
+                        padding-left:10%;
+                    }
+                }
+            }
+            .container-fluid {
+                padding-right: 60px;
+                padding-left: 60px;
+                //border: 2px solid orange;
+                .row {
+                    img.batman {
+                        width: 180%;
+                        margin-top: 50px;
+                        position: absolute;
+                    }
+                }
+                .row.scooby {
+                    padding-top: 60px;
+                    padding-bottom: 130px;
+                    > div:first-child { margin-right: 130px;}
+                    img.scooby-van {
+                        top: -172px;
+                    }
+                    .para1 {
+                        margin-left: 465px;
+                        max-width: 44%;
+                        min-width: 50%;
+                        padding-top: 30px;
+                        margin-top:0;
+                    }
+                    .para2 {
+                        max-width: 90%;
+                        padding-left: 60px;
+                        margin-top: 115px;
+                        min-width: 90%;
+                    }
+                }
+                .row.ctn-ntw {
+                    img.adv-time {
+                        top: -206px;
+                        right: 230px;
+                        width: 340px;
+                    } 
+                }
+                .row.youtube {
+                    ul {display:block}
+                }
+                .projects-header ul {display: block; margin:0 60px}
+            }
+            img.personas { width: 520px; margin-top: -123px;}
+        }
             
-            @media (min-width: 992px) {
-                .container {
-                    a.top {display:inline-block}
-                }
-                .container-fluid.bbc-container {
-                    .row {
-                        .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-                            padding-right:10%;
-                            padding-left:10%;
-                        }
+        @media (min-width: 1200px) {
+            .container-fluid.bbc-container {
+                .row {
+                    .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+                        padding-right:10%;
+                        padding-left:10%;
                     }
                 }
-                .container-fluid {
-                    padding-right: 60px;
-                    padding-left: 60px;
-                    //border: 2px solid orange;
-                    .main-header {
-                        img {display:block}
-                        nav.main-nav {
-                            margin-left:60px;
-                        }
-                    }
-                    .row {
-                        img.batman {
-                            width: 180%;
-                            margin-top: 50px;
-                            position: absolute;
-                        }
-                    }
-                    .row.scooby {
-                        padding-top: 60px;
-                        padding-bottom: 130px;
-                        > div:first-child { margin-right: 130px;}
-                        img.scooby-van {
-                            top: -172px;
-                        }
-                        .para1 {
-                            margin-left: 465px;
-                            max-width: 44%;
-                            min-width: 50%;
-                            padding-top: 30px;
-                            margin-top:0;
-                        }
-                        .para2 {
-                            max-width: 90%;
-                            padding-left: 60px;
-                            margin-top: 115px;
-                            min-width: 90%;
-                        }
-                    }
-                    .row.ctn-ntw {
-                        img.adv-time {
-                            top: -206px;
-                            right: 230px;
-                            width: 340px;
-                        } 
-                    }
-                    .row.youtube {
-                        ul {display:block}
-                    }
-                    .projects-header ul {display: block; margin:0 60px}
-                }
-                img.personas { width: 520px; margin-top: -123px;}
             }
-              
-            @media (min-width: 1200px) {
-                .container-fluid.bbc-container {
-                    .row {
-                        .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-                            padding-right:10%;
-                            padding-left:10%;
-                        }
+            .container-fluid {
+                padding-right: 60px;
+                padding-left: 60px;
+                //border: 2px solid blue;
+                .row {
+                    img.batman {
+                        width: 140%;
+                        margin-top:10px;
+                        position: absolute;
                     }
                 }
-                .container-fluid {
-                    padding-right: 60px;
-                    padding-left: 60px;
-                    //border: 2px solid blue;
-                    .main-header {
-                        img {display:block}
-                        nav.main-nav {
-                            margin-left:60px;
-                        }
+                .row.scooby {
+                    padding-top: 60px;
+                    padding-bottom: 0;
+                    > div:first-child { margin-right: 100px;}
+                    img.scooby-van {
+                        top: -172px;
                     }
-                    .row {
-                        img.batman {
-                            width: 140%;
-                            margin-top:10px;
-                            position: absolute;
-                        }
+                    .para1 {    
+                        margin-left: 0;
+                        max-width: 100%;
+                        margin-right:30px;
+                        min-width: initial;
+                        padding-top: 0;
+                        padding-left: 0;
                     }
-                    .row.scooby {
-                        padding-top: 60px;
-                        padding-bottom: 0;
-                        > div:first-child { margin-right: 100px;}
-                        img.scooby-van {
-                            top: -172px;
-                        }
-                        .para1 {    
-                            margin-left: 0;
-                            max-width: 100%;
-                            margin-right:30px;
-                            min-width: initial;
-                            padding-top: 0;
-                            padding-left: 0;
-                        }
-                        .para2 {
-                            max-width: 100%;
-                            padding-left: 0;
-                            margin-top: 0;
-                            min-width: initial;
-                        }
+                    .para2 {
+                        max-width: 100%;
+                        padding-left: 0;
+                        margin-top: 0;
+                        min-width: initial;
                     }
-                    .row.ctn-ntw {
-                        img.adv-time {
-                            position: absolute;
-                            top: -240px;
-                            right: 395px;
-                            width: 400px;
-                        }
-                    }
-                    .row.youtube {
-                        ul {display:block}
-                    }
-                    .projects-header ul {display: block; margin:0 60px}
                 }
-                img.personas {width:640px; margin-top:-132px}
+                .row.ctn-ntw {
+                    img.adv-time {
+                        position: absolute;
+                        top: -240px;
+                        right: 395px;
+                        width: 400px;
+                    }
+                }
+                .row.youtube {
+                    ul {display:block}
+                }
+                .projects-header ul {display: block; margin:0 60px}
             }
+            img.personas {width:640px; margin-top:-132px}
+        }
 
-            @media (min-width: 1580px) {
-                .container-fluid.bbc-container {
-                    .row {
-                        .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-                            padding-right:10%;
-                            padding-left:10%;
-                        }
+        @media (min-width: 1580px) {
+            .container-fluid.bbc-container {
+                .row {
+                    .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+                        padding-right:10%;
+                        padding-left:10%;
                     }
                 }
-                .container-fluid {
-                    padding-right: 60px;
-                    padding-left: 60px;
-                    //border: 2px solid pink;
-                    .main-header {
-                        img {display:block}
-                        nav.main-nav {
-                            margin-left:60px;
-                        }
-                    }
-                    .row {
-                        img.batman {
-                            width:170%;
-                            margin-top:-96px;
-                            position: absolute;
-                        }
-                    }
-                    .row.scooby {
-                        padding-top: 100px;
-                        padding-bottom: 0;
-                        > div {margin-right:30px}
-                        > div:first-child { margin-right: 0;}
-                        img.scooby-van {
-                            top: -230px;
-                        }
-                        .para1 {    
-                            margin-left: 0;
-                            max-width: 100%;
-                            min-width: initial;
-                            padding-top: 0;
-                            padding-left: 0;
-                        }
-                        .para2 {
-                            max-width: 100%;
-                            padding-left: 0;
-                            margin-top: 0;
-                            min-width: initial;
-                        }
-                    }
-                    .row.ctn-ntw {
-                        img.adv-time {
-                            position: absolute;
-                            top: -240px;
-                            right: 395px;
-                            width: 400px;
-                        }
-                    }
-                    .row.youtube {
-                        ul {display:block}
-                    }
-                    .projects-header ul {display: block; margin:0 60px}
-                }
-                img.personas {width:980px; margin-top:-157px}
             }
+            .container-fluid {
+                padding-right: 60px;
+                padding-left: 60px;
+                //border: 2px solid pink;
+                .row {
+                    img.batman {
+                        width:170%;
+                        margin-top:-96px;
+                        position: absolute;
+                    }
+                }
+                .row.scooby {
+                    padding-top: 100px;
+                    padding-bottom: 0;
+                    > div {margin-right:30px}
+                    > div:first-child { margin-right: 0;}
+                    img.scooby-van {
+                        top: -230px;
+                    }
+                    .para1 {    
+                        margin-left: 0;
+                        max-width: 100%;
+                        min-width: initial;
+                        padding-top: 0;
+                        padding-left: 0;
+                    }
+                    .para2 {
+                        max-width: 100%;
+                        padding-left: 0;
+                        margin-top: 0;
+                        min-width: initial;
+                    }
+                }
+                .row.ctn-ntw {
+                    img.adv-time {
+                        position: absolute;
+                        top: -240px;
+                        right: 395px;
+                        width: 400px;
+                    }
+                }
+                .row.youtube {
+                    ul {display:block}
+                }
+                .projects-header ul {display: block; margin:0 60px}
+            }
+            img.personas {width:980px; margin-top:-157px}
         }
     }
 }
