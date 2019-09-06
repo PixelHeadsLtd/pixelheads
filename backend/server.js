@@ -11,7 +11,7 @@ const app = express();
 const router = express.Router();
 
 // Set up a whitelist and check against it:
-var whitelist = ['http://localhost:3000', 'http://localhost:3001']
+var whitelist = ['https://www.pixel-heads.com', 'https://www.pixel-head.com/tutorials']
 var corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {

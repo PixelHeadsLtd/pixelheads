@@ -29,7 +29,8 @@ class Tutorials extends Component {
   }
 
   getDataFromDb = () => {
-    fetch("http://localhost:3001/api/getData")
+  //  fetch("http://localhost:3001/api/getData")
+      fetch("https://www.pixel-heads.com/api/getData")
       .then(data => data.json())
       .then(res => this.setState({ data: res.data }));
   };
@@ -41,7 +42,8 @@ class Tutorials extends Component {
       ++idToBeAdded;
     }
 
-    axios.post("http://localhost:3001/api/putData", { 
+  //  axios.post("http://localhost:3001/api/putData", { 
+      axios.post("https://www.pixel-heads.com/api/getData", {
       id: idToBeAdded,
       message: message
     });
@@ -55,7 +57,8 @@ class Tutorials extends Component {
       }
     });
 
-    axios.delete("http://localhost:3001/api/deleteData", {
+  //  axios.delete("http://localhost:3001/api/deleteData", {
+      axios.post("https://www.pixel-heads.com/api/getData", {
       data: {
         id: objIdToDelete
       }
@@ -70,7 +73,8 @@ class Tutorials extends Component {
       }
     });
 
-    axios.post("http://localhost:3001/api/updateData", {
+  //  axios.post("http://localhost:3001/api/updateData", {
+      axios.post("https://www.pixel-heads.com/api/getData", {
       id: objIdToUpdate,
       update: { message: updateToApply }
     });
