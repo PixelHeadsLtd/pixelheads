@@ -233,6 +233,8 @@
       margin-bottom: 0; } }
 
 @media (min-width: 375px) {
+  html body.projects .App .container a.top {
+    display: none; }
   html body.projects .App .banner nav {
     display: none; }
   html body.projects .App .projects-header {
@@ -282,6 +284,8 @@
     margin-top: -79px; } }
 
 @media (min-width: 576px) {
+  html body.projects .App .container a.top {
+    display: none; }
   html body.projects .App .banner nav {
     display: block; }
   html body.projects .App .projects-header {
@@ -334,6 +338,8 @@
     margin-top: -91px; } }
 
 @media (min-width: 768px) {
+  html body.projects .App .container a.top {
+    display: none; }
   html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 0;
     padding-left: 0; }
@@ -380,6 +386,8 @@
     margin-top: -84px; } }
 
 @media (min-width: 992px) {
+  html body.projects .App .container a.top {
+    display: inline-block; }
   html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 10%;
     padding-left: 10%; }

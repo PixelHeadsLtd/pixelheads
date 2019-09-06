@@ -371,6 +371,9 @@ html {
     body.projects {
         .App {
             @media (min-width: 375px) {
+                .container {
+                    a.top {display:none}
+                }
                 .banner {
                     nav {display:none}
                 }
@@ -438,6 +441,9 @@ html {
             }
             
             @media (min-width: 576px) {
+                .container {
+                    a.top {display:none}
+                }
                 .banner {
                     nav {display:block}
                 }
@@ -506,6 +512,9 @@ html {
             }
               
             @media (min-width: 768px) {
+                .container {
+                    a.top {display:none}
+                }
                 .container-fluid.bbc-container {
                     .row {
                         .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
@@ -567,6 +576,9 @@ html {
             }
             
             @media (min-width: 992px) {
+                .container {
+                    a.top {display:inline-block}
+                }
                 .container-fluid.bbc-container {
                     .row {
                         .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {

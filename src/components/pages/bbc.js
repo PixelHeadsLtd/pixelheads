@@ -17,7 +17,8 @@ class BBC extends Component {
     goToTop()
     return (
       <div>
-        <ReactBody className="bbc projects" />     
+        <ReactBody className="bbc projects" />
+        <ProjectsNav />
         <div className="banner bbc-active">
           <ProjectsMenu />
           <header className="projects-header">
@@ -45,9 +46,6 @@ class BBC extends Component {
             </header>
         </div>
         <div className="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12 bbc-container">
-            <header className="main-header">
-              <ProjectsNav />
-            </header>
             <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <h2>Overview</h2>

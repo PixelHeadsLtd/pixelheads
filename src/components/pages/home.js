@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactBody from 'react-body';
 import { StickyContainer } from 'react-sticky';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import { configureAnchors } from 'react-scrollable-anchor'
+import { configureAnchors } from 'react-scrollable-anchor';
 
 // Notes for ScrollAnimation
 // offset - default 150
@@ -27,12 +27,12 @@ configureAnchors({offset: -45, scrollDuration: 300})
 
 class Home extends Component {
   componentDidMount() {
-    console.log('I was triggered during componentDidMount')
+    //console.log('I was triggered during componentDidMount')
   }
 
   render() {
     var menuRef = React.createRef();
-    console.log('I was triggered during render')
+    //console.log('I was triggered during render')
     return (
       <div className="content">
         <ReactBody className="home-page" />     

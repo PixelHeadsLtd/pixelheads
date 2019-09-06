@@ -462,11 +462,11 @@ html body.projects {
       position: fixed;
       left: 0;
       right: 0;
-      top: 45px;
+      top: 0;
       /* Projects Headers */ }
       html body.projects .App .banner nav.downloads-menu {
         position: absolute;
-        top: 20px;
+        top: 60px;
         right: 60px; }
         html body.projects .App .banner nav.downloads-menu ul {
           padding: 0; }
@@ -485,7 +485,7 @@ html body.projects {
         position: absolute;
         z-index: 1;
         left: 60px;
-        top: 10px; }
+        top: 50px; }
         html body.projects .App .banner nav.projects-menu h4 {
           color: #fff;
           font-size: .8rem;
@@ -770,20 +770,129 @@ html body.guinness .App .banner {
 /* end */
 /* pagination */
 /* client logo */
+body.projects .main-header {
+  background: #000000 url(../images/pixelheads-logo-inverted.svg) no-repeat top 8px right 60px;
+  opacity: 1; }
+  body.projects .main-header .container {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0; }
+  body.projects .main-header a.top {
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    color: #252525;
+    width: 50px;
+    height: 50px;
+    margin: -50px auto 0 auto;
+    display: inline-block;
+    text-align: center;
+    background: #252525;
+    transform: rotate(45deg);
+    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1); }
+    body.projects .main-header a.top div.top-arrow {
+      -webkit-transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
+      -ms-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
+      display: block;
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      width: 10px;
+      height: 10px;
+      border-left: 1px solid #e6233e;
+      border-top: 1px solid #e6233e; }
+    body.projects .main-header a.top div.bottom-arrow {
+      opacity: 0;
+      -webkit-transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
+      -ms-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
+      display: block;
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      width: 10px;
+      height: 10px;
+      border-left: 1px solid #e6233e;
+      border-top: 1px solid #e6233e; }
+    body.projects .main-header a.top label {
+      position: absolute;
+      top: 24px;
+      left: 21px;
+      display: block;
+      transform: rotate(-45deg);
+      text-transform: uppercase;
+      font-size: .5rem;
+      color: #252525;
+      cursor: pointer; }
+  body.projects .main-header nav.main-nav a {
+    color: #fff !important;
+    font: 300 0.63rem "latoregular"; }
+
+body.projects .transpose-menu .main-header a.top:hover div.top-arrow {
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  top: 11px;
+  left: 11px;
+  width: 15px;
+  height: 15px; }
+
+body.projects .transpose-menu .main-header a.top:hover div.bottom-arrow {
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  opacity: 0.5; }
+
+body.projects .transpose-menu .main-header {
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  -webkit-transition: background-color 0.5s ease-in;
+  -moz-transition: background-color 0.5s ease-in;
+  -ms-transition: background-color 0.5s ease-in;
+  -o-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
+  background: #fff url(../images/pixelheads-logo.svg) no-repeat top 8px right 60px;
+  opacity: 0.95; }
+  body.projects .transpose-menu .main-header a.top {
+    opacity: 1;
+    margin: 19px auto 0 auto;
+    background: #fff; }
+    body.projects .transpose-menu .main-header a.top div {
+      -webkit-transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -ms-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in; }
+  body.projects .transpose-menu .main-header nav.main-nav a {
+    color: #252525 !important;
+    font: 300 0.63rem "latobold"; }
+
 .main-header {
   position: fixed;
+  text-align: center;
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #fff;
+  background: #fff url(../images/pixelheads-logo.svg) no-repeat top 8px right 60px;
   height: 44px;
   width: 100% !important; }
-  .main-header img {
-    position: absolute;
-    top: 8px;
-    right: 60px; }
   .main-header nav.main-nav {
-    position: relative;
+    position: absolute;
     margin-left: 60px;
     white-space: nowrap;
     float: left; }
@@ -1177,6 +1286,8 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 375px) {
+  html body.projects .App .container a.top {
+    display: none; }
   html body.projects .App .banner nav {
     display: none; }
   html body.projects .App .projects-header {
@@ -1226,6 +1337,8 @@ hr {
     margin-top: -79px; } }
 
 @media (min-width: 576px) {
+  html body.projects .App .container a.top {
+    display: none; }
   html body.projects .App .banner nav {
     display: block; }
   html body.projects .App .projects-header {
@@ -1278,6 +1391,8 @@ hr {
     margin-top: -91px; } }
 
 @media (min-width: 768px) {
+  html body.projects .App .container a.top {
+    display: none; }
   html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 0;
     padding-left: 0; }
@@ -1324,6 +1439,8 @@ hr {
     margin-top: -84px; } }
 
 @media (min-width: 992px) {
+  html body.projects .App .container a.top {
+    display: inline-block; }
   html body.projects .App .container-fluid.bbc-container .row .col-xs-12, html body.projects .App .container-fluid.bbc-container .row .col-sm-12, html body.projects .App .container-fluid.bbc-container .row .col-md-12, html body.projects .App .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 10%;
     padding-left: 10%; }

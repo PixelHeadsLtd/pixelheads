@@ -14,7 +14,8 @@ class Guinness extends Component {
     goToTop()
     return (
       <div>
-        <ReactBody className="guinness projects" />     
+        <ReactBody className="guinness projects" />
+        <ProjectsNav />
         <div className="banner guinness-active">
           <ProjectsMenu />
           <header className="projects-header">
@@ -42,9 +43,6 @@ class Guinness extends Component {
             </header>
         </div>
         <div className="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <header className="main-header">
-              <ProjectsNav />
-            </header>
             <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <h2>Overview</h2>

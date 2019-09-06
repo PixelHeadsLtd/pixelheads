@@ -141,11 +141,11 @@ html body.projects {
       position: fixed;
       left: 0;
       right: 0;
-      top: 45px;
+      top: 0;
       /* Projects Headers */ }
       html body.projects .App .banner nav.downloads-menu {
         position: absolute;
-        top: 20px;
+        top: 60px;
         right: 60px; }
         html body.projects .App .banner nav.downloads-menu ul {
           padding: 0; }
@@ -164,7 +164,7 @@ html body.projects {
         position: absolute;
         z-index: 1;
         left: 60px;
-        top: 10px; }
+        top: 50px; }
         html body.projects .App .banner nav.projects-menu h4 {
           color: #fff;
           font-size: .8rem;

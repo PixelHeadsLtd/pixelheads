@@ -16,7 +16,8 @@ class Setanta extends Component {
     goToTop()
     return (
       <div>
-        <ReactBody className="setanta projects" />     
+        <ReactBody className="setanta projects" />
+        <ProjectsNav />
         <div className="banner setanta-active">
           <ProjectsMenu />
           <header className="projects-header">
@@ -44,9 +45,6 @@ class Setanta extends Component {
             </header>
         </div>
         <div className="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <header className="main-header">
-              <ProjectsNav />
-            </header>
             <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <h2>Overview</h2>
