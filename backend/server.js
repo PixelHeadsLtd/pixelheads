@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
 const express = require('express');
 var cors = require('cors');
+const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
 const Data = require('./data');
@@ -10,17 +10,18 @@ const app = express();
 app.use(cors());
 const router = express.Router();
 
-app.use(function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,PATCH,OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
-  // allow preflight
-  if (req.method === 'OPTIONS') {
-      res.send(200);
-  } else {
-      next();
+// Set up a whitelist and check against it:
+var whitelist = ['http://www.pixel-heads.com', 'https://www.pixel-heads.com', 'https://pixelheads.herokuapp.com/']
+var corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
   }
-});
+}
+app.use(cors(corsOptions));
 
 // this is our MongoDB database
 const dbRoute =
