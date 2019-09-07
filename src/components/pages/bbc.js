@@ -6,6 +6,7 @@ import { goToTop } from 'react-scrollable-anchor'
 import YouTube from '../../images/clients/pages/bbc/youtube.png'
 import TGGrouped from '../../images/clients/pages/bbc/grouped.png'
 import CarNews from '../../images/clients/pages/bbc/car-news.png'
+import TVShow from '../../images/clients/pages/bbc/tv-show.png'
 import MotionGallery from '../../images/clients/pages/bbc/motion-gallery.png'
 
 // includes
@@ -92,6 +93,11 @@ class BBC extends Component {
                     </li>
                   </ul>
                   <img src={YouTube} alt="" className="w-100" />
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img src={TVShow} className="w-100" alt="" />
                 </div>
             </div>
             <div className="row">
