@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactBody from 'react-body';
-import { goToTop } from 'react-scrollable-anchor'
+import { goToTop } from 'react-scrollable-anchor';
 
 // images
 import StuHubLogo from '../../images/clients/pages/umg/studiohub-logo.png'

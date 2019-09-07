@@ -16,36 +16,12 @@ section.new-section {
     margin:0 0 20px 0;
     position: relative;
     min-height: 924px;
-    .marker {
-        position: absolute;
-        z-index: 999;
-        width:30px;
-        height:30px;
-        div {
-            background-color: $black;
-            position: absolute;
-        }
-    }
-    .top-left-marker {
-        top:-31px;
-        left:10px;
-        div.v {width:1px; height:25px; right:0; top:0}
-        div.h {width:25px; height: 1px; left:0; bottom:0}
-    }
-    .top-right-marker {
-        top:-31px;
-        right:10px;
-        div.v {width:1px; height:25px; left:0; top:0}
-        div.h {width:25px; height: 1px; right:0; bottom:0}
-    }
-    .bottom-left-marker {}
-    .bottom-right-marker {}
 }
 
 // home section
 section.new-section.home {
     text-align: center;
-    background:url(../images/mike.png) no-repeat center top 40px;
+    background:url('../images/mike.png') no-repeat center top 40px;
     .home-wrapper {padding-top:400px}
     h1 {
         font-size: 6rem!important;
@@ -133,19 +109,19 @@ section.new-section.projects {
             }
             .row {
                 .col-lg-3 {
-                    -webkit-transition: all 0.5s ease-in;
+                    @include transition(all 0.5s ease-in);
                     padding:0;
                 }
                 margin-right: 0;
                 margin-left: 0;
-                img {width: 100%; -webkit-transition: all 0.2s ease-in;}
+                img {width: 100%; @include transition(all 0.2s ease-in);}
                 figure:hover {a {opacity:1}}
                 figure {
                     margin: 0;
                     position: relative;
                     overflow: hidden;
                     .tint {
-                        -webkit-transition: all 0.2s ease-in;
+                        @include transition(all 0.2s ease-in);
                         position: absolute;
                         background:$jetBlack;
                         width: 100%;
@@ -199,7 +175,7 @@ section.new-section.projects {
                 }
                 .tint {
                     opacity: 0.8;
-                    -webkit-transition: all 0.2s ease-in;
+                    @include transition(all 0.2s ease-in);
                 }
                 a {opacity:1}
             }
@@ -242,19 +218,6 @@ section.new-section.contact {
             top:50px; 
             z-index:0;
             opacity: 0.95;
-        }
-    }
-    // mdl tabs
-    .mdl-tabs {
-        // mdl tabs
-        .mdl-tabs__tab-bar {
-            text-align: center;
-            .is-active {color:$red!important;}
-            .mdl-tabs__tab {
-                @include font(300, 13px);
-                display: inline-block;
-                margin: 0 15px;
-            }
         }
     }
     // lists

@@ -5,7 +5,7 @@
 html {
     body.projects {
         background-size: 100%;
-        font-family: latoregular; 
+        font-family: 'latoregular'; 
         font-size: .75rem; 
         margin: 0; 
         padding:0;
@@ -13,9 +13,8 @@ html {
             overflow: hidden;
             letter-spacing: .04rem;
             .container-fluid {
-                background:white; 
-                margin-top:440px;
-                padding-top: 20px;
+                background:$white; 
+                margin-top:395px;
             }
             .container-fluid.fullwidth {
                 padding-right:0!important;
@@ -37,7 +36,7 @@ html {
             figure:hover { 
                 a {opacity:1;} 
                 .tint {
-                    -webkit-transition: all 0.2s ease-in;
+                    @include transition(all 0.2s ease-in);
                     opacity:0.6;
                 }
             }
@@ -46,7 +45,7 @@ html {
                 position: relative;
                 overflow: hidden;
                 .tint {
-                    -webkit-transition: all 0.2s ease-in;
+                    @include transition(all 0.2s ease-in);
                     position: absolute;
                     background:$jetBlack;
                     width: 100%;
@@ -239,8 +238,8 @@ html {
             ul li { margin: 0 0 10px 0}
         
             /* Text */
-            h1 {font-family: latobold; font-size: 1.5rem;; text-transform: uppercase; letter-spacing: .4rem; color:#ff0049}
-            h2 {font-family: oraqlescript; font-size: 52px; font-weight: lighter; margin:25px 0 10px 0}
+            h1 {font-family: 'latobold'; font-size: 1.5rem;; text-transform: uppercase; letter-spacing: .4rem; color:#ff0049}
+            h2 {font-family: 'oraqlescript'; font-size: 52px; font-weight: lighter; margin:25px 0 10px 0}
             h3 {color:#ff0049; font-family: latobold; font-size: 1rem}
             p {line-height: 1.5rem; margin-top: 0}
             p label {width:100%; color:#ff0049; margin-bottom: 0; font-size: .95rem; letter-spacing: .05rem;}
@@ -271,14 +270,14 @@ html {
             img.personas {width:100%; margin-top:-160px}
             .row {
                 .red-panel {
-                    background-color: #ff0049;
+                    background-color: $red;
                     padding-top: 20px;
-                    color:white;
-                    h4 {color:white}
+                    color:$white;
+                    h4 {color:$white}
                 }
             }
         .container-fluid {
-            background:#fff url('../images/clients/pages/umg/background.png') no-repeat 0 0;
+            background:$white url('../images/clients/pages/umg/background.png') no-repeat 0 0;
             background-size:100%;
         }
         .banner {
@@ -294,9 +293,9 @@ html {
             img.personas {width:100%; margin-top:-160px}
             .row {
                 .red-panel {
-                    background-color: #ff0049; 
-                    color:white;
-                    label {color:white}
+                    background-color: $red; 
+                    color:$white;
+                    label {color:$white}
                 }
             }
             .container-fluid {
@@ -348,8 +347,8 @@ html {
                 }
             }
             .banner {
-                background-image:url('../images/clients/pages/turner/banner.png');
-                background-color:$jetBlack;
+                background-image: url('../images/clients/pages/turner/banner.png');
+                background-color: $jetBlack;
             }
         }
     }

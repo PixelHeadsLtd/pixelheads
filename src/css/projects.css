@@ -41,7 +41,7 @@
 /* client logo */
 html body.projects {
   background-size: 100%;
-  font-family: latoregular;
+  font-family: 'latoregular';
   font-size: .75rem;
   margin: 0;
   padding: 0; }
@@ -54,9 +54,8 @@ html body.projects {
     /* Layout */
     /* Helpers */ }
     html body.projects .App .container-fluid {
-      background: white;
-      margin-top: 440px;
-      padding-top: 20px; }
+      background: #fff;
+      margin-top: 395px; }
     html body.projects .App .container-fluid.fullwidth {
       padding-right: 0 !important;
       padding-left: 0 !important; }
@@ -75,6 +74,10 @@ html body.projects {
       opacity: 1; }
     html body.projects .App figure:hover .tint {
       -webkit-transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
+      -ms-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
       opacity: 0.6; }
     html body.projects .App figure {
       margin: 0;
@@ -82,6 +85,10 @@ html body.projects {
       overflow: hidden; }
       html body.projects .App figure .tint {
         -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
         position: absolute;
         background: #000000;
         width: 100%;
@@ -250,13 +257,13 @@ html body.projects {
     html body.projects .App ul li {
       margin: 0 0 10px 0; }
     html body.projects .App h1 {
-      font-family: latobold;
+      font-family: 'latobold';
       font-size: 1.5rem;
       text-transform: uppercase;
       letter-spacing: .4rem;
       color: #ff0049; }
     html body.projects .App h2 {
-      font-family: oraqlescript;
+      font-family: 'oraqlescript';
       font-size: 52px;
       font-weight: lighter;
       margin: 25px 0 10px 0; }
@@ -295,11 +302,11 @@ html body.umg .App img.personas {
   margin-top: -160px; }
 
 html body.umg .App .row .red-panel {
-  background-color: #ff0049;
+  background-color: #e6233e;
   padding-top: 20px;
-  color: white; }
+  color: #fff; }
   html body.umg .App .row .red-panel h4 {
-    color: white; }
+    color: #fff; }
 
 html body.umg .App .container-fluid {
   background: #fff url("../images/clients/pages/umg/background.png") no-repeat 0 0;
@@ -314,10 +321,10 @@ html body.turner .App img.personas {
   margin-top: -160px; }
 
 html body.turner .App .row .red-panel {
-  background-color: #ff0049;
-  color: white; }
+  background-color: #e6233e;
+  color: #fff; }
   html body.turner .App .row .red-panel label {
-    color: white; }
+    color: #fff; }
 
 html body.turner .App .container-fluid {
   background-size: 100%; }
