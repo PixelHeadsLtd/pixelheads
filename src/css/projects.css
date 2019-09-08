@@ -336,8 +336,7 @@ html body.turner .App .container-fluid {
     border-top: 1px dashed #fbc900;
     background: #fcfcff; }
     html body.turner .App .container-fluid .row.carousel img {
-      width: 100%;
-      margin-top: -10px; }
+      width: 100%; }
   html body.turner .App .container-fluid .row.ctn-ntw {
     padding-top: 80px;
     background-color: #dc1f0a; }

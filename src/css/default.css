@@ -245,7 +245,6 @@ section.new-section.contact {
   section.new-section.contact h3 {
     color: #fff; }
   section.new-section.contact img {
-    margin: 15% auto 0 auto;
     width: 155px; }
   section.new-section.contact ul.contact-panel {
     width: 100%;
@@ -631,8 +630,7 @@ html body.turner .App .container-fluid {
     border-top: 1px dashed #fbc900;
     background: #fcfcff; }
     html body.turner .App .container-fluid .row.carousel img {
-      width: 100%;
-      margin-top: -10px; }
+      width: 100%; }
   html body.turner .App .container-fluid .row.ctn-ntw {
     padding-top: 80px;
     background-color: #dc1f0a; }
@@ -1035,7 +1033,8 @@ hr {
     body.home-page .main-header nav.main-nav {
       margin-left: 40px; }
   body.home-page section.new-section.home {
-    background-size: 450px; }
+    background-size: 450px;
+    min-height: 650px; }
     body.home-page section.new-section.home .home-wrapper {
       padding-top: 280px; }
   body.home-page .new-section.about {
@@ -1059,14 +1058,17 @@ hr {
     padding-left: 0; }
     body.home-page .new-section.projects .container-fluid .projects-header nav > a {
       display: none; }
-  body.home-page .new-section.contact img {
-    margin: 50% auto 0 auto; }
-  body.home-page .new-section.contact ul {
-    margin: 20% 0 0 22%; }
-    body.home-page .new-section.contact ul li {
-      float: left;
-      clear: left;
-      margin-bottom: 10px; } }
+  body.home-page .new-section.contact {
+    min-height: 650px;
+    margin-bottom: 0; }
+    body.home-page .new-section.contact img {
+      margin: 15% auto 0 auto; }
+    body.home-page .new-section.contact ul {
+      margin: 20% 0 0 22%; }
+      body.home-page .new-section.contact ul li {
+        float: left;
+        clear: left;
+        margin-bottom: 10px; } }
 
 @media (min-width: 576px) {
   body.home-page .main-header {
@@ -1074,7 +1076,8 @@ hr {
     body.home-page .main-header nav.main-nav {
       margin-left: 60px; }
   body.home-page section.new-section.home {
-    background-size: 530px; }
+    background-size: 530px;
+    min-height: 924px; }
     body.home-page section.new-section.home .home-wrapper {
       padding-top: 340px; }
   body.home-page .new-section.about {
@@ -1100,14 +1103,14 @@ hr {
     padding-left: 0; }
     body.home-page .new-section.projects .container-fluid .projects-header nav > a {
       display: inline-block; }
-  body.home-page .new-section.contact img {
-    margin: 15% auto 0 auto; }
-  body.home-page .new-section.contact ul {
-    margin: 40px 0 0 0; }
-    body.home-page .new-section.contact ul li {
-      float: none;
-      clear: none;
-      margin-bottom: 0; } }
+  body.home-page .new-section.contact {
+    min-height: 924px; }
+    body.home-page .new-section.contact ul {
+      margin: 40px 0 0 0; }
+      body.home-page .new-section.contact ul li {
+        float: none;
+        clear: none;
+        margin-bottom: 0; } }
 
 @media (min-width: 768px) {
   body.home-page .main-header nav.main-nav {
@@ -1135,8 +1138,6 @@ hr {
     padding-left: 0; }
     body.home-page .new-section.projects .container-fluid .projects-header nav > a {
       display: inline-block; }
-  body.home-page .new-section.contact img {
-    margin: 15% auto 0 auto; }
   body.home-page .new-section.contact ul {
     margin: 40px 0 0 0; }
     body.home-page .new-section.contact ul li {
@@ -1168,8 +1169,6 @@ hr {
     padding-left: 0; }
     body.home-page .new-section.projects .container-fluid .projects-header nav > a {
       display: inline-block; }
-  body.home-page .new-section.contact img {
-    margin: 15% auto 0 auto; }
   body.home-page .new-section.contact ul {
     margin: 40px 0 0 0; }
     body.home-page .new-section.contact ul li {
@@ -1199,8 +1198,6 @@ hr {
     padding-left: 0; }
     body.home-page .new-section.projects .container-fluid .projects-header nav > a {
       display: inline-block; }
-  body.home-page .new-section.contact img {
-    margin: 15% auto 0 auto; }
   body.home-page .new-section.contact ul {
     margin: 40px 0 0 0; }
     body.home-page .new-section.contact ul li {
@@ -1232,8 +1229,6 @@ hr {
     padding-left: 0; }
     body.home-page .new-section.projects .container-fluid .projects-header nav > a {
       display: inline-block; }
-  body.home-page .new-section.contact img {
-    margin: 15% auto 0 auto; }
   body.home-page .new-section.contact ul {
     margin: 40px 0 0 0; }
     body.home-page .new-section.contact ul li {
