@@ -345,7 +345,7 @@ body.home-page {
     }  
 }
 
-// ----------------------------------- Responsive for Projects ----------------------------------
+// ----------------------------------- PROJECTS ----------------------------------
 html {
     body.projects {
         @media (min-width: 375px) {
@@ -383,12 +383,15 @@ html {
                 }
             }
             .container-fluid {
-                padding-right: 30px;
-                padding-left: 30px;
+                padding-right: 25px;
+                padding-left: 25px;
                 margin-top: 190px;
                 //border: 2px solid red;
                 h2 {font-size: 40px;}
                 .row {
+                    .red-panel {
+                        margin-top: 20px;
+                    }
                     img.batman {
                         width: 185%;
                         margin-top: 0;
@@ -477,12 +480,15 @@ html {
                 }
             }
             .container-fluid {
-                padding-right: 30px;
-                padding-left: 30px;
+                padding-right: 25px;
+                padding-left: 25px;
                 margin-top: 395px;
                 //border: 2px solid yellow;
                 h2 {font-size: 52px;}
                 .row {
+                    .red-panel {
+                        margin-top: 20px;
+                    }
                     img.batman {
                         width: 108%;
                         margin-top: 0;
@@ -545,10 +551,13 @@ html {
                 }
             }
             .container-fluid {
-                padding-right: 60px;
-                padding-left: 60px;
+                padding-right: 45px;
+                padding-left: 45px;
                 //border: 2px solid green;
                 .row {
+                    .red-panel {
+                        margin-top: 20px;
+                    }
                     img.batman {
                         width: 108%;
                         margin-top: 0;
@@ -600,10 +609,11 @@ html {
                 }
             }
             .container-fluid {
-                padding-right: 60px;
-                padding-left: 60px;
                 //border: 2px solid orange;
                 .row {
+                    .red-panel {
+                        margin-top: 0;
+                    }
                     img.batman {
                         width: 180%;
                         margin-top: 50px;
@@ -656,8 +666,6 @@ html {
                 }
             }
             .container-fluid {
-                padding-right: 60px;
-                padding-left: 60px;
                 //border: 2px solid blue;
                 .row {
                     img.batman {
@@ -714,8 +722,6 @@ html {
                 }
             }
             .container-fluid {
-                padding-right: 60px;
-                padding-left: 60px;
                 //border: 2px solid pink;
                 .row {
                     img.batman {
