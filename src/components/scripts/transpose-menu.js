@@ -9,7 +9,7 @@ class Opacity extends Component {
   componentDidMount(){
     window.addEventListener('scroll', () => {
        let activeClass = '';
-       if(window.scrollY > 400){
+       if(window.scrollY > 350){
            activeClass = 'transpose-menu';
        }
        this.setState({ activeClass });
