@@ -14,7 +14,6 @@ html {
             letter-spacing: .04rem;
             .container-fluid {
                 background:$white; 
-                margin-top:395px;
             }
             .container-fluid.fullwidth {
                 padding-right:0!important;
@@ -127,8 +126,6 @@ html {
                 }
             }
             .banner {
-                height: 395px;
-                background-size:100%!important;
                 background-position: center center;
                 background-repeat: no-repeat;
                 position:fixed;
@@ -158,15 +155,11 @@ html {
                 nav.projects-menu {
                     position: absolute;
                     z-index: 1;
-                    left: 60px;
-                    top: 50px;
                     h4 {color:$white; font-size: .8rem; font-family:'latolight'}
                     ul {
                         padding:0;
                         li {
                             font-size: .65rem;
-                            margin-bottom:6px;
-                            display: block;
                             position: relative;
                             a:hover {color:$white}
                             a {
@@ -197,7 +190,7 @@ html {
                     bottom: 25px;
                     left: 0;
                     right: 0;
-                    h1 {color:white; margin:70px 0 105px 0}
+                    h1 {color:white;}
                     p {
                         text-transform: uppercase; 
                         font-size: .6rem; 
@@ -238,8 +231,8 @@ html {
             ul li { margin: 0 0 10px 0}
         
             /* Text */
-            h1 {font-family: 'latobold'; font-size: 1.5rem;; text-transform: uppercase; letter-spacing: .4rem; color:#ff0049}
-            h2 {font-family: 'oraqlescript'; font-size: 52px; font-weight: lighter; margin:25px 0 10px 0}
+            h1 {font-family: 'latobold'; font-size: 1.5rem; text-transform: uppercase; letter-spacing: .4rem; color:#ff0049}
+            h2 {font-family: 'oraqlescript'; font-weight: lighter; margin:25px 0 10px 0}
             h3 {color:#ff0049; font-family: latobold; font-size: 1rem}
             p {line-height: 1.5rem; margin-top: 0}
             p label {width:100%; color:#ff0049; margin-bottom: 0; font-size: .95rem; letter-spacing: .05rem;}
@@ -256,7 +249,6 @@ html {
             .w-50 {width:50%}
             .height-1000 {height: 1000px}
             .absolute-right {position: absolute; right:0;}
-
         } // end App
     } // end projects
 } // end html

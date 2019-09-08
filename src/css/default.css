@@ -349,8 +349,7 @@ html body.projects {
     /* Layout */
     /* Helpers */ }
     html body.projects .App .container-fluid {
-      background: #fff;
-      margin-top: 395px; }
+      background: #fff; }
     html body.projects .App .container-fluid.fullwidth {
       padding-right: 0 !important;
       padding-left: 0 !important; }
@@ -436,8 +435,6 @@ html body.projects {
       html body.projects .App .banner.guinness-active nav.projects-menu ul li:nth-child(6) a i {
         display: block; }
     html body.projects .App .banner {
-      height: 395px;
-      background-size: 100% !important;
       background-position: center center;
       background-repeat: no-repeat;
       position: fixed;
@@ -464,9 +461,7 @@ html body.projects {
               font-size: .65rem; }
       html body.projects .App .banner nav.projects-menu {
         position: absolute;
-        z-index: 1;
-        left: 60px;
-        top: 50px; }
+        z-index: 1; }
         html body.projects .App .banner nav.projects-menu h4 {
           color: #fff;
           font-size: .8rem;
@@ -475,8 +470,6 @@ html body.projects {
           padding: 0; }
           html body.projects .App .banner nav.projects-menu ul li {
             font-size: .65rem;
-            margin-bottom: 6px;
-            display: block;
             position: relative; }
             html body.projects .App .banner nav.projects-menu ul li a:hover {
               color: #fff; }
@@ -503,8 +496,7 @@ html body.projects {
         left: 0;
         right: 0; }
         html body.projects .App .banner .projects-header h1 {
-          color: white;
-          margin: 70px 0 105px 0; }
+          color: white; }
         html body.projects .App .banner .projects-header p {
           text-transform: uppercase;
           font-size: .6rem;
@@ -559,7 +551,6 @@ html body.projects {
       color: #ff0049; }
     html body.projects .App h2 {
       font-family: 'oraqlescript';
-      font-size: 52px;
       font-weight: lighter;
       margin: 25px 0 10px 0; }
     html body.projects .App h3 {
@@ -1259,8 +1250,23 @@ hr {
       margin-left: 40px; }
   html body.projects .container a.top {
     display: none; }
-  html body.projects .banner nav {
-    display: none; }
+  html body.projects .banner {
+    height: 190px;
+    background-size: 130%; }
+    html body.projects .banner nav.downloads-menu {
+      display: none; }
+    html body.projects .banner nav.projects-menu {
+      top: 126px;
+      left: 40px; }
+      html body.projects .banner nav.projects-menu h4 {
+        display: none; }
+      html body.projects .banner nav.projects-menu ul li {
+        width: 33%;
+        display: inline-block;
+        margin-bottom: 0; }
+    html body.projects .banner h1 {
+      margin: 70px 0 6px 0;
+      font-size: 1.1rem; }
   html body.projects .projects-header {
     bottom: 75px !important; }
     html body.projects .projects-header ul {
@@ -1270,7 +1276,10 @@ hr {
     padding-left: 0; }
   html body.projects .container-fluid {
     padding-right: 30px;
-    padding-left: 30px; }
+    padding-left: 30px;
+    margin-top: 190px; }
+    html body.projects .container-fluid h2 {
+      font-size: 40px; }
     html body.projects .container-fluid .row img.batman {
       width: 108%;
       margin-top: 0;
@@ -1312,8 +1321,23 @@ hr {
     margin-left: 60px; }
   html body.projects .container a.top {
     display: none; }
-  html body.projects .banner nav {
-    display: block; }
+  html body.projects .banner {
+    height: 395px;
+    background-size: 100% !important; }
+    html body.projects .banner nav.downloads-menu {
+      display: block; }
+    html body.projects .banner nav.projects-menu {
+      top: 50px;
+      left: 60px; }
+      html body.projects .banner nav.projects-menu h4 {
+        display: block; }
+      html body.projects .banner nav.projects-menu ul li {
+        width: auto;
+        display: block;
+        margin-bottom: 6px; }
+    html body.projects .banner h1 {
+      margin: 70px 0 105px 0;
+      font-size: 1.5rem; }
   html body.projects .projects-header {
     bottom: 25px !important; }
     html body.projects .projects-header ul {
@@ -1323,7 +1347,10 @@ hr {
     padding-left: 0; }
   html body.projects .container-fluid {
     padding-right: 30px;
-    padding-left: 30px; }
+    padding-left: 30px;
+    margin-top: 395px; }
+    html body.projects .container-fluid h2 {
+      font-size: 52px; }
     html body.projects .container-fluid .row img.batman {
       width: 108%;
       margin-top: 0;
