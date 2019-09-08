@@ -582,10 +582,6 @@ html body.projects {
       right: 0; }
 
 /* ------------------------------------------------- Project Specific ------------------------------------------------ */
-html body.umg .App img.personas {
-  width: 100%;
-  margin-top: -160px; }
-
 html body.umg .App img.pdf {
   width: 12px;
   margin: -3px 5px 0 0; }
@@ -1308,7 +1304,7 @@ hr {
     html body.projects .container-fluid .row.youtube ul {
       display: none; }
   html body.projects img.personas {
-    width: 497px;
+    width: 400px;
     margin-top: -79px; } }
 
 @media (min-width: 576px) {
@@ -1390,7 +1386,7 @@ hr {
       display: block;
       margin: 0 35px; }
   html body.projects img.personas {
-    width: 767px;
+    width: 600px;
     margin-top: -91px; } }
 
 @media (min-width: 768px) {
@@ -1436,8 +1432,8 @@ hr {
       display: block;
       margin: 0 60px; }
   html body.projects img.personas {
-    width: 936px;
-    margin-top: -84px; } }
+    width: 100%;
+    margin-top: -90px; } }
 
 @media (min-width: 992px) {
   html body.projects .container-fluid.bbc-container .row .col-xs-12, html body.projects .container-fluid.bbc-container .row .col-sm-12, html body.projects .container-fluid.bbc-container .row .col-md-12, html body.projects .container-fluid.bbc-container .row .col-lg-12 {
@@ -1477,8 +1473,8 @@ hr {
     display: block;
     margin: 0 60px; }
   html body.projects img.personas {
-    width: 520px;
-    margin-top: -123px; } }
+    width: 100%;
+    margin-top: -160px; } }
 
 @media (min-width: 1200px) {
   html body.projects .container-fluid.bbc-container .row .col-xs-12, html body.projects .container-fluid.bbc-container .row .col-sm-12, html body.projects .container-fluid.bbc-container .row .col-md-12, html body.projects .container-fluid.bbc-container .row .col-lg-12 {
@@ -1516,10 +1512,7 @@ hr {
     display: block; }
   html body.projects .container-fluid .projects-header ul {
     display: block;
-    margin: 0 60px; }
-  html body.projects img.personas {
-    width: 640px;
-    margin-top: -132px; } }
+    margin: 0 60px; } }
 
 @media (min-width: 1580px) {
   html body.projects .container-fluid.bbc-container .row .col-xs-12, html body.projects .container-fluid.bbc-container .row .col-sm-12, html body.projects .container-fluid.bbc-container .row .col-md-12, html body.projects .container-fluid.bbc-container .row .col-lg-12 {
@@ -1558,10 +1551,7 @@ hr {
     display: block; }
   html body.projects .container-fluid .projects-header ul {
     display: block;
-    margin: 0 60px; }
-  html body.projects img.personas {
-    width: 980px;
-    margin-top: -157px; } }
+    margin: 0 60px; } }
 
 html, body, #root, .projects, .projects-grid,
 .mdl-cell, .content, .mobile, .sub-nav + div {

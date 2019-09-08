@@ -425,7 +425,7 @@ html {
                     ul {display:none}
                 }
             }
-            img.personas {width:497px; margin-top:-79px}
+            img.personas {width:400px; margin-top:-79px}
         }
         
         @media (min-width: 576px) {
@@ -525,7 +525,7 @@ html {
                 }
                 .projects-header ul {display: block; margin:0 35px}
             }
-            img.personas {width: 767px; margin-top:-91px}
+            img.personas {width: 600px; margin-top:-91px}
         }
             
         @media (min-width: 768px) {
@@ -586,7 +586,7 @@ html {
                 }
                 .projects-header ul {display: block; margin:0 60px}
             }
-            img.personas {width:936px; margin-top:-84px}
+            img.personas {width:100%; margin-top:-90px}
         }
         
         @media (min-width: 992px) {
@@ -643,7 +643,7 @@ html {
                 }
                 .projects-header ul {display: block; margin:0 60px}
             }
-            img.personas { width: 520px; margin-top: -123px;}
+            img.personas {width:100%; margin-top:-160px}
         }
             
         @media (min-width: 1200px) {
@@ -699,7 +699,6 @@ html {
                 }
                 .projects-header ul {display: block; margin:0 60px}
             }
-            img.personas {width:640px; margin-top:-132px}
         }
 
         @media (min-width: 1580px) {
@@ -755,7 +754,6 @@ html {
                 }
                 .projects-header ul {display: block; margin:0 60px}
             }
-            img.personas {width:980px; margin-top:-157px}
         }
     }
 }
