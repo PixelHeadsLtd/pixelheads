@@ -267,7 +267,8 @@ html {
     // UMG
     body.umg {
         .App {     
-            img.personas {width:100%; margin-top:-160px}
+            img.personas { width:100%; margin-top:-160px }
+            img.pdf { width: 12px; margin: -3px 5px 0 0 }
             .row {
                 .red-panel {
                     background-color: $red;

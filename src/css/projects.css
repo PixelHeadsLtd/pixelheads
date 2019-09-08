@@ -301,6 +301,10 @@ html body.umg .App img.personas {
   width: 100%;
   margin-top: -160px; }
 
+html body.umg .App img.pdf {
+  width: 12px;
+  margin: -3px 5px 0 0; }
+
 html body.umg .App .row .red-panel {
   background-color: #e6233e;
   padding-top: 20px;

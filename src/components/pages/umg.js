@@ -12,6 +12,7 @@ import RightsHubLogo from '../../images/clients/pages/umg/rightshub-logo.png'
 import RightsHub from '../../images/clients/pages/umg/rightshub.png'
 import SupplyChainLogo from '../../images/clients/pages/umg/supplychain-logo.png'
 import SupplyChain from '../../images/clients/pages/umg/supplychain.png'
+import pdf from '../../images/icons/pdf.png'
 
 // includes
 import ProjectsNav from '../menus/projects-nav'
@@ -29,7 +30,7 @@ class UMG extends Component {
             <nav className="downloads-menu">
                 <ul>
                     <li>
-                        <a href="./../umg/AWS-Example-User-Journey.pdf" download="AWS User Journey" title="Will Download a PDF">Example User Journey</a>
+                        <img className="pdf" src={pdf} alt="pdf"/><a href="./../umg/AWS-Example-User-Journey.pdf" download="AWS User Journey" title="Will Download a PDF">Example User Journey</a>
                     </li>
                     <li>
                         <a href="./../axure-demo/index.html" title="Will open in a New Window" target="_blank">Axure Prototype</a>
