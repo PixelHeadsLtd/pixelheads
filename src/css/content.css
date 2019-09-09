@@ -49,8 +49,7 @@ section.new-section {
   width: 100%;
   display: inline-block;
   margin: 0 0 20px 0;
-  position: relative;
-  min-height: 924px; }
+  position: relative; }
 
 section.new-section.home {
   text-align: center;
@@ -86,10 +85,7 @@ section.new-section.home {
 
 section.new-section.about {
   background-color: #076c9b;
-  border-bottom: 45px solid #fff;
-  min-height: 879px; }
-  section.new-section.about .row {
-    padding-top: 50px; }
+  border-bottom: 45px solid #fff; }
   section.new-section.about .comment {
     color: #83c2e4 !important; }
   section.new-section.about h1 {

@@ -57,8 +57,7 @@ section.new-section {
   width: 100%;
   display: inline-block;
   margin: 0 0 20px 0;
-  position: relative;
-  min-height: 924px; }
+  position: relative; }
 
 section.new-section.home {
   text-align: center;
@@ -94,10 +93,7 @@ section.new-section.home {
 
 section.new-section.about {
   background-color: #076c9b;
-  border-bottom: 45px solid #fff;
-  min-height: 879px; }
-  section.new-section.about .row {
-    padding-top: 50px; }
+  border-bottom: 45px solid #fff; }
   section.new-section.about .comment {
     color: #83c2e4 !important; }
   section.new-section.about h1 {
@@ -1028,13 +1024,13 @@ hr {
     background-image: none; }
     body.home-page .main-header nav.main-nav {
       margin-left: 40px; }
-  body.home-page section.new-section.home {
+  body.home-page .new-section.home {
     background-size: 450px;
     min-height: 650px; }
-    body.home-page section.new-section.home .home-wrapper {
+    body.home-page .new-section.home .home-wrapper {
       padding-top: 280px; }
   body.home-page .new-section.about {
-    min-height: 2160px; }
+    min-height: 2210px; }
     body.home-page .new-section.about .container-fluid {
       padding-right: 40px;
       padding-left: 40px; }
@@ -1073,18 +1069,18 @@ hr {
       margin-left: 60px; }
   body.home-page section.new-section.home {
     background-size: 530px;
-    min-height: 924px; }
+    min-height: 950px; }
     body.home-page section.new-section.home .home-wrapper {
       padding-top: 340px; }
   body.home-page .new-section.about {
-    min-height: 1590px; }
+    min-height: 1680px; }
     body.home-page .new-section.about .container-fluid {
       padding-right: 60px;
       padding-left: 60px; }
       body.home-page .new-section.about .container-fluid .row {
         margin-right: -15px;
         margin-left: -15px;
-        padding-top: 0; }
+        padding-top: 50px; }
         body.home-page .new-section.about .container-fluid .row .col-sm-12 {
           padding-right: 15px;
           padding-left: 15px; }
@@ -1094,13 +1090,15 @@ hr {
           margin: 0 10%; }
           body.home-page .new-section.about .container-fluid .icons div p {
             font-size: .62rem; }
-  body.home-page .new-section.projects .container-fluid {
-    padding-right: 0;
-    padding-left: 0; }
-    body.home-page .new-section.projects .container-fluid .projects-header nav > a {
-      display: inline-block; }
+  body.home-page .new-section.projects {
+    min-height: 905px; }
+    body.home-page .new-section.projects .container-fluid {
+      padding-right: 0;
+      padding-left: 0; }
+      body.home-page .new-section.projects .container-fluid .projects-header nav > a {
+        display: inline-block; }
   body.home-page .new-section.contact {
-    min-height: 924px; }
+    min-height: 925px; }
     body.home-page .new-section.contact ul {
       margin: 40px 0 0 0; }
       body.home-page .new-section.contact ul li {
@@ -1112,17 +1110,13 @@ hr {
   body.home-page .main-header nav.main-nav {
     margin-left: 60px; }
   body.home-page .new-section.about {
-    min-height: 1155px; }
+    min-height: 1140px; }
     body.home-page .new-section.about .container-fluid {
       padding-right: 60px;
       padding-left: 60px; }
-      body.home-page .new-section.about .container-fluid .row {
-        margin-right: -15px;
-        margin-left: -15px;
-        padding-top: 0; }
-        body.home-page .new-section.about .container-fluid .row .col-sm-12 {
-          padding-right: 15px;
-          padding-left: 15px; }
+      body.home-page .new-section.about .container-fluid .row .col-sm-12 {
+        padding-right: 15px;
+        padding-left: 15px; }
       body.home-page .new-section.about .container-fluid .icons {
         bottom: 60px; }
         body.home-page .new-section.about .container-fluid .icons div {
@@ -1145,17 +1139,13 @@ hr {
   body.home-page .main-header nav.main-nav {
     margin-left: 60px; }
   body.home-page .new-section.about {
-    min-height: 924px; }
+    min-height: 970px; }
     body.home-page .new-section.about .container-fluid {
       padding-right: 60px;
       padding-left: 60px; }
-      body.home-page .new-section.about .container-fluid .row {
-        margin-right: -15px;
-        margin-left: -15px;
-        padding-top: 0; }
-        body.home-page .new-section.about .container-fluid .row .col-sm-12 {
-          padding-right: 15px;
-          padding-left: 15px; }
+      body.home-page .new-section.about .container-fluid .row .col-sm-12 {
+        padding-right: 15px;
+        padding-left: 15px; }
       body.home-page .new-section.about .container-fluid .icons {
         bottom: 90px; }
         body.home-page .new-section.about .container-fluid .icons p {
@@ -1178,13 +1168,34 @@ hr {
   body.home-page .new-section.about .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
-    body.home-page .new-section.about .container-fluid .row {
-      margin-right: -15px;
-      margin-left: -15px;
-      padding-top: 0; }
-      body.home-page .new-section.about .container-fluid .row .col-sm-12 {
-        padding-right: 15px;
-        padding-left: 15px; }
+    body.home-page .new-section.about .container-fluid .row .col-sm-12 {
+      padding-right: 15px;
+      padding-left: 15px; }
+    body.home-page .new-section.about .container-fluid .icons {
+      bottom: 235px; }
+      body.home-page .new-section.about .container-fluid .icons p {
+        font-size: .62rem; }
+  body.home-page .new-section.projects .container-fluid {
+    padding-right: 0;
+    padding-left: 0; }
+    body.home-page .new-section.projects .container-fluid .projects-header nav > a {
+      display: inline-block; }
+  body.home-page .new-section.contact ul {
+    margin: 40px 0 0 0; }
+    body.home-page .new-section.contact ul li {
+      float: none;
+      clear: none;
+      margin-bottom: 0; } }
+
+@media (min-width: 1280px) {
+  body.home-page .main-header nav.main-nav {
+    margin-left: 60px; }
+  body.home-page .new-section.about .container-fluid {
+    padding-right: 60px;
+    padding-left: 60px; }
+    body.home-page .new-section.about .container-fluid .row .col-sm-12 {
+      padding-right: 15px;
+      padding-left: 15px; }
     body.home-page .new-section.about .container-fluid .icons {
       bottom: 235px; }
       body.home-page .new-section.about .container-fluid .icons p {
@@ -1204,33 +1215,10 @@ hr {
 @media (min-width: 1500px) {
   body.home-page .main-header nav.main-nav {
     margin-left: 60px; }
-  body.home-page section.new-section.home .home-wrapper {
-    padding-top: 400px; }
-  body.home-page .new-section.about .container-fluid {
-    padding-right: 60px;
-    padding-left: 60px; }
-    body.home-page .new-section.about .container-fluid .row {
-      margin-right: -15px;
-      margin-left: -15px;
-      padding-top: 50px; }
-      body.home-page .new-section.about .container-fluid .row .col-sm-12 {
-        padding-right: 15px;
-        padding-left: 15px; }
-    body.home-page .new-section.about .container-fluid .icons {
-      bottom: 100px; }
-      body.home-page .new-section.about .container-fluid .icons p {
-        font-size: .62rem; }
-  body.home-page .new-section.projects .container-fluid {
-    padding-right: 0;
-    padding-left: 0; }
-    body.home-page .new-section.projects .container-fluid .projects-header nav > a {
-      display: inline-block; }
-  body.home-page .new-section.contact ul {
-    margin: 40px 0 0 0; }
-    body.home-page .new-section.contact ul li {
-      float: none;
-      clear: none;
-      margin-bottom: 0; } }
+  body.home-page section.new-section.home {
+    background-position: center top 80px; }
+    body.home-page section.new-section.home .home-wrapper {
+      padding-top: 450px; } }
 
 @media (min-width: 375px) {
   html body.projects .main-header {

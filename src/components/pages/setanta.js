@@ -56,7 +56,7 @@ class Setanta extends Component {
                 <h2>The Brief</h2>
                     <ul>
                         <li>Create low-level, medium level and high level Mock-Ups.</li>
-                        <li>Design the overall site look and feel based on earier research.</li>
+                        <li>Design the overall site look and feel.</li>
                         <li>Create working static & Interactive Prototypes.</li>
                     </ul>
                 </div>

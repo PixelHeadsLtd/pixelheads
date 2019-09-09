@@ -10,7 +10,7 @@ body.home-page {
                 margin-left:40px;
             }
         }
-        section.new-section.home {
+        .new-section.home {
             background-size: 450px;
             min-height: 650px;
             .home-wrapper {
@@ -18,7 +18,7 @@ body.home-page {
             }
         }
         .new-section.about {
-            min-height: 2160px;
+            min-height: 2210px;
             .container-fluid {
                 padding-right: 40px;
                 padding-left: 40px;
@@ -77,20 +77,20 @@ body.home-page {
         }
         section.new-section.home {
             background-size: 530px;
-            min-height: 924px;
+            min-height: 950px;
             .home-wrapper {
                 padding-top: 340px;
             }
         }
         .new-section.about {
-            min-height: 1590px;
+            min-height: 1680px;
             .container-fluid {
                 padding-right: 60px;
                 padding-left: 60px;
                 .row {
                     margin-right: -15px;
                     margin-left: -15px;
-                    padding-top:0;
+                    padding-top: 50px;
                     .col-sm-12 {
                         padding-right:15px;
                         padding-left:15px;
@@ -106,6 +106,7 @@ body.home-page {
             }
         }
         .new-section.projects {
+            min-height: 905px;
             .container-fluid {
                 padding-right: 0;
                 padding-left: 0;
@@ -117,7 +118,7 @@ body.home-page {
             }
         }
         .new-section.contact {
-            min-height: 924px;
+            min-height: 925px;
             ul {
                 margin: 40px 0 0 0;
                 li {
@@ -137,14 +138,11 @@ body.home-page {
             }
         }
         .new-section.about {
-            min-height: 1155px;
+            min-height: 1140px;
             .container-fluid {
                 padding-right: 60px;
                 padding-left: 60px;
                 .row {
-                    margin-right: -15px;
-                    margin-left: -15px;
-                    padding-top:0;
                     .col-sm-12 {
                         padding-right:15px;
                         padding-left:15px;
@@ -190,14 +188,11 @@ body.home-page {
             }
         }
         .new-section.about {
-            min-height: 924px;
+            min-height: 970px;
             .container-fluid {
                 padding-right: 60px;
                 padding-left: 60px;
                 .row {
-                    margin-right: -15px;
-                    margin-left: -15px;
-                    padding-top:0;
                     .col-sm-12 {
                         padding-right:15px;
                         padding-left:15px;
@@ -234,7 +229,7 @@ body.home-page {
       
     @media (min-width: 1200px) {
         .main-header {
-            //border-top:2px solid pink;
+            //border-top:2px solid black;
             nav.main-nav {
                 margin-left:60px;
             }
@@ -244,9 +239,51 @@ body.home-page {
                 padding-right: 60px;
                 padding-left: 60px;
                 .row {
-                    margin-right: -15px;
-                    margin-left: -15px;
-                    padding-top:0;
+                    .col-sm-12 {
+                        padding-right:15px;
+                        padding-left:15px;
+                    }
+                }
+                .icons {
+                    bottom:235px;
+                    p {font-size:.62rem}
+                }
+            }
+        }
+        .new-section.projects {
+            .container-fluid {
+                padding-right: 0;
+                padding-left: 0;
+                .projects-header {
+                    nav {
+                        > a {display:inline-block}
+                    }
+                }
+            }
+        }
+        .new-section.contact {
+            ul {
+                margin: 40px 0 0 0;
+                li {
+                    float: none;
+                    clear: none;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    @media (min-width: 1280px) {
+        .main-header {
+            // border-top:2px solid pink;
+            nav.main-nav {
+                margin-left:60px;
+            }
+        }
+        .new-section.about {
+            .container-fluid {
+                padding-right: 60px;
+                padding-left: 60px;
+                .row {
                     .col-sm-12 {
                         padding-right:15px;
                         padding-left:15px;
@@ -282,60 +319,26 @@ body.home-page {
     }    
     @media (min-width: 1500px) {
         .main-header {
-            //border-top:2px solid yellow;
+            // border-top:2px solid yellow;
             nav.main-nav {
                 margin-left:60px;
             }
         }
         section.new-section.home {
+            background-position: center top 80px;
             .home-wrapper {
-                padding-top: 400px;
-            }
-        }
-        .new-section.about {
-            .container-fluid {
-                padding-right: 60px;
-                padding-left: 60px;
-                .row {
-                    margin-right: -15px;
-                    margin-left: -15px;
-                    padding-top:50px;
-                    .col-sm-12 {
-                        padding-right:15px;
-                        padding-left:15px;
-                    }
-                }
-                .icons {
-                    bottom:100px;
-                    p {font-size:.62rem}
-                }
-            }
-        }
-        .new-section.projects {
-            .container-fluid {
-                padding-right: 0;
-                padding-left: 0;
-                .projects-header {
-                    nav {
-                        > a {display:inline-block}
-                    }
-                }
-            }
-        }
-        .new-section.contact {
-            ul {
-                margin: 40px 0 0 0;
-                li {
-                    float: none;
-                    clear: none;
-                    margin-bottom: 0;
-                }
+                padding-top: 450px;
             }
         }
     }  
 }
-
-// ----------------------------------- PROJECTS ----------------------------------
+// -------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------- PROJECTS ----------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------
 html {
     body.projects {
         @media (min-width: 375px) {

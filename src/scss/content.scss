@@ -15,7 +15,6 @@ section.new-section {
     display:inline-block;
     margin:0 0 20px 0;
     position: relative;
-    min-height: 924px;
 }
 
 // home section
@@ -58,8 +57,6 @@ section.new-section.home {
 section.new-section.about {
     background-color: $about;
     border-bottom:45px solid $white;
-    min-height: 879px;
-    .row {padding-top:50px}
     .comment {color:$pale-blue!important}
     h1 {color:$white}
     p {color:$white; @include font(bold, 12px, 'latolight');}
