@@ -92,8 +92,7 @@ section.new-section.home {
         height: 100%; }
 
 section.new-section.about {
-  background-color: #076c9b;
-  border-bottom: 45px solid #fff; }
+  background-color: #076c9b; }
   section.new-section.about .comment {
     color: #83c2e4 !important; }
   section.new-section.about h1 {
@@ -128,7 +127,7 @@ section.new-section.projects .projects-header {
     section.new-section.projects .projects-header nav a {
       height: 20px;
       display: inline-block;
-      margin: 15px 20px 25px 20px;
+      margin: 15px 20px 15px 20px;
       padding: 0;
       cursor: pointer;
       color: #888 !important;
@@ -1044,13 +1043,15 @@ hr {
         bottom: 30px; }
         body.home-page .new-section.about .container-fluid .icons div {
           margin: 0 10%; }
-  body.home-page .new-section.projects .container-fluid {
-    padding-right: 0;
-    padding-left: 0; }
-    body.home-page .new-section.projects .container-fluid .projects-header nav > a {
-      display: none; }
+  body.home-page .new-section.projects {
+    min-height: 2098px; }
+    body.home-page .new-section.projects .container-fluid {
+      padding-right: 0;
+      padding-left: 0; }
+      body.home-page .new-section.projects .container-fluid .projects-header nav > a {
+        display: none; }
   body.home-page .new-section.contact {
-    min-height: 650px;
+    min-height: 800px;
     margin-bottom: 0; }
     body.home-page .new-section.contact img {
       margin: 15% auto 0 auto; }
@@ -1090,7 +1091,7 @@ hr {
           body.home-page .new-section.about .container-fluid .icons div p {
             font-size: .62rem; }
   body.home-page .new-section.projects {
-    min-height: 905px; }
+    min-height: 879px; }
     body.home-page .new-section.projects .container-fluid {
       padding-right: 0;
       padding-left: 0; }
@@ -1138,7 +1139,7 @@ hr {
   body.home-page .main-header nav.main-nav {
     margin-left: 60px; }
   body.home-page .new-section.about {
-    min-height: 970px; }
+    min-height: 862px; }
     body.home-page .new-section.about .container-fluid {
       padding-right: 60px;
       padding-left: 60px; }
