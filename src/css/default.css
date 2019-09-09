@@ -109,8 +109,7 @@ section.new-section.about {
     right: 0;
     bottom: 180px; }
     section.new-section.about .icons div {
-      display: inline-block;
-      margin: 0 6%; }
+      display: inline-block; }
       section.new-section.about .icons div p {
         margin-top: 5px;
         font-size: .62rem; }
@@ -1030,7 +1029,7 @@ hr {
     body.home-page .new-section.home .home-wrapper {
       padding-top: 280px; }
   body.home-page .new-section.about {
-    min-height: 2210px; }
+    min-height: 2180px; }
     body.home-page .new-section.about .container-fluid {
       padding-right: 40px;
       padding-left: 40px; }
@@ -1044,7 +1043,7 @@ hr {
       body.home-page .new-section.about .container-fluid .icons {
         bottom: 30px; }
         body.home-page .new-section.about .container-fluid .icons div {
-          margin: 0 2%; }
+          margin: 0 10%; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -1080,14 +1079,14 @@ hr {
       body.home-page .new-section.about .container-fluid .row {
         margin-right: -15px;
         margin-left: -15px;
-        padding-top: 50px; }
+        padding-top: 30px; }
         body.home-page .new-section.about .container-fluid .row .col-sm-12 {
           padding-right: 15px;
           padding-left: 15px; }
       body.home-page .new-section.about .container-fluid .icons {
         bottom: 60px; }
         body.home-page .new-section.about .container-fluid .icons div {
-          margin: 0 10%; }
+          margin: 0 6%; }
           body.home-page .new-section.about .container-fluid .icons div p {
             font-size: .62rem; }
   body.home-page .new-section.projects {
@@ -1218,7 +1217,11 @@ hr {
   body.home-page section.new-section.home {
     background-position: center top 80px; }
     body.home-page section.new-section.home .home-wrapper {
-      padding-top: 450px; } }
+      padding-top: 450px; }
+  body.home-page .new-section.about .container-fluid .row {
+    padding-top: 50px; }
+  body.home-page .new-section.about .container-fluid .icons {
+    bottom: 160px; } }
 
 @media (min-width: 375px) {
   html body.projects .main-header {
