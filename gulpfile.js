@@ -8,7 +8,7 @@ const browserSync = require('browser-sync').create();
 // compile scss into css
 function style() {
     // 1. where is my scss file
-    return gulp.src('./src/scss/**/*.scss')
+    return gulp.src('./src/scss/*.scss')
     // 2. pass that file through the sass compiler
     .pipe(sass())
     // 3. where do i save the compiled css?
@@ -21,17 +21,12 @@ function watch() {
     browserSync.init({
         server: {
             baseDir: './public'
-        }
+        },
+        port:5000
     });
-    gulp.watch('./src/scss/**/*.scss', style);
+    gulp.watch('./src/scss/*.scss', style);
     gulp.watch('./src/**/*.js').on('change', browserSync.reload);
-    //gulp.watch('./src/js/**/*.js').on('change', browserSync.reload);
-    //gulp.watch('./src/components/**/*.js').on('change', browserSync.reload);
-    gulp.watch('./src/*.html').on('change', browserSync.reload);
     gulp.watch('./public/*.html').on('change', browserSync.reload);
-    gulp.watch('./*.html').on('change', browserSync.reload);
-    gulp.watch('./*.html').on('change', browserSync.reload);
-    gulp.watch('*.html').on('change', browserSync.reload);
 }
 
 exports.style = style;
