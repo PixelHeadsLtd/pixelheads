@@ -20,7 +20,7 @@ class About extends Component {
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12">
             <h4>UX Strategy</h4>
-            <p>UX strategy’s can range from a lean, well defined process right through to a full formal strategy that 
+            <p>UX strategies can range from a lean, well defined process right through to a full formal strategy that 
               covers design patterns, usability and accessibility principles, interaction guides and a 
               component library. Even the most basic strategy will help to ensure a more user-centred approach 
               and help to maintain standards.
@@ -36,7 +36,7 @@ class About extends Component {
                 provide excellent context when developing a UX solution.
               </p>
               <h4>Customer Journey Mapping</h4>
-              <p>A Customer Journey map is a visual representation of the overall story of a customers relationship with 
+              <p>A Customer Journey map is a visual representation of the overall story of a customer's relationship with 
                 your company, product or service. The story is told from the customer’s perspective and highlights the 
                 intersections between their expectations and your offering. This is very useful in trying to understand how 
                 the user feels and reacts to different interactions and how they can be optimised for a better user experience.</p>
@@ -97,7 +97,7 @@ class About extends Component {
               edge software that deliver immediate feedback for users. Restful API's have enhanced the user experience and have vastly 
               improved both development efficiency and code maintainability.
             </p>
-            <h4>Tecnical Knowledge</h4>
+            <h4>Technical Knowledge</h4>
             <p>It's not for everyone but many designers are expected to not only design great products, but to also build them. Though not 
               all clients expect this and many have the available funds to split teams into their specialist areas, having experience in FE dev
                can help ensure designs are pixel-perfect as per signed-off visuals. Keeping abreast of modern FE technologies is not 
