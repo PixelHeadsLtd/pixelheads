@@ -13,3 +13,10 @@ svg.demo {
         stroke-miterlimit: 10;
     }
 }
+
+.horizontal-pan {
+    div {
+        position: absolute;
+        div {position: static;}
+    }
+}

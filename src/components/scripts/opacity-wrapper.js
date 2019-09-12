@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Opacity extends Component {
   constructor(props) {
     super(props);
-    this.state = {opacity: 0};
+    this.state = {opacity: 1};
   }
 
   // start fading
@@ -17,7 +17,7 @@ class Opacity extends Component {
   }
 
   handleScroll = () => {
-    let y = this.state.element.current.getBoundingClientRect().y; // offset for when opacity begins
+    let y = this.state.element.current.getBoundingClientRect().y -200; // offset for when opacity begins
     let distance = y * 0.01; // distance smoothing
     let opacity = 1;
     if(distance !== 0 && y < 350) { // after in view
@@ -26,7 +26,7 @@ class Opacity extends Component {
     else if(distance !== 0 && y > -350) { // before in view
       opacity = 1/Math.abs(distance);
     }
-    if(opacity < 0.109){
+    if(opacity < 0.2){
       opacity = 0;
     }
     this.setState({opacity: opacity});

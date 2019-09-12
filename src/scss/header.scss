@@ -19,7 +19,7 @@ body.projects {
             position: relative;
             overflow: hidden;
             opacity: 0;
-            transition: all 0.5s ease-in;
+            @include transition(all 0.5s ease-in);
             color: $black;
             width: 50px;
             height: 50px;
@@ -139,6 +139,70 @@ body.projects {
         a.active {
             opacity:1;
             border-bottom: 2px solid $red
+        }
+    }
+    .main-nav-small.show-menu {
+        nav {top:0} 
+        .tint {opacity: 0.9; visibility: visible}
+        .menu-icon div {background-color:$black}
+    }
+    .main-nav-small {
+        .menu-icon {
+            z-index: 2;
+            width: 18px;
+            display: block;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            div {
+                width: 100%;
+                height: 2px;
+                background-color: $red;
+                border-radius: 30px;
+                margin: 0 0 3px 0;
+            }
+        }
+        .tint {
+            background-color: $jetBlack;
+            @include transition(all 0.2s ease-in);
+            opacity: 0;
+            visibility: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+        nav {
+            top: -245px;
+            @include transition(all 0.2s ease-in);
+            background: white;
+            z-index: 1;
+            position: fixed;
+            width: 100%;
+            height: 240px;
+            left: 0;
+            padding-top: 10px;
+            a {
+                width: 100%;
+                height: auto;
+                cursor: pointer;
+                text-align: center;
+                display: block;
+                margin: 0;
+                padding: 16px 0;
+                cursor:pointer;
+                color:$black!important;
+                opacity:0.6;
+                @include font(300, .63rem, 'latobold');
+                text-transform: uppercase;
+                //border-bottom: 2px solid $white;
+            }
+            a:hover {text-decoration: none!important}
+            a.active {
+                opacity:1;
+            }
         }
     }
 }

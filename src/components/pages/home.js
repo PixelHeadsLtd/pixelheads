@@ -20,6 +20,7 @@ import ActiveSection from '../scripts/active-section';
 import Header from '../header/header';
 import Landing from './landing-page';
 import AboutMike from './about';
+import Approach from './approach';
 import MikesProjects from './projects';
 import ContactMike from './contact';
 
@@ -52,16 +53,23 @@ class Home extends Component {
                   </ActiveSection>
                 </ScrollableAnchor>
               </section>
+              <section className="new-section approach">
+                <ScrollableAnchor id={'section-approach'}>
+                  <ActiveSection index="2" refToMenu={menuRef}> 
+                    <Approach />
+                  </ActiveSection>
+                </ScrollableAnchor>
+              </section>
               <section className="new-section projects">
                 <ScrollableAnchor id={'section-projects'}>
-                  <ActiveSection index="2" refToMenu={menuRef}>
+                  <ActiveSection index="3" refToMenu={menuRef}>
                     <MikesProjects />
                   </ActiveSection>
                 </ScrollableAnchor>
               </section>
               <section className="new-section contact">
                 <ScrollableAnchor id={'section-contact'}>
-                  <ActiveSection index="3" refToMenu={menuRef}>
+                  <ActiveSection index="4" refToMenu={menuRef}>
                     <ContactMike />
                   </ActiveSection>
                 </ScrollableAnchor>

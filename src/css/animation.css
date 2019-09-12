@@ -4,3 +4,8 @@ svg.demo .target-path {
   stroke-width: 1;
   stroke-linecap: square;
   stroke-miterlimit: 10; }
+
+.horizontal-pan div {
+  position: absolute; }
+  .horizontal-pan div div {
+    position: static; }

@@ -78,6 +78,23 @@ section.new-section.about {
     }
 }
 
+// approach section
+section.new-section.approach {
+    background-color: $approach;
+    h1 {color:$white; margin-bottom: 30px}
+    hr {
+        border-style: dashed;
+        border-color: $white;
+        opacity: 0.3;
+    }
+    .row:last-child {margin-bottom:50px;}
+    .row {
+        margin-top:30px;
+        p {color:$white; @include font(bold, 12px, 'latolight');}
+        img {width: 115px;}
+    }
+}
+
 // projects section
 section.new-section.projects {
     .projects-header {
@@ -187,7 +204,6 @@ section.new-section.contact {
         width: 155px;
     }
     ul.contact-panel {
-        width:100%;
         margin:40px 0 0 0;
         li {
             display:inline-block;

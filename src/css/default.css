@@ -6,6 +6,11 @@ svg.demo .target-path {
   stroke-linecap: square;
   stroke-miterlimit: 10; }
 
+.horizontal-pan div {
+  position: absolute; }
+  .horizontal-pan div div {
+    position: static; }
+
 /********************************************** LOAD CUSTOM FONTS **********************************************/
 @font-face {
   font-family: 'latohairline';
@@ -114,6 +119,25 @@ section.new-section.about {
         font-size: .62rem; }
         section.new-section.about .icons div p span {
           color: #fbc900; }
+
+section.new-section.approach {
+  background-color: #1f9c9c; }
+  section.new-section.approach h1 {
+    color: #fff;
+    margin-bottom: 30px; }
+  section.new-section.approach hr {
+    border-style: dashed;
+    border-color: #fff;
+    opacity: 0.3; }
+  section.new-section.approach .row:last-child {
+    margin-bottom: 50px; }
+  section.new-section.approach .row {
+    margin-top: 30px; }
+    section.new-section.approach .row p {
+      color: #fff;
+      font: bold 12px "latolight"; }
+    section.new-section.approach .row img {
+      width: 115px; }
 
 section.new-section.projects .projects-header {
   width: 100% !important;
@@ -241,7 +265,6 @@ section.new-section.contact {
   section.new-section.contact img {
     width: 155px; }
   section.new-section.contact ul.contact-panel {
-    width: 100%;
     margin: 40px 0 0 0; }
     section.new-section.contact ul.contact-panel li {
       display: inline-block;
@@ -747,6 +770,10 @@ body.projects .main-header {
     position: relative;
     overflow: hidden;
     opacity: 0;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
     color: #252525;
     width: 50px;
@@ -877,6 +904,72 @@ body.projects .transpose-menu .main-header {
     .main-header nav.main-nav a.active {
       opacity: 1;
       border-bottom: 2px solid #e6233e; }
+  .main-header .main-nav-small.show-menu nav {
+    top: 0; }
+  .main-header .main-nav-small.show-menu .tint {
+    opacity: 0.9;
+    visibility: visible; }
+  .main-header .main-nav-small.show-menu .menu-icon div {
+    background-color: #252525; }
+  .main-header .main-nav-small .menu-icon {
+    z-index: 2;
+    width: 18px;
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 15px; }
+    .main-header .main-nav-small .menu-icon div {
+      width: 100%;
+      height: 2px;
+      background-color: #e6233e;
+      border-radius: 30px;
+      margin: 0 0 3px 0; }
+  .main-header .main-nav-small .tint {
+    background-color: #000000;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0; }
+  .main-header .main-nav-small nav {
+    top: -245px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background: white;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 240px;
+    left: 0;
+    padding-top: 10px; }
+    .main-header .main-nav-small nav a {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      text-align: center;
+      display: block;
+      margin: 0;
+      padding: 16px 0;
+      cursor: pointer;
+      color: #252525 !important;
+      opacity: 0.6;
+      font: 300 0.63rem "latobold";
+      text-transform: uppercase; }
+    .main-header .main-nav-small nav a:hover {
+      text-decoration: none !important; }
+    .main-header .main-nav-small nav a.active {
+      opacity: 1; }
 
 .mw400 {
   max-width: 400px !important; }
@@ -1022,6 +1115,8 @@ hr {
     min-height: 650px; }
   body.home-page .new-section.about {
     min-height: 2180px; }
+  body.home-page .new-section.approach {
+    min-height: 3256px; }
   body.home-page .new-section.projects {
     min-height: 2098px; }
   body.home-page .new-section.contact {
@@ -1029,7 +1124,7 @@ hr {
   body.home-page .main-header {
     background-image: none; }
     body.home-page .main-header nav.main-nav {
-      margin-left: 40px; }
+      display: none; }
   body.home-page .new-section.home {
     background-size: 450px; }
     body.home-page .new-section.home .home-wrapper {
@@ -1048,6 +1143,19 @@ hr {
       bottom: 30px; }
       body.home-page .new-section.about .container-fluid .icons div {
         margin: 0 10%; }
+  body.home-page .new-section.approach .container-fluid {
+    padding-right: 40px;
+    padding-left: 40px; }
+  body.home-page .new-section.approach .row {
+    margin-right: 0;
+    margin-left: 0; }
+    body.home-page .new-section.approach .row .col-md-auto {
+      text-align: center; }
+    body.home-page .new-section.approach .row img {
+      margin: 0 auto 30px auto; }
+    body.home-page .new-section.approach .row div {
+      padding-right: 0;
+      padding-left: 0; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -1067,14 +1175,22 @@ hr {
 @media (min-width: 576px) {
   body.home-page .new-section.home {
     min-height: 950px; }
-  body.home-page .new-section.about,
-  body.home-page .new-section.projects,
+  body.home-page .new-section.about {
+    min-height: 1630px; }
+  body.home-page .new-section.approach {
+    min-height: 2508px; }
+  body.home-page .new-section.projects {
+    min-height: 1090px; }
   body.home-page .new-section.contact {
     min-height: 924px; }
   body.home-page .main-header {
     background: #fff url(../images/pixelheads-logo.svg) no-repeat top 8px right 60px; }
     body.home-page .main-header nav.main-nav {
-      margin-left: 60px; }
+      margin-left: 60px;
+      display: block; }
+    body.home-page .main-header .main-nav-small {
+      margin-left: 60px;
+      display: none; }
   body.home-page section.new-section.home .home-wrapper {
     padding-top: 340px; }
   body.home-page .new-section.about .container-fluid {
@@ -1133,6 +1249,16 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 992px) {
+  body.home-page .new-section.home {
+    min-height: 950px; }
+  body.home-page .new-section.about {
+    min-height: 990px; }
+  body.home-page .new-section.approach {
+    min-height: 2309px; }
+  body.home-page .new-section.projects {
+    min-height: 930px; }
+  body.home-page .new-section.contact {
+    min-height: 924px; }
   body.home-page .main-header nav.main-nav {
     margin-left: 60px; }
   body.home-page .new-section.about .container-fluid {
@@ -1145,6 +1271,19 @@ hr {
       bottom: 90px; }
       body.home-page .new-section.about .container-fluid .icons p {
         font-size: .62rem; }
+  body.home-page .new-section.approach .container-fluid {
+    padding-right: 60px;
+    padding-left: 60px; }
+  body.home-page .new-section.approach .row {
+    margin-right: -15px;
+    margin-left: -15px; }
+    body.home-page .new-section.approach .row .col-md-auto {
+      text-align: left; }
+    body.home-page .new-section.approach .row img {
+      margin: 0; }
+    body.home-page .new-section.approach .row div {
+      padding-right: 15px;
+      padding-left: 15px; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -1158,6 +1297,16 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 1200px) {
+  body.home-page .new-section.home {
+    min-height: 950px; }
+  body.home-page .new-section.about {
+    min-height: 950px; }
+  body.home-page .new-section.approach {
+    min-height: 2023px; }
+  body.home-page .new-section.projects {
+    min-height: 930px; }
+  body.home-page .new-section.contact {
+    min-height: 924px; }
   body.home-page .main-header nav.main-nav {
     margin-left: 60px; }
   body.home-page .new-section.about .container-fluid {
@@ -1167,7 +1316,7 @@ hr {
       padding-right: 15px;
       padding-left: 15px; }
     body.home-page .new-section.about .container-fluid .icons {
-      bottom: 235px; }
+      bottom: 75px; }
       body.home-page .new-section.about .container-fluid .icons p {
         font-size: .62rem; }
   body.home-page .new-section.projects .container-fluid {
@@ -1191,10 +1340,6 @@ hr {
     body.home-page .new-section.about .container-fluid .row .col-sm-12 {
       padding-right: 15px;
       padding-left: 15px; }
-    body.home-page .new-section.about .container-fluid .icons {
-      bottom: 235px; }
-      body.home-page .new-section.about .container-fluid .icons p {
-        font-size: .62rem; }
   body.home-page .new-section.projects .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -1208,6 +1353,8 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 1500px) {
+  body.home-page .new-section.approach {
+    min-height: 1539px; }
   body.home-page .main-header nav.main-nav {
     margin-left: 60px; }
   body.home-page section.new-section.home {
@@ -1217,13 +1364,15 @@ hr {
   body.home-page .new-section.about .container-fluid .row {
     padding-top: 50px; }
   body.home-page .new-section.about .container-fluid .icons {
-    bottom: 160px; } }
+    bottom: 160px; }
+  body.home-page .new-section.approach .row img {
+    width: 115px; } }
 
 @media (min-width: 375px) {
   html body.projects .main-header {
     background-image: none; }
     html body.projects .main-header nav.main-nav {
-      margin-left: 40px; }
+      display: none; }
   html body.projects .container a.top {
     display: none; }
   html body.projects .banner {
@@ -1299,8 +1448,11 @@ hr {
     background-image: url(../images/pixelheads-logo.svg) !important; }
   html body.projects .main-header {
     background-image: url(../images/pixelheads-logo-inverted.svg); }
-  html body.projects .main-header nav.main-nav {
-    margin-left: 60px; }
+    html body.projects .main-header nav.main-nav {
+      display: block;
+      margin-left: 60px; }
+    html body.projects .main-header .main-nav-small {
+      display: none; }
   html body.projects .container a.top {
     display: none; }
   html body.projects .banner {
@@ -1633,3 +1785,8 @@ body.home-page {
     color: #252525;
     font: 600 1.1rem "latoregular";
     margin: 0 0 3px 0; }
+  body.home-page h4 {
+    color: #033952;
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin-bottom: .2rem; }

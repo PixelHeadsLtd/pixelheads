@@ -54,6 +54,10 @@ body.projects .main-header {
     position: relative;
     overflow: hidden;
     opacity: 0;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
     color: #252525;
     width: 50px;
@@ -184,3 +188,69 @@ body.projects .transpose-menu .main-header {
     .main-header nav.main-nav a.active {
       opacity: 1;
       border-bottom: 2px solid #e6233e; }
+  .main-header .main-nav-small.show-menu nav {
+    top: 0; }
+  .main-header .main-nav-small.show-menu .tint {
+    opacity: 0.9;
+    visibility: visible; }
+  .main-header .main-nav-small.show-menu .menu-icon div {
+    background-color: #252525; }
+  .main-header .main-nav-small .menu-icon {
+    z-index: 2;
+    width: 18px;
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 15px; }
+    .main-header .main-nav-small .menu-icon div {
+      width: 100%;
+      height: 2px;
+      background-color: #e6233e;
+      border-radius: 30px;
+      margin: 0 0 3px 0; }
+  .main-header .main-nav-small .tint {
+    background-color: #000000;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0; }
+  .main-header .main-nav-small nav {
+    top: -245px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background: white;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 240px;
+    left: 0;
+    padding-top: 10px; }
+    .main-header .main-nav-small nav a {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      text-align: center;
+      display: block;
+      margin: 0;
+      padding: 16px 0;
+      cursor: pointer;
+      color: #252525 !important;
+      opacity: 0.6;
+      font: 300 0.63rem "latobold";
+      text-transform: uppercase; }
+    .main-header .main-nav-small nav a:hover {
+      text-decoration: none !important; }
+    .main-header .main-nav-small nav a.active {
+      opacity: 1; }

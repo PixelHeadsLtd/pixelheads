@@ -107,6 +107,25 @@ section.new-section.about {
         section.new-section.about .icons div p span {
           color: #fbc900; }
 
+section.new-section.approach {
+  background-color: #1f9c9c; }
+  section.new-section.approach h1 {
+    color: #fff;
+    margin-bottom: 30px; }
+  section.new-section.approach hr {
+    border-style: dashed;
+    border-color: #fff;
+    opacity: 0.3; }
+  section.new-section.approach .row:last-child {
+    margin-bottom: 50px; }
+  section.new-section.approach .row {
+    margin-top: 30px; }
+    section.new-section.approach .row p {
+      color: #fff;
+      font: bold 12px "latolight"; }
+    section.new-section.approach .row img {
+      width: 115px; }
+
 section.new-section.projects .projects-header {
   width: 100% !important;
   display: inline-block;
@@ -233,7 +252,6 @@ section.new-section.contact {
   section.new-section.contact img {
     width: 155px; }
   section.new-section.contact ul.contact-panel {
-    width: 100%;
     margin: 40px 0 0 0; }
     section.new-section.contact ul.contact-panel li {
       display: inline-block;

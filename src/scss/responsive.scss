@@ -7,13 +7,14 @@ body.home-page {
         //.new-section { border: 1px solid red }
         .new-section.home { min-height: 650px }
         .new-section.about { min-height: 2180px; }
+        .new-section.approach { min-height: 3256px }
         .new-section.projects { min-height: 2098px }
         .new-section.contact { min-height: 800px }
         // HEIGHTS MUST EXCEED WINDOW FOR ANCHORS TO WORK PROPERLY
         .main-header {
-            background-image:none;
+            background-image: none;
             nav.main-nav {
-                margin-left:40px;
+                display: none;
             }
         }  
         .new-section.home {
@@ -40,6 +41,22 @@ body.home-page {
                     div {
                         margin: 0 10%;
                     }
+                }
+            }
+        }
+        .new-section.approach {
+            .container-fluid {
+                padding-right: 40px;
+                padding-left: 40px;
+            }
+            .row {
+                margin-right: 0;
+                margin-left: 0;
+                .col-md-auto {text-align: center}
+                img {margin:0 auto 30px auto}
+                div {
+                    padding-right: 0;
+                    padding-left: 0;
                 }
             }
         }
@@ -74,14 +91,20 @@ body.home-page {
         // SECTION HEIGHTS MUST EXCEED WINDOW FOR ANCHORS TO WORK PROPERLY
         //.new-section { border: 1px solid blue }
         .new-section.home { min-height: 950px }
-        .new-section.about,
-        .new-section.projects, 
+        .new-section.about { min-height: 1630px; }
+        .new-section.approach { min-height: 2508px }
+        .new-section.projects { min-height: 1090px }
         .new-section.contact { min-height: 924px }
         // HEIGHTS MUST EXCEED WINDOW FOR ANCHORS TO WORK PROPERLY 
         .main-header {
             background:$white url(../images/pixelheads-logo.svg) no-repeat top 8px right 60px;
             nav.main-nav {
                 margin-left:60px;
+                display: block;
+            }
+            .main-nav-small {
+                margin-left:60px;
+                display: none;
             }
         }
         section.new-section.home {
@@ -184,7 +207,14 @@ body.home-page {
     }
     
     @media (min-width: 992px) {
+        // SECTION HEIGHTS MUST EXCEED WINDOW FOR ANCHORS TO WORK PROPERLY
         //.new-section { border: 1px solid green }
+        .new-section.home { min-height: 950px }
+        .new-section.about { min-height: 990px; }
+        .new-section.approach { min-height: 2309px }
+        .new-section.projects { min-height: 930px }
+        .new-section.contact { min-height: 924px }
+        // HEIGHTS MUST EXCEED WINDOW FOR ANCHORS TO WORK PROPERLY 
         .main-header {
             nav.main-nav {
                 margin-left:60px;
@@ -203,6 +233,22 @@ body.home-page {
                 .icons {
                     bottom:90px;
                     p {font-size:.62rem}
+                }
+            }
+        }
+        .new-section.approach {
+            .container-fluid {
+                padding-right: 60px;
+                padding-left: 60px;
+            }
+            .row {
+                margin-right: -15px;
+                margin-left: -15px;
+                .col-md-auto {text-align: left}
+                img {margin:0}
+                div {
+                    padding-right: 15px;
+                    padding-left: 15px;
                 }
             }
         }
@@ -230,7 +276,14 @@ body.home-page {
     }
       
     @media (min-width: 1200px) {
+        // SECTION HEIGHTS MUST EXCEED WINDOW FOR ANCHORS TO WORK PROPERLY
         //.new-section { border: 1px solid pink }
+        .new-section.home { min-height: 950px }
+        .new-section.about { min-height: 950px; }
+        .new-section.approach { min-height: 2023px }
+        .new-section.projects { min-height: 930px }
+        .new-section.contact { min-height: 924px }
+        // HEIGHTS MUST EXCEED WINDOW FOR ANCHORS TO WORK PROPERLY 
         .main-header {
             nav.main-nav {
                 margin-left:60px;
@@ -247,7 +300,7 @@ body.home-page {
                     }
                 }
                 .icons {
-                    bottom:235px;
+                    bottom:75px;
                     p {font-size:.62rem}
                 }
             }
@@ -291,10 +344,6 @@ body.home-page {
                         padding-left:15px;
                     }
                 }
-                .icons {
-                    bottom:235px;
-                    p {font-size:.62rem}
-                }
             }
         }
         .new-section.projects {
@@ -320,7 +369,10 @@ body.home-page {
         }
     }    
     @media (min-width: 1500px) {
+        // SECTION HEIGHTS MUST EXCEED WINDOW FOR ANCHORS TO WORK PROPERLY
         //.new-section { border: 1px solid purple }
+        .new-section.approach { min-height: 1539px }
+        // HEIGHTS MUST EXCEED WINDOW FOR ANCHORS TO WORK PROPERLY 
         .main-header {
             nav.main-nav {
                 margin-left:60px;
@@ -342,6 +394,11 @@ body.home-page {
                 }
             }
         }
+        .new-section.approach {
+            .row {
+                img {width: 115px;}
+            }
+        }
     }  
 }
 // -------------------------------------------------------------------------------------------------------------------
@@ -357,7 +414,7 @@ html {
             .main-header {
                 background-image:none;
                 nav.main-nav {
-                    margin-left:40px;
+                    display:none;
                 }
             }
             .container {
@@ -451,10 +508,12 @@ html {
             }
             .main-header {
                 background-image: url(../images/pixelheads-logo-inverted.svg);
-            }
-            .main-header {
                 nav.main-nav {
-                    margin-left:60px;
+                    display: block;
+                    margin-left: 60px;
+                }
+                .main-nav-small {
+                    display: none;
                 }
             }
             .container {
