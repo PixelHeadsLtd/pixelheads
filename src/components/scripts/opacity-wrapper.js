@@ -26,9 +26,6 @@ class Opacity extends Component {
     else if(distance !== 0 && y > -350) { // before in view
       opacity = 1/Math.abs(distance);
     }
-    if(opacity < 0.2){
-      opacity = 0;
-    }
     this.setState({opacity: opacity});
   };
 
