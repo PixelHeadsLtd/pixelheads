@@ -19,27 +19,28 @@ class About extends Component {
             <img src={Research} alt="" />
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12">
-            <h4>UX Strategy</h4>
-            <p>UX strategies can range from a lean, well defined process right through to a full formal strategy that 
-              covers design patterns, usability and accessibility principles, interaction guides and a 
-              component library. Even the most basic strategy will help to ensure a more user-centred approach 
-              and help to maintain standards.
-            </p>
               <h4>Design Sprints</h4>
               <p>In a concentrated and highly focussed time period, cross-disciplinary teams can rapidly understand, define, prototype and 
                 validate a design solution. Design sprints are a great way to get full team buy-in and find answers to complex problems.
               </p>
               <h4>Stakeholder Interviews</h4>
-              <p>These are essential in understanding the product vision and ensuring that user needs and 
-                business goals are as well aligned as possible. Understanding the why is at the core of being able to develop 
-                the how. Stakeholders often have invaluable experience of the users, their behaviours and motivations can 
-                provide excellent context when developing a UX solution.
+              <p>Understanding the why is at the core of being able to develop the how. Stakeholders often have invaluable 
+                experience of the users, their behaviours and motivations can provide excellent context when developing a UX solution.
               </p>
               <h4>Customer Journey Mapping</h4>
               <p>A Customer Journey map is a visual representation of the overall story of a customer's relationship with 
-                your company, product or service. The story is told from the customer’s perspective and highlights the 
-                intersections between their expectations and your offering. This is very useful in trying to understand how 
-                the user feels and reacts to different interactions and how they can be optimised for a better user experience.</p>
+                your company, product or service. The story highlights the intersections between their expectations and your offering. 
+                This is very useful in trying to understand how the user feels and reacts to different interactions and how 
+                they can be optimised for a better user experience.</p>
+          </div>
+        </div>
+        </Opacity>
+        <Opacity>
+        <div className="row justify-content-md-center">
+          <div className="col-md-auto">
+            <img src={Research} alt="" />
+          </div>
+          <div className="col-lg-6 col-md-12 col-sm-12">
               <h4>User Testing</h4>
               <p>Having users involved early and often yields the greatest results. Observing users attempting to complete 
                 tasks with a prototype of your product can help you identify usability problems as early as possible, so they 
@@ -66,12 +67,6 @@ class About extends Component {
             <img src={Design} alt="" />
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12">
-            <h4>A Design Eye</h4>
-            <p>Design is about knowing when something works and how to make a product useful. Although very subjective, I think it's 
-              partly an instinctive thing. I believe anyone can design but not everyone can design well. Ultimatley you need 
-              to enjoy all aspects of design and make them a part of your everyday life. Companies like Apple have reached the 
-              pinnacle of success by putting design at the very heart of everything they do.
-            </p>
             <h4>Design Patterns</h4>
             <p>Keeping abreast of modern design patterns and trends is an absolute must when desiging any product. As designers, 
               we cannot live in a vacuum and ignore the world around us. I believe great design leads to great experiences and 
@@ -97,12 +92,11 @@ class About extends Component {
               edge software that deliver immediate feedback for users. Restful API's have enhanced the user experience and have vastly 
               improved both development efficiency and code maintainability.
             </p>
-            <h4>Technical Knowledge</h4>
-            <p>It's not for everyone but many designers are expected to not only design great products, but to also build them. Though not 
-              all clients expect this and many have the available funds to split teams into their specialist areas, having experience in FE dev
-               can help ensure designs are pixel-perfect as per signed-off visuals. Keeping abreast of modern FE technologies is not 
-               only great fun but also bridges the cap between the technical architects and designers, providing the designer with a clear 
-               understanding of the technical boundaries that might otherwise not be considered.
+            <h4>Front-End Development</h4>
+            <p>On projects with limited resources, designers are sometimes expected to have mastered front-end development. 
+              Though not all clients require this and many have the available funds to split teams into their specialist areas, having solid foundations 
+              in this area will not only vastly speed up delivery on a given project, but also help bridge the gap between the visual side (prototyping) 
+              and the back-end (architecture).
             </p>
           </div>
         </div>
