@@ -200,7 +200,7 @@ body.projects .transpose-menu .main-header {
     width: 18px;
     display: block;
     position: absolute;
-    left: 15px;
+    right: 15px;
     top: 15px; }
     .main-header .main-nav-small .menu-icon div {
       width: 100%;
