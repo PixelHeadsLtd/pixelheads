@@ -47,7 +47,7 @@ toggleMenu() {
         </nav>
         <div className={"main-nav-small " + (this.state.show ? 'show-menu' : '')}>
           <i onClick={ this.toggleMenu } className="menu-icon" alt=""><div></div><div></div><div></div></i>
-          <div className="tint"></div>
+          <div onClick={ this.toggleMenu } className="tint"></div>
           <nav>
             <a className={this.state.isActiveIndex === "0" ? 'active home' : ''} onClick={ () => this.toggleActiveClass("0") } href='#section-home'>Home</a>
             <a className={this.state.isActiveIndex === "1" ? 'active about' : ''} onClick={() => this.toggleActiveClass("1") } href='#section-about'>About</a>
