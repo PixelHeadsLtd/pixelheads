@@ -185,6 +185,7 @@ body.projects {
             left: 0;
             padding-top: 10px;
             a.active {color:$red!important}
+            a:last-child {border-bottom:none}
             a {
                 width: 100%;
                 height: auto;
