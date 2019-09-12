@@ -74,7 +74,7 @@ class About extends Component {
             </p>
             <h4>Design Patterns</h4>
             <p>Keeping abreast of modern design patterns and trends is an absolute must when desiging any product. As designers, 
-              we cannot live in a vacuum and ignore the world around us. I beleive great design leads to great experiences and 
+              we cannot live in a vacuum and ignore the world around us. I believe great design leads to great experiences and 
               enriches our lives. Everything is designed and the things we love the most are the things that are designed well.
             </p>
             <h4>Typography</h4>
