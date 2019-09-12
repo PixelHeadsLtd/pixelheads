@@ -21,6 +21,8 @@ body.home-page {
             background-size: 450px;
             .home-wrapper {
                 padding-top: 280px;
+                p {display:none}
+                p.intro-mobile {display:block}
             }
         }
         .new-section.about {
@@ -110,6 +112,8 @@ body.home-page {
         section.new-section.home {
             .home-wrapper {
                 padding-top: 340px;
+                p {display:block}
+                p.intro-mobile {display:none}
             }
         }
         .new-section.about {

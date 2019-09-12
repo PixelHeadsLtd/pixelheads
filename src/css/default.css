@@ -1129,6 +1129,10 @@ hr {
     background-size: 450px; }
     body.home-page .new-section.home .home-wrapper {
       padding-top: 280px; }
+      body.home-page .new-section.home .home-wrapper p {
+        display: none; }
+      body.home-page .new-section.home .home-wrapper p.intro-mobile {
+        display: block; }
   body.home-page .new-section.about .container-fluid {
     padding-right: 40px;
     padding-left: 40px; }
@@ -1193,6 +1197,10 @@ hr {
       display: none; }
   body.home-page section.new-section.home .home-wrapper {
     padding-top: 340px; }
+    body.home-page section.new-section.home .home-wrapper p {
+      display: block; }
+    body.home-page section.new-section.home .home-wrapper p.intro-mobile {
+      display: none; }
   body.home-page .new-section.about .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }

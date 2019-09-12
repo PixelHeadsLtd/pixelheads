@@ -10,6 +10,9 @@ class Landing extends Component {
       <div className="home-wrapper">
         <h1>Hi<span className="ellipsis">...</span></h1>
         <p>I’m <a href="mailto:info@pixel-heads.com">Mike King</a> of PixelHeads Limited<br />
+        A Senior UX/UI Consultant, Designer, Artist, Sculptor & Musician.<br />
+        Also, as an extra string to my bow, I have some FE skills too.</p>
+        <p className="intro-mobile">I’m <a href="mailto:info@pixel-heads.com">Mike King</a> of PixelHeads Limited<br />
         A Senior UX/UI Designer, Artist, Sculptor & Musician.<br />
         I have FE development skills too.</p>
         <div className="social">
