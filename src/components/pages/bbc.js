@@ -8,6 +8,7 @@ import TGGrouped from '../../images/clients/pages/bbc/grouped.png'
 import CarNews from '../../images/clients/pages/bbc/car-news.png'
 import TVShow from '../../images/clients/pages/bbc/tv-show.png'
 import MotionGallery from '../../images/clients/pages/bbc/motion-gallery.png'
+import BannerImage from '../../images/clients/pages/bbc/banner.png'
 
 // includes
 import ProjectsNav from '../menus/projects-nav'
@@ -45,6 +46,7 @@ class BBC extends Component {
                     </li>
                 </ul>
             </header>
+            <img src={BannerImage} alt="" data-aos="fade-in" data-aos-duration="1000" />
         </div>
         <div className="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12 bbc-container">
             <div className="row">

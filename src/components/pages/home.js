@@ -39,14 +39,14 @@ class Home extends Component {
         <ReactBody className="home-page" />     
           <StickyContainer> {/* THIS STICKY CONTAINER MUST WRAP THE ENTIRE PAGE - CAN HAVE NESTED CONTAINERS AS WELL */}
             <Header ref={menuRef} />
-              <section className="new-section home"> 
+              <section className="new-section home" data-aos="fade-in"> 
                 <ScrollableAnchor id={'section-home'}>
                   <ActiveSection index="0" refToMenu={menuRef}>
                     <Landing />
                   </ActiveSection>
                 </ScrollableAnchor> 
               </section>
-              <section className="new-section about">
+              <section className="new-section about" data-aos="fade-in">
                 <ScrollableAnchor id={'section-about'}>
                   <ActiveSection index="1" refToMenu={menuRef}> 
                     <AboutMike />
@@ -67,7 +67,7 @@ class Home extends Component {
                   </ActiveSection>
                 </ScrollableAnchor>
               </section>
-              <section className="new-section contact">
+              <section className="new-section contact" data-aos="fade-in">
                 <ScrollableAnchor id={'section-contact'}>
                   <ActiveSection index="4" refToMenu={menuRef}>
                     <ContactMike />

@@ -126,12 +126,21 @@ html {
                 }
             }
             .banner {
-                background-position: center center;
-                background-repeat: no-repeat;
+                background-color: $jetBlack;
                 position:fixed;
                 left:0;
                 right:0;
                 top:0;
+                img {
+                    max-width: 100%;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    z-index: -1;
+                }
                 nav.downloads-menu {
                     position: absolute;
                     top:60px;
@@ -148,6 +157,11 @@ html {
                                 font-family: 'latoregular';
                                 letter-spacing: .05rem;
                                 font-size: .65rem;
+                            }
+                            a.pdf {
+                                background: url(../images/icons/pdf.png) no-repeat left center;
+                                background-size: 13px;
+                                padding: 3px 0 3px 19px;
                             }
                         }
                     }
@@ -258,7 +272,7 @@ html {
 html {
     // UMG
     body.umg {
-        .App {     
+        .App {
             img.pdf { width: 12px; margin: -3px 5px 0 0 }
             .row {
                 .red-panel {
@@ -268,13 +282,9 @@ html {
                     h4 {color:$white}
                 }
             }
-        .container-fluid {
-            background:$white url('../images/clients/pages/umg/background.png') no-repeat 0 0;
-            background-size:100%;
-        }
-        .banner {
-            background-image: url('../images/clients/pages/umg/banner.png');
-            background-color: $jetBlack;
+            .container-fluid {
+                background:$white url('../images/clients/pages/umg/background.png') no-repeat 0 0;
+                background-size:100%;
             }
         }
     }
@@ -335,10 +345,6 @@ html {
                     background-color:$crimson;
                 }
             }
-            .banner {
-                background-image: url('../images/clients/pages/turner/banner.png');
-                background-color: $jetBlack;
-            }
         }
     }
 
@@ -375,40 +381,6 @@ html {
                 .row.topgear-grouped {
                     margin-top:-100px;
                 }
-            }
-            .banner {
-                background-image: url('../images/clients/pages/bbc/banner.png');
-                background-color: $jetBlack;
-            }
-        }
-    }
-
-    // Monum
-    body.monum {
-        .App {
-            .banner {
-                background-image: url('../images/clients/pages/monum/banner.png');
-                background-color: $jetBlack;
-                background-position: center bottom 63px!important;
-            }
-        }
-    }
-
-    // Setanta
-    body.setanta {
-        .App {
-            .banner {
-                background-image:url('../images/clients/pages/setanta/banner.png');
-                background-color: $jetBlack;
-            }
-        }
-    }
-     // Guinness
-     body.guinness {
-        .App {
-            .banner {
-                background-image:url('../images/clients/pages/guinness/banner.png');
-                background-color: $jetBlack;
             }
         }
     }

@@ -9,6 +9,7 @@ import Chap from '../../images/clients/pages/monum/chap.jpg'
 import Angers from '../../images/clients/pages/monum/anger.jpg'
 import MonumHome from '../../images/clients/pages/monum/home.png'
 import MonumHomeTwo from '../../images/clients/pages/monum/monum-fullpage.png'
+import BannerImage from '../../images/clients/pages/monum/banner.png'
 
 // includes
 import ProjectsNav from '../menus/projects-nav'
@@ -46,6 +47,7 @@ class Monum extends Component {
                     </li>
                 </ul>
             </header>
+            <img src={BannerImage} alt="" data-aos="fade-in" data-aos-duration="1000" />
         </div>
         <div className="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div className="row">

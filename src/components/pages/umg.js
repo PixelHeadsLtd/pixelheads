@@ -13,6 +13,7 @@ import RightsHub from '../../images/clients/pages/umg/rightshub.png'
 import SupplyChainLogo from '../../images/clients/pages/umg/supplychain-logo.png'
 import SupplyChain from '../../images/clients/pages/umg/supplychain.png'
 import pdf from '../../images/icons/pdf.png'
+import BannerImage from '../../images/clients/pages/umg/banner.png'
 
 // includes
 import ProjectsNav from '../menus/projects-nav'
@@ -30,7 +31,7 @@ class UMG extends Component {
             <nav className="downloads-menu">
                 <ul>
                     <li>
-                        <img className="pdf" src={pdf} alt="pdf"/><a href="./../umg/AWS-Example-User-Journey.pdf" download="AWS User Journey" title="Will Download a PDF">Example User Journey</a>
+                       <a className="pdf" href="./../umg/AWS-Example-User-Journey.pdf" download="AWS User Journey" title="Will Download a PDF">Example User Journey</a>
                     </li>
                     <li>
                         <a href="./../axure-demo/index.html" title="Will open in a New Window" target="_blank">Axure Prototype</a>
@@ -61,6 +62,7 @@ class UMG extends Component {
                     </li>
                 </ul>
             </header>
+            <img src={BannerImage} alt="" data-aos="fade-in" data-aos-duration="1000" />
         </div>
         <div className="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12 umg-mobile">
             <div className="row">
@@ -110,15 +112,15 @@ class UMG extends Component {
                     </p> 
                 </div>
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 shift-up">
-                    <img className="personas to-the-right-edge" src={Personas} alt="" />
+                    <img className="personas to-the-right-edge" src={Personas} alt="" data-aos="fade-left" data-aos-duration="1000" />
                 </div>
             </div>
 
             <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                    <img src={Mobile} className="w-100" alt="" />
+                    <img src={Mobile} className="w-100" alt="" data-aos="fade-right" />
                 </div>
-                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 red-panel">
+                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 red-panel" data-aos="fade-left">
                     <h4>STAGE ONE</h4>
                     <p>
                         Research the User needs inline with the Business incentives. Create Personas, User Stories, low-level 
@@ -146,7 +148,7 @@ class UMG extends Component {
             <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <h2>StudioHub</h2>
-                    <img src={StuHubLogo} className="w-100" alt="" />
+                    <img src={StuHubLogo} className="w-100" alt="" data-aos="fade-up" />
                     <img src={StudioHub} className="w-100" alt="" />
                 </div>
             </div>
@@ -161,7 +163,7 @@ class UMG extends Component {
             <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <h2>Rights Hub</h2>
-                    <img src={RightsHubLogo} className="w-100" alt="" />
+                    <img src={RightsHubLogo} className="w-100" alt="" data-aos="fade-up" />
                     <img src={RightsHub} className="w-100" alt="" />
                 </div>
             </div>
@@ -169,7 +171,7 @@ class UMG extends Component {
             <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <h2>Supply Chain</h2>
-                    <img src={SupplyChainLogo} className="w-100" alt="" />
+                    <img src={SupplyChainLogo} className="w-100" alt="" data-aos="fade-up" />
                     <img src={SupplyChain} className="w-100" alt="" />
                 </div>
             </div>

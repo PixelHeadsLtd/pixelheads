@@ -10,6 +10,7 @@ import CartoonNetwork from '../../images/clients/pages/turner/cn.png'
 import AdvTime from '../../images/clients/pages/turner/at.png'
 import AdultSwimGames from '../../images/clients/pages/turner/as-games.jpg'
 import AdultSwimVideos from '../../images/clients/pages/turner/as-videos.jpg'
+import BannerImage from '../../images/clients/pages/turner/banner.png'
 
 // includes
 import ProjectsNav from '../menus/projects-nav'
@@ -47,6 +48,7 @@ class Turner extends Component {
                   </li>
               </ul>
             </header>
+            <img src={BannerImage} alt="" data-aos="fade-in" data-aos-duration="1000" />
         </div>
         <div className="container-fluid fullwidth col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div className="row">

@@ -140,13 +140,21 @@ html body.projects {
       html body.projects .App .banner.guinness-active nav.projects-menu ul li:nth-child(6) a i {
         display: block; }
     html body.projects .App .banner {
-      background-position: center center;
-      background-repeat: no-repeat;
+      background-color: #000000;
       position: fixed;
       left: 0;
       right: 0;
       top: 0;
       /* Projects Headers */ }
+      html body.projects .App .banner img {
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: -1; }
       html body.projects .App .banner nav.downloads-menu {
         position: absolute;
         top: 60px;
@@ -164,6 +172,10 @@ html body.projects {
               font-family: 'latoregular';
               letter-spacing: .05rem;
               font-size: .65rem; }
+            html body.projects .App .banner nav.downloads-menu ul li a.pdf {
+              background: url(../images/icons/pdf.png) no-repeat left center;
+              background-size: 13px;
+              padding: 3px 0 3px 19px; }
       html body.projects .App .banner nav.projects-menu {
         position: absolute;
         z-index: 1; }
@@ -303,10 +315,6 @@ html body.umg .App .container-fluid {
   background: #fff url("../images/clients/pages/umg/background.png") no-repeat 0 0;
   background-size: 100%; }
 
-html body.umg .App .banner {
-  background-image: url("../images/clients/pages/umg/banner.png");
-  background-color: #000000; }
-
 html body.turner .App img.personas {
   width: 100%;
   margin-top: -160px; }
@@ -356,10 +364,6 @@ html body.turner .App .container-fluid {
     padding-top: 80px;
     background-color: #dc1f0a; }
 
-html body.turner .App .banner {
-  background-image: url("../images/clients/pages/turner/banner.png");
-  background-color: #000000; }
-
 html body.bbc .App .container-fluid {
   background: #fff url("../images/clients/pages/bbc/tyre-marks-grey.png") no-repeat;
   background-position: top right -322px;
@@ -385,20 +389,3 @@ html body.bbc .App .container-fluid {
           color: #fff; }
   html body.bbc .App .container-fluid .row.topgear-grouped {
     margin-top: -100px; }
-
-html body.bbc .App .banner {
-  background-image: url("../images/clients/pages/bbc/banner.png");
-  background-color: #000000; }
-
-html body.monum .App .banner {
-  background-image: url("../images/clients/pages/monum/banner.png");
-  background-color: #000000;
-  background-position: center bottom 63px !important; }
-
-html body.setanta .App .banner {
-  background-image: url("../images/clients/pages/setanta/banner.png");
-  background-color: #000000; }
-
-html body.guinness .App .banner {
-  background-image: url("../images/clients/pages/guinness/banner.png");
-  background-color: #000000; }

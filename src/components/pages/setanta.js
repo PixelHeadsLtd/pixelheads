@@ -6,6 +6,7 @@ import { goToTop } from 'react-scrollable-anchor'
 import SetantaHome from './../../images/clients/pages/setanta/home.png'
 import SetantaIncome from './../../images/clients/pages/setanta/income.png'
 import SetantaNews from './../../images/clients/pages/setanta/news.png'
+import BannerImage from '../../images/clients/pages/setanta/banner.png'
 
 // includes
 import ProjectsNav from '../menus/projects-nav'
@@ -43,6 +44,7 @@ class Setanta extends Component {
                     </li>
                 </ul>
             </header>
+            <img src={BannerImage} alt="" data-aos="fade-in" data-aos-duration="1000" />
         </div>
         <div className="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div className="row">

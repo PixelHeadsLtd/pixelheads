@@ -98,17 +98,6 @@ body.home-page {
         .new-section.projects { min-height: 1090px }
         .new-section.contact { min-height: 924px }
         // HEIGHTS MUST EXCEED WINDOW FOR ANCHORS TO WORK PROPERLY 
-        .main-header {
-            background:$white url(../images/pixelheads-logo.svg) no-repeat top 8px right 60px;
-            nav.main-nav {
-                margin-left:60px;
-                display: block;
-            }
-            .main-nav-small {
-                margin-left:60px;
-                display: none;
-            }
-        }
         section.new-section.home {
             .home-wrapper {
                 padding-top: 340px;
@@ -164,8 +153,14 @@ body.home-page {
     @media (min-width: 768px) {
         //.new-section { border: 1px solid orange }
         .main-header {
+            background:$white url(../images/pixelheads-logo.svg) no-repeat top 8px right 60px;
             nav.main-nav {
                 margin-left:60px;
+                display: block;
+            }
+            .main-nav-small {
+                margin-left:60px;
+                display: none;
             }
         }
         .new-section.about {
@@ -424,13 +419,20 @@ html {
             .container {
                 a.top {display:none}
             }
+
+            // tweak banner image positioning for mobile
+            .banner.umg-active img { max-width: 150%; top: 26%; left: -14%; }
+            .banner.turner-active img { max-width: 125%; top: 7%; left: -13%;}
+            .banner.monum-active img { max-width: 130%; left: -22%; bottom: 0;}
+            .banner.setanta-active img { max-width: 150%; top: 12%; left: -14%; }
+
             .banner {
                 height:190px;
-                background-size: 130%;
                 nav.downloads-menu {display:none}
                 nav.projects-menu {
-                    top:126px;
-                    left:40px;
+                    top: 126px;
+                    left: 40px;
+                    right: 0;
                     h4 {display:none}
                     ul li {width:33%; display:inline-block; margin-bottom: 0} 
                 }
@@ -505,31 +507,39 @@ html {
         }
         
         @media (min-width: 576px) {
-            .transpose-menu {
-                .main-header {
-                    background-image: url(../images/pixelheads-logo.svg)!important;
-                }
-            }
-            .main-header {
-                background-image: url(../images/pixelheads-logo-inverted.svg);
-                nav.main-nav {
-                    display: block;
-                    margin-left: 60px;
-                }
-                .main-nav-small {
-                    display: none;
-                }
-            }
             .container {
                 a.top {display:none}
             }
+            .banner,
+            .banner.umg-active,
+            .banner.turner-active,
+            .banner.setanta-active { 
+                img {
+                    max-width: 100%;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    z-index: -1;
+                }
+            }
+            .banner.monum-active {
+                img {
+                    max-width: 100%;
+                    bottom: 63px;
+                    top: auto;
+                    left: 0;
+                }
+            }
             .banner {
                 height: 395px;
-                background-size: 100%!important;
                 nav.downloads-menu {display:block}
                 nav.projects-menu {
                     top:50px;
                     left:60px;
+                    right: auto;
                     h4 {display:block}
                     ul li {width:auto; display: block; margin-bottom: 6px }
                 }
@@ -607,6 +617,21 @@ html {
         }
             
         @media (min-width: 768px) {
+            .transpose-menu {
+                .main-header {
+                    background-image: url(../images/pixelheads-logo.svg)!important;
+                }
+            }
+            .main-header {
+                background-image: url(../images/pixelheads-logo-inverted.svg);
+                nav.main-nav {
+                    display: block;
+                    margin-left: 60px;
+                }
+                .main-nav-small {
+                    display: none;
+                }
+            }
             .container {
                 a.top {display:inline-block}
             }

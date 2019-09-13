@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import AddClass from './components/scripts/transpose-menu';
+import AOS from 'aos';
 
 // pages
 import Home from './components/pages/home';
@@ -14,6 +15,7 @@ import Setanta from './components/pages/setanta';
 import Guinness from './components/pages/guinness';
 import Tutorials from './components/pages/tutorials';
 
+AOS.init();
 
 class App extends Component {
   render() {

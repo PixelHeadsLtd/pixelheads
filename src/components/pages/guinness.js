@@ -4,6 +4,7 @@ import { goToTop } from 'react-scrollable-anchor'
 
 // images
 import GuinnessHomePage from './../../images/clients/pages/guinness/home.png'
+import BannerImage from '../../images/clients/pages/guinness/banner.png'
 
 // includes
 import ProjectsNav from '../menus/projects-nav'
@@ -41,6 +42,7 @@ class Guinness extends Component {
                     </li>
                 </ul>
             </header>
+            <img src={BannerImage} alt="" data-aos="fade-in" data-aos-duration="1000" />
         </div>
         <div className="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div className="row">

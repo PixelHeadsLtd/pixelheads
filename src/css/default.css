@@ -451,13 +451,21 @@ html body.projects {
       html body.projects .App .banner.guinness-active nav.projects-menu ul li:nth-child(6) a i {
         display: block; }
     html body.projects .App .banner {
-      background-position: center center;
-      background-repeat: no-repeat;
+      background-color: #000000;
       position: fixed;
       left: 0;
       right: 0;
       top: 0;
       /* Projects Headers */ }
+      html body.projects .App .banner img {
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: -1; }
       html body.projects .App .banner nav.downloads-menu {
         position: absolute;
         top: 60px;
@@ -475,6 +483,10 @@ html body.projects {
               font-family: 'latoregular';
               letter-spacing: .05rem;
               font-size: .65rem; }
+            html body.projects .App .banner nav.downloads-menu ul li a.pdf {
+              background: url(../images/icons/pdf.png) no-repeat left center;
+              background-size: 13px;
+              padding: 3px 0 3px 19px; }
       html body.projects .App .banner nav.projects-menu {
         position: absolute;
         z-index: 1; }
@@ -614,10 +626,6 @@ html body.umg .App .container-fluid {
   background: #fff url("../images/clients/pages/umg/background.png") no-repeat 0 0;
   background-size: 100%; }
 
-html body.umg .App .banner {
-  background-image: url("../images/clients/pages/umg/banner.png");
-  background-color: #000000; }
-
 html body.turner .App img.personas {
   width: 100%;
   margin-top: -160px; }
@@ -667,10 +675,6 @@ html body.turner .App .container-fluid {
     padding-top: 80px;
     background-color: #dc1f0a; }
 
-html body.turner .App .banner {
-  background-image: url("../images/clients/pages/turner/banner.png");
-  background-color: #000000; }
-
 html body.bbc .App .container-fluid {
   background: #fff url("../images/clients/pages/bbc/tyre-marks-grey.png") no-repeat;
   background-position: top right -322px;
@@ -696,23 +700,6 @@ html body.bbc .App .container-fluid {
           color: #fff; }
   html body.bbc .App .container-fluid .row.topgear-grouped {
     margin-top: -100px; }
-
-html body.bbc .App .banner {
-  background-image: url("../images/clients/pages/bbc/banner.png");
-  background-color: #000000; }
-
-html body.monum .App .banner {
-  background-image: url("../images/clients/pages/monum/banner.png");
-  background-color: #000000;
-  background-position: center bottom 63px !important; }
-
-html body.setanta .App .banner {
-  background-image: url("../images/clients/pages/setanta/banner.png");
-  background-color: #000000; }
-
-html body.guinness .App .banner {
-  background-image: url("../images/clients/pages/guinness/banner.png");
-  background-color: #000000; }
 
 /********************************************** LOAD CUSTOM FONTS **********************************************/
 @font-face {
@@ -950,7 +937,7 @@ body.projects .transpose-menu .main-header {
     z-index: 1;
     position: fixed;
     width: 100%;
-    height: 240px;
+    height: 243px;
     left: 0;
     padding-top: 10px; }
     .main-header .main-nav-small nav a.active {
@@ -1192,14 +1179,6 @@ hr {
     min-height: 1090px; }
   body.home-page .new-section.contact {
     min-height: 924px; }
-  body.home-page .main-header {
-    background: #fff url(../images/pixelheads-logo.svg) no-repeat top 8px right 60px; }
-    body.home-page .main-header nav.main-nav {
-      margin-left: 60px;
-      display: block; }
-    body.home-page .main-header .main-nav-small {
-      margin-left: 60px;
-      display: none; }
   body.home-page section.new-section.home .home-wrapper {
     padding-top: 340px; }
     body.home-page section.new-section.home .home-wrapper p {
@@ -1235,8 +1214,14 @@ hr {
       margin-bottom: 0; } }
 
 @media (min-width: 768px) {
-  body.home-page .main-header nav.main-nav {
-    margin-left: 60px; }
+  body.home-page .main-header {
+    background: #fff url(../images/pixelheads-logo.svg) no-repeat top 8px right 60px; }
+    body.home-page .main-header nav.main-nav {
+      margin-left: 60px;
+      display: block; }
+    body.home-page .main-header .main-nav-small {
+      margin-left: 60px;
+      display: none; }
   body.home-page .new-section.about .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
@@ -1388,14 +1373,30 @@ hr {
       display: none; }
   html body.projects .container a.top {
     display: none; }
+  html body.projects .banner.umg-active img {
+    max-width: 150%;
+    top: 26%;
+    left: -14%; }
+  html body.projects .banner.turner-active img {
+    max-width: 125%;
+    top: 7%;
+    left: -13%; }
+  html body.projects .banner.monum-active img {
+    max-width: 130%;
+    left: -22%;
+    bottom: 0; }
+  html body.projects .banner.setanta-active img {
+    max-width: 150%;
+    top: 12%;
+    left: -14%; }
   html body.projects .banner {
-    height: 190px;
-    background-size: 130%; }
+    height: 190px; }
     html body.projects .banner nav.downloads-menu {
       display: none; }
     html body.projects .banner nav.projects-menu {
       top: 126px;
-      left: 40px; }
+      left: 40px;
+      right: 0; }
       html body.projects .banner nav.projects-menu h4 {
         display: none; }
       html body.projects .banner nav.projects-menu ul li {
@@ -1457,25 +1458,33 @@ hr {
     margin-top: -79px; } }
 
 @media (min-width: 576px) {
-  html body.projects .transpose-menu .main-header {
-    background-image: url(../images/pixelheads-logo.svg) !important; }
-  html body.projects .main-header {
-    background-image: url(../images/pixelheads-logo-inverted.svg); }
-    html body.projects .main-header nav.main-nav {
-      display: block;
-      margin-left: 60px; }
-    html body.projects .main-header .main-nav-small {
-      display: none; }
   html body.projects .container a.top {
     display: none; }
+  html body.projects .banner img,
+  html body.projects .banner.umg-active img,
+  html body.projects .banner.turner-active img,
+  html body.projects .banner.setanta-active img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1; }
+  html body.projects .banner.monum-active img {
+    max-width: 100%;
+    bottom: 63px;
+    top: auto;
+    left: 0; }
   html body.projects .banner {
-    height: 395px;
-    background-size: 100% !important; }
+    height: 395px; }
     html body.projects .banner nav.downloads-menu {
       display: block; }
     html body.projects .banner nav.projects-menu {
       top: 50px;
-      left: 60px; }
+      left: 60px;
+      right: auto; }
       html body.projects .banner nav.projects-menu h4 {
         display: block; }
       html body.projects .banner nav.projects-menu ul li {
@@ -1542,6 +1551,15 @@ hr {
     margin-top: -91px; } }
 
 @media (min-width: 768px) {
+  html body.projects .transpose-menu .main-header {
+    background-image: url(../images/pixelheads-logo.svg) !important; }
+  html body.projects .main-header {
+    background-image: url(../images/pixelheads-logo-inverted.svg); }
+    html body.projects .main-header nav.main-nav {
+      display: block;
+      margin-left: 60px; }
+    html body.projects .main-header .main-nav-small {
+      display: none; }
   html body.projects .container a.top {
     display: inline-block; }
   html body.projects .container-fluid.bbc-container .row .col-xs-12, html body.projects .container-fluid.bbc-container .row .col-sm-12, html body.projects .container-fluid.bbc-container .row .col-md-12, html body.projects .container-fluid.bbc-container .row .col-lg-12 {
