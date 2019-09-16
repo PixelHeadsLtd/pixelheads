@@ -345,10 +345,7 @@ html body.turner .App .container-fluid {
     padding-top: 80px;
     background-color: #dc1f0a; }
     html body.turner .App .container-fluid .row.ctn-ntw img.adv-time {
-      position: absolute;
-      top: -240px;
-      right: 395px;
-      width: 400px; }
+      position: absolute; }
   html body.turner .App .container-fluid .row.scooby {
     min-height: 400px;
     margin-top: 123px;

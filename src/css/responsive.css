@@ -344,9 +344,9 @@
     html body.projects .container-fluid .row.ctn-ntw {
       padding-top: 80px; }
       html body.projects .container-fluid .row.ctn-ntw img.adv-time {
-        top: -169px;
-        right: 113px;
-        width: 265px; }
+        top: -103px;
+        right: 5%;
+        width: 161px; }
     html body.projects .container-fluid .row.youtube ul {
       display: none; }
   html body.projects img.personas {
@@ -416,17 +416,17 @@
         margin-top: -10px !important; }
     html body.projects .container-fluid .row.scooby {
       padding-top: 60px;
-      padding-bottom: 180px; }
+      padding-bottom: 100px; }
       html body.projects .container-fluid .row.scooby > div:first-child {
         margin-right: 130px; }
       html body.projects .container-fluid .row.scooby img.scooby-van {
         top: -172px;
-        width: 451px; }
+        width: 400px; }
       html body.projects .container-fluid .row.scooby .para1 {
         margin-left: 0;
         max-width: 90%;
         padding-left: 60px;
-        margin-top: 50px; }
+        margin-top: 250px; }
       html body.projects .container-fluid .row.scooby .para2 {
         max-width: 90%;
         padding-left: 60px;
@@ -489,9 +489,9 @@
     html body.projects .container-fluid .row.ctn-ntw {
       padding-top: 80px; }
       html body.projects .container-fluid .row.ctn-ntw img.adv-time {
-        top: -206px;
-        right: 230px;
-        width: 340px; }
+        top: -148px;
+        right: 47px;
+        width: 228px; }
     html body.projects .container-fluid .row.youtube ul {
       display: block; }
     html body.projects .container-fluid .projects-header ul {
@@ -519,7 +519,7 @@
     html body.projects .container-fluid .row.scooby img.scooby-van {
       top: -172px; }
     html body.projects .container-fluid .row.scooby .para1 {
-      margin-left: 465px;
+      margin-left: 415px;
       max-width: 44%;
       min-width: 50%;
       padding-top: 30px;
@@ -527,12 +527,13 @@
     html body.projects .container-fluid .row.scooby .para2 {
       max-width: 90%;
       padding-left: 60px;
-      margin-top: 115px;
+      margin-top: 40px;
+      margin-bottom: 0;
       min-width: 90%; }
   html body.projects .container-fluid .row.ctn-ntw img.adv-time {
-    top: -206px;
-    right: 230px;
-    width: 340px; }
+    top: -200px;
+    right: 65px;
+    width: 312px; }
   html body.projects .container-fluid .row.youtube ul {
     display: block; }
   html body.projects .container-fluid .projects-header ul {
@@ -570,10 +571,9 @@
       margin-top: 0;
       min-width: initial; }
   html body.projects .container-fluid .row.ctn-ntw img.adv-time {
-    position: absolute;
-    top: -240px;
-    right: 395px;
-    width: 400px; }
+    top: -161px;
+    right: 56px;
+    width: 250px; }
   html body.projects .container-fluid .row.youtube ul {
     display: block; }
   html body.projects .container-fluid .projects-header ul {
@@ -609,10 +609,9 @@
       margin-top: 0;
       min-width: initial; }
   html body.projects .container-fluid .row.ctn-ntw img.adv-time {
-    position: absolute;
-    top: -240px;
-    right: 395px;
-    width: 400px; }
+    top: -216px;
+    right: 152px;
+    width: 335px; }
   html body.projects .container-fluid .row.youtube ul {
     display: block; }
   html body.projects .container-fluid .projects-header ul {
