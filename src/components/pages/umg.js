@@ -12,7 +12,6 @@ import RightsHubLogo from '../../images/clients/pages/umg/rightshub-logo.png'
 import RightsHub from '../../images/clients/pages/umg/rightshub.png'
 import SupplyChainLogo from '../../images/clients/pages/umg/supplychain-logo.png'
 import SupplyChain from '../../images/clients/pages/umg/supplychain.png'
-import pdf from '../../images/icons/pdf.png'
 import BannerImage from '../../images/clients/pages/umg/banner.png'
 
 // includes

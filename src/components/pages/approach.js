@@ -4,16 +4,12 @@ import Research from '../../images/icons/icon-research.svg';
 import Design from '../../images/icons/icon-design.svg';
 import Development from '../../images/icons/icon-development.svg';
 
-// scripts
-import Opacity from '../scripts/opacity-wrapper';
-
 class About extends Component {
   render() {
     return (
       <div className="container-fluid">
         <h1>Approach</h1>
         <hr />
-        <Opacity>
         <div className="row justify-content-md-center">
           <div className="col-md-auto">
             <img src={Research} alt="" />
@@ -34,8 +30,6 @@ class About extends Component {
                 they can be optimised for a better user experience.</p>
           </div>
         </div>
-        </Opacity>
-        <Opacity>
         <div className="row justify-content-md-center">
           <div className="col-md-auto">
             <img src={Research} alt="" />
@@ -59,9 +53,7 @@ class About extends Component {
               </p>
           </div>
         </div>
-        </Opacity>
         <hr />
-        <Opacity>
         <div className="row justify-content-md-center">
           <div className="col-md-auto">
             <img src={Design} alt="" />
@@ -79,9 +71,7 @@ class About extends Component {
             </p>
           </div>
         </div>
-        </Opacity>
         <hr />
-        <Opacity>
         <div className="row justify-content-md-center">
           <div className="col-md-auto">
             <img src={Development} alt="" />
@@ -100,7 +90,6 @@ class About extends Component {
             </p>
           </div>
         </div>
-        </Opacity>
       </div>
     );
   }
