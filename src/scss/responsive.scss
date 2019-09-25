@@ -18,12 +18,9 @@ body.home-page {
             }
         }  
         .new-section.home {
-            background-size: 450px;
-            .home-wrapper {
-                padding-top: 280px;
-                p {display:none}
-                p.intro-mobile {display:block}
-            }
+            p {display:none}
+            p.intro-mobile {display:block}
+            img.mike {margin:40px auto -50px auto;}
         }
         .new-section.about {
             .container-fluid {
@@ -98,12 +95,10 @@ body.home-page {
         .new-section.projects { min-height: 1090px }
         .new-section.contact { min-height: 924px }
         // HEIGHTS MUST EXCEED WINDOW FOR ANCHORS TO WORK PROPERLY 
-        section.new-section.home {
-            .home-wrapper {
-                padding-top: 340px;
-                p {display:block}
-                p.intro-mobile {display:none}
-            }
+        .new-section.home {
+            p {display:block}
+            p.intro-mobile {display:none}
+            img.mike {margin:40px auto -65px auto;}
         }
         .new-section.about {
             .container-fluid {
@@ -163,6 +158,9 @@ body.home-page {
                 display: none;
             }
         }
+        .new-section.home {
+            img.mike {margin:170px auto -30px auto;}
+        }
         .new-section.about {
             .container-fluid {
                 padding-right: 60px;
@@ -218,6 +216,9 @@ body.home-page {
             nav.main-nav {
                 margin-left:60px;
             }
+        }
+        .new-section.home {
+            img.mike {margin:40px auto -65px auto;}
         }
         .new-section.about {
             .container-fluid {
@@ -377,11 +378,8 @@ body.home-page {
                 margin-left:60px;
             }
         }
-        section.new-section.home {
-            background-position: center top 80px;
-            .home-wrapper {
-                padding-top: 450px;
-            }
+        .new-section.home {
+            img.mike {margin: 6% auto 0 auto;}
         }
         .new-section.about {
             .container-fluid {

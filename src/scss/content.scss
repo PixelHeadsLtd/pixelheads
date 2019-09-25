@@ -20,13 +20,22 @@ section.new-section {
 // home section
 section.new-section.home {
     text-align: center;
-    background:url('../images/mike.png') no-repeat center top 40px;
-    .home-wrapper {padding-top:400px}
+    img.mike {
+        position: relative;
+        z-index: -1;
+        width: 100%;
+        max-width: 530px;
+        animation-duration: 1s;
+        animation-timing-function: ease-in; /* how the animation will behave */
+        animation-delay: 0s; /* how long to delay the animation from starting */
+        animation-iteration-count: 1; /* how many times the animation will play */
+        animation-name: zoomFadeIn; /* the name of the animation we defined above */
+    }
     h1 {
         font-size: 6rem!important;
         width:100%;
-        margin:20px 0 0 0!important;
-        padding-left:0;
+        margin:0;
+        padding:0;
         span.ellipsis {
             color:$red;
             letter-spacing: .2rem;
@@ -43,6 +52,12 @@ section.new-section.home {
         width: 100%;
         display: inline-block;
         margin: 14px auto;
+        a:hover {
+            -webkit-animation: swing 1s ease;
+            animation: swing 1s ease;
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+        }
         a {
             width: 25px;
             height: 25px;

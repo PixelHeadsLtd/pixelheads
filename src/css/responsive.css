@@ -13,14 +13,12 @@
     background-image: none; }
     body.home-page .main-header nav.main-nav {
       display: none; }
-  body.home-page .new-section.home {
-    background-size: 450px; }
-    body.home-page .new-section.home .home-wrapper {
-      padding-top: 280px; }
-      body.home-page .new-section.home .home-wrapper p {
-        display: none; }
-      body.home-page .new-section.home .home-wrapper p.intro-mobile {
-        display: block; }
+  body.home-page .new-section.home p {
+    display: none; }
+  body.home-page .new-section.home p.intro-mobile {
+    display: block; }
+  body.home-page .new-section.home img.mike {
+    margin: 40px auto -50px auto; }
   body.home-page .new-section.about .container-fluid {
     padding-right: 40px;
     padding-left: 40px; }
@@ -75,12 +73,12 @@
     min-height: 1090px; }
   body.home-page .new-section.contact {
     min-height: 924px; }
-  body.home-page section.new-section.home .home-wrapper {
-    padding-top: 340px; }
-    body.home-page section.new-section.home .home-wrapper p {
-      display: block; }
-    body.home-page section.new-section.home .home-wrapper p.intro-mobile {
-      display: none; }
+  body.home-page .new-section.home p {
+    display: block; }
+  body.home-page .new-section.home p.intro-mobile {
+    display: none; }
+  body.home-page .new-section.home img.mike {
+    margin: 40px auto -65px auto; }
   body.home-page .new-section.about .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
@@ -118,6 +116,8 @@
     body.home-page .main-header .main-nav-small {
       margin-left: 60px;
       display: none; }
+  body.home-page .new-section.home img.mike {
+    margin: 170px auto -30px auto; }
   body.home-page .new-section.about .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
@@ -155,6 +155,8 @@
     min-height: 924px; }
   body.home-page .main-header nav.main-nav {
     margin-left: 60px; }
+  body.home-page .new-section.home img.mike {
+    margin: 40px auto -65px auto; }
   body.home-page .new-section.about .container-fluid {
     padding-right: 60px;
     padding-left: 60px; }
@@ -251,10 +253,8 @@
     min-height: 1539px; }
   body.home-page .main-header nav.main-nav {
     margin-left: 60px; }
-  body.home-page section.new-section.home {
-    background-position: center top 80px; }
-    body.home-page section.new-section.home .home-wrapper {
-      padding-top: 450px; }
+  body.home-page .new-section.home img.mike {
+    margin: 6% auto 0 auto; }
   body.home-page .new-section.about .container-fluid .row {
     padding-top: 50px; }
   body.home-page .new-section.about .container-fluid .icons {
