@@ -6,13 +6,25 @@
 html {
     body.projects {
         background-size: 100%;
-        font-family: 'latoregular'; 
-        font-size: .75rem; 
-        margin: 0; 
-        padding:0;
         .App {
             overflow: hidden;
-            letter-spacing: .04rem;
+            /* Links */
+            a {color:#00a3cc; text-decoration: none}
+            a:hover {color:#252525; text-decoration: none}
+            /* Lists */
+            ul li { margin: 0 0 8px 0}
+        
+            /* Text */
+            h1 {font-family: 'latobold'; font-size: 1.5rem; text-transform: uppercase; letter-spacing: .4rem; color:#ff0049}
+            h2 {font-family: 'oraqlescript'; font-weight: lighter; margin:25px 0 10px 0}
+            p label {width:100%; color:#ff0049; margin-bottom: 0; font-size: .95rem; letter-spacing: .05rem;}
+        
+            /* Layout */
+            img.to-the-right-edge {float:right; margin-right:-90px}
+            .row {
+                margin-right: 0;
+                margin-left: 0;
+            }
             .container-fluid {
                 background:$white; 
             }
@@ -32,51 +44,6 @@ html {
                 margin: 0 0 6px 0;
                 text-transform: uppercase;
                 letter-spacing: .2rem;
-            }
-            figure:hover { 
-                a {opacity:1;} 
-                .tint {
-                    @include transition(all 0.2s ease-in);
-                    opacity:0.6;
-                }
-            }
-            figure {
-                margin: 0;
-                position: relative;
-                overflow: hidden;
-                .tint {
-                    @include transition(all 0.2s ease-in);
-                    position: absolute;
-                    background:$jetBlack;
-                    width: 100%;
-                    height: 100%;
-                    opacity: 0;
-                }
-                a {
-                    color:$white;
-                    text-transform: uppercase;
-                    position: absolute;
-                    top: 0;
-                    z-index: 1;
-                    width: 100%;
-                    height: 100%;
-                    text-align: center;
-                    opacity: 0;
-                    margin: 0;
-                    padding-top: 25.5%;
-                    border:none;
-                    h3 {
-                        color:$white;
-                        letter-spacing: .2rem;
-                        font-size: .85rem;
-                    }
-                    p {
-                        letter-spacing: .2rem;
-                        font-family:'latolight';
-                        font-size: .65rem;
-                        color:$white;
-                    }
-                }
             }
             .banner.umg-active {
                 nav.projects-menu ul {
@@ -147,7 +114,9 @@ html {
                     top:60px;
                     right:60px;
                     ul {
+                        margin: 0;
                         padding: 0;
+                        line-height: 1.2rem;
                         li {
                             display: block;
                             margin:0 0 2px 0;
@@ -172,10 +141,13 @@ html {
                     z-index: 1;
                     h4 {color:$white; font-size: .8rem; font-family:'latolight'}
                     ul {
+                        margin:0;
                         padding:0;
+                        line-height: 1.4rem;
                         li {
                             font-size: .65rem;
                             position: relative;
+                            margin-bottom: 0;
                             a:hover {color:$white}
                             a {
                                 color:#888;
@@ -190,7 +162,7 @@ html {
                                     transform: rotate(45deg);
                                     position: absolute;
                                     left: -14px;
-                                    top: 3px;
+                                    top: 7px;
                                 }
                             }
                         }
@@ -239,31 +211,6 @@ html {
                     }
                 } // end projects header
             }
-            /* Links */
-            a {color:#00a3cc; text-decoration: none}
-            a:hover {color:#252525; text-decoration: none}
-            /* Lists */
-            ul li { margin: 0 0 10px 0}
-        
-            /* Text */
-            h1 {font-family: 'latobold'; font-size: 1.5rem; text-transform: uppercase; letter-spacing: .4rem; color:#ff0049}
-            h2 {font-family: 'oraqlescript'; font-weight: lighter; margin:25px 0 10px 0}
-            h3 {color:#ff0049; font-family: latobold; font-size: 1rem}
-            p {line-height: 1.5rem; margin-top: 0}
-            p label {width:100%; color:#ff0049; margin-bottom: 0; font-size: .95rem; letter-spacing: .05rem;}
-        
-            /* Layout */
-            img.to-the-right-edge {float:right; margin-right:-90px}
-            .row {
-                margin-right: 0;
-                margin-left: 0;
-            }
-    
-            /* Helpers */
-            .w-25 {width:25%}
-            .w-50 {width:50%}
-            .height-1000 {height: 1000px}
-            .absolute-right {position: absolute; right:0;}
         } // end App
     } // end projects
 } // end html

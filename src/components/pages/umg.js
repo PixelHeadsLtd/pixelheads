@@ -86,8 +86,8 @@ class UMG extends Component {
                         <li>Carry out Front-End dveleopment using React, Angular and Aurelia frameworks.</li>
                     </ul>
                     <p>
-                        Applications where as follows:
-                    </p>
+                        <strong>Applications where as follows:</strong>
+                    </p>     
                     <p>
                         <label>STUDIO HUB</label>
                         Allow Record Labels to create create, search, manage projects (Albums), recording sessions, add contributors, 

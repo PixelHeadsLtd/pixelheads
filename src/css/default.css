@@ -199,7 +199,6 @@ section.new-section.home {
   section.new-section.home p {
     text-align: center;
     display: inline-block;
-    line-height: 1.6rem !important;
     margin: 0 auto; }
   section.new-section.home .social {
     width: 100%;
@@ -226,8 +225,7 @@ section.new-section.about {
   section.new-section.about h1 {
     color: #fff; }
   section.new-section.about p {
-    color: #fff;
-    font: bold 12px "latolight"; }
+    color: #fff; }
   section.new-section.about .icons {
     width: 100%;
     text-align: center;
@@ -239,7 +237,8 @@ section.new-section.about {
       display: inline-block; }
       section.new-section.about .icons div p {
         margin-top: 5px;
-        font-size: .62rem; }
+        font-size: .62rem;
+        line-height: 1.4rem; }
         section.new-section.about .icons div p span {
           color: #fbc900; }
 
@@ -257,8 +256,7 @@ section.new-section.approach {
   section.new-section.approach .row {
     margin-top: 30px; }
     section.new-section.approach .row p {
-      color: #fff;
-      font: bold 12px "latolight"; }
+      color: #fff; }
     section.new-section.approach .row img {
       width: 115px; }
 
@@ -271,7 +269,7 @@ section.new-section.projects .projects-header {
     margin: 0 auto;
     display: inline-block;
     width: 100%; }
-    section.new-section.projects .projects-header nav a {
+    section.new-section.projects .projects-header nav > a {
       height: 20px;
       display: inline-block;
       margin: 15px 20px 15px 20px;
@@ -280,7 +278,7 @@ section.new-section.projects .projects-header {
       color: #888 !important;
       font: 300 0.75rem "latoregular";
       text-transform: uppercase; }
-    section.new-section.projects .projects-header nav a:hover {
+    section.new-section.projects .projects-header nav > a:hover {
       border-bottom: 2px solid #e6233e;
       text-decoration: none; }
     section.new-section.projects .projects-header nav .row {
@@ -300,45 +298,6 @@ section.new-section.projects .projects-header {
         -ms-transition: all 0.2s ease-in;
         -o-transition: all 0.2s ease-in;
         transition: all 0.2s ease-in; }
-      section.new-section.projects .projects-header nav .row figure:hover a {
-        opacity: 1; }
-      section.new-section.projects .projects-header nav .row figure {
-        margin: 0;
-        position: relative;
-        overflow: hidden; }
-        section.new-section.projects .projects-header nav .row figure .tint {
-          -webkit-transition: all 0.2s ease-in;
-          -moz-transition: all 0.2s ease-in;
-          -ms-transition: all 0.2s ease-in;
-          -o-transition: all 0.2s ease-in;
-          transition: all 0.2s ease-in;
-          position: absolute;
-          background: #000000;
-          width: 100%;
-          height: 100%;
-          opacity: 0; }
-        section.new-section.projects .projects-header nav .row figure a {
-          color: #fff;
-          text-transform: uppercase;
-          position: absolute;
-          top: 0;
-          z-index: 1;
-          width: 100%;
-          height: 100%;
-          text-align: center;
-          opacity: 0;
-          margin: 0;
-          padding-top: 25.5%;
-          border: none; }
-          section.new-section.projects .projects-header nav .row figure a h3 {
-            color: #fff;
-            letter-spacing: .2rem;
-            font-size: .85rem; }
-          section.new-section.projects .projects-header nav .row figure a p {
-            letter-spacing: .2rem;
-            font-family: 'latolight';
-            font-size: .65rem;
-            color: #fff; }
       section.new-section.projects .projects-header nav .row .bbc-is-active a {
         padding-top: 50% !important; }
     section.new-section.projects .projects-header nav figure:hover img,
@@ -547,19 +506,43 @@ section.new-section.contact {
 /* pagination */
 /* client logo */
 html body.projects {
-  background-size: 100%;
-  font-family: 'latoregular';
-  font-size: .75rem;
-  margin: 0;
-  padding: 0; }
+  background-size: 100%; }
   html body.projects .App {
     overflow: hidden;
-    letter-spacing: .04rem;
     /* Links */
     /* Lists */
     /* Text */
-    /* Layout */
-    /* Helpers */ }
+    /* Layout */ }
+    html body.projects .App a {
+      color: #00a3cc;
+      text-decoration: none; }
+    html body.projects .App a:hover {
+      color: #252525;
+      text-decoration: none; }
+    html body.projects .App ul li {
+      margin: 0 0 8px 0; }
+    html body.projects .App h1 {
+      font-family: 'latobold';
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: .4rem;
+      color: #ff0049; }
+    html body.projects .App h2 {
+      font-family: 'oraqlescript';
+      font-weight: lighter;
+      margin: 25px 0 10px 0; }
+    html body.projects .App p label {
+      width: 100%;
+      color: #ff0049;
+      margin-bottom: 0;
+      font-size: .95rem;
+      letter-spacing: .05rem; }
+    html body.projects .App img.to-the-right-edge {
+      float: right;
+      margin-right: -90px; }
+    html body.projects .App .row {
+      margin-right: 0;
+      margin-left: 0; }
     html body.projects .App .container-fluid {
       background: #fff; }
     html body.projects .App .container-fluid.fullwidth {
@@ -576,52 +559,6 @@ html body.projects {
       margin: 0 0 6px 0;
       text-transform: uppercase;
       letter-spacing: .2rem; }
-    html body.projects .App figure:hover a {
-      opacity: 1; }
-    html body.projects .App figure:hover .tint {
-      -webkit-transition: all 0.2s ease-in;
-      -moz-transition: all 0.2s ease-in;
-      -ms-transition: all 0.2s ease-in;
-      -o-transition: all 0.2s ease-in;
-      transition: all 0.2s ease-in;
-      opacity: 0.6; }
-    html body.projects .App figure {
-      margin: 0;
-      position: relative;
-      overflow: hidden; }
-      html body.projects .App figure .tint {
-        -webkit-transition: all 0.2s ease-in;
-        -moz-transition: all 0.2s ease-in;
-        -ms-transition: all 0.2s ease-in;
-        -o-transition: all 0.2s ease-in;
-        transition: all 0.2s ease-in;
-        position: absolute;
-        background: #000000;
-        width: 100%;
-        height: 100%;
-        opacity: 0; }
-      html body.projects .App figure a {
-        color: #fff;
-        text-transform: uppercase;
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        opacity: 0;
-        margin: 0;
-        padding-top: 25.5%;
-        border: none; }
-        html body.projects .App figure a h3 {
-          color: #fff;
-          letter-spacing: .2rem;
-          font-size: .85rem; }
-        html body.projects .App figure a p {
-          letter-spacing: .2rem;
-          font-family: 'latolight';
-          font-size: .65rem;
-          color: #fff; }
     html body.projects .App .banner.umg-active nav.projects-menu ul li:nth-child(1) a {
       color: #fff; }
       html body.projects .App .banner.umg-active nav.projects-menu ul li:nth-child(1) a i {
@@ -667,7 +604,9 @@ html body.projects {
         top: 60px;
         right: 60px; }
         html body.projects .App .banner nav.downloads-menu ul {
-          padding: 0; }
+          margin: 0;
+          padding: 0;
+          line-height: 1.2rem; }
           html body.projects .App .banner nav.downloads-menu ul li {
             display: block;
             margin: 0 0 2px 0;
@@ -691,10 +630,13 @@ html body.projects {
           font-size: .8rem;
           font-family: 'latolight'; }
         html body.projects .App .banner nav.projects-menu ul {
-          padding: 0; }
+          margin: 0;
+          padding: 0;
+          line-height: 1.4rem; }
           html body.projects .App .banner nav.projects-menu ul li {
             font-size: .65rem;
-            position: relative; }
+            position: relative;
+            margin-bottom: 0; }
             html body.projects .App .banner nav.projects-menu ul li a:hover {
               color: #fff; }
             html body.projects .App .banner nav.projects-menu ul li a {
@@ -710,7 +652,7 @@ html body.projects {
                 transform: rotate(45deg);
                 position: absolute;
                 left: -14px;
-                top: 3px; }
+                top: 7px; }
       html body.projects .App .banner .projects-header {
         width: 100%;
         display: inline-block;
@@ -759,52 +701,6 @@ html body.projects {
             padding: 0;
             width: 25%;
             float: left; }
-    html body.projects .App a {
-      color: #00a3cc;
-      text-decoration: none; }
-    html body.projects .App a:hover {
-      color: #252525;
-      text-decoration: none; }
-    html body.projects .App ul li {
-      margin: 0 0 10px 0; }
-    html body.projects .App h1 {
-      font-family: 'latobold';
-      font-size: 1.5rem;
-      text-transform: uppercase;
-      letter-spacing: .4rem;
-      color: #ff0049; }
-    html body.projects .App h2 {
-      font-family: 'oraqlescript';
-      font-weight: lighter;
-      margin: 25px 0 10px 0; }
-    html body.projects .App h3 {
-      color: #ff0049;
-      font-family: latobold;
-      font-size: 1rem; }
-    html body.projects .App p {
-      line-height: 1.5rem;
-      margin-top: 0; }
-    html body.projects .App p label {
-      width: 100%;
-      color: #ff0049;
-      margin-bottom: 0;
-      font-size: .95rem;
-      letter-spacing: .05rem; }
-    html body.projects .App img.to-the-right-edge {
-      float: right;
-      margin-right: -90px; }
-    html body.projects .App .row {
-      margin-right: 0;
-      margin-left: 0; }
-    html body.projects .App .w-25 {
-      width: 25%; }
-    html body.projects .App .w-50 {
-      width: 50%; }
-    html body.projects .App .height-1000 {
-      height: 1000px; }
-    html body.projects .App .absolute-right {
-      position: absolute;
-      right: 0; }
 
 /* ------------------------------------------------- Project Specific ------------------------------------------------ */
 html body.umg .App img.pdf {
@@ -1070,8 +966,8 @@ body.projects .main-header {
       border-top: 1px solid #e6233e; }
     body.projects .main-header a.top label {
       position: absolute;
-      top: 24px;
-      left: 21px;
+      top: 20px;
+      left: 23px;
       display: block;
       transform: rotate(-45deg);
       text-transform: uppercase;
@@ -1758,15 +1654,14 @@ hr {
     html body.projects .banner nav.downloads-menu {
       display: none; }
     html body.projects .banner nav.projects-menu {
-      top: 126px;
+      top: 112px;
       left: 40px;
       right: 0; }
       html body.projects .banner nav.projects-menu h4 {
         display: none; }
       html body.projects .banner nav.projects-menu ul li {
         width: 33%;
-        display: inline-block;
-        margin-bottom: 0; }
+        display: inline-block; }
     html body.projects .banner h1 {
       margin: 70px 0 6px 0;
       font-size: 1.1rem; }
@@ -1846,15 +1741,14 @@ hr {
     html body.projects .banner nav.downloads-menu {
       display: block; }
     html body.projects .banner nav.projects-menu {
-      top: 50px;
+      top: 40px;
       left: 60px;
       right: auto; }
       html body.projects .banner nav.projects-menu h4 {
         display: block; }
       html body.projects .banner nav.projects-menu ul li {
         width: auto;
-        display: block;
-        margin-bottom: 6px; }
+        display: block; }
     html body.projects .banner h1 {
       margin: 70px 0 105px 0;
       font-size: 1.5rem; }
@@ -1924,8 +1818,6 @@ hr {
       margin-left: 60px; }
     html body.projects .main-header .main-nav-small {
       display: none; }
-  html body.projects .container a.top {
-    display: inline-block; }
   html body.projects .container-fluid.bbc-container .row .col-xs-12, html body.projects .container-fluid.bbc-container .row .col-sm-12, html body.projects .container-fluid.bbc-container .row .col-md-12, html body.projects .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 0;
     padding-left: 0; }
@@ -1970,6 +1862,8 @@ hr {
     margin-top: -90px; } }
 
 @media (min-width: 992px) {
+  html body.projects .container a.top {
+    display: inline-block; }
   html body.projects .container-fluid.bbc-container .row .col-xs-12, html body.projects .container-fluid.bbc-container .row .col-sm-12, html body.projects .container-fluid.bbc-container .row .col-md-12, html body.projects .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 10%;
     padding-left: 10%; }
@@ -2086,53 +1980,105 @@ hr {
     display: block;
     margin: 0 60px; } }
 
-html, body, #root, .projects, .projects-grid,
-.mdl-cell, .content, .mobile, .sub-nav + div {
-  height: 100%; }
-
-body.home-page {
+html body {
+  font-family: 'latoregular';
+  font-size: .78rem;
+  letter-spacing: 0.05em;
+  line-height: 1.5rem;
   margin: 0;
-  padding: 0;
-  font: normal 0.78rem "latoregular";
-  letter-spacing: 0.05em; }
-  body.home-page h1, body.home-page h2, body.home-page h3, body.home-page h4, body.home-page h5, body.home-page h6 {
+  padding: 0; }
+  html body section.new-section.about,
+  html body section.new-section.approach {
+    font-family: 'latolight';
+    font-weight: bolder; }
+  html body strong {
+    font-family: 'latoblack'; }
+  html body i {
+    font-family: 'latoitalic'; }
+  html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
     white-space: nowrap; }
-  body.home-page link, body.home-page a, body.home-page a:visited {
+  html body link, html body a, html body a:visited {
     color: #e6233e;
     text-decoration: none;
     cursor: pointer; }
-  body.home-page a:hover {
+  html body a:hover {
     text-decoration: none;
     color: #e73f3b; }
-  body.home-page ul li {
+  html body ul li {
     padding-left: 8px; }
-  body.home-page p {
-    margin: 0 0 20px 0;
-    line-height: 1.4rem !important;
-    font: 200 12px "latoregular"; }
-    body.home-page p a {
+  html body p {
+    margin: 0 0 20px 0; }
+    html body p a {
       font-size: 0.8rem; }
-  body.home-page h1 {
+  html body h1 {
     color: #252525;
     text-align: center;
     margin: 0 0 5px 0;
     padding: 30px 0 0 0;
-    font: 300 76px "oraqlescript";
-    font-size: 76px; }
-  body.home-page h2 {
-    color: #e73f3b;
+    font-family: 'oraqlescript';
+    font-size: 4.75rem; }
+  html body h2 {
     margin: 0 0 15px 0;
-    font: 300 25px "latoregular";
+    font-family: 'latoregular';
+    font-size: 25px;
     clear: left; }
-    body.home-page h2 a.link-large {
-      float: right;
-      margin: 5px 0 0 0; }
-  body.home-page h3 {
+  html body h3 {
     color: #252525;
-    font: 600 1.1rem "latoregular";
+    font-family: 'latoregular';
+    font-size: 1.1rem;
     margin: 0 0 3px 0; }
-  body.home-page h4 {
+  html body h4 {
+    font-family: 'latoregular';
     color: #033952;
     text-transform: uppercase;
     font-size: .8rem;
+    font-weight: bolder;
     margin-bottom: .2rem; }
+  html body figure:hover a {
+    opacity: 1; }
+  html body figure:hover .tint {
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    opacity: 0.6; }
+  html body figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden; }
+    html body figure .tint {
+      -webkit-transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
+      -ms-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
+      position: absolute;
+      background: #000000;
+      width: 100%;
+      height: 100%;
+      opacity: 0; }
+    html body figure a {
+      color: #fff;
+      text-transform: uppercase;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      opacity: 0;
+      margin: 0;
+      padding-top: 25.5%;
+      border: none; }
+      html body figure a h3 {
+        color: #fff;
+        letter-spacing: .2rem;
+        font-family: 'latoregular';
+        font-size: .85rem; }
+      html body figure a p {
+        letter-spacing: .2rem;
+        line-height: 1.3rem;
+        font-family: 'latolight';
+        font-size: .65rem;
+        color: #fff; }

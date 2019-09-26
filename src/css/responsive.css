@@ -290,15 +290,14 @@
     html body.projects .banner nav.downloads-menu {
       display: none; }
     html body.projects .banner nav.projects-menu {
-      top: 126px;
+      top: 112px;
       left: 40px;
       right: 0; }
       html body.projects .banner nav.projects-menu h4 {
         display: none; }
       html body.projects .banner nav.projects-menu ul li {
         width: 33%;
-        display: inline-block;
-        margin-bottom: 0; }
+        display: inline-block; }
     html body.projects .banner h1 {
       margin: 70px 0 6px 0;
       font-size: 1.1rem; }
@@ -378,15 +377,14 @@
     html body.projects .banner nav.downloads-menu {
       display: block; }
     html body.projects .banner nav.projects-menu {
-      top: 50px;
+      top: 40px;
       left: 60px;
       right: auto; }
       html body.projects .banner nav.projects-menu h4 {
         display: block; }
       html body.projects .banner nav.projects-menu ul li {
         width: auto;
-        display: block;
-        margin-bottom: 6px; }
+        display: block; }
     html body.projects .banner h1 {
       margin: 70px 0 105px 0;
       font-size: 1.5rem; }
@@ -456,8 +454,6 @@
       margin-left: 60px; }
     html body.projects .main-header .main-nav-small {
       display: none; }
-  html body.projects .container a.top {
-    display: inline-block; }
   html body.projects .container-fluid.bbc-container .row .col-xs-12, html body.projects .container-fluid.bbc-container .row .col-sm-12, html body.projects .container-fluid.bbc-container .row .col-md-12, html body.projects .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 0;
     padding-left: 0; }
@@ -502,6 +498,8 @@
     margin-top: -90px; } }
 
 @media (min-width: 992px) {
+  html body.projects .container a.top {
+    display: inline-block; }
   html body.projects .container-fluid.bbc-container .row .col-xs-12, html body.projects .container-fluid.bbc-container .row .col-sm-12, html body.projects .container-fluid.bbc-container .row .col-md-12, html body.projects .container-fluid.bbc-container .row .col-lg-12 {
     padding-right: 10%;
     padding-left: 10%; }

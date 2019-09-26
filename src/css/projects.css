@@ -113,19 +113,43 @@
 /* pagination */
 /* client logo */
 html body.projects {
-  background-size: 100%;
-  font-family: 'latoregular';
-  font-size: .75rem;
-  margin: 0;
-  padding: 0; }
+  background-size: 100%; }
   html body.projects .App {
     overflow: hidden;
-    letter-spacing: .04rem;
     /* Links */
     /* Lists */
     /* Text */
-    /* Layout */
-    /* Helpers */ }
+    /* Layout */ }
+    html body.projects .App a {
+      color: #00a3cc;
+      text-decoration: none; }
+    html body.projects .App a:hover {
+      color: #252525;
+      text-decoration: none; }
+    html body.projects .App ul li {
+      margin: 0 0 8px 0; }
+    html body.projects .App h1 {
+      font-family: 'latobold';
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: .4rem;
+      color: #ff0049; }
+    html body.projects .App h2 {
+      font-family: 'oraqlescript';
+      font-weight: lighter;
+      margin: 25px 0 10px 0; }
+    html body.projects .App p label {
+      width: 100%;
+      color: #ff0049;
+      margin-bottom: 0;
+      font-size: .95rem;
+      letter-spacing: .05rem; }
+    html body.projects .App img.to-the-right-edge {
+      float: right;
+      margin-right: -90px; }
+    html body.projects .App .row {
+      margin-right: 0;
+      margin-left: 0; }
     html body.projects .App .container-fluid {
       background: #fff; }
     html body.projects .App .container-fluid.fullwidth {
@@ -142,52 +166,6 @@ html body.projects {
       margin: 0 0 6px 0;
       text-transform: uppercase;
       letter-spacing: .2rem; }
-    html body.projects .App figure:hover a {
-      opacity: 1; }
-    html body.projects .App figure:hover .tint {
-      -webkit-transition: all 0.2s ease-in;
-      -moz-transition: all 0.2s ease-in;
-      -ms-transition: all 0.2s ease-in;
-      -o-transition: all 0.2s ease-in;
-      transition: all 0.2s ease-in;
-      opacity: 0.6; }
-    html body.projects .App figure {
-      margin: 0;
-      position: relative;
-      overflow: hidden; }
-      html body.projects .App figure .tint {
-        -webkit-transition: all 0.2s ease-in;
-        -moz-transition: all 0.2s ease-in;
-        -ms-transition: all 0.2s ease-in;
-        -o-transition: all 0.2s ease-in;
-        transition: all 0.2s ease-in;
-        position: absolute;
-        background: #000000;
-        width: 100%;
-        height: 100%;
-        opacity: 0; }
-      html body.projects .App figure a {
-        color: #fff;
-        text-transform: uppercase;
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        opacity: 0;
-        margin: 0;
-        padding-top: 25.5%;
-        border: none; }
-        html body.projects .App figure a h3 {
-          color: #fff;
-          letter-spacing: .2rem;
-          font-size: .85rem; }
-        html body.projects .App figure a p {
-          letter-spacing: .2rem;
-          font-family: 'latolight';
-          font-size: .65rem;
-          color: #fff; }
     html body.projects .App .banner.umg-active nav.projects-menu ul li:nth-child(1) a {
       color: #fff; }
       html body.projects .App .banner.umg-active nav.projects-menu ul li:nth-child(1) a i {
@@ -233,7 +211,9 @@ html body.projects {
         top: 60px;
         right: 60px; }
         html body.projects .App .banner nav.downloads-menu ul {
-          padding: 0; }
+          margin: 0;
+          padding: 0;
+          line-height: 1.2rem; }
           html body.projects .App .banner nav.downloads-menu ul li {
             display: block;
             margin: 0 0 2px 0;
@@ -257,10 +237,13 @@ html body.projects {
           font-size: .8rem;
           font-family: 'latolight'; }
         html body.projects .App .banner nav.projects-menu ul {
-          padding: 0; }
+          margin: 0;
+          padding: 0;
+          line-height: 1.4rem; }
           html body.projects .App .banner nav.projects-menu ul li {
             font-size: .65rem;
-            position: relative; }
+            position: relative;
+            margin-bottom: 0; }
             html body.projects .App .banner nav.projects-menu ul li a:hover {
               color: #fff; }
             html body.projects .App .banner nav.projects-menu ul li a {
@@ -276,7 +259,7 @@ html body.projects {
                 transform: rotate(45deg);
                 position: absolute;
                 left: -14px;
-                top: 3px; }
+                top: 7px; }
       html body.projects .App .banner .projects-header {
         width: 100%;
         display: inline-block;
@@ -325,52 +308,6 @@ html body.projects {
             padding: 0;
             width: 25%;
             float: left; }
-    html body.projects .App a {
-      color: #00a3cc;
-      text-decoration: none; }
-    html body.projects .App a:hover {
-      color: #252525;
-      text-decoration: none; }
-    html body.projects .App ul li {
-      margin: 0 0 10px 0; }
-    html body.projects .App h1 {
-      font-family: 'latobold';
-      font-size: 1.5rem;
-      text-transform: uppercase;
-      letter-spacing: .4rem;
-      color: #ff0049; }
-    html body.projects .App h2 {
-      font-family: 'oraqlescript';
-      font-weight: lighter;
-      margin: 25px 0 10px 0; }
-    html body.projects .App h3 {
-      color: #ff0049;
-      font-family: latobold;
-      font-size: 1rem; }
-    html body.projects .App p {
-      line-height: 1.5rem;
-      margin-top: 0; }
-    html body.projects .App p label {
-      width: 100%;
-      color: #ff0049;
-      margin-bottom: 0;
-      font-size: .95rem;
-      letter-spacing: .05rem; }
-    html body.projects .App img.to-the-right-edge {
-      float: right;
-      margin-right: -90px; }
-    html body.projects .App .row {
-      margin-right: 0;
-      margin-left: 0; }
-    html body.projects .App .w-25 {
-      width: 25%; }
-    html body.projects .App .w-50 {
-      width: 50%; }
-    html body.projects .App .height-1000 {
-      height: 1000px; }
-    html body.projects .App .absolute-right {
-      position: absolute;
-      right: 0; }
 
 /* ------------------------------------------------- Project Specific ------------------------------------------------ */
 html body.umg .App img.pdf {
