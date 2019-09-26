@@ -45,41 +45,114 @@ svg.demo .target-path {
     -webkit-transform: translateX(0);
     transform: translateX(0); } }
 
-/********************************************** LOAD CUSTOM FONTS **********************************************/
 @font-face {
-  font-family: 'latohairline';
-  src: url("../fonts/lato-thin.woff") format("woff");
-  src: url("../fonts/lato-thin.woff2") format("woff2");
-  font-weight: normal; }
+  font-family: 'latothin';
+  src: url("../fonts/lato-thin-webfont.eot") format("eot");
+  src: url("../fonts/lato-thin-webfont.svg") format("svg");
+  src: url("../fonts/lato-thin-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-thin-webfont.woff") format("woff");
+  src: url("../fonts/lato-thin-webfont.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal; }
 
 @font-face {
   font-family: 'latolight';
-  src: url("../fonts/lato-light.ttf") format("ttf");
-  src: url("../fonts/lato-light.woff") format("woff");
-  src: url("../fonts/lato-light.woff2") format("woff2");
-  font-weight: normal; }
+  src: url("../fonts/lato-light-webfont.eot") format("eot");
+  src: url("../fonts/lato-light-webfont.svg") format("svg");
+  src: url("../fonts/lato-light-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-light-webfont.woff") format("woff");
+  src: url("../fonts/lato-light-webfont.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal; }
 
 @font-face {
   font-family: 'latoregular';
-  src: url("../fonts/lato-regular.ttf") format("ttf");
-  src: url("../fonts/lato-regular.woff") format("woff");
-  src: url("../fonts/lato-regular.woff2") format("woff2");
-  font-weight: normal; }
+  src: url("../fonts/lato-regular-webfont.eot") format("eot");
+  src: url("../fonts/lato-regular-webfont.svg") format("svg");
+  src: url("../fonts/lato-regular-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-regular-webfont.woff") format("woff");
+  src: url("../fonts/lato-regular-webfont.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal; }
 
 @font-face {
   font-family: 'latobold';
-  src: url("../fonts/lato-bold.woff") format("woff");
-  src: url("../fonts/lato-bold.woff2") format("woff2");
-  font-weight: 300; }
+  src: url("../fonts/lato-bold-webfont.eot") format("eot");
+  src: url("../fonts/lato-bold-webfont.svg") format("svg");
+  src: url("../fonts/lato-bold-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-bold-webfont.woff") format("woff");
+  src: url("../fonts/lato-bold-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoblack';
+  src: url("../fonts/lato-black-webfont.eot") format("eot");
+  src: url("../fonts/lato-black-webfont.svg") format("svg");
+  src: url("../fonts/lato-black-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-black-webfont.woff") format("woff");
+  src: url("../fonts/lato-black-webfont.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latothinitalic';
+  src: url("../fonts/lato-thinitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-thinitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-thinitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-thinitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-thinitalic-webfont.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latolightitalic';
+  src: url("../fonts/lato-lightitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-lightitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-lightitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-lightitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-lightitalic-webfont.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoregularitalic';
+  src: url("../fonts/lato-regularitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-regularitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-regularitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-regularitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-regularitalic-webfont.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latobolditalic';
+  src: url("../fonts/lato-bolditalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-bolditalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-bolditalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-bolditalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-bolditalic-webfont.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoblackitalic';
+  src: url("../fonts/lato-blackitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-blackitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-blackitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-blackitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-blackitalic-webfont.woff2") format("woff2");
+  font-weight: 1000;
+  font-style: normal; }
 
 @font-face {
   font-family: 'oraqlescript';
   src: url("../fonts/OraqleScript.otf") format("otf");
   src: url("../fonts/OraqleScript.ttf") format("ttf");
   src: url("../fonts/OraqleScript.woff") format("woff");
-  font-weight: 400; }
+  font-weight: normal;
+  font-style: normal; }
 
-/********************************************** START MIXINS **********************************************/
 /* Header */
 /* Video Format Icons */
 /* Mike King Icons (copyright pixelHeadsLtd) */
@@ -359,41 +432,114 @@ section.new-section.contact {
     .App table tbody td li {
       margin: 0; }
 
-/********************************************** LOAD CUSTOM FONTS **********************************************/
 @font-face {
-  font-family: 'latohairline';
-  src: url("../fonts/lato-thin.woff") format("woff");
-  src: url("../fonts/lato-thin.woff2") format("woff2");
-  font-weight: normal; }
+  font-family: 'latothin';
+  src: url("../fonts/lato-thin-webfont.eot") format("eot");
+  src: url("../fonts/lato-thin-webfont.svg") format("svg");
+  src: url("../fonts/lato-thin-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-thin-webfont.woff") format("woff");
+  src: url("../fonts/lato-thin-webfont.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal; }
 
 @font-face {
   font-family: 'latolight';
-  src: url("../fonts/lato-light.ttf") format("ttf");
-  src: url("../fonts/lato-light.woff") format("woff");
-  src: url("../fonts/lato-light.woff2") format("woff2");
-  font-weight: normal; }
+  src: url("../fonts/lato-light-webfont.eot") format("eot");
+  src: url("../fonts/lato-light-webfont.svg") format("svg");
+  src: url("../fonts/lato-light-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-light-webfont.woff") format("woff");
+  src: url("../fonts/lato-light-webfont.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal; }
 
 @font-face {
   font-family: 'latoregular';
-  src: url("../fonts/lato-regular.ttf") format("ttf");
-  src: url("../fonts/lato-regular.woff") format("woff");
-  src: url("../fonts/lato-regular.woff2") format("woff2");
-  font-weight: normal; }
+  src: url("../fonts/lato-regular-webfont.eot") format("eot");
+  src: url("../fonts/lato-regular-webfont.svg") format("svg");
+  src: url("../fonts/lato-regular-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-regular-webfont.woff") format("woff");
+  src: url("../fonts/lato-regular-webfont.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal; }
 
 @font-face {
   font-family: 'latobold';
-  src: url("../fonts/lato-bold.woff") format("woff");
-  src: url("../fonts/lato-bold.woff2") format("woff2");
-  font-weight: 300; }
+  src: url("../fonts/lato-bold-webfont.eot") format("eot");
+  src: url("../fonts/lato-bold-webfont.svg") format("svg");
+  src: url("../fonts/lato-bold-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-bold-webfont.woff") format("woff");
+  src: url("../fonts/lato-bold-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoblack';
+  src: url("../fonts/lato-black-webfont.eot") format("eot");
+  src: url("../fonts/lato-black-webfont.svg") format("svg");
+  src: url("../fonts/lato-black-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-black-webfont.woff") format("woff");
+  src: url("../fonts/lato-black-webfont.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latothinitalic';
+  src: url("../fonts/lato-thinitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-thinitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-thinitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-thinitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-thinitalic-webfont.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latolightitalic';
+  src: url("../fonts/lato-lightitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-lightitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-lightitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-lightitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-lightitalic-webfont.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoregularitalic';
+  src: url("../fonts/lato-regularitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-regularitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-regularitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-regularitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-regularitalic-webfont.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latobolditalic';
+  src: url("../fonts/lato-bolditalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-bolditalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-bolditalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-bolditalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-bolditalic-webfont.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoblackitalic';
+  src: url("../fonts/lato-blackitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-blackitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-blackitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-blackitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-blackitalic-webfont.woff2") format("woff2");
+  font-weight: 1000;
+  font-style: normal; }
 
 @font-face {
   font-family: 'oraqlescript';
   src: url("../fonts/OraqleScript.otf") format("otf");
   src: url("../fonts/OraqleScript.ttf") format("ttf");
   src: url("../fonts/OraqleScript.woff") format("woff");
-  font-weight: 400; }
+  font-weight: normal;
+  font-style: normal; }
 
-/********************************************** START MIXINS **********************************************/
 /* Header */
 /* Video Format Icons */
 /* Mike King Icons (copyright pixelHeadsLtd) */
@@ -748,41 +894,114 @@ html body.bbc .App .container-fluid {
   html body.bbc .App .container-fluid .row.topgear-grouped {
     margin-top: -100px; }
 
-/********************************************** LOAD CUSTOM FONTS **********************************************/
 @font-face {
-  font-family: 'latohairline';
-  src: url("../fonts/lato-thin.woff") format("woff");
-  src: url("../fonts/lato-thin.woff2") format("woff2");
-  font-weight: normal; }
+  font-family: 'latothin';
+  src: url("../fonts/lato-thin-webfont.eot") format("eot");
+  src: url("../fonts/lato-thin-webfont.svg") format("svg");
+  src: url("../fonts/lato-thin-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-thin-webfont.woff") format("woff");
+  src: url("../fonts/lato-thin-webfont.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal; }
 
 @font-face {
   font-family: 'latolight';
-  src: url("../fonts/lato-light.ttf") format("ttf");
-  src: url("../fonts/lato-light.woff") format("woff");
-  src: url("../fonts/lato-light.woff2") format("woff2");
-  font-weight: normal; }
+  src: url("../fonts/lato-light-webfont.eot") format("eot");
+  src: url("../fonts/lato-light-webfont.svg") format("svg");
+  src: url("../fonts/lato-light-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-light-webfont.woff") format("woff");
+  src: url("../fonts/lato-light-webfont.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal; }
 
 @font-face {
   font-family: 'latoregular';
-  src: url("../fonts/lato-regular.ttf") format("ttf");
-  src: url("../fonts/lato-regular.woff") format("woff");
-  src: url("../fonts/lato-regular.woff2") format("woff2");
-  font-weight: normal; }
+  src: url("../fonts/lato-regular-webfont.eot") format("eot");
+  src: url("../fonts/lato-regular-webfont.svg") format("svg");
+  src: url("../fonts/lato-regular-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-regular-webfont.woff") format("woff");
+  src: url("../fonts/lato-regular-webfont.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal; }
 
 @font-face {
   font-family: 'latobold';
-  src: url("../fonts/lato-bold.woff") format("woff");
-  src: url("../fonts/lato-bold.woff2") format("woff2");
-  font-weight: 300; }
+  src: url("../fonts/lato-bold-webfont.eot") format("eot");
+  src: url("../fonts/lato-bold-webfont.svg") format("svg");
+  src: url("../fonts/lato-bold-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-bold-webfont.woff") format("woff");
+  src: url("../fonts/lato-bold-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoblack';
+  src: url("../fonts/lato-black-webfont.eot") format("eot");
+  src: url("../fonts/lato-black-webfont.svg") format("svg");
+  src: url("../fonts/lato-black-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-black-webfont.woff") format("woff");
+  src: url("../fonts/lato-black-webfont.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latothinitalic';
+  src: url("../fonts/lato-thinitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-thinitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-thinitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-thinitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-thinitalic-webfont.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latolightitalic';
+  src: url("../fonts/lato-lightitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-lightitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-lightitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-lightitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-lightitalic-webfont.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoregularitalic';
+  src: url("../fonts/lato-regularitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-regularitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-regularitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-regularitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-regularitalic-webfont.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latobolditalic';
+  src: url("../fonts/lato-bolditalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-bolditalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-bolditalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-bolditalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-bolditalic-webfont.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoblackitalic';
+  src: url("../fonts/lato-blackitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-blackitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-blackitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-blackitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-blackitalic-webfont.woff2") format("woff2");
+  font-weight: 1000;
+  font-style: normal; }
 
 @font-face {
   font-family: 'oraqlescript';
   src: url("../fonts/OraqleScript.otf") format("otf");
   src: url("../fonts/OraqleScript.ttf") format("ttf");
   src: url("../fonts/OraqleScript.woff") format("woff");
-  font-weight: 400; }
+  font-weight: normal;
+  font-style: normal; }
 
-/********************************************** START MIXINS **********************************************/
 /* Header */
 /* Video Format Icons */
 /* Mike King Icons (copyright pixelHeadsLtd) */
@@ -1139,41 +1358,114 @@ hr {
 /* end */
 /* pagination */
 /* client logo */
-/********************************************** LOAD CUSTOM FONTS **********************************************/
 @font-face {
-  font-family: 'latohairline';
-  src: url("../fonts/lato-thin.woff") format("woff");
-  src: url("../fonts/lato-thin.woff2") format("woff2");
-  font-weight: normal; }
+  font-family: 'latothin';
+  src: url("../fonts/lato-thin-webfont.eot") format("eot");
+  src: url("../fonts/lato-thin-webfont.svg") format("svg");
+  src: url("../fonts/lato-thin-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-thin-webfont.woff") format("woff");
+  src: url("../fonts/lato-thin-webfont.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal; }
 
 @font-face {
   font-family: 'latolight';
-  src: url("../fonts/lato-light.ttf") format("ttf");
-  src: url("../fonts/lato-light.woff") format("woff");
-  src: url("../fonts/lato-light.woff2") format("woff2");
-  font-weight: normal; }
+  src: url("../fonts/lato-light-webfont.eot") format("eot");
+  src: url("../fonts/lato-light-webfont.svg") format("svg");
+  src: url("../fonts/lato-light-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-light-webfont.woff") format("woff");
+  src: url("../fonts/lato-light-webfont.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal; }
 
 @font-face {
   font-family: 'latoregular';
-  src: url("../fonts/lato-regular.ttf") format("ttf");
-  src: url("../fonts/lato-regular.woff") format("woff");
-  src: url("../fonts/lato-regular.woff2") format("woff2");
-  font-weight: normal; }
+  src: url("../fonts/lato-regular-webfont.eot") format("eot");
+  src: url("../fonts/lato-regular-webfont.svg") format("svg");
+  src: url("../fonts/lato-regular-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-regular-webfont.woff") format("woff");
+  src: url("../fonts/lato-regular-webfont.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal; }
 
 @font-face {
   font-family: 'latobold';
-  src: url("../fonts/lato-bold.woff") format("woff");
-  src: url("../fonts/lato-bold.woff2") format("woff2");
-  font-weight: 300; }
+  src: url("../fonts/lato-bold-webfont.eot") format("eot");
+  src: url("../fonts/lato-bold-webfont.svg") format("svg");
+  src: url("../fonts/lato-bold-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-bold-webfont.woff") format("woff");
+  src: url("../fonts/lato-bold-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoblack';
+  src: url("../fonts/lato-black-webfont.eot") format("eot");
+  src: url("../fonts/lato-black-webfont.svg") format("svg");
+  src: url("../fonts/lato-black-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-black-webfont.woff") format("woff");
+  src: url("../fonts/lato-black-webfont.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latothinitalic';
+  src: url("../fonts/lato-thinitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-thinitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-thinitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-thinitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-thinitalic-webfont.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latolightitalic';
+  src: url("../fonts/lato-lightitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-lightitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-lightitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-lightitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-lightitalic-webfont.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoregularitalic';
+  src: url("../fonts/lato-regularitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-regularitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-regularitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-regularitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-regularitalic-webfont.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latobolditalic';
+  src: url("../fonts/lato-bolditalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-bolditalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-bolditalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-bolditalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-bolditalic-webfont.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoblackitalic';
+  src: url("../fonts/lato-blackitalic-webfont.eot") format("eot");
+  src: url("../fonts/lato-blackitalic-webfont.svg") format("svg");
+  src: url("../fonts/lato-blackitalic-webfont.ttf") format("ttf");
+  src: url("../fonts/lato-blackitalic-webfont.woff") format("woff");
+  src: url("../fonts/lato-blackitalic-webfont.woff2") format("woff2");
+  font-weight: 1000;
+  font-style: normal; }
 
 @font-face {
   font-family: 'oraqlescript';
   src: url("../fonts/OraqleScript.otf") format("otf");
   src: url("../fonts/OraqleScript.ttf") format("ttf");
   src: url("../fonts/OraqleScript.woff") format("woff");
-  font-weight: 400; }
+  font-weight: normal;
+  font-style: normal; }
 
-/********************************************** START MIXINS **********************************************/
 @media (min-width: 375px) {
   body.home-page .new-section.home {
     min-height: 650px; }
@@ -1798,56 +2090,11 @@ html, body, #root, .projects, .projects-grid,
 .mdl-cell, .content, .mobile, .sub-nav + div {
   height: 100%; }
 
-.hide .hide-sub-header,
-.hide .menu-info,
-.hide .projects-intro {
-  display: none; }
-
-.border-dashed-light {
-  border: 1px dashed #ddd; }
-
-.drop-shadow {
-  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
-
-.clear {
-  float: left;
-  clear: left; }
-
-.animate {
-  transition: all 0.5s ease;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-property: -webkit-transform;
-  -moz-transition-property: -moz-transform;
-  -o-transition-property: -o-transform;
-  transition-property: transform; }
-
 body.home-page {
   margin: 0;
   padding: 0;
-  font: 200 0.78rem "latoregular";
-  letter-spacing: 0.05em;
-  /*font-family: $roboto-slab;*/
-  /* Custom scrollbars. Only works for chrome and Safari */ }
-  body.home-page ::-webkit-scrollbar-track {
-    -webkit-box-shadow: none;
-    border-radius: 2px;
-    background: #ddd; }
-  body.home-page ::-webkit-scrollbar {
-    width: 2px;
-    background-color: #fff; }
-  body.home-page ::-webkit-scrollbar-thumb {
-    border-radius: 2px;
-    -webkit-box-shadow: none;
-    background: #e6233e; }
-  body.home-page ::-webkit-scrollbar-thumb:hover {
-    background: #e6233e; }
-  body.home-page ::-webkit-scrollbar-thumb:active {
-    background: black; }
+  font: normal 0.78rem "latoregular";
+  letter-spacing: 0.05em; }
   body.home-page h1, body.home-page h2, body.home-page h3, body.home-page h4, body.home-page h5, body.home-page h6 {
     white-space: nowrap; }
   body.home-page link, body.home-page a, body.home-page a:visited {
@@ -1857,9 +2104,6 @@ body.home-page {
   body.home-page a:hover {
     text-decoration: none;
     color: #e73f3b; }
-  body.home-page a.link-large {
-    font: 300 15px "latoregular";
-    color: #478ce9; }
   body.home-page ul li {
     padding-left: 8px; }
   body.home-page p {
