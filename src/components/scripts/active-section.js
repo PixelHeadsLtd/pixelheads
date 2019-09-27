@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 class ActiveSection extends Component {
-  constructor(props){
-    super(props);
-  }
-
   // start fading
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);

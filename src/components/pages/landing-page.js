@@ -22,13 +22,13 @@ class Landing extends Component {
         A Senior UX/UI Designer, Artist, Sculptor & Musician.<br />
         I have FE development skills too.</p>
         <div className="social">
-          <a href="https://www.linkedin.com/in/mike-king-0481b92/" target="blank" title="View LinkedIn Profile" >
+          <a href="https://www.linkedin.com/in/mike-king-0481b92/" target="blank" title="LinkedIn" >
             <img src={LinkedIn} alt="" />
           </a>
-          <a href="https://www.facebook.com/profile.php?id=613721312" target="blank" title="FB">
+          <a href="https://www.facebook.com/profile.php?id=613721312" target="blank" title="Facebook">
             <img src={FB} alt="" />
           </a>
-          <a href="https://github.com/PixelHeadsLtd" target="blank" title="Visit GitHub Account">
+          <a href="https://github.com/PixelHeadsLtd" target="blank" title="GitHub">
             <img src={GitHub} alt="" />
           </a>
         </div>
