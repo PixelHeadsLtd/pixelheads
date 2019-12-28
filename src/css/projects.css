@@ -209,7 +209,8 @@ html body.projects {
       html body.projects .App .banner nav.downloads-menu {
         position: absolute;
         top: 60px;
-        right: 60px; }
+        right: 60px;
+        z-index: 1; }
         html body.projects .App .banner nav.downloads-menu ul {
           margin: 0;
           padding: 0;
